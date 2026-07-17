@@ -16,8 +16,6 @@ referencias_bibliograficas:
   citacao: Cap. 2 – 2.4, 2.5
 pre_aula:
   leitura:
-    intro: Leitura mais leve — cobre só a definição de probabilidade condicional;
-      independência e os exemplos de urna ficam para a exposição em sala.
     itens:
     - Bussab & Morettin, Estatística Básica, 9ª ed. — Capítulo 5, seção 5.3 (probabilidade
       condicional).

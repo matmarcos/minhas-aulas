@@ -17,9 +17,6 @@ referencias_bibliograficas:
   citacao: Cap. 1 – 1.1 a 1.6; Cap. 2 – 2.1
 pre_aula:
   leitura:
-    intro: Leitura mais leve — cobre só as definições básicas (experimento aleatório,
-      espaço amostral, evento); axiomas de probabilidade e árvore de eventos ficam
-      para a exposição em sala.
     itens:
     - Bussab & Morettin, Estatística Básica, 9ª ed. — Capítulo 5, seção 5.1 (fenômeno
       aleatório, espaço amostral, evento).

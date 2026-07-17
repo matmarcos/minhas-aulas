@@ -32,7 +32,6 @@
   <h2>Pré-aula</h2>
   {% if aula.pre_aula.leitura %}
   <h3>Leitura recomendada</h3>
-  {% if aula.pre_aula.leitura.intro %}<p>{{ aula.pre_aula.leitura.intro }}</p>{% endif %}
   <ul class="bib-list">
     {% for item in aula.pre_aula.leitura.itens %}<li>{{ item }}</li>{% endfor %}
   </ul>

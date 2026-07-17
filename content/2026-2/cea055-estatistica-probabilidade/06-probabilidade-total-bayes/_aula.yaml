@@ -16,8 +16,6 @@ referencias_bibliograficas:
   citacao: Cap. 2 – 2.6
 pre_aula:
   leitura:
-    intro: Leitura mais leve — cobre só a ideia de partição do espaço amostral e probabilidade
-      total; o Teorema de Bayes propriamente dito fica para a exposição em sala.
     itens:
     - Bussab & Morettin, Estatística Básica, 9ª ed. — Capítulo 5, seção 5.4 (só a
       parte de probabilidade total).

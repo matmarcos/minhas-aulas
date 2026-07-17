@@ -17,8 +17,6 @@ referencias_bibliograficas:
   citacao: Cap. 3 – 3.1, 3.2, 3.3
 pre_aula:
   leitura:
-    intro: Leitura mais leve — cobre só a definição de variável aleatória discreta;
-      esperança e variância ficam para a exposição em sala.
     itens:
     - Bussab & Morettin, Estatística Básica, 9ª ed. — Capítulo 6, seções 6.1 e 6.2
       (definição de v.a. discreta e função de probabilidade).

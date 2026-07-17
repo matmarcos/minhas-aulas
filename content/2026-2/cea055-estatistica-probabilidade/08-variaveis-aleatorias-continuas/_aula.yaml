@@ -16,8 +16,6 @@ referencias_bibliograficas:
   citacao: Cap. 5 – 5.1
 pre_aula:
   leitura:
-    intro: Leitura mais leve — cobre só a ideia de variável aleatória contínua e densidade;
-      esperança e variância no caso contínuo ficam para a exposição em sala.
     itens:
     - Bussab & Morettin, Estatística Básica, 9ª ed. — Capítulo 7, seção 7.1 (variável
       aleatória contínua e função densidade).

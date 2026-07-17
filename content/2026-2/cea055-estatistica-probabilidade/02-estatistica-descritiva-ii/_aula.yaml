@@ -16,8 +16,6 @@ referencias_bibliograficas:
   citacao: Cap. 4 – 4.2, 4.3; Cap. 1 – 1.2 (box-plot)
 pre_aula:
   leitura:
-    intro: Leitura mais leve — cobre só desvio médio e variância; quantis, box plot
-      e simetria ficam para a exposição em sala.
     itens:
     - 'Bussab & Morettin, Estatística Básica, 9ª ed. — Capítulo 3, seção 3.2 (medidas
       de dispersão: desvio médio e variância).'
