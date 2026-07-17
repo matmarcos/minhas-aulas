@@ -4,6 +4,7 @@ data: ''
 resumo: Tipos de variáveis; tabelas e distribuições de frequência; gráficos para variáveis
   qualitativas e quantitativas (barras, setores, histograma); medidas de posição (média,
   mediana, moda)
+bloco: 1
 slides:
   titulo: Slides da aula 01
   arquivo: Aula_01_Estatistica_Descritiva_I.pptx

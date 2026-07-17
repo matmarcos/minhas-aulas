@@ -2,6 +2,7 @@ titulo: 'Aula 03 - Introdução à Probabilidade: espaço amostral e eventos'
 data: ''
 resumo: Revisão de teoria de conjuntos; fenômeno aleatório; espaço amostral; evento;
   função probabilidade
+bloco: 1
 slides:
   titulo: Slides da aula 03
   arquivo: Aula_03_Introducao_Probabilidade.pptx

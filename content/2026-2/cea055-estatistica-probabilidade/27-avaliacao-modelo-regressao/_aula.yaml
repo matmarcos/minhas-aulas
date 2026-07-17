@@ -2,6 +2,7 @@ titulo: Aula 27 - Avaliação do modelo de regressão linear e aplicações
 data: ''
 resumo: Análise de resíduos; coeficiente de determinação (R²); exercícios de aplicação
   do método dos mínimos quadrados
+bloco: 3
 slides:
   titulo: Slides da aula 27
   arquivo: Aula_27_Avaliacao_Modelo_Regressao.pptx

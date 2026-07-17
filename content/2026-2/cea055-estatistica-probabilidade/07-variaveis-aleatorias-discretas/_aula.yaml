@@ -2,6 +2,7 @@ titulo: 'Aula 07 - Variáveis aleatórias discretas: definição, esperança e v
 data: ''
 resumo: Conceito de variável aleatória; distinção entre variáveis aleatórias discretas
   e contínuas; valor esperado e variância no caso discreto
+bloco: 1
 slides:
   titulo: Slides da aula 07
   arquivo: Aula_07_Variaveis_Aleatorias_Discretas.pptx

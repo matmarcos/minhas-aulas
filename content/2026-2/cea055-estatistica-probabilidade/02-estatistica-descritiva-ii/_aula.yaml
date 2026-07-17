@@ -3,6 +3,7 @@ titulo: 'Aula 02 - Estatística Descritiva II: medidas de dispersão, quartis e 
 data: ''
 resumo: Amplitude, variância e desvio-padrão; separatrizes (quartis); construção e
   interpretação de box plots
+bloco: 1
 slides:
   titulo: Slides da aula 02
   arquivo: Aula_02_Estatistica_Descritiva_II.pptx

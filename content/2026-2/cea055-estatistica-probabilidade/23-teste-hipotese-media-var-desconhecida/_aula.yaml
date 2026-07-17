@@ -2,6 +2,7 @@ titulo: Aula 23 - Teste de hipótese para a média — variância desconhecida
 data: ''
 resumo: Procedimento de teste para uma única média com variância desconhecida (uso
   da distribuição t); exercícios integradores
+bloco: 3
 slides:
   titulo: Slides da aula 23
   arquivo: Aula_23_Teste_Hipotese_Media_Var_Desconhecida.pptx

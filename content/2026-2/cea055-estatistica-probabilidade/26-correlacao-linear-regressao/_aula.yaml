@@ -2,6 +2,7 @@ titulo: Aula 26 - Correlação linear e modelo de regressão linear simples
 data: ''
 resumo: Coeficiente de correlação linear; modelo de regressão linear simples; estimação
   dos parâmetros pelo método dos mínimos quadrados
+bloco: 3
 slides:
   titulo: Slides da aula 26
   arquivo: Aula_26_Correlacao_Linear_Regressao.pptx

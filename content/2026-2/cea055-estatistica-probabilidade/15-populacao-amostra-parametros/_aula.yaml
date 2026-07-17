@@ -3,6 +3,7 @@ data: ''
 resumo: Conceitos de população e amostra; tipos de amostragem; Amostragem Aleatória
   Simples (AAS); diferença entre estatística e parâmetro; média, mediana, variância
   e proporção amostrais
+bloco: 2
 slides:
   titulo: Slides da aula 15
   arquivo: Aula_15_Populacao_Amostra_Parametros.pptx

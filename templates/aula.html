@@ -3,35 +3,10 @@
 {% block breadcrumbs %}<a href="{{ root }}index.html">Início</a> / <a href="{{ root }}{{ semestre.slug }}/index.html">{{ semestre.titulo }}</a> / <a href="{{ root }}{{ semestre.slug }}/{{ disciplina.slug }}/index.html">{{ disciplina.titulo }}</a> / {{ aula.titulo }}{% endblock %}
 {% block content %}
 {% set base_href = root ~ semestre.slug ~ "/" ~ disciplina.slug ~ "/" ~ aula.slug ~ "/arquivos/" %}
+{% set aula_id = semestre.slug ~ "/" ~ disciplina.slug ~ "/" ~ aula.slug %}
 <h1>{{ aula.titulo }}</h1>
 <p class="meta">{{ aula.data }}</p>
 <p class="subtitle">{{ aula.resumo }}</p>
-
-{% if aula.slides %}
-<section class="aula-secao">
-  <h2>Slides do professor</h2>
-  {% if aula.slides.arquivo_pdf %}
-  <iframe class="slides-embed" src="{{ base_href }}{{ aula.slides.arquivo_pdf }}" title="{{ aula.slides.titulo or 'Slides da aula' }}"></iframe>
-  {% endif %}
-  <ul class="material-list">
-    {% if aula.slides.arquivo_pdf %}
-    <li><a href="{{ base_href }}{{ aula.slides.arquivo_pdf }}" target="_blank" rel="noopener">Abrir slides em tela cheia (PDF)</a></li>
-    {% endif %}
-    <li><a href="{{ base_href }}{{ aula.slides.arquivo }}">Baixar slides originais (PowerPoint)</a></li>
-  </ul>
-</section>
-{% endif %}
-
-{% if aula.referencias_bibliograficas %}
-<section class="aula-secao">
-  <h2>Referências bibliográficas</h2>
-  <ul class="bib-list">
-    {% for ref in aula.referencias_bibliograficas %}
-    <li><strong>{{ ref.livro }}</strong> — {{ ref.citacao }}</li>
-    {% endfor %}
-  </ul>
-</section>
-{% endif %}
 
 {% if aula.pre_aula %}
 <section class="aula-secao">
@@ -56,6 +31,36 @@
     {% for item in aula.pre_aula.tarefa %}<li>{{ item }}</li>{% endfor %}
   </ul>
   {% endif %}
+  <label class="preaula-check">
+    <input type="checkbox" data-preaula-checkbox data-aula-id="{{ aula_id }}">
+    Já fiz a pré-aula desta aula
+  </label>
+</section>
+{% endif %}
+
+{% if aula.slides %}
+<section class="aula-secao">
+  <h2>Slides do professor</h2>
+  {% if aula.slides.arquivo_pdf %}
+  <iframe class="slides-embed" src="{{ base_href }}{{ aula.slides.arquivo_pdf }}" title="{{ aula.slides.titulo or 'Slides da aula' }}"></iframe>
+  {% endif %}
+  <ul class="material-list">
+    {% if aula.slides.arquivo_pdf %}
+    <li><a href="{{ base_href }}{{ aula.slides.arquivo_pdf }}" target="_blank" rel="noopener">Abrir slides em tela cheia (PDF)</a></li>
+    {% endif %}
+    <li><a href="{{ base_href }}{{ aula.slides.arquivo }}">Baixar slides originais (PowerPoint)</a></li>
+  </ul>
+</section>
+{% endif %}
+
+{% if aula.referencias_bibliograficas %}
+<section class="aula-secao">
+  <h2>Referências bibliográficas</h2>
+  <ul class="bib-list">
+    {% for ref in aula.referencias_bibliograficas %}
+    <li><strong>{{ ref.livro }}</strong> — {{ ref.citacao }}</li>
+    {% endfor %}
+  </ul>
 </section>
 {% endif %}
 

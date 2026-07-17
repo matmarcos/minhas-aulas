@@ -1,6 +1,7 @@
 titulo: 'Aula 08 - Variáveis aleatórias contínuas: esperança e variância'
 data: ''
 resumo: Função densidade de probabilidade; valor esperado e variância no caso contínuo
+bloco: 1
 slides:
   titulo: Slides da aula 08
   arquivo: Aula_08_Variaveis_Aleatorias_Continuas.pptx

@@ -2,6 +2,7 @@ titulo: Aula 22 - Teste de hipótese para a média — variância conhecida
 data: ''
 resumo: Procedimento de teste para uma única média com variância populacional conhecida;
   valor-p
+bloco: 3
 slides:
   titulo: Slides da aula 22
   arquivo: Aula_22_Teste_Hipotese_Media_Var_Conhecida.pptx

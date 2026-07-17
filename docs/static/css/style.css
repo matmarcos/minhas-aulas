@@ -113,3 +113,27 @@ h1 { font-size: 28px; margin-bottom: 4px; color: var(--text); }
   margin-bottom: 12px;
   background: var(--surface);
 }
+.bloco-titulo {
+  margin-top: 32px;
+  margin-bottom: 4px;
+  font-size: 15px;
+  color: var(--accent-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.bloco-titulo:first-of-type { margin-top: 24px; }
+.lesson-list li.aula-preaula-feita { border-left: 3px solid var(--accent); }
+.check-marker { color: var(--accent); font-weight: 700; }
+.preaula-check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  padding: 12px 14px;
+  background: var(--accent-soft);
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--text);
+  cursor: pointer;
+}
+.preaula-check input { width: 16px; height: 16px; accent-color: var(--accent); cursor: pointer; }
