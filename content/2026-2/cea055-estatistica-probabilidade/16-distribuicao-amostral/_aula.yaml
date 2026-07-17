@@ -1,0 +1,24 @@
+titulo: Aula 16 - Distribuição amostral da média e da proporção
+data: ''
+resumo: Distribuições amostrais; distribuição amostral da média; distribuição amostral
+  da proporção
+slides:
+  titulo: Slides da aula 16
+  arquivo: Aula_16_Distribuicao_Amostral.pptx
+referencias_bibliograficas:
+- livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+  citacao: Cap. 10 – 10.7 a 10.9
+- livro: Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª
+    ed.
+  citacao: Cap. 7 – 7.2
+- livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+  citacao: Cap. 7 – 7.3
+- livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
+  citacao: Cap. 9 – 9.1, 9.2
+pre_aula:
+  videos:
+  - titulo: Teorema do Limite Central (introdução à distribuição amostral)
+    url: https://www.youtube.com/watch?v=t31I49KYFDo
+exercicios_recomendados:
+  titulo: Tabela de exercícios recomendados
+  arquivo: Tabela_Referencias_Aula16.pdf

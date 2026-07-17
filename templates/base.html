@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% block title %}Minhas Aulas{% endblock %}</title>
+<link rel="stylesheet" href="{{ root }}static/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="{{ root }}index.html">Minhas Aulas</a>
+  <nav class="breadcrumbs">{% block breadcrumbs %}{% endblock %}</nav>
+</header>
+<main>
+{% block content %}{% endblock %}
+</main>
+<footer class="site-footer">
+  <p>Gerado automaticamente · atualize o conteúdo em <code>content/</code> e rode <code>python scripts/build.py</code></p>
+</footer>
+</body>
+</html>

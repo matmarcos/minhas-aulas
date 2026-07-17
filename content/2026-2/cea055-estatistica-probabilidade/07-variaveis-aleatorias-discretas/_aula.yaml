@@ -1,0 +1,43 @@
+titulo: 'Aula 07 - Variáveis aleatórias discretas: definição, esperança e variância'
+data: ''
+resumo: Conceito de variável aleatória; distinção entre variáveis aleatórias discretas
+  e contínuas; valor esperado e variância no caso discreto
+slides:
+  titulo: Slides da aula 07
+  arquivo: Aula_07_Variaveis_Aleatorias_Discretas.pptx
+referencias_bibliograficas:
+- livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+  citacao: Cap. 6 – 6.1 a 6.4
+- livro: Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª
+    ed.
+  citacao: Cap. 3 – 3.1, 3.3
+- livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+  citacao: Cap. 3 – 3.1
+- livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
+  citacao: Cap. 3 – 3.1, 3.2, 3.3
+pre_aula:
+  leitura:
+    intro: Leitura mais leve — cobre só a definição de variável aleatória discreta;
+      esperança e variância ficam para a exposição em sala.
+    itens:
+    - Bussab & Morettin, Estatística Básica, 9ª ed. — Capítulo 6, seções 6.1 e 6.2
+      (definição de v.a. discreta e função de probabilidade).
+    - Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed. — Capítulo 3,
+      seção 3.1 (mesmo tema, segunda referência).
+  videos:
+  - titulo: 'Aula 4: Variáveis Aleatórias'
+    url: https://www.youtube.com/watch?v=qN_K0NuJPs8
+  - titulo: 'Aula 6: Valor esperado e variância'
+    url: https://www.youtube.com/watch?v=6_6Ek8q1bDE
+  tarefa:
+  - Lança-se uma moeda honesta duas vezes. Defina X = número de caras obtidas. Liste
+    à mão todos os valores possíveis de X e a probabilidade de cada um (a função de
+    probabilidade de X).
+  - Verifique que a soma de todas as probabilidades que você encontrou dá exatamente
+    1.
+exercicios_recomendados:
+  titulo: Tabela de exercícios recomendados
+  arquivo: Tabela_Referencias_Aula7.pdf
+tarefa_complementar:
+- titulo: Variavel aleatoria discreta - Testando Positivo
+  arquivo: Aula 7 - Variavel aleatoria discreta - Testando Positivo.ipynb

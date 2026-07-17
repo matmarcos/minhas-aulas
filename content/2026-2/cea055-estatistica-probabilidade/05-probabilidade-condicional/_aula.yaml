@@ -1,0 +1,40 @@
+titulo: Aula 05 - Probabilidade condicional e independência
+data: ''
+resumo: Definição de probabilidade condicional; eventos independentes
+slides:
+  titulo: Slides da aula 05
+  arquivo: Aula_05_Probabilidade_Condicional.pptx
+referencias_bibliograficas:
+- livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+  citacao: Cap. 5 – 5.3
+- livro: Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª
+    ed.
+  citacao: Cap. 2 – 2.5, 2.7
+- livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+  citacao: Cap. 2 – 2.2
+- livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
+  citacao: Cap. 2 – 2.4, 2.5
+pre_aula:
+  leitura:
+    intro: Leitura mais leve — cobre só a definição de probabilidade condicional;
+      independência e os exemplos de urna ficam para a exposição em sala.
+    itens:
+    - Bussab & Morettin, Estatística Básica, 9ª ed. — Capítulo 5, seção 5.3 (probabilidade
+      condicional).
+    - Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed. — Capítulo 2,
+      seção 2.2 (mesmo tema, segunda referência).
+  videos:
+  - titulo: 'Aula 2: Probabilidade Condicional e Independência'
+    url: https://www.youtube.com/watch?v=HzOCwzzlGiA
+  tarefa:
+  - Uma urna tem 3 bolas azuis e 2 vermelhas. Sorteia-se uma bola, sem reposição,
+    e depois outra. Calcule à mão a probabilidade de a segunda bola ser vermelha,
+    dado que a primeira foi azul.
+  - Nesse mesmo experimento, a cor da segunda bola é independente da cor da primeira?
+    Justifique com base no cálculo acima.
+exercicios_recomendados:
+  titulo: Tabela de exercícios recomendados
+  arquivo: Tabela_Referencias_Aula5.pdf
+tarefa_complementar:
+- titulo: Probabilidade condicional - Testando Positivo
+  arquivo: Aula 5 - Probabilidade condicional - Testando Positivo.ipynb

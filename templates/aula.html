@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% block title %}{{ aula.titulo }} · Minhas Aulas{% endblock %}
+{% block breadcrumbs %}<a href="{{ root }}index.html">Início</a> / <a href="{{ root }}{{ semestre.slug }}/index.html">{{ semestre.titulo }}</a> / <a href="{{ root }}{{ semestre.slug }}/{{ disciplina.slug }}/index.html">{{ disciplina.titulo }}</a> / {{ aula.titulo }}{% endblock %}
+{% block content %}
+{% set base_href = root ~ semestre.slug ~ "/" ~ disciplina.slug ~ "/" ~ aula.slug ~ "/arquivos/" %}
+<h1>{{ aula.titulo }}</h1>
+<p class="meta">{{ aula.data }}</p>
+<p class="subtitle">{{ aula.resumo }}</p>
+
+{% if aula.slides %}
+<section class="aula-secao">
+  <h2>Slides do professor</h2>
+  <ul class="material-list">
+    <li><a href="{{ base_href }}{{ aula.slides.arquivo }}">{{ aula.slides.titulo or "Slides da aula" }}</a></li>
+  </ul>
+</section>
+{% endif %}
+
+{% if aula.referencias_bibliograficas %}
+<section class="aula-secao">
+  <h2>Referências bibliográficas</h2>
+  <ul class="bib-list">
+    {% for ref in aula.referencias_bibliograficas %}
+    <li><strong>{{ ref.livro }}</strong> — {{ ref.citacao }}</li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+{% if aula.pre_aula %}
+<section class="aula-secao">
+  <h2>Pré-aula</h2>
+  {% if aula.pre_aula.leitura %}
+  <h3>Leitura recomendada</h3>
+  {% if aula.pre_aula.leitura.intro %}<p>{{ aula.pre_aula.leitura.intro }}</p>{% endif %}
+  <ul class="bib-list">
+    {% for item in aula.pre_aula.leitura.itens %}<li>{{ item }}</li>{% endfor %}
+  </ul>
+  {% endif %}
+  {% if aula.pre_aula.videos %}
+  <h3>Vídeo recomendado</h3>
+  <ul class="material-list">
+    {% for v in aula.pre_aula.videos %}
+    <li><a href="{{ v.url }}" target="_blank" rel="noopener">{{ v.titulo }}</a></li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  {% if aula.pre_aula.tarefa %}
+  <h3>Tarefa</h3>
+  <ul class="bib-list">
+    {% for item in aula.pre_aula.tarefa %}<li>{{ item }}</li>{% endfor %}
+  </ul>
+  {% endif %}
+</section>
+{% endif %}
+
+{% if aula.exercicios_recomendados %}
+<section class="aula-secao">
+  <h2>Exercícios recomendados</h2>
+  <ul class="material-list">
+    <li><a href="{{ base_href }}{{ aula.exercicios_recomendados.arquivo }}">{{ aula.exercicios_recomendados.titulo or "Tabela de exercícios recomendados" }}</a></li>
+  </ul>
+</section>
+{% endif %}
+
+{% if aula.tarefa_complementar %}
+<section class="aula-secao">
+  <h2>Tarefa complementar (opcional)</h2>
+  <ul class="material-list">
+    {% for t in aula.tarefa_complementar %}
+    <li><a href="{{ base_href }}{{ t.arquivo }}">{{ t.titulo }}</a></li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+{% endblock %}

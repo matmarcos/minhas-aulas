@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}{{ disciplina.titulo }} · Minhas Aulas{% endblock %}
+{% block breadcrumbs %}<a href="{{ root }}index.html">Início</a> / <a href="{{ root }}{{ semestre.slug }}/index.html">{{ semestre.titulo }}</a> / {{ disciplina.titulo }}{% endblock %}
+{% block content %}
+<h1>{{ disciplina.titulo }}</h1>
+<p class="subtitle">{{ disciplina.descricao }}</p>
+<ul class="lesson-list">
+  {% for aula in disciplina.aulas %}
+  <li>
+    <a href="{{ root }}{{ semestre.slug }}/{{ disciplina.slug }}/{{ aula.slug }}/index.html">
+      <span class="lesson-title">{{ aula.titulo }}</span>
+      <span class="lesson-date">{{ aula.data }}</span>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

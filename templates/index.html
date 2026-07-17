@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Minhas Aulas{% endblock %}
+{% block content %}
+<h1>Minhas Aulas</h1>
+<p class="subtitle">Escolha o semestre para ver as disciplinas e materiais.</p>
+<div class="card-grid">
+  {% for semestre in semestres %}
+  <a class="card" href="{{ root }}{{ semestre.slug }}/index.html">
+    <h2>{{ semestre.titulo }}</h2>
+    <p>{{ semestre.disciplinas|length }} disciplina(s)</p>
+  </a>
+  {% endfor %}
+</div>
+{% endblock %}

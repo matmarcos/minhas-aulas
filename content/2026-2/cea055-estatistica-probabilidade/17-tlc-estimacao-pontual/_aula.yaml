@@ -1,0 +1,23 @@
+titulo: Aula 17 - Teorema do Limite Central e estimação pontual
+data: ''
+resumo: Teorema do Limite Central; estimação pontual para média e proporção
+slides:
+  titulo: Slides da aula 17
+  arquivo: Aula_17_TLC_Estimacao_Pontual.pptx
+referencias_bibliograficas:
+- livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+  citacao: Cap. 10 – 10.7; Cap. 11 – 11.1
+- livro: Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª
+    ed.
+  citacao: Cap. 7 – 7.2, 7.3
+- livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+  citacao: Cap. 7 – 7.3
+- livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
+  citacao: Cap. 9 – 9.1; Cap. 10 – 10.2, 10.3
+pre_aula:
+  videos:
+  - titulo: 'Aula 19: Teorema Central do Limite'
+    url: https://www.youtube.com/watch?v=QcQz6_93GC4
+exercicios_recomendados:
+  titulo: Tabela de exercícios recomendados
+  arquivo: Tabela_Referencias_Aula17.pdf

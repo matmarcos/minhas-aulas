@@ -1,0 +1,35 @@
+titulo: Aula 04 - Técnicas de contagem
+data: ''
+resumo: Cálculo de probabilidades em espaços amostrais finitos; princípio multiplicativo;
+  combinações
+slides:
+  titulo: Slides da aula 04
+  arquivo: Aula_04_Tecnicas_de_Contagem.pptx
+referencias_bibliograficas:
+- livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+  citacao: Cap. 5 – 5.2 (exemplos)
+- livro: Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª
+    ed.
+  citacao: Cap. 2 – 2.2
+- livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+  citacao: Cap. 2 – 2.1 (exemplos)
+- livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
+  citacao: Cap. 2 – 2.2, 2.3
+pre_aula:
+  leitura:
+    intro: Leitura mais leve — cobre só o princípio multiplicativo básico; arranjos,
+      permutações e combinações ficam para a exposição em sala.
+    itens:
+    - Bussab & Morettin, Estatística Básica, 9ª ed. — Capítulo 5, seção 5.2 (exemplos
+      de princípio multiplicativo).
+    - 'Morettin, Estatística Básica: Probabilidade e Inferência — Capítulo 2, seção
+      2.2 (mesmo tema, segunda referência).'
+  videos:
+  - titulo: Estatística e Probabilidade – Aula 03 – Análise combinatória (parte I)
+    url: https://www.youtube.com/watch?v=avPlaW1oW_A
+exercicios_recomendados:
+  titulo: Tabela de exercícios recomendados
+  arquivo: Tabela_Referencias_Aula4.pdf
+tarefa_complementar:
+- titulo: Tecnicas de contagem - filmes
+  arquivo: Aula 4 - Tecnicas de contagem - filmes.ipynb

@@ -1,0 +1,24 @@
+titulo: Aula 23 - Teste de hipótese para a média — variância desconhecida
+data: ''
+resumo: Procedimento de teste para uma única média com variância desconhecida (uso
+  da distribuição t); exercícios integradores
+slides:
+  titulo: Slides da aula 23
+  arquivo: Aula_23_Teste_Hipotese_Media_Var_Desconhecida.pptx
+referencias_bibliograficas:
+- livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+  citacao: Cap. 12 – 12.10
+- livro: Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª
+    ed.
+  citacao: Cap. 9 – 9.3
+- livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+  citacao: Cap. 8 – 8.3, 8.4
+- livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
+  citacao: Cap. 14 – 14.2, 14.3
+pre_aula:
+  videos:
+  - titulo: Estatística e Probabilidade – Aula 13 – Teste t de Student
+    url: https://www.youtube.com/watch?v=AgDC9yoopUA
+exercicios_recomendados:
+  titulo: Tabela de exercícios recomendados
+  arquivo: Tabela_Referencias_Aula23.pdf

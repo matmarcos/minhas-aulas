@@ -1,0 +1,25 @@
+titulo: 'Aula 09 - Modelos discretos I: uniforme discreta, Bernoulli e geométrica'
+data: ''
+resumo: Distribuição uniforme discreta; distribuição de Bernoulli; distribuição geométrica
+slides:
+  titulo: Slides da aula 09
+  arquivo: Aula_09_Modelos_Discretos_I.pptx
+referencias_bibliograficas:
+- livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+  citacao: Cap. 6 – 6.6.1, 6.6.2
+- livro: Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª
+    ed.
+  citacao: Cap. 3 – 3.4, 3.6
+- livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+  citacao: Cap. 3 – 3.2, 3.3
+- livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
+  citacao: Cap. 4 – 4.1, 4.2, 4.3
+pre_aula:
+  videos:
+  - titulo: 'Aula 8: Uniforme discreta, Bernoulli e Binomial'
+    url: https://www.youtube.com/watch?v=zKlRBfVGsyM
+  - titulo: 'Aula 10: Geométrica, binomial negativa e hipergeométrica'
+    url: https://www.youtube.com/watch?v=Ke9dn-cSXow
+exercicios_recomendados:
+  titulo: Tabela de exercícios recomendados
+  arquivo: Tabela_Referencias_Aula9.pdf

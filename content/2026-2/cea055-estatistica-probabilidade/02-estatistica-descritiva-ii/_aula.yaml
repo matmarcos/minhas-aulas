@@ -1,0 +1,36 @@
+titulo: 'Aula 02 - Estatística Descritiva II: medidas de dispersão, quartis e box
+  plots'
+data: ''
+resumo: Amplitude, variância e desvio-padrão; separatrizes (quartis); construção e
+  interpretação de box plots
+slides:
+  titulo: Slides da aula 02
+  arquivo: Aula_02_Estatistica_Descritiva_II.pptx
+referencias_bibliograficas:
+- livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+  citacao: Cap. 3 – 3.2 a 3.4
+- livro: Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª
+    ed.
+  citacao: Cap. 6 – 6.4
+- livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+  citacao: Cap. 4 – 4.2, 4.3; Cap. 1 – 1.2 (box-plot)
+pre_aula:
+  leitura:
+    intro: Leitura mais leve — cobre só desvio médio e variância; quantis, box plot
+      e simetria ficam para a exposição em sala.
+    itens:
+    - 'Bussab & Morettin, Estatística Básica, 9ª ed. — Capítulo 3, seção 3.2 (medidas
+      de dispersão: desvio médio e variância).'
+    - Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª ed.
+      — Capítulo 6, seção 6.4 (segunda referência, mesmo tema).
+  videos:
+  - titulo: Medidas de dispersão, forma e associação
+    url: https://youtu.be/ZvUhRikhNEk
+  - titulo: 'Análise Exploratória de Dados: Medidas Resumo'
+    url: https://youtu.be/bD2UYs1w_s4
+exercicios_recomendados:
+  titulo: Tabela de exercícios recomendados
+  arquivo: Tabela_Referencias_Aula2.pdf
+tarefa_complementar:
+- titulo: Dispersao e boxplot - filmes
+  arquivo: Aula 2 - Dispersao e boxplot - filmes.ipynb

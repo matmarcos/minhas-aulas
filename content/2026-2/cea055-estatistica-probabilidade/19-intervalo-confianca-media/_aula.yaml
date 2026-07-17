@@ -1,0 +1,24 @@
+titulo: Aula 19 - Intervalo de confiança para a média
+data: ''
+resumo: Intervalo de confiança para a média populacional com desvio padrão conhecido
+  e desconhecido
+slides:
+  titulo: Slides da aula 19
+  arquivo: Aula_19_Intervalo_Confianca_Media.pptx
+referencias_bibliograficas:
+- livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+  citacao: Cap. 11 – 11.6
+- livro: Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª
+    ed.
+  citacao: Cap. 8 – 8.1, 8.2
+- livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+  citacao: Cap. 7 – 7.4
+- livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
+  citacao: Cap. 11 – 11.1, 11.2; Cap. 14 – 14.2
+pre_aula:
+  videos:
+  - titulo: 'Aula 22: Intervalo de Confiança'
+    url: https://www.youtube.com/watch?v=AkmyfLc-EOs
+exercicios_recomendados:
+  titulo: Tabela de exercícios recomendados
+  arquivo: Tabela_Referencias_Aula19.pdf

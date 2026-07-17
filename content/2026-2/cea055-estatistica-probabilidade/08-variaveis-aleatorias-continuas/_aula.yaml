@@ -1,0 +1,40 @@
+titulo: 'Aula 08 - Variáveis aleatórias contínuas: esperança e variância'
+data: ''
+resumo: Função densidade de probabilidade; valor esperado e variância no caso contínuo
+slides:
+  titulo: Slides da aula 08
+  arquivo: Aula_08_Variaveis_Aleatorias_Continuas.pptx
+referencias_bibliograficas:
+- livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+  citacao: Cap. 7 – 7.1 a 7.3
+- livro: Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª
+    ed.
+  citacao: Cap. 4 – 4.2, 4.3
+- livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+  citacao: Cap. 6 – 6.1
+- livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
+  citacao: Cap. 5 – 5.1
+pre_aula:
+  leitura:
+    intro: Leitura mais leve — cobre só a ideia de variável aleatória contínua e densidade;
+      esperança e variância no caso contínuo ficam para a exposição em sala.
+    itens:
+    - Bussab & Morettin, Estatística Básica, 9ª ed. — Capítulo 7, seção 7.1 (variável
+      aleatória contínua e função densidade).
+    - Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed. — Capítulo 6,
+      seção 6.1 (mesmo tema, segunda referência).
+  videos:
+  - titulo: 'Aula 5: Função de distribuição'
+    url: https://www.youtube.com/watch?v=Nbq0DWW26ag
+  - titulo: 'Aula 7: Valor esperado e variância (continuação)'
+    url: https://www.youtube.com/watch?v=kXArrVxPcno
+exercicios_recomendados:
+  titulo: Tabela de exercícios recomendados
+  arquivo: Tabela_Referencias_Aula8.pdf
+tarefa_complementar:
+- titulo: Variavel aleatoria continua - Testando Positivo (conclusao)
+  arquivo: Aula 8 - Variavel aleatoria continua - Testando Positivo (conclusao).ipynb
+- titulo: Aplicacoes da aula de 1 a 8 (PNS 2019) - Saude no Brasil
+  arquivo: Aplicacoes da aula de 1 a 8 (PNS 2019) - Saude no Brasil.ipynb
+- titulo: Aplicacoes da aula de 1 a 8 - Analise de dados reais (IMDb Top 250)
+  arquivo: Aplicacoes da aula de 1 a 8 - Analise de dados reais (IMDb Top 250).ipynb

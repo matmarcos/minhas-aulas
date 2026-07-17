@@ -1,0 +1,24 @@
+titulo: Aula 14 - Aproximação normal e revisão geral dos modelos de distribuição
+data: ''
+resumo: Aproximação da distribuição binomial pela normal; revisão integrada dos modelos
+  discretos e contínuos
+slides:
+  titulo: Slides da aula 14
+  arquivo: Aula_14_Aproximacao_Normal_Revisao.pptx
+referencias_bibliograficas:
+- livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+  citacao: Cap. 7 – 7.5
+- livro: Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª
+    ed.
+  citacao: Cap. 4 – 4.6
+- livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+  citacao: Cap. 6 – 6.2; 6.3 (exercícios)
+- livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
+  citacao: Cap. 6 – 6.2
+pre_aula:
+  videos:
+  - titulo: Aproximação Normal à Binomial
+    url: https://www.youtube.com/watch?v=eZ7L9NTzfYg
+exercicios_recomendados:
+  titulo: Tabela de exercícios recomendados
+  arquivo: Tabela_Referencias_Aula14.pdf

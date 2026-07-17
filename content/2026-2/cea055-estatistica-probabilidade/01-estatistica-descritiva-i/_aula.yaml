@@ -1,0 +1,47 @@
+titulo: 'Aula 01 - Estatística Descritiva I: dados qualitativos/quantitativos e medidas
+  de posição'
+data: ''
+resumo: Tipos de variáveis; tabelas e distribuições de frequência; gráficos para variáveis
+  qualitativas e quantitativas (barras, setores, histograma); medidas de posição (média,
+  mediana, moda)
+slides:
+  titulo: Slides da aula 01
+  arquivo: Aula_01_Estatistica_Descritiva_I.pptx
+referencias_bibliograficas:
+- livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+  citacao: Cap. 2 – 2.1 a 2.4; Cap. 3 – 3.1
+- livro: Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª
+    ed.
+  citacao: Cap. 6 – 6.1 a 6.3
+- livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+  citacao: Cap. 1 – 1.2
+pre_aula:
+  leitura:
+    intro: Leitura mais leve que a leitura da aula em si — cobre só as definições
+      que os alunos precisam reconhecer antes da aula, deixando gráficos e ramo-e-folhas
+      para a exposição do professor.
+    itens:
+    - 'Bussab & Morettin, Estatística Básica, 9ª ed. — Capítulo 2, seções 2.1 e 2.2
+      (conceito de variável e classificação: qualitativa nominal/ordinal, quantitativa
+      discreta/contínua).'
+    - Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed. — Capítulo 1,
+      seção 1.2 (mesmo tema, segunda referência para quem preferir outra explicação).
+  videos:
+  - titulo: Tipos de variáveis e formas de análise descritiva
+    url: https://youtu.be/9Rd2SJHu5rw
+  - titulo: Estatística e Probabilidade – Aula 07 – Tabelas
+    url: https://www.youtube.com/watch?v=gBOer0OnF4c
+  tarefa:
+  - 'Classifique cada uma das variáveis abaixo como qualitativa nominal, qualitativa
+    ordinal, quantitativa discreta ou quantitativa contínua: (a) cor dos olhos; (b)
+    número de irmãos; (c) grau de escolaridade do pai/mãe; (d) tempo (em minutos)
+    para chegar à universidade; (e) time de futebol preferido; (f) número de matérias
+    em que está matriculado(a) este semestre.'
+  - Anote, à mão, o tempo (em minutos) que você levou para chegar à universidade em
+    cada um dos últimos 5 dias de aula. Monte uma tabela simples com esses 5 valores.
+exercicios_recomendados:
+  titulo: Tabela de exercícios recomendados
+  arquivo: Tabela_Referencias_Aula1.pdf
+tarefa_complementar:
+- titulo: Estatistica na pratica - filmes
+  arquivo: Aula 1 - Estatistica na pratica - filmes.ipynb

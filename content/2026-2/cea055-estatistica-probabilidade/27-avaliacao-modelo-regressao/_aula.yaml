@@ -1,0 +1,26 @@
+titulo: Aula 27 - Avaliação do modelo de regressão linear e aplicações
+data: ''
+resumo: Análise de resíduos; coeficiente de determinação (R²); exercícios de aplicação
+  do método dos mínimos quadrados
+slides:
+  titulo: Slides da aula 27
+  arquivo: Aula_27_Avaliacao_Modelo_Regressao.pptx
+referencias_bibliograficas:
+- livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+  citacao: Cap. 16 – 16.3 a 16.5
+- livro: Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª
+    ed.
+  citacao: Cap. 11 – 11.7
+- livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+  citacao: Cap. 9 – 9.5 (exercícios)
+- livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
+  citacao: — (não abordado nesta obra)
+pre_aula:
+  videos:
+  - titulo: Regressão Linear Simples (mesmo vídeo da Aula 26)
+    url: https://www.youtube.com/watch?v=xRIc81AeLOg
+  - titulo: Coeficiente de determinação R² (machine learning)
+    url: https://www.youtube.com/watch?v=wDJjmH3JFqc
+exercicios_recomendados:
+  titulo: Tabela de exercícios recomendados
+  arquivo: Tabela_Referencias_Aula27.pdf

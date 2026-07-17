@@ -1,0 +1,23 @@
+titulo: Aula 21 - Introdução ao teste de hipóteses
+data: ''
+resumo: Hipótese nula e alternativa; tipos de erro (I e II); nível de significância
+slides:
+  titulo: Slides da aula 21
+  arquivo: Aula_21_Introducao_Teste_Hipotese.pptx
+referencias_bibliograficas:
+- livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+  citacao: Cap. 12 – 12.1 a 12.4
+- livro: Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª
+    ed.
+  citacao: Cap. 9 – 9.1
+- livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+  citacao: Cap. 8 – 8.1
+- livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
+  citacao: Cap. 12 – 12.1; Cap. 13 – 13.1
+pre_aula:
+  videos:
+  - titulo: 'Aula 23: Teste de hipóteses'
+    url: https://www.youtube.com/watch?v=S3V5qJ1bxhk
+exercicios_recomendados:
+  titulo: Tabela de exercícios recomendados
+  arquivo: Tabela_Referencias_Aula21.pdf

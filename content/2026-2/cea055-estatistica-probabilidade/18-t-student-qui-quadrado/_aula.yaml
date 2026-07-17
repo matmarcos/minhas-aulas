@@ -1,0 +1,26 @@
+titulo: Aula 18 - Distribuições t de Student e qui-quadrado
+data: ''
+resumo: Distribuição t de Student; distribuição qui-quadrado e suas aplicações em
+  inferência
+slides:
+  titulo: Slides da aula 18
+  arquivo: Aula_18_T_Student_e_Qui_Quadrado.pptx
+referencias_bibliograficas:
+- livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+  citacao: Cap. 7 – 7.7.2, 7.7.3
+- livro: Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª
+    ed.
+  citacao: Cap. 8 – 8.2.1
+- livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+  citacao: Cap. 7 – 7.4; Cap. 8 – 8.5
+- livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
+  citacao: Cap. 14 – 14.1; Cap. 16 – 16.1
+pre_aula:
+  videos:
+  - titulo: 'Aula 12: ...e t-Student'
+    url: https://www.youtube.com/watch?v=crumAouFNRE
+  - titulo: Estatística e Probabilidade – Aula 12 – Teste Qui-quadrado
+    url: https://www.youtube.com/watch?v=4QfHVbpAoSg
+exercicios_recomendados:
+  titulo: Tabela de exercícios recomendados
+  arquivo: Tabela_Referencias_Aula18.pdf
