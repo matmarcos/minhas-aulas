@@ -2,20 +2,15 @@
 {% block title %}{{ disciplina.titulo }} · Minhas Aulas{% endblock %}
 {% block breadcrumbs %}<a href="{{ root }}index.html">Início</a> / <a href="{{ root }}{{ semestre.slug }}/index.html">{{ semestre.titulo }}</a> / {{ disciplina.titulo }}{% endblock %}
 {% block content %}
-{% set bloco_nomes = {1: "Bloco 1 — avaliado na Prova P1", 2: "Bloco 2 — avaliado na Prova P2", 3: "Bloco 3 — avaliado na Prova P3"} %}
 <h1>{{ disciplina.titulo }}</h1>
 <p class="subtitle">{{ disciplina.descricao }}</p>
-{% for bloco_num, aulas_do_bloco in disciplina.aulas | groupby('bloco') %}
-<h2 class="bloco-titulo">{{ bloco_nomes.get(bloco_num, "Bloco " ~ bloco_num) }}</h2>
-<ul class="lesson-list">
-  {% for aula in aulas_do_bloco %}
-  <li data-aula-id="{{ semestre.slug }}/{{ disciplina.slug }}/{{ aula.slug }}">
-    <a href="{{ root }}{{ semestre.slug }}/{{ disciplina.slug }}/{{ aula.slug }}/index.html">
-      <span class="lesson-title">{{ aula.titulo }} <span class="check-marker" data-check-marker></span></span>
-      <span class="lesson-date">{{ aula.data }}</span>
-    </a>
-  </li>
+<div class="card-grid">
+  {% for bloco in disciplina.blocos %}
+  <a class="card" href="{{ root }}{{ semestre.slug }}/{{ disciplina.slug }}/{{ bloco.slug }}/index.html">
+    <h2>{{ bloco.titulo }}</h2>
+    <p>{{ bloco.descricao }}</p>
+    <p class="meta">{{ bloco.aulas|length }} aula(s)</p>
+  </a>
   {% endfor %}
-</ul>
-{% endfor %}
+</div>
 {% endblock %}

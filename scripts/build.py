@@ -29,6 +29,22 @@ TEMPLATES_DIR = ROOT / "templates"
 STATIC_DIR = ROOT / "static"
 OUT_DIR = ROOT / "docs"
 
+# descricao dos blocos de avaliacao (P1/P2/P3) mostrada nos cards da pagina da disciplina
+BLOCOS_META = {
+    1: {
+        "titulo": "Bloco 1 — Prova P1",
+        "descricao": "Estatística descritiva, probabilidade e variáveis aleatórias.",
+    },
+    2: {
+        "titulo": "Bloco 2 — Prova P2",
+        "descricao": "Modelos de distribuição discretos e contínuos, aproximação normal e distribuições amostrais.",
+    },
+    3: {
+        "titulo": "Bloco 3 — Prova P3",
+        "descricao": "Intervalos de confiança, testes de hipótese e regressão linear.",
+    },
+}
+
 
 def slugify(name: str) -> str:
     return name
@@ -103,9 +119,24 @@ def build():
                 disciplina["aulas"].append(aula)
 
             disciplina["aulas"].sort(key=lambda a: (a["data"], a["slug"]))
-            disciplina.pop  # no-op to keep linters quiet
-            disciplina["aulas"] = disciplina["aulas"]
-            disciplina["aulas"]
+
+            blocos_dict = {}
+            for aula in disciplina["aulas"]:
+                blocos_dict.setdefault(aula.get("bloco", 0), []).append(aula)
+            blocos = []
+            for num in sorted(blocos_dict):
+                meta = BLOCOS_META.get(num, {"titulo": f"Bloco {num}", "descricao": ""})
+                blocos.append(
+                    {
+                        "numero": num,
+                        "slug": f"bloco-{num}",
+                        "titulo": meta["titulo"],
+                        "descricao": meta["descricao"],
+                        "aulas": blocos_dict[num],
+                    }
+                )
+            disciplina["blocos"] = blocos
+
             semestre["disciplinas"].append(disciplina)
 
         semestre["disciplinas"].sort(key=lambda d: d["titulo"])
@@ -143,6 +174,23 @@ def build():
                 tpl.render(root="../../", semestre=semestre, disciplina=disciplina),
                 encoding="utf-8",
             )
+
+            # pagina de cada bloco (P1/P2/P3) - pasta irma das pastas de aula dentro
+            # da disciplina, assim as urls das aulas (e os links do Colab, que ja
+            # apontam pra elas) continuam exatamente as mesmas
+            for bloco in disciplina["blocos"]:
+                bloco_dir = disc_dir / bloco["slug"]
+                bloco_dir.mkdir(parents=True, exist_ok=True)
+                tpl = env.get_template("bloco.html")
+                (bloco_dir / "index.html").write_text(
+                    tpl.render(
+                        root="../../../",
+                        semestre=semestre,
+                        disciplina=disciplina,
+                        bloco=bloco,
+                    ),
+                    encoding="utf-8",
+                )
 
             for aula in disciplina["aulas"]:
                 aula_dir = disc_dir / aula["slug"]
