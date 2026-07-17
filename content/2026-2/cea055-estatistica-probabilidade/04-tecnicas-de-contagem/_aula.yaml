@@ -32,4 +32,5 @@ exercicios_recomendados:
   arquivo: Tabela_Referencias_Aula4.pdf
 tarefa_complementar:
 - titulo: Tecnicas de contagem - filmes
+  url: https://colab.research.google.com/github/matmarcos/minhas-aulas/blob/main/docs/2026-2/cea055-estatistica-probabilidade/04-tecnicas-de-contagem/arquivos/Aula%204%20-%20Tecnicas%20de%20contagem%20-%20filmes.ipynb
   arquivo: Aula 4 - Tecnicas de contagem - filmes.ipynb

@@ -33,8 +33,11 @@ exercicios_recomendados:
   arquivo: Tabela_Referencias_Aula8.pdf
 tarefa_complementar:
 - titulo: Variavel aleatoria continua - Testando Positivo (conclusao)
+  url: https://colab.research.google.com/github/matmarcos/minhas-aulas/blob/main/docs/2026-2/cea055-estatistica-probabilidade/08-variaveis-aleatorias-continuas/arquivos/Aula%208%20-%20Variavel%20aleatoria%20continua%20-%20Testando%20Positivo%20%28conclusao%29.ipynb
   arquivo: Aula 8 - Variavel aleatoria continua - Testando Positivo (conclusao).ipynb
 - titulo: Aplicacoes da aula de 1 a 8 (PNS 2019) - Saude no Brasil
+  url: https://colab.research.google.com/github/matmarcos/minhas-aulas/blob/main/docs/2026-2/cea055-estatistica-probabilidade/08-variaveis-aleatorias-continuas/arquivos/Aplicacoes%20da%20aula%20de%201%20a%208%20%28PNS%202019%29%20-%20Saude%20no%20Brasil.ipynb
   arquivo: Aplicacoes da aula de 1 a 8 (PNS 2019) - Saude no Brasil.ipynb
 - titulo: Aplicacoes da aula de 1 a 8 - Analise de dados reais (IMDb Top 250)
+  url: https://colab.research.google.com/github/matmarcos/minhas-aulas/blob/main/docs/2026-2/cea055-estatistica-probabilidade/08-variaveis-aleatorias-continuas/arquivos/Aplicacoes%20da%20aula%20de%201%20a%208%20-%20Analise%20de%20dados%20reais%20%28IMDb%20Top%20250%29.ipynb
   arquivo: Aplicacoes da aula de 1 a 8 - Analise de dados reais (IMDb Top 250).ipynb

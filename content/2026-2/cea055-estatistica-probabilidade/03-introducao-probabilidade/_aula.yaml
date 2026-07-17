@@ -39,4 +39,5 @@ exercicios_recomendados:
   arquivo: Tabela_Referencias_Aula3.pdf
 tarefa_complementar:
 - titulo: Espaco amostral e eventos - filmes
+  url: https://colab.research.google.com/github/matmarcos/minhas-aulas/blob/main/docs/2026-2/cea055-estatistica-probabilidade/03-introducao-probabilidade/arquivos/Aula%203%20-%20Espaco%20amostral%20e%20eventos%20-%20filmes.ipynb
   arquivo: Aula 3 - Espaco amostral e eventos - filmes.ipynb

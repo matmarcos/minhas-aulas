@@ -37,4 +37,5 @@ exercicios_recomendados:
   arquivo: Tabela_Referencias_Aula5.pdf
 tarefa_complementar:
 - titulo: Probabilidade condicional - Testando Positivo
+  url: https://colab.research.google.com/github/matmarcos/minhas-aulas/blob/main/docs/2026-2/cea055-estatistica-probabilidade/05-probabilidade-condicional/arquivos/Aula%205%20-%20Probabilidade%20condicional%20-%20Testando%20Positivo.ipynb
   arquivo: Aula 5 - Probabilidade condicional - Testando Positivo.ipynb

@@ -68,7 +68,11 @@
   <h2>Tarefa complementar (opcional)</h2>
   <ul class="material-list">
     {% for t in aula.tarefa_complementar %}
+    {% if t.url %}
+    <li><a href="{{ t.url }}" target="_blank" rel="noopener">{{ t.titulo }} (abrir no Colab)</a></li>
+    {% else %}
     <li><a href="{{ base_href }}{{ t.arquivo }}">{{ t.titulo }}</a></li>
+    {% endif %}
     {% endfor %}
   </ul>
 </section>
