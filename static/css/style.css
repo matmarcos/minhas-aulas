@@ -1,10 +1,16 @@
+/* Paleta inspirada nas cores institucionais da UFOP (aproximação, nao
+   Pantone oficial certificado - ver README para detalhes). */
 :root {
-  --bg: #0f1115;
-  --surface: #171a21;
-  --border: #2a2e38;
-  --text: #e7e9ee;
-  --muted: #9aa0ac;
-  --accent: #6c8cff;
+  --bg: #fbfaf8;
+  --surface: #ffffff;
+  --surface-tint: #f6efee;
+  --border: #e4ddd8;
+  --text: #241f1d;
+  --muted: #6f6560;
+  --accent: #8c1d2b;       /* vermelho institucional (aprox. Vermelho Escola de Minas) */
+  --accent-dark: #6b131e;
+  --accent-soft: #f6e9ea;
+  --accent-blue: #1c3a63;  /* azul institucional (aprox. Azul Escola de Minas), uso pontual */
 }
 * { box-sizing: border-box; }
 body {
@@ -19,13 +25,15 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 16px 24px;
-  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+  border-bottom: 3px solid var(--accent);
 }
-.brand { color: var(--text); font-weight: 700; text-decoration: none; font-size: 18px; }
+.brand { color: var(--accent); font-weight: 700; text-decoration: none; font-size: 18px; }
 .breadcrumbs { color: var(--muted); font-size: 14px; }
 .breadcrumbs a { color: var(--muted); }
+.breadcrumbs a:hover { color: var(--accent); }
 main { max-width: 900px; margin: 0 auto; padding: 32px 24px; }
-h1 { font-size: 28px; margin-bottom: 4px; }
+h1 { font-size: 28px; margin-bottom: 4px; color: var(--text); }
 .subtitle { color: var(--muted); margin-top: 0; }
 .meta { color: var(--muted); font-size: 13px; }
 .card-grid {
@@ -38,14 +46,15 @@ h1 { font-size: 28px; margin-bottom: 4px; }
   display: block;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 10px;
+  border-left: 3px solid var(--accent);
+  border-radius: 8px;
   padding: 18px;
   text-decoration: none;
   color: var(--text);
-  transition: border-color 0.15s;
+  transition: box-shadow 0.15s, border-color 0.15s;
 }
-.card:hover { border-color: var(--accent); }
-.card h2 { margin: 0 0 8px; font-size: 17px; }
+.card:hover { border-color: var(--accent); box-shadow: 0 2px 10px rgba(140, 29, 43, 0.12); }
+.card h2 { margin: 0 0 8px; font-size: 17px; color: var(--accent); }
 .card p { margin: 4px 0; color: var(--muted); font-size: 14px; }
 .lesson-list, .material-list { list-style: none; padding: 0; margin-top: 24px; }
 .lesson-list li, .material-list li {
@@ -71,17 +80,18 @@ h1 { font-size: 28px; margin-bottom: 4px; }
   border-top: 1px solid var(--border);
   margin-top: 40px;
 }
-.site-footer code { background: var(--surface); padding: 2px 6px; border-radius: 4px; }
+.site-footer code { background: var(--surface-tint); padding: 2px 6px; border-radius: 4px; }
 .aula-secao { margin-top: 32px; }
 .aula-secao h2 {
   font-size: 18px;
-  border-bottom: 1px solid var(--border);
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent-soft);
   padding-bottom: 8px;
   margin-bottom: 12px;
 }
 .aula-secao h3 {
   font-size: 14px;
-  color: var(--muted);
+  color: var(--accent-blue);
   text-transform: uppercase;
   letter-spacing: 0.03em;
   margin: 20px 0 8px;
