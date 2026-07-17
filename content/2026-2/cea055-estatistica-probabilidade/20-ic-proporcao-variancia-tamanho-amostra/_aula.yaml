@@ -5,6 +5,7 @@ resumo: Intervalo de confiança para a proporção populacional; intervalo de co
 slides:
   titulo: Slides da aula 20
   arquivo: Aula_20_IC_Proporcao_Variancia_TamanhoAmostra.pptx
+  arquivo_pdf: Aula_20_IC_Proporcao_Variancia_TamanhoAmostra.pdf
 referencias_bibliograficas:
 - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
   citacao: Cap. 11 – 11.6; Cap. 10 – 10.11

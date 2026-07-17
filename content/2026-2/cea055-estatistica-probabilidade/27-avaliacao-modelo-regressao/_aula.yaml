@@ -5,6 +5,7 @@ resumo: Análise de resíduos; coeficiente de determinação (R²); exercícios 
 slides:
   titulo: Slides da aula 27
   arquivo: Aula_27_Avaliacao_Modelo_Regressao.pptx
+  arquivo_pdf: Aula_27_Avaliacao_Modelo_Regressao.pdf
 referencias_bibliograficas:
 - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
   citacao: Cap. 16 – 16.3 a 16.5

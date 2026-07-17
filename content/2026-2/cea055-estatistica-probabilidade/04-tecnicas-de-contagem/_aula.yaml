@@ -5,6 +5,7 @@ resumo: Cálculo de probabilidades em espaços amostrais finitos; princípio mul
 slides:
   titulo: Slides da aula 04
   arquivo: Aula_04_Tecnicas_de_Contagem.pptx
+  arquivo_pdf: Aula_04_Tecnicas_de_Contagem.pdf
 referencias_bibliograficas:
 - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
   citacao: Cap. 5 – 5.2 (exemplos)

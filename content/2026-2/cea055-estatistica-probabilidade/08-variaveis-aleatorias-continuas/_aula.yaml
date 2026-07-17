@@ -4,6 +4,7 @@ resumo: Função densidade de probabilidade; valor esperado e variância no caso
 slides:
   titulo: Slides da aula 08
   arquivo: Aula_08_Variaveis_Aleatorias_Continuas.pptx
+  arquivo_pdf: Aula_08_Variaveis_Aleatorias_Continuas.pdf
 referencias_bibliograficas:
 - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
   citacao: Cap. 7 – 7.1 a 7.3

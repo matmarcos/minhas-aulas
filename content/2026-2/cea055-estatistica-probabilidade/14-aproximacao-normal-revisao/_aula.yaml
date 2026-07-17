@@ -5,6 +5,7 @@ resumo: Aproximação da distribuição binomial pela normal; revisão integrada
 slides:
   titulo: Slides da aula 14
   arquivo: Aula_14_Aproximacao_Normal_Revisao.pptx
+  arquivo_pdf: Aula_14_Aproximacao_Normal_Revisao.pdf
 referencias_bibliograficas:
 - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
   citacao: Cap. 7 – 7.5

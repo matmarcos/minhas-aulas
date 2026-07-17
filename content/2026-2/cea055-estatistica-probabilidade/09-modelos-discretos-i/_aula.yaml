@@ -4,6 +4,7 @@ resumo: Distribuição uniforme discreta; distribuição de Bernoulli; distribui
 slides:
   titulo: Slides da aula 09
   arquivo: Aula_09_Modelos_Discretos_I.pptx
+  arquivo_pdf: Aula_09_Modelos_Discretos_I.pdf
 referencias_bibliograficas:
 - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
   citacao: Cap. 6 – 6.6.1, 6.6.2

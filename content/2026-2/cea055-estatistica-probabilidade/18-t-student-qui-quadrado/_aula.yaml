@@ -5,6 +5,7 @@ resumo: Distribuição t de Student; distribuição qui-quadrado e suas aplicaç
 slides:
   titulo: Slides da aula 18
   arquivo: Aula_18_T_Student_e_Qui_Quadrado.pptx
+  arquivo_pdf: Aula_18_T_Student_e_Qui_Quadrado.pdf
 referencias_bibliograficas:
 - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
   citacao: Cap. 7 – 7.7.2, 7.7.3

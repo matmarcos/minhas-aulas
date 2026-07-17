@@ -5,6 +5,7 @@ resumo: Coeficiente de correlação linear; modelo de regressão linear simples;
 slides:
   titulo: Slides da aula 26
   arquivo: Aula_26_Correlacao_Linear_Regressao.pptx
+  arquivo_pdf: Aula_26_Correlacao_Linear_Regressao.pdf
 referencias_bibliograficas:
 - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
   citacao: Cap. 16 – 16.1, 16.2

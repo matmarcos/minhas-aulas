@@ -4,6 +4,7 @@ resumo: Teorema do Limite Central; estimação pontual para média e proporção
 slides:
   titulo: Slides da aula 17
   arquivo: Aula_17_TLC_Estimacao_Pontual.pptx
+  arquivo_pdf: Aula_17_TLC_Estimacao_Pontual.pdf
 referencias_bibliograficas:
 - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
   citacao: Cap. 10 – 10.7; Cap. 11 – 11.1

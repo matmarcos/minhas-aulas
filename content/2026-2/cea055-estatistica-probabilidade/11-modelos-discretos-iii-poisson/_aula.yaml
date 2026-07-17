@@ -4,6 +4,7 @@ resumo: Distribuição de Poisson; processo de Poisson e aplicações
 slides:
   titulo: Slides da aula 11
   arquivo: Aula_11_Modelos_Discretos_III_Poisson.pptx
+  arquivo_pdf: Aula_11_Modelos_Discretos_III_Poisson.pdf
 referencias_bibliograficas:
 - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
   citacao: Cap. 6 – 6.6.5, 6.7

@@ -43,11 +43,13 @@ def load_yaml(path: Path, default=None):
 
 def encontrar_arquivos(node):
     """Percorre a estrutura da aula (dicts/listas aninhados) e coleta todo valor
-    de uma chave 'arquivo', em qualquer secao (slides, exercicios, tarefa_complementar, etc.)."""
+    de uma chave que contenha 'arquivo' (arquivo, arquivo_pdf, etc.), em qualquer
+    secao (slides, exercicios, tarefa_complementar, etc.)."""
     achados = []
     if isinstance(node, dict):
-        if isinstance(node.get("arquivo"), str):
-            achados.append(node["arquivo"])
+        for k, v in node.items():
+            if "arquivo" in k and isinstance(v, str):
+                achados.append(v)
         for v in node.values():
             achados.extend(encontrar_arquivos(v))
     elif isinstance(node, list):

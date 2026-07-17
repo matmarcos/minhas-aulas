@@ -5,6 +5,7 @@ resumo: Intervalo de confiança para a média populacional com desvio padrão co
 slides:
   titulo: Slides da aula 19
   arquivo: Aula_19_Intervalo_Confianca_Media.pptx
+  arquivo_pdf: Aula_19_Intervalo_Confianca_Media.pdf
 referencias_bibliograficas:
 - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
   citacao: Cap. 11 – 11.6

@@ -5,6 +5,7 @@ resumo: Revisão de teoria de conjuntos; fenômeno aleatório; espaço amostral;
 slides:
   titulo: Slides da aula 03
   arquivo: Aula_03_Introducao_Probabilidade.pptx
+  arquivo_pdf: Aula_03_Introducao_Probabilidade.pdf
 referencias_bibliograficas:
 - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
   citacao: Cap. 5 – 5.1, 5.2

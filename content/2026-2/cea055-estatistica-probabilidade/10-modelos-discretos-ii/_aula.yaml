@@ -4,6 +4,7 @@ resumo: Distribuição binomial; distribuição hipergeométrica
 slides:
   titulo: Slides da aula 10
   arquivo: Aula_10_Modelos_Discretos_II.pptx
+  arquivo_pdf: Aula_10_Modelos_Discretos_II.pdf
 referencias_bibliograficas:
 - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
   citacao: Cap. 6 – 6.6.3, 6.6.4

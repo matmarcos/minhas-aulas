@@ -4,6 +4,7 @@ resumo: Regra da probabilidade total; Teorema de Bayes e aplicações
 slides:
   titulo: Slides da aula 06
   arquivo: Aula_06_Probabilidade_Total_Bayes.pptx
+  arquivo_pdf: Aula_06_Probabilidade_Total_Bayes.pdf
 referencias_bibliograficas:
 - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
   citacao: Cap. 5 – 5.4
