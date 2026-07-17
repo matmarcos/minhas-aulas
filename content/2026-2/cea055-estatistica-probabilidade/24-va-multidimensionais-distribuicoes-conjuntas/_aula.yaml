@@ -22,5 +22,25 @@ pre_aula:
   - titulo: 'Aula 14: Variáveis Aleatórias Multidimensionais'
     url: https://www.youtube.com/watch?v=k5A-wUXi9dQ
 exercicios_recomendados:
-  titulo: Tabela de exercícios recomendados
+  itens:
+  - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+    exercicios: 'Cap. 8: Problemas 1, 2 e 3'
+    recomendacao: 'Sequência muito didática: o problema 1 parte de um experimento
+      simples (moeda + dado) para você mesmo montar a tabela conjunta; o 2 e o 3 já
+      dão a tabela pronta e pedem marginais, condicionais e independência.'
+  - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+    exercicios: 'Cap. 5 (5.3 Exercícios): 25, 27, 28, 29 e 30'
+    recomendacao: 'Boa variedade de contextos (paleontologia, matérias-primas, variáveis
+      abstratas A e B). O exercício 30 é interessante: dá probabilidades condicionais
+      e marginais parciais, e você precisa completar a tabela toda.'
+  - livro: Montgomery & Runger, Applied Statistics and Probability for Engineers,
+      7ª ed.
+    exercicios: 'Cap. 5: Exercícios 5.1.1, 5.1.2, 5.2.1, 5.2.2, 5.2.4 e 5.2.5'
+    recomendacao: Única referência desta lista com exemplos de variáveis contínuas
+      bidimensionais (5.2.1 e 5.2.5, com densidades condicionais) — as outras referências
+      desta lista trabalham só com variáveis discretas.
+  - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
+    exercicios: 'Cap. 3: Exercícios 14, 15, 16, 17 e 18'
+    recomendacao: 'O exercício 18 é bom para revisão: dá a tabela conjunta incompleta
+      (falta descobrir o valor de p) antes de calcular tudo o mais.'
   arquivo: Tabela_Referencias_Aula24.pdf

@@ -22,5 +22,26 @@ pre_aula:
   - titulo: Aproximação Normal à Binomial
     url: https://www.youtube.com/watch?v=eZ7L9NTzfYg
 exercicios_recomendados:
-  titulo: Tabela de exercícios recomendados
+  itens:
+  - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+    exercicios: 'Cap. 7: Problemas 22, 23 e 24'
+    recomendacao: Poucos exercícios dedicados só à aproximação nesta seção. O problema
+      24 (mesmo do capítulo anterior) já tinha pedido para comparar o cálculo binomial
+      e Poisson exato; aqui a comparação é com a aproximação normal.
+  - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+    exercicios: ''
+    recomendacao: Não encontramos exercícios de aproximação normal-binomial nesta
+      lista, além de uma atividade que exige computador (fora do escopo de uma lista
+      escrita). Use as outras referências desta lista.
+  - livro: Montgomery & Runger, Applied Statistics and Probability for Engineers,
+      7ª ed.
+    exercicios: 'Cap. 4: Exercícios 4.6.1, 4.6.2, 4.6.3, 4.6.4, 4.6.5 e 4.6.6'
+    recomendacao: Referência mais completa para esta aula. O exercício 4.6.2 é o único
+      que aproxima uma Poisson (não uma binomial) pela normal — vale comparar com
+      os demais.
+  - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
+    exercicios: 'Cap. 6: Exercícios 4, 5, 6, 7, 8 e 9'
+    recomendacao: Excelente sequência para esta aula — do exercício mais simples (4)
+      até aplicações mais ricas (8, com parafusos defeituosos, e 9, com lançamento
+      de moeda).
   arquivo: Tabela_Referencias_Aula14.pdf

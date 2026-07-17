@@ -22,5 +22,25 @@ pre_aula:
   - titulo: Teorema do Limite Central (introdução à distribuição amostral)
     url: https://www.youtube.com/watch?v=t31I49KYFDo
 exercicios_recomendados:
-  titulo: Tabela de exercícios recomendados
+  itens:
+  - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+    exercicios: 'Cap. 10: Problemas 4, 5, 6, 7, 8, 9, 10, 11, 12 e 13'
+    recomendacao: 'Referência muito completa: os problemas 4 a 6 pedem para você construir
+      a distribuição amostral "na mão" (bom para entender o conceito). Os problemas
+      7 a 10 são sobre a média; 11 a 13, sobre a proporção.'
+  - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+    exercicios: 'Cap. 7 (7.5 Exercícios): 5, 6, 7, 8, 9, 10, 11, 12, 13 e 14'
+    recomendacao: Boa variedade de contextos para a distribuição amostral da média,
+      incluindo casos com diferentes tamanhos de amostra para você comparar o efeito
+      de n na precisão.
+  - livro: Montgomery & Runger, Applied Statistics and Probability for Engineers,
+      7ª ed.
+    exercicios: 'Cap. 7: Exercícios 7.2.1 a 7.2.9'
+    recomendacao: Referência completa (9 exercícios ao todo). O exercício 7.2.1 é
+      um bom ponto de partida — pede para você identificar qual parâmetro da população
+      está sendo estimado.
+  - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
+    exercicios: 'Cap. 9: Exercícios 1, 2, 3, 4 e 5'
+    recomendacao: Os exercícios 1 a 3 treinam a distribuição amostral da média; 4
+      e 5, a da proporção. Poucos exercícios, mas todos diretamente relevantes.
   arquivo: Tabela_Referencias_Aula16.pdf

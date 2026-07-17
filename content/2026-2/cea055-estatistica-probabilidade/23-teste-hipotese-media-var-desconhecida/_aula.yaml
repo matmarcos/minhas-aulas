@@ -22,5 +22,25 @@ pre_aula:
   - titulo: Estatística e Probabilidade – Aula 13 – Teste t de Student
     url: https://www.youtube.com/watch?v=AgDC9yoopUA
 exercicios_recomendados:
-  titulo: Tabela de exercícios recomendados
+  itens:
+  - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+    exercicios: 'Cap. 12: Problemas 21 e 22'
+    recomendacao: Poucos exercícios dedicados especificamente a variância desconhecida
+      nesta seção — o problema 21 é o mais direto (já dá o valor de t para você interpretar).
+  - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+    exercicios: 'Cap. 8 (8.6 Exercícios): 21 e 22'
+    recomendacao: Nestes dois exercícios você mesmo estima o desvio-padrão a partir
+      da amostra (não é dado pelo enunciado como parâmetro populacional) — por isso
+      pedem o teste t, não o teste z.
+  - livro: Montgomery & Runger, Applied Statistics and Probability for Engineers,
+      7ª ed.
+    exercicios: 'Cap. 9: Exercícios 9.3.1, 9.3.2, 9.3.3, 9.3.4, 9.3.5, 9.3.6 e 9.3.7'
+    recomendacao: Referência mais completa para esta aula. Os exercícios 9.3.2 e 9.3.4
+      dão uma saída de software com valores faltando — bom treino para interpretar
+      relatórios estatísticos, não só calcular na mão.
+  - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
+    exercicios: 'Cap. 14: Exercícios 6, 7, 9 e 10'
+    recomendacao: Estes quatro já são de teste de hipótese (não intervalo de confiança)
+      com variância desconhecida — os exercícios 1 a 5 da mesma lista são de IC, caso
+      queira revisar aquele conteúdo (Aula 19) também.
   arquivo: Tabela_Referencias_Aula23.pdf

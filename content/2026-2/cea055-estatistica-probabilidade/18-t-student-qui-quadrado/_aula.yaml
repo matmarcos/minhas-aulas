@@ -24,5 +24,27 @@ pre_aula:
   - titulo: Estatística e Probabilidade – Aula 12 – Teste Qui-quadrado
     url: https://www.youtube.com/watch?v=4QfHVbpAoSg
 exercicios_recomendados:
-  titulo: Tabela de exercícios recomendados
+  itens:
+  - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+    exercicios: ''
+    recomendacao: Este livro apresenta a distribuição t e a qui-quadrado só de forma
+      teórica, sem exercícios propostos nesta seção — os exercícios que usam essas
+      distribuições aparecem só mais adiante, junto com intervalos de confiança e
+      testes de hipótese (aulas futuras).
+  - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+    exercicios: ''
+    recomendacao: 'Situação semelhante ao Bussab: não encontramos exercícios que usem
+      a tabela t ou qui-quadrado isoladamente, sem já pedir para construir um intervalo
+      de confiança ou teste completo.'
+  - livro: Montgomery & Runger, Applied Statistics and Probability for Engineers,
+      7ª ed.
+    exercicios: 'Cap. 8: Exercícios 8.2.1 e 8.2.2'
+    recomendacao: 'O exercício 8.2.2 é o mais direto para esta aula: pede só para
+      consultar a tabela e encontrar percentis t, sem construir intervalo nenhum ainda.
+      Ótimo para praticar a leitura da tabela antes de avançar.'
+  - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
+    exercicios: ''
+    recomendacao: Este livro também combina a apresentação da distribuição t direto
+      com intervalo de confiança e teste de hipótese na mesma lista de exercícios
+      (Cap. 14) — não há exercícios isolados só sobre a distribuição em si.
   arquivo: Tabela_Referencias_Aula18.pdf

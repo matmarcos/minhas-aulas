@@ -25,5 +25,28 @@ pre_aula:
   - titulo: Estatística – Aula 2 – Variáveis, População, Amostra e Técnicas de Amostragem
     url: https://www.youtube.com/watch?v=2Q7wSgJR-g4
 exercicios_recomendados:
-  titulo: Tabela de exercícios recomendados
+  itens:
+  - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+    exercicios: 'Cap. 10: Problemas 1 e 3'
+    recomendacao: 'O problema 1 é conceitual: pede para você criticar diferentes planos
+      de amostragem (bom para entender vieses de amostragem). O problema 3 é sobre
+      AAS.'
+  - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+    exercicios: ''
+    recomendacao: Não encontramos exercícios dedicados aos conceitos de população,
+      amostra e parâmetros nesta lista — ela vai direto para cálculos de distribuição
+      amostral e intervalo de confiança (conteúdo de aulas futuras). Use as outras
+      referências.
+  - livro: Montgomery & Runger, Applied Statistics and Probability for Engineers,
+      7ª ed.
+    exercicios: ''
+    recomendacao: Não encontramos exercícios dedicados à Seção 7.1 (estimação pontual/conceitos
+      básicos) — a lista de exercícios do capítulo começa direto na Seção 7.2 (distribuições
+      amostrais, conteúdo da próxima aula). Use as outras referências.
+  - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
+    exercicios: 'Cap. 8: Exercícios 1, 2 e 3'
+    recomendacao: 'Referência mais completa para esta aula: são exercícios completos
+      de estatística descritiva aplicada a uma amostra (média, desvio, moda, mediana,
+      quartis) — um bom jeito de revisar como calcular estatísticas (as medidas da
+      amostra, em contraste com os parâmetros da população).'
   arquivo: Tabela_Referencias_Aula15.pdf

@@ -27,7 +27,30 @@ pre_aula:
   - titulo: 'Aula 3: Teorema de Bayes'
     url: https://www.youtube.com/watch?v=sRfVDPJAkro
 exercicios_recomendados:
-  titulo: Tabela de exercícios recomendados
+  itens:
+  - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+    exercicios: 'Cap. 5: Problemas 23, 24, 25, 26, 27 e 37'
+    recomendacao: 'Resolva os problemas 23 e 24 em sequência: o 23 pede a probabilidade
+      total e o 24 usa o mesmo cenário para calcular a probabilidade "de trás para
+      frente" com Bayes. O problema 37 é o exemplo clássico (peças de três máquinas).'
+  - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+    exercicios: 'Cap. 2 (2.3 Exercícios): 18, 25, 26, 28 e 29'
+    recomendacao: Estes são os exercícios mais ricos em Bayes que encontramos no livro
+      — guardamos eles especialmente para esta aula (não foram usados na lista da
+      Aula 5).
+  - livro: Montgomery & Runger, Applied Statistics and Probability for Engineers,
+      7ª ed.
+    exercicios: 'Cap. 2: Exercícios 2.6.1, 2.6.3, 2.6.4, 2.6.6, 2.6.7, 2.8.1, 2.8.3,
+      2.8.4, 2.8.7 e 2.8.9'
+    recomendacao: Os exercícios 2.6.x treinam a regra da probabilidade total. Os 2.8.x
+      já pedem para aplicar o Teorema de Bayes — boa referência para as duas partes
+      desta aula.
+  - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
+    exercicios: ''
+    recomendacao: Não encontramos, na lista de exercícios propostos deste livro, problemas
+      claramente dedicados a probabilidade total e Bayes (o teorema é ilustrado apenas
+      em exemplos já resolvidos no texto, seções 2.6). Use as outras referências desta
+      lista para praticar.
   arquivo: Tabela_Referencias_Aula6.pdf
 tarefa_complementar:
 - titulo: Probabilidade Total e Bayes - Testando Positivo

@@ -39,7 +39,27 @@ pre_aula:
   - Anote, à mão, o tempo (em minutos) que você levou para chegar à universidade em
     cada um dos últimos 5 dias de aula. Monte uma tabela simples com esses 5 valores.
 exercicios_recomendados:
-  titulo: Tabela de exercícios recomendados
+  itens:
+  - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+    exercicios: 'Cap. 2: Problemas 1, 2, 3, 4, 6 e 7 ; Cap. 3: Problemas 1, 2, 4 e
+      6'
+    recomendacao: 'Esta é a referência mais completa para esta aula: você vai treinar
+      tabelas de frequência, gráficos e medidas de posição em uma única fonte. Bom
+      ponto de partida.'
+  - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+    exercicios: 'Cap. 1: Exercícios 2, 3, 7, 8, 18 e 20 ; Cap. 4: Exercícios 3, 4,
+      5 e 11'
+    recomendacao: Os exercícios do Cap. 1 treinam tabelas e gráficos. Nos exercícios
+      do Cap. 4, resolva apenas as partes que pedem média, moda e mediana — os itens
+      sobre variância e desvio-padrão são conteúdo da próxima aula, pode deixá-los
+      para depois.
+  - livro: Montgomery & Runger, Applied Statistics and Probability for Engineers,
+      7ª ed.
+    exercicios: 'Cap. 6: Exercícios 6.1.6, 6.1.7, 6.1.8, 6.1.9, 6.1.11, 6.2.2, 6.2.4,
+      6.3.2, 6.3.6 e 6.3.9'
+    recomendacao: Boa referência para praticar ramo-e-folhas, histograma e o diagrama
+      de Pareto (gráfico para dados categóricos). Nos exercícios da seção 6.1, calcule
+      apenas a média — o desvio-padrão pedido junto é conteúdo da próxima aula.
   arquivo: Tabela_Referencias_Aula1.pdf
 tarefa_complementar:
 - titulo: Estatistica na pratica - filmes

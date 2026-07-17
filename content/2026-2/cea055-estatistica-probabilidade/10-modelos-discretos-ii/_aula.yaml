@@ -23,5 +23,27 @@ pre_aula:
   - titulo: 'Aula 10: ...hipergeométrica'
     url: https://www.youtube.com/watch?v=Ke9dn-cSXow
 exercicios_recomendados:
-  titulo: Tabela de exercícios recomendados
+  itens:
+  - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+    exercicios: 'Cap. 6: Problemas 20, 21, 24, 25, 26, 27 e 28'
+    recomendacao: 'Comece pelo problema 20: ele pede para você reconhecer se cada
+      situação é binomial ou não — o item (b), com extração sem reposição, é justamente
+      o caso hipergeométrico. Os problemas 26 a 28 pedem para esboçar gráficos, bom
+      treino visual.'
+  - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+    exercicios: 'Cap. 3 (3.4 Exercícios): 16, 17, 18, 19, 26 e 27'
+    recomendacao: Os exercícios 16 a 19 são de binomial. Os exercícios 26 e 27 usam
+      extração sem reposição (jacarés e livros defeituosos) — é aí que entra a hipergeométrica.
+  - livro: Montgomery & Runger, Applied Statistics and Probability for Engineers,
+      7ª ed.
+    exercicios: 'Cap. 3: Exercícios 3.5.1, 3.5.2, 3.5.3, 3.5.4, 3.7.1, 3.7.2, 3.7.3,
+      3.7.4 e 3.7.6'
+    recomendacao: 'Referência mais completa: o exercício 3.5.1 treina reconhecer quando
+      o modelo binomial se aplica (compare com o problema 20 do Bussab). O 3.7.6 (loteria)
+      é um clássico para entender hipergeométrica.'
+  - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
+    exercicios: 'Cap. 4: Exercícios 3, 4, 5, 7 e 8'
+    recomendacao: Os exercícios 4, 7 e 8 são de binomial. Os exercícios 3 e 5 envolvem
+      amostragem sem reposição de um lote — são os casos de hipergeométrica nesta
+      lista.
   arquivo: Tabela_Referencias_Aula10.pdf

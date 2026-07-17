@@ -36,7 +36,31 @@ pre_aula:
   - Verifique que a soma de todas as probabilidades que você encontrou dá exatamente
     1.
 exercicios_recomendados:
-  titulo: Tabela de exercícios recomendados
+  itens:
+  - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+    exercicios: 'Cap. 6: Problemas 1, 4, 5, 7, 8, 10, 11, 12, 13 e 14'
+    recomendacao: Comece pelos problemas 1, 4 e 5 (só a distribuição); depois vá para
+      7, 8, 10 e 11 (esperança e variância). Os problemas 13 e 14 formam um par —
+      resolva em sequência.
+  - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+    exercicios: 'Cap. 3 (3.4 Exercícios): 2, 3, 4, 5, 6, 7, 8 e 9'
+    recomendacao: Esta lista mistura direto com problemas de distribuições específicas
+      (binomial, Poisson etc. — conteúdo de aulas futuras); pegamos só os itens que
+      pedem para você mesmo construir a função de probabilidade a partir da situação
+      descrita.
+  - livro: Montgomery & Runger, Applied Statistics and Probability for Engineers,
+      7ª ed.
+    exercicios: 'Cap. 3: Exercícios 3.1.4, 3.1.5, 3.1.8, 3.1.9, 3.1.10, 3.3.1, 3.3.2,
+      3.3.6, 3.3.7 e 3.3.8'
+    recomendacao: Os exercícios 3.1.x pedem para identificar a faixa de valores e
+      a função de probabilidade. Os 3.3.x calculam média e variância — alguns (3.3.2
+      a 3.3.5) reaproveitam o resultado de exercícios 3.1.x anteriores.
+  - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
+    exercicios: 'Cap. 3: Exercícios 1, 3, 4, 6, 7, 9, 10, 11, 12 e 13'
+    recomendacao: 'Ótima referência para praticar cálculo de esperança em contextos
+      de jogos e apostas (6, 7, 8, 12, 13) — ajuda a entender o significado prático
+      de "valor esperado". Evite os exercícios 14 em diante: eles já são sobre distribuições
+      conjuntas, conteúdo de uma aula bem mais à frente.'
   arquivo: Tabela_Referencias_Aula7.pdf
 tarefa_complementar:
 - titulo: Variavel aleatoria discreta - Testando Positivo

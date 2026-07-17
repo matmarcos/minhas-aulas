@@ -24,5 +24,26 @@ pre_aula:
   - titulo: Coeficiente de determinação R² (machine learning)
     url: https://www.youtube.com/watch?v=wDJjmH3JFqc
 exercicios_recomendados:
-  titulo: Tabela de exercícios recomendados
+  itens:
+  - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+    exercicios: 'Cap. 16: Problemas 5, 6, 7, 8 e 9'
+    recomendacao: Os problemas 7, 8 e 9 reaproveitam os dados dos problemas 2, 3 e
+      4 da Aula 26 — você já tem a reta ajustada, agora constrói a tabela ANOVA e
+      avalia o modelo. O problema 6 é completo do zero (dados novos).
+  - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+    exercicios: ''
+    recomendacao: O único exercício de regressão que encontramos neste livro (usado
+      na Aula 26) não traz uma parte de avaliação do modelo (ANOVA, R2 ou análise
+      de resíduos). Use as outras referências para esta aula.
+  - livro: Montgomery & Runger, Applied Statistics and Probability for Engineers,
+      7ª ed.
+    exercicios: 'Cap. 11: Exercícios 11.7.3, 11.7.4, 11.7.5 e 11.7.6'
+    recomendacao: Referência mais completa para esta aula. Os exercícios 11.7.4 a
+      11.7.6 reaproveitam dados de exercícios da Aula 26 (11.2.2, 11.2.4 e 11.2.6)
+      — pedem para você fazer o gráfico de resíduos e o gráfico de probabilidade normal
+      para verificar as suposições do modelo.
+  - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
+    exercicios: ''
+    recomendacao: Este livro não é referência bibliográfica desta aula no nosso plano
+      de curso — ele não desenvolve regressão linear como tópico. Use as outras referências.
   arquivo: Tabela_Referencias_Aula27.pdf

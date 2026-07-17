@@ -21,5 +21,26 @@ pre_aula:
   - titulo: 'Aula 12: Exponencial, Uniforme, Gama, Beta e t-Student'
     url: https://www.youtube.com/watch?v=crumAouFNRE
 exercicios_recomendados:
-  titulo: Tabela de exercícios recomendados
+  itens:
+  - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+    exercicios: 'Cap. 7: Problemas 13 e 21'
+    recomendacao: Este livro tem só um exercício de cada modelo (13 é uniforme, 21
+      é exponencial) — a lista de problemas dessa seção é dominada por exercícios
+      do modelo Normal. Use as outras referências para praticar mais.
+  - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+    exercicios: 'Cap. 6 (6.3 Exercícios): 18, 20, 21, 22 e 23'
+    recomendacao: O exercício 18 (encontro entre dois amigos) é um clássico de distribuição
+      uniforme. Os exercícios 20 a 23 treinam a exponencial em diferentes contextos.
+  - livro: Montgomery & Runger, Applied Statistics and Probability for Engineers,
+      7ª ed.
+    exercicios: 'Cap. 4: Exercícios 4.4.1, 4.4.2, 4.4.3, 4.4.4, 4.4.5, 4.7.1, 4.7.2,
+      4.7.4, 4.7.5 e 4.7.7'
+    recomendacao: Referência mais completa para esta aula. O exercício 4.7.2(c) chama
+      atenção para a propriedade de "falta de memória" da exponencial — vale a pena
+      refletir sobre essa questão.
+  - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
+    exercicios: 'Cap. 5: Exercícios 9, 10 e 12'
+    recomendacao: Poucos exercícios dedicados a esses dois modelos especificamente
+      nesta lista (o exercício 10 é uniforme; 9 e 12 são exponencial). Use as outras
+      referências para praticar mais.
   arquivo: Tabela_Referencias_Aula12.pdf

@@ -28,7 +28,30 @@ pre_aula:
   - titulo: Estatística e Probabilidade – Aula 03 – Análise combinatória (parte I)
     url: https://www.youtube.com/watch?v=avPlaW1oW_A
 exercicios_recomendados:
-  titulo: Tabela de exercícios recomendados
+  itens:
+  - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+    exercicios: 'Cap. 5: Problema 11'
+    recomendacao: Este livro tem pouquíssimos exercícios de contagem propostos — a
+      maior parte do conteúdo aparece só como exemplo já resolvido no texto (Exemplos
+      5.8 e 5.9, se quiser estudar por lá). Para praticar mais, use as outras referências
+      desta lista.
+  - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+    exercicios: ''
+    recomendacao: Não encontramos exercícios de técnicas de contagem neste livro.
+      Use as outras referências desta lista para praticar este conteúdo.
+  - livro: Montgomery & Runger, Applied Statistics and Probability for Engineers,
+      7ª ed.
+    exercicios: 'Cap. 2: Exercícios 2.2.3, 2.2.4, 2.2.5, 2.2.6, 2.2.7, 2.2.9, 2.2.10,
+      2.2.11, 2.2.12 e 2.2.14'
+    recomendacao: 'Referência mais completa para esta aula: cobre princípio multiplicativo
+      (2.2.3 a 2.2.5), permutações (2.2.6, 2.2.9, 2.2.12), arranjos (2.2.10, 2.2.11)
+      e combinações (2.2.7, 2.2.14). Bom ponto de partida.'
+  - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
+    exercicios: 'Cap. 2: Exercícios 5, 6, 7, 8, 9, 10, 11, 12, 13 e 17'
+    recomendacao: Bons exercícios de combinação e princípio multiplicativo. Eles pedem
+      para calcular uma probabilidade no final — é normal, contagem e probabilidade
+      costumam andar juntas; o objetivo aqui é praticar a parte de contar os casos
+      possíveis e favoráveis.
   arquivo: Tabela_Referencias_Aula4.pdf
 tarefa_complementar:
 - titulo: Tecnicas de contagem - filmes

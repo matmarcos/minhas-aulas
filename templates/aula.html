@@ -42,7 +42,7 @@
 <section class="aula-secao">
   <h2>Slides do professor</h2>
   {% if aula.slides.arquivo_pdf %}
-  <iframe class="slides-embed" src="{{ base_href }}{{ aula.slides.arquivo_pdf }}" title="{{ aula.slides.titulo or 'Slides da aula' }}"></iframe>
+  <iframe class="slides-embed" loading="lazy" src="{{ base_href }}{{ aula.slides.arquivo_pdf }}" title="{{ aula.slides.titulo or 'Slides da aula' }}"></iframe>
   {% endif %}
   <ul class="material-list">
     {% if aula.slides.arquivo_pdf %}
@@ -67,9 +67,22 @@
 {% if aula.exercicios_recomendados %}
 <section class="aula-secao">
   <h2>Exercícios recomendados</h2>
-  <ul class="material-list">
-    <li><a href="{{ base_href }}{{ aula.exercicios_recomendados.arquivo }}">{{ aula.exercicios_recomendados.titulo or "Tabela de exercícios recomendados" }}</a></li>
+  {% if aula.exercicios_recomendados.itens %}
+  <ul class="bib-list">
+    {% for item in aula.exercicios_recomendados.itens %}
+    <li>
+      <strong>{{ item.livro }}</strong>
+      {% if item.exercicios %} — {{ item.exercicios }}{% endif %}
+      {% if item.recomendacao %}<br>{{ item.recomendacao }}{% endif %}
+    </li>
+    {% endfor %}
   </ul>
+  {% endif %}
+  {% if aula.exercicios_recomendados.arquivo %}
+  <ul class="material-list">
+    <li><a href="{{ base_href }}{{ aula.exercicios_recomendados.arquivo }}" target="_blank" rel="noopener">Abrir tabela em PDF</a></li>
+  </ul>
+  {% endif %}
 </section>
 {% endif %}
 

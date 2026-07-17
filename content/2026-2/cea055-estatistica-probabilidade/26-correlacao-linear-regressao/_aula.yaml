@@ -20,5 +20,27 @@ pre_aula:
   - titulo: Regressão Linear Simples
     url: https://www.youtube.com/watch?v=xRIc81AeLOg
 exercicios_recomendados:
-  titulo: Tabela de exercícios recomendados
+  itens:
+  - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+    exercicios: 'Cap. 16: Problemas 1, 2, 3 e 4'
+    recomendacao: 'Boa referência para começar: os problemas 1 e 4 usam o mesmo conjunto
+      de dados de um exemplo já visto no capítulo anterior. O problema 2 pede para
+      você também fazer o gráfico da reta ajustada — não pule essa parte, ajuda a
+      visualizar se o modelo faz sentido.'
+  - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+    exercicios: 'Cap. 9 (9.6 Exercícios): 3'
+    recomendacao: Só encontramos um exercício claramente de regressão linear nesta
+      lista (o restante do capítulo trata de comparação de amostras e ANOVA, fora
+      do escopo desta aula). Use as outras referências para praticar mais.
+  - livro: Montgomery & Runger, Applied Statistics and Probability for Engineers,
+      7ª ed.
+    exercicios: 'Cap. 11: Exercícios 11.2.1, 11.2.2, 11.8.1, 11.8.2 e 11.8.3'
+    recomendacao: Referência mais completa. Os exercícios 11.2.x tratam do ajuste
+      do modelo (mínimos quadrados); os 11.8.x são especificamente sobre o coeficiente
+      de correlação ρ — teste de hipótese e intervalo de confiança para ele.
+  - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
+    exercicios: ''
+    recomendacao: Este livro não é referência bibliográfica desta aula no nosso plano
+      de curso — ele não desenvolve regressão linear como tópico. Use as outras três
+      referências.
   arquivo: Tabela_Referencias_Aula26.pdf

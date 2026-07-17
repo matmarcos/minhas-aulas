@@ -21,5 +21,27 @@ pre_aula:
   - titulo: 'Aula 11: A distribuição Normal'
     url: https://www.youtube.com/watch?v=jdcKU2sgDfg
 exercicios_recomendados:
-  titulo: Tabela de exercícios recomendados
+  itens:
+  - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+    exercicios: 'Cap. 7: Problemas 14, 15, 16, 17, 18, 19 e 20'
+    recomendacao: 'Boa sequência: 14 e 15 treinam o uso direto da tabela; 16 já generaliza
+      para qualquer N(µ, σ²); 17 a 20 são aplicações práticas (altura de alunos, vendas,
+      rolamentos).'
+  - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+    exercicios: 'Cap. 6 (6.3 Exercícios): 25, 26, 32 e 33'
+    recomendacao: Os exercícios 25 e 26 são cálculo direto de probabilidade normal.
+      Os 32 e 33 são aplicações práticas (durabilidade de pneu, precipitação pluviométrica).
+  - livro: Montgomery & Runger, Applied Statistics and Probability for Engineers,
+      7ª ed.
+    exercicios: 'Cap. 4: Exercícios 4.5.1, 4.5.2, 4.5.3, 4.5.4, 4.5.5, 4.5.6, 4.5.7,
+      4.5.8 e 4.5.9'
+    recomendacao: Referência mais completa para esta aula. Comece pelos exercícios
+      4.5.1 e 4.5.2 (uso direto da tabela da normal padrão) antes de ir para os demais,
+      que já pedem para você padronizar uma variável X.
+  - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
+    exercicios: 'Cap. 6: Exercícios 1 e 3'
+    recomendacao: Estes exercícios já combinam duas variáveis normais independentes
+      (um pouco além do que esta aula pede) — mas ainda são um bom treino de cálculo
+      de probabilidade com a tabela normal. Se quiser, resolva só a parte de encontrar
+      a distribuição de cada X individual.
   arquivo: Tabela_Referencias_Aula13.pdf

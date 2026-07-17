@@ -24,5 +24,27 @@ pre_aula:
   - titulo: Estatística e Probabilidade – Aula 13 – Teste t de Student
     url: https://www.youtube.com/watch?v=AgDC9yoopUA
 exercicios_recomendados:
-  titulo: Tabela de exercícios recomendados
+  itens:
+  - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+    exercicios: 'Cap. 12 (12.11 Problemas Suplementares): 22, 23, 25(a) e 27'
+    recomendacao: Todos com desvio-padrão populacional conhecido. O exercício 23(b)
+      faz uma pergunta interessante sobre a conclusão do teste — vale refletir mesmo
+      sem resolver formalmente.
+  - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+    exercicios: 'Cap. 8 (8.6 Exercícios): 21 e 22'
+    recomendacao: Poucos exercícios de teste para a média com variância conhecida
+      nesta lista — a maioria dos exercícios do capítulo é sobre proporção (conteúdo
+      que não faz parte desta aula). Use as outras referências para praticar mais.
+  - livro: Montgomery & Runger, Applied Statistics and Probability for Engineers,
+      7ª ed.
+    exercicios: 'Cap. 9: Exercícios 9.2.1, 9.2.2, 9.2.3, 9.2.4, 9.2.6, 9.2.7, 9.2.8,
+      9.2.9 e 9.2.10'
+    recomendacao: Referência mais completa para esta aula. Os exercícios 9.2.6 a 9.2.9
+      seguem o mesmo roteiro (teste + valor-P + potência + tamanho de amostra) — resolva
+      um de cada vez para fixar a sequência completa.
+  - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
+    exercicios: 'Cap. 12: Exercícios 1, 2, 3, 4, 6, 7, 9 e 10'
+    recomendacao: Referência bem completa também. Os exercícios 1 e 2 já vêm com as
+      hipóteses prontas — bom para focar só no cálculo da estatística de teste antes
+      de passar para os exercícios que pedem para você formular as hipóteses sozinho.
   arquivo: Tabela_Referencias_Aula22.pdf

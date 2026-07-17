@@ -34,7 +34,32 @@ pre_aula:
   - Nesse mesmo espaço amostral, escreva o subconjunto que corresponde ao evento "sair
     coroa e um número par".
 exercicios_recomendados:
-  titulo: Tabela de exercícios recomendados
+  itens:
+  - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+    exercicios: 'Cap. 5: Problemas 1, 2, 3, 5, 6, 7, 8, 11, 12 e 14'
+    recomendacao: Referência mais completa para esta aula. Os problemas 1, 2, 3, 5
+      e 6 pedem só descrever o espaço amostral (sem calcular probabilidade ainda);
+      os demais já pedem para calcular.
+  - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+    exercicios: 'Cap. 2 (Exercícios da Seção 2.1): 1, 2, 3, 4 e 5 ; Cap. 2 (2.3 Exercícios):
+      1 e 2'
+    recomendacao: 'Use os "Exercícios da Seção 2.1" — são os que tratam de espaço
+      amostral, eventos e probabilidade básica. Cuidado: a lista "2.3 Exercícios"
+      do mesmo capítulo é quase toda de probabilidade condicional (conteúdo de uma
+      aula futura); pegamos só os itens 1 e 2 de lá, que ainda não usam isso.'
+  - livro: Montgomery & Runger, Applied Statistics and Probability for Engineers,
+      7ª ed.
+    exercicios: 'Cap. 2: Exercícios 2.1.1, 2.1.3, 2.1.6, 2.1.8, 2.1.9, 2.1.10, 2.1.12,
+      2.1.13, 2.3.1 e 2.3.2'
+    recomendacao: Os exercícios 2.1.x pedem só descrever o espaço amostral (bom treino
+      de interpretação). Os 2.3.x já pedem para calcular probabilidades usando os
+      axiomas.
+  - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
+    exercicios: 'Cap. 1: Exercícios 1, 2, 3 e 4 ; Cap. 2: Exercícios 2, 3 e 4'
+    recomendacao: Cap. 1 treina espaço amostral e eventos, sem calcular probabilidade.
+      No Cap. 2, os exercícios 2, 3 e 4 calculam probabilidade a partir de tabelas
+      simples — os exercícios seguintes dessa lista (5 em diante) exigem técnicas
+      de contagem, conteúdo de uma aula futura; que só com esses três por enquanto.
   arquivo: Tabela_Referencias_Aula3.pdf
 tarefa_complementar:
 - titulo: Espaco amostral e eventos - filmes
