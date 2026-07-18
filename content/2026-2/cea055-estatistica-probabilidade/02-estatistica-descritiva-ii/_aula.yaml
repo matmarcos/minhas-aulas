@@ -49,6 +49,9 @@ exercicios_recomendados:
       calcule o desvio-padrão deles (não a média). Os exercícios 6.4 são de box plot,
       chamado de "diagrama de caixa" no livro.
   arquivo: Tabela_Referencias_Aula2.pdf
+lista_ia:
+  lista_arquivo: Lista_Aula2_Original.pdf
+  gabarito_arquivo: Gabarito_Aula2_Original.pdf
 tarefa_complementar:
 - titulo: Dispersao e boxplot - filmes
   url: https://colab.research.google.com/github/matmarcos/minhas-aulas/blob/main/docs/2026-2/cea055-estatistica-probabilidade/02-estatistica-descritiva-ii/arquivos/Aula%202%20-%20Dispersao%20e%20boxplot%20-%20filmes.ipynb

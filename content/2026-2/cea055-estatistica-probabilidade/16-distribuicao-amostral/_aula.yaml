@@ -44,3 +44,6 @@ exercicios_recomendados:
     recomendacao: Os exercícios 1 a 3 treinam a distribuição amostral da média; 4
       e 5, a da proporção. Poucos exercícios, mas todos diretamente relevantes.
   arquivo: Tabela_Referencias_Aula16.pdf
+lista_ia:
+  lista_arquivo: Lista_Aula16_Original.pdf
+  gabarito_arquivo: Gabarito_Aula16_Original.pdf

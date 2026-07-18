@@ -137,3 +137,12 @@ h1 { font-size: 28px; margin-bottom: 4px; color: var(--text); }
   cursor: pointer;
 }
 .preaula-check input { width: 16px; height: 16px; accent-color: var(--accent); cursor: pointer; }
+.aviso-ia {
+  background: #fff6e0;
+  border: 1px solid #e8c869;
+  color: #6b5417;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+  margin: 0 0 12px;
+}

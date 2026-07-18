@@ -42,3 +42,6 @@ exercicios_recomendados:
     recomendacao: Bons exercícios práticos (emissão radioativa, pronto-socorro, estouro
       de pneus, defeitos em tecido).
   arquivo: Tabela_Referencias_Aula11.pdf
+lista_ia:
+  lista_arquivo: Lista_Aula11_Original.pdf
+  gabarito_arquivo: Gabarito_Aula11_Original.pdf

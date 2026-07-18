@@ -62,6 +62,9 @@ exercicios_recomendados:
       de "valor esperado". Evite os exercícios 14 em diante: eles já são sobre distribuições
       conjuntas, conteúdo de uma aula bem mais à frente.'
   arquivo: Tabela_Referencias_Aula7.pdf
+lista_ia:
+  lista_arquivo: Lista_Aula7_Original.pdf
+  gabarito_arquivo: Gabarito_Aula7_Original.pdf
 tarefa_complementar:
 - titulo: Variavel aleatoria discreta - Testando Positivo
   url: https://colab.research.google.com/github/matmarcos/minhas-aulas/blob/main/docs/2026-2/cea055-estatistica-probabilidade/07-variaveis-aleatorias-discretas/arquivos/Aula%207%20-%20Variavel%20aleatoria%20discreta%20-%20Testando%20Positivo.ipynb

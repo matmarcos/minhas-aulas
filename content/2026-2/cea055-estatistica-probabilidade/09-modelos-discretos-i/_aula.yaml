@@ -47,3 +47,6 @@ exercicios_recomendados:
       dedicados especificamente à uniforme discreta, Bernoulli ou geométrica — a lista
       concentra-se em binomial e Poisson. Use as outras referências desta lista.
   arquivo: Tabela_Referencias_Aula9.pdf
+lista_ia:
+  lista_arquivo: Lista_Aula9_Original.pdf
+  gabarito_arquivo: Gabarito_Aula9_Original.pdf

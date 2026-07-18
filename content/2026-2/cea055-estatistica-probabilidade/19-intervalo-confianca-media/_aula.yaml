@@ -47,3 +47,6 @@ exercicios_recomendados:
       desconhecida com amostra grande. Os exercícios 4 e 12 também pedem o tamanho
       de amostra necessário para um erro específico.
   arquivo: Tabela_Referencias_Aula19.pdf
+lista_ia:
+  lista_arquivo: Lista_Aula19_Original.pdf
+  gabarito_arquivo: Gabarito_Aula19_Original.pdf

@@ -86,6 +86,21 @@
 </section>
 {% endif %}
 
+{% if aula.lista_ia %}
+<section class="aula-secao">
+  <h2>Lista de exercícios extra</h2>
+  <p class="aviso-ia">⚠️ Gerado com o auxílio de IA (Claude/Anthropic), não copiado de livro-texto. Pode conter imprecisões — revise as respostas com atenção.</p>
+  <ul class="material-list">
+    {% if aula.lista_ia.lista_arquivo %}
+    <li><a href="{{ base_href }}{{ aula.lista_ia.lista_arquivo }}" target="_blank" rel="noopener">📄 Lista de exercícios (PDF, gerado por IA)</a></li>
+    {% endif %}
+    {% if aula.lista_ia.gabarito_arquivo %}
+    <li><a href="{{ base_href }}{{ aula.lista_ia.gabarito_arquivo }}" target="_blank" rel="noopener">✅ Gabarito (PDF, gerado por IA)</a></li>
+    {% endif %}
+  </ul>
+</section>
+{% endif %}
+
 {% if aula.tarefa_complementar %}
 <section class="aula-secao">
   <h2>Tarefa complementar (opcional)</h2>

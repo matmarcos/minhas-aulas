@@ -44,3 +44,6 @@ exercicios_recomendados:
     recomendacao: 'O exercício 18 é bom para revisão: dá a tabela conjunta incompleta
       (falta descobrir o valor de p) antes de calcular tudo o mais.'
   arquivo: Tabela_Referencias_Aula24.pdf
+lista_ia:
+  lista_arquivo: Lista_Aula24_Original.pdf
+  gabarito_arquivo: Gabarito_Aula24_Original.pdf

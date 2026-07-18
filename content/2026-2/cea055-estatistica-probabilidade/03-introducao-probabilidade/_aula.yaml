@@ -61,6 +61,9 @@ exercicios_recomendados:
       simples — os exercícios seguintes dessa lista (5 em diante) exigem técnicas
       de contagem, conteúdo de uma aula futura; que só com esses três por enquanto.
   arquivo: Tabela_Referencias_Aula3.pdf
+lista_ia:
+  lista_arquivo: Lista_Aula3_Original.pdf
+  gabarito_arquivo: Gabarito_Aula3_Original.pdf
 tarefa_complementar:
 - titulo: Espaco amostral e eventos - filmes
   url: https://colab.research.google.com/github/matmarcos/minhas-aulas/blob/main/docs/2026-2/cea055-estatistica-probabilidade/03-introducao-probabilidade/arquivos/Aula%203%20-%20Espaco%20amostral%20e%20eventos%20-%20filmes.ipynb

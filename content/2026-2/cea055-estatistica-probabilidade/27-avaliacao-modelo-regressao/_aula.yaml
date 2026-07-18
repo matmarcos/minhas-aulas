@@ -47,3 +47,6 @@ exercicios_recomendados:
     recomendacao: Este livro não é referência bibliográfica desta aula no nosso plano
       de curso — ele não desenvolve regressão linear como tópico. Use as outras referências.
   arquivo: Tabela_Referencias_Aula27.pdf
+lista_ia:
+  lista_arquivo: Lista_Aula27_Original.pdf
+  gabarito_arquivo: Gabarito_Aula27_Original.pdf

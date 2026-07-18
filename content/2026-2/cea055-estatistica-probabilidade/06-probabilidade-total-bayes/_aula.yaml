@@ -52,6 +52,9 @@ exercicios_recomendados:
       em exemplos já resolvidos no texto, seções 2.6). Use as outras referências desta
       lista para praticar.
   arquivo: Tabela_Referencias_Aula6.pdf
+lista_ia:
+  lista_arquivo: Lista_Aula6_Original.pdf
+  gabarito_arquivo: Gabarito_Aula6_Original.pdf
 tarefa_complementar:
 - titulo: Probabilidade Total e Bayes - Testando Positivo
   url: https://colab.research.google.com/github/matmarcos/minhas-aulas/blob/main/docs/2026-2/cea055-estatistica-probabilidade/06-probabilidade-total-bayes/arquivos/Aula%206%20-%20Probabilidade%20Total%20e%20Bayes%20-%20Testando%20Positivo.ipynb

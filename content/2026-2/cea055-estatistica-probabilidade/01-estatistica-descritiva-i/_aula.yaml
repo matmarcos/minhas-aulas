@@ -61,6 +61,9 @@ exercicios_recomendados:
       de Pareto (gráfico para dados categóricos). Nos exercícios da seção 6.1, calcule
       apenas a média — o desvio-padrão pedido junto é conteúdo da próxima aula.
   arquivo: Tabela_Referencias_Aula1.pdf
+lista_ia:
+  lista_arquivo: Lista_Aula1_Original.pdf
+  gabarito_arquivo: Gabarito_Aula1_Original.pdf
 tarefa_complementar:
 - titulo: Estatistica na pratica - filmes
   url: https://colab.research.google.com/github/matmarcos/minhas-aulas/blob/main/docs/2026-2/cea055-estatistica-probabilidade/01-estatistica-descritiva-i/arquivos/Aula%201%20-%20Estatistica%20na%20pratica%20-%20filmes.ipynb
