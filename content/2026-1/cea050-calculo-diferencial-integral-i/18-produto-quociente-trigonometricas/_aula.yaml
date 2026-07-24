@@ -1,0 +1,29 @@
+titulo: Aula 18 - Regras do produto e do quociente; derivadas de funções trigonométricas
+bloco: 2
+data: ''
+resumo: Regra do produto; regra do quociente; derivadas de seno, cosseno e demais funções trigonométricas
+descricao:
+- 'A derivada de um produto não é o produto das derivadas — este é provavelmente o erro mais comum do
+  bloco. A regra correta é: a derivada de f·g é f′·g + f·g′. Analogamente, para o quociente f/g a derivada
+  é (f′·g − f·g′)/g², e aqui a ordem dos termos do numerador importa, porque a subtração não é comutativa.'
+- 'Um conselho prático que o próprio slide destaca: nem todo quociente pede a regra do quociente. Expressões
+  como (3x² + 2√x)/x podem ser separadas em parcelas e derivadas com a regra da potência, com muito menos
+  conta e menos chance de erro. Vale sempre olhar se a simplificação prévia é possível.'
+- 'A segunda metade estabelece as derivadas trigonométricas: a derivada do seno é o cosseno, e a do cosseno
+  é menos seno. As demais saem da regra do quociente aplicada às definições — a derivada da tangente é
+  secante ao quadrado, e assim por diante. O sinal negativo na derivada do cosseno é fonte constante de
+  erro, e a alternância de sinais fica evidente ao calcular derivadas sucessivas, como no exercício clássico
+  da 27ª derivada de cos x.'
+referencias_bibliograficas:
+- livro: Stewart, Cálculo, Volume I, 6ª ed.
+  citacao: Cap. 3 — 3.2, 3.3
+- livro: Thomas, Cálculo, Volume 1, 12ª ed.
+  citacao: Cap. 3 — 3.3, 3.5
+exercicios_recomendados:
+  itens:
+  - livro: Stewart, Cálculo, Volume I, 6ª ed.
+    exercicios: 'Seção 3.2: exercícios 1, 3, 9, 13, 17, 25, 27, 31 e 43'
+    recomendacao: Regras do produto e do quociente.
+  - livro: Stewart, Cálculo, Volume I, 6ª ed.
+    exercicios: 'Seção 3.3: exercícios 1 ao 16'
+    recomendacao: Derivadas das funções trigonométricas, combinadas com produto e quociente.

@@ -1,0 +1,31 @@
+titulo: 'Aula 01 - Pré-Cálculo I: conjuntos numéricos, desigualdades e intervalos'
+bloco: 1
+data: ''
+resumo: Conjuntos numéricos; desigualdades e intervalos; resolução de inequações; potenciação com expoentes
+  inteiros
+descricao:
+- 'A disciplina abre revisando a linguagem sobre a qual todo o Cálculo é construído: os números reais.
+  Antes de falar em limite ou derivada, é preciso ter fluência em descrever subconjuntos da reta — e é
+  isso que a notação de intervalo faz. Um intervalo como (a, b) representa todos os reais estritamente
+  entre a e b; [a, b] inclui as extremidades; e combinações como (−∞, 3] descrevem semirretas.'
+- 'O ponto central da aula é a tradução em três direções: uma desigualdade (por exemplo, x > 2), a notação
+  de intervalo correspondente ((2, ∞)) e o desenho na reta real. Resolver uma inequação é encontrar exatamente
+  esse conjunto solução. As regras operatórias são as mesmas da igualdade, com uma exceção que causa a
+  maioria dos erros: ao multiplicar ou dividir os dois lados por um número negativo, o sinal da desigualdade
+  se inverte.'
+- A aula fecha com potenciação de expoentes inteiros — produto e quociente de potências de mesma base,
+  potência de potência e expoentes negativos. São regras que voltarão em toda derivada de função potência,
+  e vale automatizá-las agora.
+referencias_bibliograficas:
+- livro: Stewart, Cálculo, Volume I, 6ª ed.
+  citacao: Apêndice A — Números, Desigualdades e Valores Absolutos
+- livro: Demana et al., Pré-cálculo
+  citacao: Cap. 1 — completo; Cap. 6 (inequações)
+- livro: Thomas, Cálculo, Volume 1, 12ª ed.
+  citacao: Apêndices 1 a 3 (números reais, intervalos e retas)
+exercicios_recomendados:
+  itens:
+  - livro: Demana et al., Pré-cálculo
+    exercicios: 'Cap. 1: exercícios 1 ao 68'
+    recomendacao: Cobre representação dos reais, ordem na reta, notação de intervalo e potenciação com
+      expoentes inteiros — a base para todo o resto do semestre.

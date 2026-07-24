@@ -1,0 +1,28 @@
+titulo: Aula 22 - Método do Intervalo Fechado
+bloco: 3
+data: ''
+resumo: Procedimento para máximo e mínimo absolutos de função contínua em [a, b]
+descricao:
+- Esta aula transforma os teoremas anteriores em um procedimento fechado. Para achar os valores máximo
+  e mínimo absolutos de uma função contínua em um intervalo [a, b], basta calcular f nos números críticos
+  que estão dentro do intervalo, calcular f nas duas extremidades a e b, e comparar todos esses valores.
+  O maior é o máximo absoluto, o menor é o mínimo absoluto.
+- 'O método é curto, mas os erros são previsíveis. O primeiro é esquecer as extremidades: como o Teorema
+  de Fermat só fala de extremos locais no interior, o máximo absoluto pode perfeitamente estar em a ou
+  b, onde a derivada nem precisa se anular. O segundo é incluir números críticos que caem fora do intervalo
+  dado. O terceiro é parar na derivada — o método compara valores de f, não de f′.'
+- 'Vale notar que o método dispensa qualquer teste para classificar os candidatos. Não é preciso saber
+  se um número crítico é máximo local, mínimo local ou nenhum dos dois: basta avaliar f em todos e comparar.
+  Foi exatamente esse roteiro que a primeira questão da P3 pediu, para f(x) = x³ − 3x² − 9x + 10 no intervalo
+  [−2, 4].'
+referencias_bibliograficas:
+- livro: Stewart, Cálculo, Volume I, 6ª ed.
+  citacao: Cap. 4 — 4.1
+- livro: Thomas, Cálculo, Volume 1, 12ª ed.
+  citacao: Cap. 4 — 4.1
+exercicios_recomendados:
+  itens:
+  - livro: Stewart, Cálculo, Volume I, 6ª ed.
+    exercicios: 'Seção 4.1: exercícios 1, 2, 7, 13, 15, 19, 22, 27, 31, 33, 51, 53 e 60'
+    recomendacao: Mesma lista da aula 21 — a Seção 4.1 foi dividida em duas aulas. Para esta, concentre-se
+      nos exercícios que pedem máximo e mínimo absolutos em intervalo fechado.

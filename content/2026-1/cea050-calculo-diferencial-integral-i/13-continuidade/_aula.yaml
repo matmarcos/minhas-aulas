@@ -1,0 +1,31 @@
+titulo: Aula 13 - Continuidade
+bloco: 2
+data: ''
+resumo: Definição de função contínua em um número; tipos de descontinuidade; continuidade em intervalos
+descricao:
+- 'A propriedade da substituição direta da aula anterior tem um nome: as funções que a satisfazem são
+  as funções contínuas. Formalmente, f é contínua em um número a quando o limite de f(x) quando x tende
+  a a existe e é igual a f(a). A definição embute três exigências simultâneas: f(a) precisa estar definida,
+  o limite precisa existir, e os dois precisam coincidir.'
+- 'Cada uma dessas exigências, quando falha, produz um tipo diferente de descontinuidade — buraco, salto
+  ou assíntota. Identificar em quais números uma função é descontínua, e por qual dos três motivos, é
+  o exercício típico da seção, e as funções definidas por partes são o terreno natural para ele: a descontinuidade,
+  quando existe, está sempre nos pontos de transição entre as fórmulas.'
+- 'A continuidade se estende a intervalos, com continuidade lateral nas extremidades. O resultado que
+  economiza mais trabalho é o catálogo: polinômios são contínuos em toda a reta; funções racionais, raízes,
+  trigonométricas, exponenciais e logarítmicas são contínuas em seus domínios; e somas, produtos, quocientes
+  e composições de funções contínuas são contínuas onde estão definidas. Na prática, isso significa que
+  quase toda função construída neste curso é contínua, e a atenção pode se concentrar nas exceções.'
+referencias_bibliograficas:
+- livro: Stewart, Cálculo, Volume I, 6ª ed.
+  citacao: Cap. 2 — 2.5
+- livro: Demana et al., Pré-cálculo
+  citacao: Cap. 7 (continuidade de uma função)
+- livro: Thomas, Cálculo, Volume 1, 12ª ed.
+  citacao: Cap. 2 — 2.5
+exercicios_recomendados:
+  itens:
+  - livro: Stewart, Cálculo, Volume I, 6ª ed.
+    exercicios: 'Seção 2.5: exercícios 1, 3, 5, 9, 13, 15, 35, 37, 39, 43, 47 e 49'
+    recomendacao: Identificação de descontinuidades a partir do gráfico e da expressão, e determinação
+      de constantes que tornam uma função por partes contínua.

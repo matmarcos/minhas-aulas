@@ -1,0 +1,24 @@
+titulo: 'Aula 04 - Funções I: quatro maneiras de representar uma função'
+bloco: 1
+data: ''
+resumo: Definição de função; domínio, contradomínio e imagem; representações verbal, numérica, algébrica
+  e gráfica
+descricao:
+- 'Aqui entra o objeto central do Cálculo. Uma função f é uma lei que associa a cada elemento x de um
+  conjunto D (o domínio) exatamente um elemento f(x) de um segundo conjunto. A palavra decisiva é ''exatamente
+  um'': é ela que separa funções de relações quaisquer.'
+- 'O capítulo organiza quatro formas de apresentar a mesma função — verbal (uma descrição em palavras),
+  numérica (uma tabela), algébrica (uma fórmula) e visual (um gráfico). Boa parte da dificuldade inicial
+  em Cálculo vem de conseguir transitar entre elas: ler o domínio a partir do gráfico, montar a fórmula
+  a partir de uma descrição, esboçar o gráfico a partir da fórmula.'
+- 'Domínio e imagem merecem atenção separada. Quando a função é dada só pela fórmula, convenciona-se que
+  o domínio é o maior conjunto de reais para o qual a fórmula faz sentido — de novo, sem divisão por zero
+  e sem raiz par de negativo. A imagem é o conjunto dos valores efetivamente assumidos, e costuma ser
+  bem mais difícil de determinar que o domínio: no gráfico, é a projeção da curva sobre o eixo vertical.'
+referencias_bibliograficas:
+- livro: Stewart, Cálculo, Volume I, 6ª ed.
+  citacao: Cap. 1 — 1.1
+- livro: Demana et al., Pré-cálculo
+  citacao: Cap. 7 (definição de função e notação; domínio e imagem)
+- livro: Thomas, Cálculo, Volume 1, 12ª ed.
+  citacao: Cap. 1 — 1.1

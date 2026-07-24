@@ -1,0 +1,23 @@
+titulo: 'Aula 06 - Modelos matemáticos: uma lista de funções essenciais'
+bloco: 1
+data: ''
+resumo: Modelos lineares; equação da reta; funções polinomiais, potência e racionais
+descricao:
+- 'Esta aula monta o catálogo de funções que servirá de referência pelo resto do curso. A ideia de modelo
+  matemático é apresentada primeiro: uma função escolhida para descrever um fenômeno real, sempre uma
+  aproximação, nunca a realidade exata.'
+- 'Os modelos lineares vêm primeiro. Uma função linear f(x) = mx + b tem gráfico retilíneo, e o coeficiente
+  angular m é a taxa de variação: quanto f aumenta para cada unidade de aumento em x. Essa leitura de
+  m como taxa é a antecipação direta do conceito de derivada — a derivada será exatamente a taxa de variação
+  instantânea, o coeficiente angular da reta tangente.'
+- Em seguida vêm as funções polinomiais (com grau, coeficiente dominante e o comportamento nas extremidades
+  determinado por eles), as funções potência x^a nos seus vários casos conforme o expoente, e as funções
+  racionais, que são quocientes de polinômios e trazem consigo as restrições de domínio e as assíntotas
+  verticais que serão estudadas em detalhe no bloco seguinte.
+referencias_bibliograficas:
+- livro: Stewart, Cálculo, Volume I, 6ª ed.
+  citacao: Cap. 1 — 1.2
+- livro: Demana et al., Pré-cálculo
+  citacao: Cap. 8 — completo; Cap. 9 — completo; Cap. 10 (gráficos de funções polinomiais)
+- livro: Thomas, Cálculo, Volume 1, 12ª ed.
+  citacao: Cap. 1 — 1.1

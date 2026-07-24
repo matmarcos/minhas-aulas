@@ -1,0 +1,30 @@
+titulo: Aula 28 - Primitivas
+bloco: 3
+data: ''
+resumo: Definição de primitiva; família de primitivas e a constante C; tabela de primitivas das funções
+  elementares
+descricao:
+- 'Esta aula inverte a pergunta que ocupou todo o bloco 2. Em vez de partir de f e obter f′, parte-se
+  da derivada e procura-se a função original: F é uma primitiva de f quando F′ = f. É a operação de recuperar
+  a posição a partir da velocidade, ou a quantidade a partir da taxa de variação.'
+- 'A primeira observação importante é que a primitiva nunca é única. Se F é primitiva de f, então F +
+  C também é, para qualquer constante C — afinal a derivada de uma constante é zero. A família completa
+  de primitivas é portanto F(x) + C, e essa constante arbitrária não é um detalhe burocrático: ela representa
+  a informação que a derivada apaga, e só é determinada quando o problema fornece uma condição adicional.'
+- Na prática, monta-se uma tabela lendo as regras de derivação ao contrário. A primitiva de xⁿ é x^(n+1)/(n+1),
+  com a ressalva de n diferente de −1 (caso em que a primitiva é ln|x|); a de cos x é sen x; a de eˣ é
+  ele mesmo. Introduz-se aqui o símbolo de integral, que passará a designar essa operação, preparando
+  a ligação com o cálculo de áreas que vem a seguir.
+referencias_bibliograficas:
+- livro: Stewart, Cálculo, Volume I, 6ª ed.
+  citacao: Cap. 4 — 4.9
+- livro: Demana et al., Pré-cálculo
+  citacao: Cap. 15 (introdução à integral de uma função; integral indefinida)
+- livro: Thomas, Cálculo, Volume 1, 12ª ed.
+  citacao: Cap. 4 — 4.8
+exercicios_recomendados:
+  itens:
+  - livro: Stewart, Cálculo, Volume I, 6ª ed.
+    exercicios: 'Seção 4.9: exercícios 1, 3, 9, 11, 14, 15, 23, 27, 29 e 31'
+    recomendacao: Primitiva mais geral das funções elementares e problemas com condição inicial, que determinam
+      a constante C.

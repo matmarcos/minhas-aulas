@@ -1,0 +1,32 @@
+titulo: 'Aula 08 - Novas funções a partir de antigas: transformações e composição'
+bloco: 1
+data: ''
+resumo: Translações, expansões e reflexões de gráficos; operações aritméticas com funções; composição
+descricao:
+- 'Em vez de estudar cada função do zero, esta aula ensina a obter gráficos novos a partir dos que já
+  conhecemos. Somar uma constante do lado de fora, f(x) + c, desloca o gráfico verticalmente; somar por
+  dentro, f(x + c), desloca horizontalmente — e no sentido contrário ao que a intuição sugere: f(x + 2)
+  desloca duas unidades para a esquerda.'
+- 'Multiplicar por constante produz expansões e compressões, e o sinal negativo produz reflexão: −f(x)
+  reflete em relação ao eixo x, f(−x) reflete em relação ao eixo y. Combinando essas operações, esboça-se
+  rapidamente algo como f(2 − x) + 1, que é uma reflexão seguida de translações — exatamente o tipo de
+  composição de transformações cobrado na P1. Uma aplicação clássica é esboçar uma parábola completando
+  o quadrado e lendo o resultado como uma translação de x².'
+- 'A segunda parte trata de combinar funções: soma, diferença, produto e quociente (com o domínio sendo
+  a interseção dos domínios, excluindo os zeros do denominador) e, sobretudo, a composição (f ∘ g)(x)
+  = f(g(x)). A composição é a operação mais importante das três para o que vem adiante, porque a Regra
+  da Cadeia — a regra de derivação mais usada de todo o curso — é precisamente a regra para derivar uma
+  composta.'
+referencias_bibliograficas:
+- livro: Stewart, Cálculo, Volume I, 6ª ed.
+  citacao: Cap. 1 — 1.3
+- livro: Demana et al., Pré-cálculo
+  citacao: Cap. 13 — completo
+- livro: Thomas, Cálculo, Volume 1, 12ª ed.
+  citacao: Cap. 1 — 1.2
+exercicios_recomendados:
+  itens:
+  - livro: Stewart, Cálculo, Volume I, 6ª ed.
+    exercicios: 'Seção 1.3: todos os exercícios'
+    recomendacao: O slide da aula indica a seção inteira, sem selecionar números. Priorize os de transformação
+      de gráficos e os de composição com determinação de domínio.

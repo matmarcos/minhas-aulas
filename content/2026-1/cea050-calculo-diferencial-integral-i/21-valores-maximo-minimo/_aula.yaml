@@ -1,0 +1,32 @@
+titulo: Aula 21 - Valores máximo e mínimo
+bloco: 3
+data: ''
+resumo: Extremos absolutos e locais; Teorema do Valor Extremo; Teorema de Fermat; números críticos
+descricao:
+- O bloco final aplica a derivada a problemas de otimização, e começa distinguindo dois conceitos frequentemente
+  confundidos. Um máximo absoluto é o maior valor que f assume em todo o seu domínio; um máximo local
+  é o maior valor apenas nas vizinhanças de um ponto. Um pico modesto no meio do gráfico pode ser máximo
+  local sem ser absoluto, e o máximo absoluto pode ocorrer numa extremidade do intervalo, sem ser máximo
+  local.
+- 'O Teorema do Valor Extremo garante a existência: se f é contínua em um intervalo fechado [a, b], então
+  f assume máximo e mínimo absolutos nesse intervalo. As duas hipóteses são indispensáveis — continuidade
+  e intervalo fechado. Sem elas o teorema falha, e os contraexemplos com intervalos abertos ou funções
+  descontínuas são a melhor forma de fixar isso.'
+- 'O Teorema de Fermat fornece a localização: se f tem extremo local em c e f′(c) existe, então f′(c)
+  = 0. Atenção à direção da implicação — a recíproca é falsa. A derivada de x³ se anula em zero sem que
+  haja extremo ali. Por isso os pontos onde f′ se anula ou não existe são chamados números críticos e
+  tratados como candidatos a extremo, nunca como extremos confirmados; confirmar exige os testes das aulas
+  seguintes.'
+referencias_bibliograficas:
+- livro: Stewart, Cálculo, Volume I, 6ª ed.
+  citacao: Cap. 4 — 4.1
+- livro: Demana et al., Pré-cálculo
+  citacao: Cap. 7 (extremos local e absoluto)
+- livro: Thomas, Cálculo, Volume 1, 12ª ed.
+  citacao: Cap. 4 — 4.1
+exercicios_recomendados:
+  itens:
+  - livro: Stewart, Cálculo, Volume I, 6ª ed.
+    exercicios: 'Seção 4.1: exercícios 1, 2, 7, 13, 15, 19, 22, 27, 31, 33, 51, 53 e 60'
+    recomendacao: 'Lista da Seção 4.1, compartilhada com a aula 22: os primeiros tratam de identificar
+      extremos no gráfico e achar números críticos; os finais aplicam o Método do Intervalo Fechado.'

@@ -1,0 +1,27 @@
+titulo: 'Aula 02 - Pré-Cálculo II: radiciação, expoentes racionais, polinômios e fatoração'
+bloco: 1
+data: ''
+resumo: Radicais e racionalização; potenciação com expoentes racionais; operações com polinômios; produtos
+  notáveis e fatoração
+descricao:
+- 'Esta aula estende a potenciação para expoentes fracionários e liga as duas notações que aparecem alternadamente
+  no livro-texto: a raiz n-ésima de x elevada a m é o mesmo que x elevado a m/n. Reconhecer essa equivalência
+  é o que permite derivar uma raiz quadrada usando a regra da potência, mais adiante no semestre.'
+- 'O trabalho com radicais inclui simplificação e racionalização de denominadores. A racionalização parece
+  um detalhe estético agora, mas é uma técnica de cálculo de limites: quando uma substituição direta produz
+  a indeterminação 0/0 em uma expressão com raiz, multiplicar pelo conjugado costuma ser o passo que resolve.'
+- 'A segunda metade trata de polinômios: soma, subtração, multiplicação e divisão, produtos notáveis e
+  as três estratégias de fatoração — por produtos notáveis, de trinômios e por agrupamento. Fatorar é
+  a ferramenta que cancela o fator problemático em limites do tipo (x² − 9)/(x − 3), e a facilidade em
+  fatorar se traduz diretamente em facilidade nos capítulos de limite.'
+referencias_bibliograficas:
+- livro: Demana et al., Pré-cálculo
+  citacao: Cap. 2 — completo; Cap. 3 — completo
+exercicios_recomendados:
+  itens:
+  - livro: Demana et al., Pré-cálculo
+    exercicios: 'Cap. 2: exercícios 1 ao 79'
+    recomendacao: Radicais, racionalização e expoentes racionais.
+  - livro: Demana et al., Pré-cálculo
+    exercicios: 'Cap. 3: exercícios 1 ao 91'
+    recomendacao: Operações com polinômios, produtos notáveis e as técnicas de fatoração.

@@ -1,0 +1,36 @@
+titulo: 'Aula 11 - Introdução a limites: o problema da tangente e o limite de uma função'
+bloco: 2
+data: ''
+resumo: Reta secante e passagem ao limite; noção intuitiva de limite; limites laterais; limites infinitos
+descricao:
+- 'O Cálculo nasce de dois problemas aparentemente distintos: encontrar a reta tangente a uma curva num
+  ponto e encontrar a velocidade instantânea de um objeto. A aula mostra que os dois levam ao mesmo tipo
+  de conta. Para a tangente, escolhe-se um segundo ponto Q sobre a curva, calcula-se o coeficiente angular
+  da reta secante PQ e observa-se o que acontece quando Q se aproxima de P. A velocidade instantânea segue
+  o mesmo roteiro com velocidades médias em intervalos cada vez menores.'
+- 'Essa operação de aproximação é o limite. Escrever que o limite de f(x) quando x tende a a é L significa
+  que os valores de f(x) ficam arbitrariamente próximos de L quando x se aproxima de a. O detalhe mais
+  importante da definição é a exclusão do próprio ponto: interessa o comportamento de f perto de a, nunca
+  em a. Por isso o limite pode existir mesmo onde a função não está definida — e é exatamente esse o caso
+  nos quocientes que definem tangente e velocidade.'
+- Da aproximação por dois lados surgem os limites laterais, pela esquerda e pela direita. O limite existe
+  se, e somente se, os dois laterais existem e coincidem; quando eles diferem, como acontece em funções
+  por partes com salto, o limite não existe. A aula trata ainda dos limites infinitos, em que os valores
+  de f crescem sem cota ao se aproximar de a — situação que corresponde graficamente a uma assíntota vertical.
+referencias_bibliograficas:
+- livro: Stewart, Cálculo, Volume I, 6ª ed.
+  citacao: Cap. 2 — 2.1, 2.2
+- livro: Demana et al., Pré-cálculo
+  citacao: Cap. 15 (velocidade média e instantânea; retas tangentes a um gráfico)
+- livro: Thomas, Cálculo, Volume 1, 12ª ed.
+  citacao: Cap. 2 — 2.1, 2.2, 2.4
+exercicios_recomendados:
+  itens:
+  - livro: Stewart, Cálculo, Volume I, 6ª ed.
+    exercicios: 'Seção 2.1: exercícios 1 ao 3'
+    recomendacao: 'Poucos exercícios, mas conceituais: acompanham a construção da tangente e da velocidade
+      por aproximações sucessivas.'
+  - livro: Stewart, Cálculo, Volume I, 6ª ed.
+    exercicios: 'Seção 2.2: exercícios 1, 5, 13, 16, 21, 25, 27, 29'
+    recomendacao: Estimativa de limites por tabela e por gráfico, limites laterais e casos em que o limite
+      não existe.

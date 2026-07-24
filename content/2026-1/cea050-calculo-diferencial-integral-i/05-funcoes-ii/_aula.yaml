@@ -1,0 +1,33 @@
+titulo: 'Aula 05 - Funções II: teste da reta vertical, funções definidas por partes e simetria'
+bloco: 1
+data: ''
+resumo: Teste da reta vertical; funções definidas por partes; função modular; funções pares e ímpares;
+  crescimento e decrescimento
+descricao:
+- 'O teste da reta vertical é a tradução gráfica da definição de função: uma curva no plano representa
+  uma função se, e somente se, nenhuma reta vertical a intercepta em mais de um ponto. Dois pontos na
+  mesma vertical significariam dois valores de f para o mesmo x, o que a definição proíbe. É por isso
+  que a circunferência x² + y² = 25 não é o gráfico de uma função.'
+- 'Funções definidas por partes usam fórmulas diferentes em trechos diferentes do domínio. O exemplo mais
+  importante é a função modular: |x| vale x quando x ≥ 0 e −x quando x < 0. Para esboçar o gráfico de
+  uma função por partes, trabalha-se um trecho de cada vez, com atenção especial aos pontos de transição
+  — é onde surgem os saltos e os bicos que voltarão nas aulas de continuidade e de diferenciabilidade.'
+- A aula fecha com simetria e monotonicidade. Uma função é par quando f(−x) = f(x), e seu gráfico é simétrico
+  em relação ao eixo y; é ímpar quando f(−x) = −f(x), com gráfico simétrico em relação à origem. Reconhecer
+  a simetria reduz pela metade o trabalho de esboçar um gráfico. Já crescimento e decrescimento são definidos
+  por comparação de valores agora, mas ganharão um critério muito mais prático quando a derivada entrar
+  em cena.
+referencias_bibliograficas:
+- livro: Stewart, Cálculo, Volume I, 6ª ed.
+  citacao: Cap. 1 — 1.1
+- livro: Demana et al., Pré-cálculo
+  citacao: Cap. 7 (continuidade, funções crescentes e decrescentes, extremos e simetria)
+- livro: Thomas, Cálculo, Volume 1, 12ª ed.
+  citacao: Cap. 1 — 1.1
+exercicios_recomendados:
+  itens:
+  - livro: Stewart, Cálculo, Volume I, 6ª ed.
+    exercicios: 'Seção 1.1: exercícios 1 ao 88'
+    recomendacao: 'Lista longa e variada: cobre leitura de gráficos, domínio e imagem, funções por partes
+      e simetria. Não precisa fazer todos de uma vez — priorize os que envolvem esboço e determinação
+      de domínio.'

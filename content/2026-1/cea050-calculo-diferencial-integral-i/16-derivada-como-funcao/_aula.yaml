@@ -1,0 +1,28 @@
+titulo: Aula 16 - A derivada como uma função
+bloco: 2
+data: ''
+resumo: Função derivada f′; notações; diferenciabilidade; pontos onde a derivada não existe; derivadas
+  de ordem superior
+descricao:
+- 'Na aula anterior a derivada era um número associado a um ponto. Deixando o ponto variar, obtém-se uma
+  nova função: f′, que a cada x associa o coeficiente angular da tangente naquele ponto. Essa mudança
+  de perspectiva é o que torna a derivada uma ferramenta de análise de gráficos — o sinal de f′ passa
+  a informar sobre o crescimento de f em todo um intervalo, e não em um ponto isolado.'
+- 'As notações convivem no livro-texto e vale reconhecer todas: f′(x), dy/dx, df/dx e Df(x) designam a
+  mesma coisa. A notação de Leibniz dy/dx tem a vantagem de lembrar a origem do conceito como quociente
+  de variações, e será a mais conveniente na Regra da Cadeia e na derivação implícita.'
+- 'Uma função é derivável em a quando f′(a) existe. Isso falha em três situações típicas: bicos (como
+  |x| na origem, onde as inclinações laterais diferem), tangentes verticais e descontinuidades. Vale registrar
+  a relação de mão única entre os conceitos: toda função derivável é contínua, mas há funções contínuas
+  que não são deriváveis — |x| é justamente o contraexemplo. Derivando f′ obtém-se a segunda derivada
+  f″, que medirá concavidade no bloco 3.'
+referencias_bibliograficas:
+- livro: Stewart, Cálculo, Volume I, 6ª ed.
+  citacao: Cap. 2 — 2.8
+- livro: Thomas, Cálculo, Volume 1, 12ª ed.
+  citacao: Cap. 3 — 3.2
+exercicios_recomendados:
+  itens:
+  - livro: Stewart, Cálculo, Volume I, 6ª ed.
+    exercicios: 'Seção 2.8: exercícios 3, 19, 21, 23, 25, 27 e 29'
+    recomendacao: Obtenção de f′ pela definição e leitura do gráfico de f′ a partir do gráfico de f.

@@ -1,0 +1,28 @@
+titulo: Aula 15 - Derivadas e taxas de variação
+bloco: 2
+data: ''
+resumo: Reta tangente como limite de secantes; definição de derivada em um ponto; velocidade instantânea
+descricao:
+- 'Esta aula fecha o círculo aberto na aula 11. Aquele limite do quociente das diferenças, que apareceu
+  tanto no problema da tangente quanto no da velocidade, recebe agora um nome próprio: derivada. A derivada
+  de f em a é o limite de [f(x) − f(a)]/(x − a) quando x tende a a, ou, na formulação equivalente com
+  h = x − a, o limite de [f(a + h) − f(a)]/h quando h tende a zero.'
+- As duas formulações são a mesma conta escrita de dois modos, e convém dominar ambas — algumas questões
+  saem muito mais rápido em uma delas. Geometricamente, a derivada em a é o coeficiente angular da reta
+  tangente ao gráfico no ponto (a, f(a)); de posse dele, a equação da tangente sai da forma ponto-inclinação.
+- A interpretação física amplia o alcance do conceito. Se s(t) descreve a posição de um objeto, a derivada
+  em t é a velocidade instantânea. Mais geralmente, a derivada é a taxa de variação instantânea de uma
+  grandeza em relação a outra — e é essa leitura que faz do Cálculo uma ferramenta aplicável a custo marginal,
+  taxa de reação e crescimento populacional, não apenas a gráficos.
+referencias_bibliograficas:
+- livro: Stewart, Cálculo, Volume I, 6ª ed.
+  citacao: Cap. 2 — 2.7
+- livro: Demana et al., Pré-cálculo
+  citacao: Cap. 15 (a derivada)
+- livro: Thomas, Cálculo, Volume 1, 12ª ed.
+  citacao: Cap. 3 — 3.1, 3.4
+exercicios_recomendados:
+  itens:
+  - livro: Stewart, Cálculo, Volume I, 6ª ed.
+    exercicios: 'Seção 2.7: exercícios 1, 5, 7, 14, 15, 25, 27, 29, 37 e 38'
+    recomendacao: Cálculo da derivada pela definição e equação da reta tangente.

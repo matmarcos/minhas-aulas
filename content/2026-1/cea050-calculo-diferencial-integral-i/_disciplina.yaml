@@ -1,0 +1,16 @@
+titulo: CEA050 - Cálculo Diferencial e Integral I
+descricao: Números e funções reais, limite e continuidade, derivada e suas aplicações, integral indefinida
+  e definida e o Teorema Fundamental do Cálculo. Turma EP1-T31, UFOP. Disciplina já concluída — material
+  publicado como acervo do semestre.
+professor: Marcos Goulart Lima
+blocos:
+  1:
+    titulo: Bloco 1 — Prova P1
+    descricao: 'Pré-cálculo e funções: domínio e imagem, transformações de gráficos, composição, exponenciais
+      e logaritmos.'
+  2:
+    titulo: Bloco 2 — Prova P2
+    descricao: Limites, continuidade, assíntotas e as regras de derivação, até derivação implícita e logarítmica.
+  3:
+    titulo: Bloco 3 — Prova P3
+    descricao: Aplicações da derivada (máximos e mínimos, concavidade, L'Hôspital) e introdução às integrais.

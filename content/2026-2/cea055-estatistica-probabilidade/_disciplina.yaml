@@ -3,3 +3,14 @@ descricao: Estatística descritiva, probabilidade, variáveis aleatórias, distr
   amostrais, estimação, testes de hipótese e regressão linear. Turmas de Computação
   e Sistemas de Informação, UFOP.
 professor: Marcos Goulart Lima
+blocos:
+  1:
+    titulo: Bloco 1 — Prova P1
+    descricao: Estatística descritiva, probabilidade e variáveis aleatórias.
+  2:
+    titulo: Bloco 2 — Prova P2
+    descricao: Modelos de distribuição discretos e contínuos, aproximação normal e
+      distribuições amostrais.
+  3:
+    titulo: Bloco 3 — Prova P3
+    descricao: Intervalos de confiança, testes de hipótese e regressão linear.

@@ -1,0 +1,28 @@
+titulo: Aula 12 - Cálculo de limites usando propriedades
+bloco: 2
+data: ''
+resumo: Propriedades operatórias dos limites; substituição direta; indeterminações e simplificação algébrica
+descricao:
+- 'Estimar limites por tabela ou gráfico, como na aula anterior, é ilustrativo mas impreciso. Esta aula
+  estabelece as propriedades que permitem calcular limites algebricamente: o limite da soma é a soma dos
+  limites, o mesmo valendo para diferença, produto, quociente (desde que o limite do denominador não seja
+  zero), potência e raiz.'
+- 'A consequência prática mais útil é a propriedade da substituição direta: se f é polinomial ou racional
+  e a pertence ao domínio de f, então o limite quando x tende a a é simplesmente f(a). Isso resolve de
+  imediato a maioria dos casos — mas não todos, e os que sobram são justamente os interessantes.'
+- 'Quando a substituição direta produz 0/0, temos uma indeterminação: a expressão não decide nada por
+  si só, e é preciso manipular antes de passar ao limite. As duas técnicas centrais são fatorar e cancelar
+  o fator que zera numerador e denominador, e racionalizar multiplicando pelo conjugado quando há raízes.
+  As duas dependem diretamente da álgebra revisada nas aulas 2 e 3 — o que explica por que o pré-cálculo
+  abriu o semestre.'
+referencias_bibliograficas:
+- livro: Stewart, Cálculo, Volume I, 6ª ed.
+  citacao: Cap. 2 — 2.3
+- livro: Thomas, Cálculo, Volume 1, 12ª ed.
+  citacao: Cap. 2 — 2.2
+exercicios_recomendados:
+  itens:
+  - livro: Stewart, Cálculo, Volume I, 6ª ed.
+    exercicios: 'Seção 2.3: exercícios 1, 2, 11, 13, 15, 17, 19, 21, 35, 40'
+    recomendacao: Do uso direto das propriedades até os casos com indeterminação 0/0 que exigem fatoração
+      ou conjugado.

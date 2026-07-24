@@ -1,0 +1,30 @@
+titulo: Aula 14 - Limites no infinito e assíntotas horizontais
+bloco: 2
+data: ''
+resumo: Comportamento de f quando x tende a ±∞; assíntotas horizontais; limites no infinito de funções
+  racionais
+descricao:
+- 'Até aqui perguntamos o que acontece com f(x) quando x se aproxima de um número. Agora a pergunta muda:
+  o que acontece quando x cresce indefinidamente, ou decresce indefinidamente. A resposta descreve o comportamento
+  do gráfico bem longe da origem.'
+- Quando f(x) se aproxima de um valor L conforme x tende a mais ou menos infinito, a reta y = L é uma
+  assíntota horizontal do gráfico. Diferentemente da assíntota vertical, que a curva nunca cruza, uma
+  assíntota horizontal pode ser cruzada — ela descreve tendência no longo prazo, não uma barreira.
+- 'Para funções racionais existe uma técnica padrão: dividir numerador e denominador pela maior potência
+  de x do denominador, o que transforma todos os termos em parcelas que tendem a zero, mais as constantes.
+  O resultado depende apenas da comparação entre os graus — se o grau do numerador é menor, o limite é
+  zero; se são iguais, é a razão dos coeficientes dominantes; se é maior, não há assíntota horizontal.
+  Reunindo assíntotas verticais e horizontais, obtém-se o esqueleto do gráfico, que era o que a questão
+  2 da P2 pedia para a função (x² + 4)/(x² − 1).'
+referencias_bibliograficas:
+- livro: Stewart, Cálculo, Volume I, 6ª ed.
+  citacao: Cap. 2 — 2.6
+- livro: Demana et al., Pré-cálculo
+  citacao: Cap. 7 (assíntotas; comportamento da função nas extremidades)
+- livro: Thomas, Cálculo, Volume 1, 12ª ed.
+  citacao: Cap. 2 — 2.6
+exercicios_recomendados:
+  itens:
+  - livro: Stewart, Cálculo, Volume I, 6ª ed.
+    exercicios: 'Seção 2.6: exercícios 1, 2, 3, 15, 17, 19, 21, 23, 49, 50'
+    recomendacao: Limites no infinito e determinação de assíntotas horizontais e verticais.

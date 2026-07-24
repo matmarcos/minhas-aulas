@@ -1,0 +1,32 @@
+titulo: Aula 19 - Regra da cadeia; derivação implícita e derivadas de funções inversas
+bloco: 2
+data: ''
+resumo: Regra da cadeia; derivação implícita; reta tangente a curvas implícitas; derivadas das trigonométricas
+  inversas
+descricao:
+- 'A Regra da Cadeia é a regra de derivação mais usada do curso, porque quase toda função composta cai
+  nela. Se F(x) = f(g(x)), então F′(x) = f′(g(x))·g′(x): deriva-se a função de fora mantendo o miolo intacto
+  e multiplica-se pela derivada do miolo. Identificar corretamente quem é a função de fora e quem é o
+  miolo é a única dificuldade real, e ela se resolve com prática.'
+- 'Combinada com a regra da potência, produz a versão mais frequente: a derivada de [g(x)]ⁿ é n·[g(x)]^(n−1)·g′(x).
+  Derivar algo como e^tg(x), que caiu na P2, é uma aplicação direta — exponencial por fora, tangente por
+  dentro.'
+- A derivação implícita trata de curvas que não são gráficos de funções, como a circunferência x² + y²
+  = 25. Em vez de isolar y, deriva-se a equação inteira em relação a x tratando y como função de x — o
+  que faz aparecer dy/dx pela Regra da Cadeia sempre que se deriva um termo em y — e depois isola-se dy/dx.
+  É assim que se obtém a reta tangente à circunferência no ponto (3, 4), como pedia a última questão da
+  P2. A mesma técnica, aplicada à relação entre uma função e sua inversa, fornece as derivadas do arco-seno,
+  arco-tangente e demais trigonométricas inversas.
+referencias_bibliograficas:
+- livro: Stewart, Cálculo, Volume I, 6ª ed.
+  citacao: Cap. 3 — 3.4, 3.5
+- livro: Thomas, Cálculo, Volume 1, 12ª ed.
+  citacao: Cap. 3 — 3.6, 3.7, 3.8, 3.9
+exercicios_recomendados:
+  itens:
+  - livro: Stewart, Cálculo, Volume I, 6ª ed.
+    exercicios: 'Seção 3.4: exercícios 1, 3, 7, 9, 13, 15, 23, 25, 47 e 77'
+    recomendacao: Regra da cadeia, dos casos simples às composições de três funções.
+  - livro: Stewart, Cálculo, Volume I, 6ª ed.
+    exercicios: 'Seção 3.5: exercícios 1, 3, 5, 13, 19, 21, 25 e 37'
+    recomendacao: Derivação implícita e reta tangente a curvas implícitas.

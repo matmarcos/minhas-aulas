@@ -1,0 +1,29 @@
+titulo: 'Aula 17 - Regras de derivação: funções polinomiais e exponenciais'
+bloco: 2
+data: ''
+resumo: Derivada da constante; regra da potência; múltiplo constante; soma e diferença; derivada de eˣ
+descricao:
+- 'Calcular toda derivada pela definição é inviável, e esta aula inicia o conjunto de regras que substitui
+  o limite por manipulação algébrica. As primeiras são imediatas: a derivada de uma constante é zero (o
+  gráfico é horizontal, inclinação nula) e a derivada de x elevado a n é n vezes x elevado a n − 1. A
+  regra da potência vale para qualquer expoente real, o que a torna aplicável também a raízes e a potências
+  negativas, uma vez reescritas na forma x^a.'
+- 'Somam-se a elas as regras estruturais: a derivada de um múltiplo constante é a constante vezes a derivada,
+  e a derivada de uma soma ou diferença é a soma ou diferença das derivadas. Juntas, essas quatro regras
+  derivam qualquer polinômio quase mentalmente.'
+- 'A aula fecha com a exponencial natural e a propriedade que justifica a escolha do número e como base:
+  a derivada de eˣ é o próprio eˣ. É a única função não nula com essa característica, e ela é a razão
+  de e aparecer em toda modelagem de crescimento — a taxa de variação sendo proporcional à própria quantidade.'
+referencias_bibliograficas:
+- livro: Stewart, Cálculo, Volume I, 6ª ed.
+  citacao: Cap. 3 — 3.1
+- livro: Demana et al., Pré-cálculo
+  citacao: Cap. 15 (regras de derivação)
+- livro: Thomas, Cálculo, Volume 1, 12ª ed.
+  citacao: Cap. 3 — 3.3
+exercicios_recomendados:
+  itens:
+  - livro: Stewart, Cálculo, Volume I, 6ª ed.
+    exercicios: 'Seção 3.1: exercícios 3 ao 31, somente os ímpares'
+    recomendacao: Treino direto das regras básicas; reescreva raízes e quocientes como potências antes
+      de aplicar a regra da potência.

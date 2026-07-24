@@ -1,0 +1,33 @@
+titulo: 'Aula 03 - Pré-Cálculo III: expressões fracionárias, equações e inequações'
+bloco: 1
+data: ''
+resumo: Domínio de expressões algébricas; simplificação de expressões racionais; equações lineares e quadráticas;
+  inequações com valor absoluto
+descricao:
+- 'A aula começa com uma ideia que se repetirá o semestre inteiro: toda expressão algébrica tem um domínio,
+  e ele é determinado pelo que não se pode fazer — dividir por zero e extrair raiz de índice par de número
+  negativo. Identificar o domínio antes de manipular a expressão evita simplificações que perdem informação.'
+- 'A seguir vêm as expressões racionais: simplificação por fatoração, operações com frações algébricas
+  e frações compostas, incluindo o caso com expoentes negativos. Vale insistir num ponto: simplificar
+  (x² − 3x)/(x² − 9) para x/(x + 3) é válido apenas para x diferente de 3 — as duas expressões não são
+  a mesma função, e é justamente essa diferença que dá sentido ao conceito de limite.'
+- 'A parte final trata de equações e inequações. Equações lineares e quadráticas (por fatoração, completamento
+  de quadrado e fórmula de Bhaskara), resolução gráfica, e o caso mais cobrado em prova: inequações com
+  valor absoluto. A leitura geométrica é o atalho — |x − 5| > 2 significa que a distância de x até 5 é
+  maior que 2, ou seja, x < 3 ou x > 7.'
+referencias_bibliograficas:
+- livro: Stewart, Cálculo, Volume I, 6ª ed.
+  citacao: Apêndice A
+- livro: Demana et al., Pré-cálculo
+  citacao: Cap. 4 — completo; Cap. 5 — completo; Cap. 6 — completo
+exercicios_recomendados:
+  itens:
+  - livro: Demana et al., Pré-cálculo
+    exercicios: 'Cap. 4: exercícios 1 ao 74'
+    recomendacao: Domínio de expressões algébricas, expressões racionais e frações compostas.
+  - livro: Demana et al., Pré-cálculo
+    exercicios: 'Cap. 5: exercícios 1 ao 99'
+    recomendacao: Equações lineares e quadráticas, inclusive por método gráfico.
+  - livro: Demana et al., Pré-cálculo
+    exercicios: 'Cap. 6: exercícios 1 ao 69'
+    recomendacao: Inequações lineares, quadráticas e com valor absoluto — o tipo que caiu na P1.

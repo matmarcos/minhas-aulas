@@ -17,6 +17,7 @@ Rode: python scripts/build.py
 Saída: pasta docs/ (pronta para publicar no GitHub Pages)
 """
 import shutil
+import stat
 import sys
 from pathlib import Path
 
@@ -29,21 +30,37 @@ TEMPLATES_DIR = ROOT / "templates"
 STATIC_DIR = ROOT / "static"
 OUT_DIR = ROOT / "docs"
 
-# descricao dos blocos de avaliacao (P1/P2/P3) mostrada nos cards da pagina da disciplina
-BLOCOS_META = {
-    1: {
-        "titulo": "Bloco 1 — Prova P1",
-        "descricao": "Estatística descritiva, probabilidade e variáveis aleatórias.",
-    },
-    2: {
-        "titulo": "Bloco 2 — Prova P2",
-        "descricao": "Modelos de distribuição discretos e contínuos, aproximação normal e distribuições amostrais.",
-    },
-    3: {
-        "titulo": "Bloco 3 — Prova P3",
-        "descricao": "Intervalos de confiança, testes de hipótese e regressão linear.",
-    },
+# descricao dos blocos de avaliacao (P1/P2/P3) mostrada nos cards da pagina da
+# disciplina. Cada disciplina define os seus em _disciplina.yaml, na chave
+# 'blocos': {1: {titulo, descricao}, ...}. O dicionario abaixo e so o fallback
+# para disciplinas que ainda nao declararam os proprios.
+BLOCOS_META_PADRAO = {
+    1: {"titulo": "Bloco 1 — Prova P1", "descricao": ""},
+    2: {"titulo": "Bloco 2 — Prova P2", "descricao": ""},
+    3: {"titulo": "Bloco 3 — Prova P3", "descricao": ""},
 }
+
+
+def limpar_saida(destino: Path) -> None:
+    """Esvazia docs/ sem apagar a pasta raiz.
+
+    O shutil.rmtree falha com PermissionError (WinError 5) quando a pasta esta
+    sincronizada pelo Google Drive: ele segura os diretorios mesmo sem nenhum
+    processo com arquivo aberto. Apagar arquivo a arquivo e depois os diretorios
+    de baixo para cima contorna isso; diretorio que resistir e apenas ignorado,
+    ja que sera reescrito em seguida.
+    """
+    if not destino.exists():
+        return
+    for arquivo in sorted(destino.rglob("*"), key=lambda p: len(p.parts), reverse=True):
+        try:
+            if arquivo.is_file() or arquivo.is_symlink():
+                arquivo.chmod(stat.S_IWRITE)
+                arquivo.unlink()
+            elif arquivo.is_dir():
+                arquivo.rmdir()
+        except OSError:
+            pass
 
 
 def slugify(name: str) -> str:
@@ -123,15 +140,18 @@ def build():
             blocos_dict = {}
             for aula in disciplina["aulas"]:
                 blocos_dict.setdefault(aula.get("bloco", 0), []).append(aula)
+            blocos_disc = disc_meta.get("blocos") or {}
             blocos = []
             for num in sorted(blocos_dict):
-                meta = BLOCOS_META.get(num, {"titulo": f"Bloco {num}", "descricao": ""})
+                meta = blocos_disc.get(num) or BLOCOS_META_PADRAO.get(
+                    num, {"titulo": f"Bloco {num}", "descricao": ""}
+                )
                 blocos.append(
                     {
                         "numero": num,
                         "slug": f"bloco-{num}",
-                        "titulo": meta["titulo"],
-                        "descricao": meta["descricao"],
+                        "titulo": meta.get("titulo", f"Bloco {num}"),
+                        "descricao": meta.get("descricao", ""),
                         "aulas": blocos_dict[num],
                     }
                 )
@@ -145,12 +165,11 @@ def build():
     semestres.sort(key=lambda s: s["slug"], reverse=True)
 
     # limpa saída
-    if OUT_DIR.exists():
-        shutil.rmtree(OUT_DIR)
-    OUT_DIR.mkdir(parents=True)
+    limpar_saida(OUT_DIR)
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
 
     # copia estáticos
-    shutil.copytree(STATIC_DIR, OUT_DIR / "static")
+    shutil.copytree(STATIC_DIR, OUT_DIR / "static", dirs_exist_ok=True)
 
     # index geral
     tpl = env.get_template("index.html")

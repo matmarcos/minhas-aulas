@@ -1,0 +1,27 @@
+titulo: Aula 30 - O Teorema Fundamental do Cálculo
+bloco: 3
+data: ''
+resumo: Função área acumulada; TFC Parte 1 e Parte 2; hipótese de continuidade
+descricao:
+- 'Até este ponto derivada e integral são conceitos independentes: uma nasceu do problema da tangente,
+  a outra do problema da área. O Teorema Fundamental do Cálculo mostra que são operações inversas — e
+  é o resultado que dá nome ao curso.'
+- 'A Parte 1 considera a função área acumulada g(x), definida como a integral de f do ponto a até x. O
+  teorema afirma que, se f é contínua, então g é derivável e g′(x) = f(x): derivar a área acumulada devolve
+  a função original. Combinada com a Regra da Cadeia, essa parte permite derivar integrais cujo limite
+  superior é uma função de x, e é o que explica o exemplo da função de Fresnel visto em aula.'
+- 'A Parte 2 é a que se usa para calcular: se F é uma primitiva qualquer de f, então a integral de a até
+  b vale F(b) − F(a). Isso reduz o cálculo de uma área — definida por um limite de somas infinitas — a
+  duas avaliações de uma primitiva. A hipótese de continuidade em todo o intervalo é essencial, e ignorá-la
+  produz absurdos: aplicar a regra a 1/x² no intervalo [−1, 3] devolve um número negativo para a integral
+  de uma função que nunca é negativa, porque há descontinuidade infinita em x = 0 dentro do intervalo.'
+referencias_bibliograficas:
+- livro: Stewart, Cálculo, Volume I, 6ª ed.
+  citacao: Cap. 5 — 5.3
+- livro: Thomas, Cálculo, Volume 1, 12ª ed.
+  citacao: Cap. 5 — 5.4
+exercicios_recomendados:
+  itens:
+  - livro: Stewart, Cálculo, Volume I, 6ª ed.
+    exercicios: 'Seção 5.3: exercícios 7, 9, 19, 21, 27 e 29'
+    recomendacao: Aplicação das duas partes do TFC, incluindo derivação de integrais com limite variável.

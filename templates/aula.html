@@ -38,6 +38,16 @@
 </section>
 {% endif %}
 
+{% if aula.descricao %}
+<section class="aula-secao">
+  <h2>Descrição da aula</h2>
+  {% for paragrafo in aula.descricao %}
+  <p class="aula-descricao">{{ paragrafo }}</p>
+  {% endfor %}
+  <p class="nota-fonte">Texto elaborado a partir dos slides usados em aula, com auxílio de IA (Claude/Anthropic). Use como apoio, não como substituto do livro-texto.</p>
+</section>
+{% endif %}
+
 {% if aula.slides %}
 <section class="aula-secao">
   <h2>Slides do professor</h2>
@@ -48,7 +58,9 @@
     {% if aula.slides.arquivo_pdf %}
     <li><a href="{{ base_href }}{{ aula.slides.arquivo_pdf }}" target="_blank" rel="noopener">Abrir slides em tela cheia (PDF)</a></li>
     {% endif %}
+    {% if aula.slides.arquivo %}
     <li><a href="{{ base_href }}{{ aula.slides.arquivo }}">Baixar slides originais (PowerPoint)</a></li>
+    {% endif %}
   </ul>
 </section>
 {% endif %}
