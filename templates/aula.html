@@ -48,6 +48,17 @@
 </section>
 {% endif %}
 
+{% if aula.videos_recomendados %}
+<section class="aula-secao">
+  <h2>Vídeos recomendados</h2>
+  <ul class="material-list">
+    {% for v in aula.videos_recomendados %}
+    <li><a href="{{ v.url }}" target="_blank" rel="noopener">{{ v.titulo }}</a></li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
 {% if aula.slides %}
 <section class="aula-secao">
   <h2>Slides do professor</h2>
@@ -125,6 +136,22 @@
     {% endif %}
     {% endfor %}
   </ul>
+</section>
+{% endif %}
+
+{% if aula.material_complementar %}
+<section class="aula-secao">
+  <h2>Material complementar</h2>
+  {% for paragrafo in aula.material_complementar.texto %}
+  <p class="aula-descricao">{{ paragrafo }}</p>
+  {% endfor %}
+  {% if aula.material_complementar.arquivos %}
+  <ul class="material-list">
+    {% for a in aula.material_complementar.arquivos %}
+    <li><a href="{{ base_href }}{{ a.arquivo }}" target="_blank" rel="noopener">{{ a.titulo }}</a></li>
+    {% endfor %}
+  </ul>
+  {% endif %}
 </section>
 {% endif %}
 {% endblock %}

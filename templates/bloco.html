@@ -4,6 +4,21 @@
 {% block content %}
 <h1>{{ bloco.titulo }}</h1>
 <p class="subtitle">{{ bloco.descricao }}</p>
+
+{% if bloco.prova %}
+<section class="aula-secao">
+  <h2>Prova e gabarito</h2>
+  <ul class="material-list">
+    {% if bloco.prova.enunciado %}
+    <li><a href="arquivos/{{ bloco.prova.enunciado }}" target="_blank" rel="noopener">Enunciado da prova (PDF)</a></li>
+    {% endif %}
+    {% if bloco.prova.gabarito %}
+    <li><a href="arquivos/{{ bloco.prova.gabarito }}" target="_blank" rel="noopener">Gabarito (PDF)</a></li>
+    {% endif %}
+  </ul>
+</section>
+{% endif %}
+
 <ul class="lesson-list">
   {% for aula in bloco.aulas %}
   <li data-aula-id="{{ semestre.slug }}/{{ disciplina.slug }}/{{ aula.slug }}">

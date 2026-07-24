@@ -1,0 +1,30 @@
+titulo: Aula 19 - Espaços vetoriais
+bloco: 3
+data: ''
+resumo: Definição axiomática de espaço vetorial; exemplos; subespaços vetoriais
+descricao:
+- 'O terceiro bloco generaliza tudo que foi feito com vetores geométricos (blocos 2) para um cenário mais
+  abstrato: o espaço ℝⁿ, definido como o conjunto de todas as n-uplas de números reais (x₁,x₂,…,xₙ). As
+  operações são as esperadas — soma componente a componente, multiplicação por escalar, vetor nulo — e
+  valem as mesmas oito propriedades algébricas que já eram familiares em ℝ² e ℝ³ (comutatividade, associatividade,
+  existência de neutro e oposto, distributividade).'
+- 'A generalização compensa: tudo que se prova para ℝⁿ genérico vale automaticamente para ℝ², ℝ³, e também
+  para conjuntos bem diferentes de setas geométricas — matrizes de mesma ordem, polinômios de grau limitado,
+  funções — desde que satisfaçam os mesmos axiomas algébricos. É esse ganho de generalidade que justifica
+  tratar o assunto de forma abstrata a partir de agora.'
+- 'Um subespaço vetorial é um subconjunto S de ℝⁿ que é, ele mesmo, fechado sob as operações do espaço
+  maior: contém o vetor nulo, a soma de dois elementos de S ainda está em S, e o produto de um escalar
+  por um elemento de S ainda está em S. Verificar essas três condições é o exercício típico da aula —
+  e retas e planos que passam pela origem, vistos nos blocos anteriores, são exatamente os subespaços
+  de ℝ² e ℝ³.'
+slides:
+  titulo: Slides da aula 19 — Espaços vetoriais
+  arquivo_pdf: CEA049_19_Espacos_Vetoriais.pdf
+referencias_bibliograficas:
+- livro: Steinbruch & Winterle, Álgebra Linear, 2ª ed.
+  citacao: Cap. 2 — Introdução, Espaços e Subespaços Vetoriais
+videos_recomendados:
+- titulo: Geometria Analítica e Álgebra Linear – Aula 09 – Espaços Vetoriais (UNIVESP)
+  url: https://www.youtube.com/watch?v=V5B67r4uFs0
+- titulo: Geometria Analítica e Álgebra Linear – Aula 16 – Combinações Lineares. Subespaços (UNIVESP)
+  url: https://www.youtube.com/watch?v=l13GR80odc0

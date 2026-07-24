@@ -1,0 +1,40 @@
+titulo: Aula 24 - Transformações no plano
+bloco: 3
+data: ''
+resumo: Reflexão, projeção, rotação, contração e dilatação no plano
+descricao:
+- Com a correspondência transformação-matriz estabelecida na aula anterior, esta aula cataloga os operadores
+  lineares (transformações T:ℝⁿ→ℝⁿ, com domínio e contradomínio iguais) que têm interpretação geométrica
+  direta no plano. A reflexão em torno do eixo x tem matriz diag(1,−1); em torno do eixo y, diag(−1,1);
+  e em torno da reta y=x, a matriz que troca as coordenadas, [[0,1],[1,0]].
+- 'A projeção ortogonal sobre o eixo x tem matriz diag(1,0) — zera a segunda coordenada e mantém a primeira;
+  sobre o eixo y, o inverso. Contração e dilatação são ambas da forma diag(a,a): contração quando 0<a<1
+  (encolhe o vetor mantendo a direção) e dilatação quando a>1 (amplia). A rotação pelo ângulo θ tem a
+  matriz mais elaborada do grupo, com senos e cossenos de θ nas quatro entradas, e é a única desse catálogo
+  cujo efeito não é imediatamente visível olhando só para a matriz — precisa da fórmula trigonométrica.'
+- 'O mesmo catálogo se estende ao espaço tridimensional: reflexões nos três planos coordenados (xy, xz,
+  yz) e projeções ortogonais sobre esses mesmos planos, cada uma com sua matriz diagonal característica.
+  Como composição de transformações lineares corresponde a multiplicação de matrizes (aula 23), aplicar
+  duas transformações em sequência — por exemplo, uma reflexão seguida de uma dilatação — equivale a multiplicar
+  as duas matrizes na ordem correta e aplicar o resultado de uma vez.'
+slides:
+  titulo: Slides da aula 24 — Transformações no plano
+  arquivo_pdf: CEA049_24_Transformacoes_no_Plano.pdf
+referencias_bibliograficas:
+- livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+  citacao: Cap. 5 — 5.4.1 (rotação)
+- livro: Steinbruch & Winterle, Álgebra Linear, 2ª ed.
+  citacao: Cap. 4 — Transformações Lineares Planas
+exercicios_recomendados:
+  itens:
+  - livro: Steinbruch & Winterle, Álgebra Linear, 2ª ed.
+    exercicios: 'Seção 4.8: exercícios 45 a 50'
+    recomendacao: Operadores lineares no plano — reflexão, projeção, rotação, contração e dilatação.
+  - livro: Anton & Rorres, Álgebra Linear com Aplicações, 10ª ed.
+    exercicios: 'Seção 4.9 (a partir da pág. 252): exercícios 14 a 22'
+    recomendacao: Operadores lineares geométricos, com ênfase nos casos do espaço tridimensional.
+videos_recomendados:
+- titulo: Geometria Analítica e Álgebra Linear – Aula 18 – Transformações Lineares (UNIVESP)
+  url: https://www.youtube.com/watch?v=GG0l7plSEAs
+- titulo: Geometria Analítica e Álgebra Linear – Aula 19 – Mudança de Base, Representação Matricial (UNIVESP)
+  url: https://www.youtube.com/watch?v=5KMgCvSeBB4

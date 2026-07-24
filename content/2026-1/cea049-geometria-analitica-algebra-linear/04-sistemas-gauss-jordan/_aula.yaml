@@ -1,0 +1,38 @@
+titulo: 'Aula 04 - Sistemas de equações lineares: Gauss-Jordan'
+bloco: 1
+data: ''
+resumo: Sistemas lineares; forma escalonada reduzida; método de eliminação de Gauss-Jordan
+descricao:
+- 'Um sistema de equações lineares é um conjunto de equações da forma a₁x₁+a₂x₂+⋯+aₙxₙ=b, e toda a teoria
+  de matrizes da aula 1 existe, em boa parte, para representá-lo de forma compacta: o sistema AX=b, onde
+  A reúne os coeficientes, X as incógnitas e b os termos independentes. Colocando A ao lado de b obtém-se
+  a matriz ampliada [A|b], o objeto que de fato se manipula ao resolver o sistema.'
+- 'Resolver um sistema por eliminação consiste em aplicar operações elementares às linhas da matriz ampliada
+  — permutar duas linhas, multiplicar uma linha por uma constante não nula, ou somar a uma linha um múltiplo
+  de outra — sem alterar o conjunto solução. O objetivo é chegar a uma matriz na forma escalonada reduzida:
+  linhas nulas por último, pivô igual a 1 em cada linha não nula, cada pivô à direita do pivô anterior,
+  e zeros acima e abaixo de cada pivô.'
+- 'O método de Gauss-Jordan é o algoritmo passo a passo para chegar a essa forma: localizar a coluna mais
+  à esquerda não nula, obter um pivô igual a 1 nela, zerar o restante da coluna, e repetir o processo
+  ignorando a linha já tratada. Uma vez na forma escalonada reduzida, a solução do sistema é lida diretamente
+  da matriz, sem precisar de retrossubstituição — a aula seguinte é dedicada a praticar exatamente esse
+  algoritmo em vários sistemas.'
+slides:
+  titulo: 'Slides da aula 04 — Sistemas de equações lineares: Gauss-Jordan'
+  arquivo_pdf: CEA049_04_Sistemas_GaussJordan.pdf
+referencias_bibliograficas:
+- livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+  citacao: Cap. 1 — 1.2.1
+- livro: Steinbruch & Winterle, Álgebra Linear, 2ª ed.
+  citacao: Apênd. A — Sistemas de Equações Lineares
+exercicios_recomendados:
+  itens:
+  - livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+    exercicios: 'Pág. 57: exercícios 1.2.1 a 1.2.15'
+    recomendacao: Este bloco de exercícios cobre o método de Gauss-Jordan (aula 4) e também sistemas homogêneos
+      e matrizes equivalentes (aula 5).
+videos_recomendados:
+- titulo: Geometria Analítica e Álgebra Linear – Aula 01 – Sistema de Equações Lineares I (UNIVESP)
+  url: https://www.youtube.com/watch?v=oD84gokfleA
+- titulo: Geometria Analítica e Álgebra Linear – Aula 03 – Sistema de Equações Lineares II (UNIVESP)
+  url: https://www.youtube.com/watch?v=LzU_KoWuLZo

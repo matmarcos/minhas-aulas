@@ -1,0 +1,28 @@
+titulo: Aula 26 - Autovalores, autovetores e diagonalização
+bloco: 3
+data: ''
+resumo: Polinômio característico; autovalores e autovetores; diagonalização de matrizes
+descricao:
+- Um autovetor de uma matriz quadrada A é um vetor v não nulo tal que Av=λv para algum escalar λ — ou
+  seja, a transformação associada a A não muda a direção de v, apenas o multiplica pelo fator λ, chamado
+  autovalor associado. Encontrar os autovalores de A equivale a resolver a equação det(A−λI)=0, chamada
+  equação característica, cujo lado esquerdo, expandido, é um polinômio em λ — o polinômio característico
+  de A.
+- Uma vez encontrados os autovalores (as raízes do polinômio característico), os autovetores associados
+  a cada λ são obtidos resolvendo o sistema homogêneo (A−λI)v=0 — o mesmo tipo de sistema que já apareceu
+  para calcular núcleos na aula 25, agora aplicado à matriz A−λI em vez de A.
+- 'Quando A tem n autovetores linearmente independentes (o que acontece, por exemplo, sempre que A tem
+  n autovalores distintos), é possível formar uma matriz P cujas colunas são esses autovetores, de modo
+  que P⁻¹AP=D, uma matriz diagonal cujas entradas são os autovalores de A — o processo de diagonalização.
+  Uma matriz diagonalizada é muito mais fácil de manipular: potências de A, por exemplo, se calculam como
+  AP=PD, logo Aⁿ=PDⁿP⁻¹, e Dⁿ é trivial de calcular (basta elevar cada entrada da diagonal a n).'
+referencias_bibliograficas:
+- livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+  citacao: Cap. 6 — 6.1
+- livro: Steinbruch & Winterle, Álgebra Linear, 2ª ed.
+  citacao: Cap. 6 — Vetores Próprios e Valores Próprios
+videos_recomendados:
+- titulo: Geometria Analítica e Álgebra Linear – Aula 21 – Autovalores e Autovetores (UNIVESP)
+  url: https://www.youtube.com/watch?v=w4hLtBIYghg
+- titulo: Geometria Analítica e Álgebra Linear – Aula 22 – Diagonalização (UNIVESP)
+  url: https://www.youtube.com/watch?v=wh-qG0uhS1M

@@ -1,0 +1,35 @@
+titulo: Aula 17 - Equações da reta I
+bloco: 2
+data: ''
+resumo: Equações paramétricas e vetorial da reta no espaço
+descricao:
+- A equação de uma reta no espaço segue a mesma lógica das equações do plano, com um vetor diretor no
+  lugar de dois. Se r é uma reta que passa por um ponto P e tem direção de um vetor não nulo V, um ponto
+  X pertence a r se, e somente se, o vetor PX é colinear a V — ou seja, PX = tV para algum número real
+  t, o que se reescreve como X = P + tV, a equação vetorial da reta.
+- 'Escrevendo essa equação coordenada a coordenada obtêm-se as equações paramétricas: x = x₁+ta, y = y₁+tb,
+  z = z₁+tc, onde (x₁,y₁,z₁) são as coordenadas de P e (a,b,c) as componentes do vetor diretor V. Cada
+  valor de t gera um ponto diferente da reta — t=0 devolve o próprio ponto P.'
+- 'Um exercício recorrente é verificar se duas retas dadas por suas equações se interceptam: iguala-se
+  a equação paramétrica de uma reta à da outra e verifica-se se o sistema resultante (nos parâmetros de
+  cada reta) tem solução. Se tiver, as retas se cruzam no ponto correspondente; se não tiver solução,
+  são reversas (não se cruzam nem são paralelas) — a menos que os vetores diretores sejam paralelos, caso
+  em que são paralelas ou coincidentes.'
+slides:
+  titulo: Slides da aula 17 — Equações da reta I
+  arquivo_pdf: CEA049_17_Equacoes_Reta_I.pdf
+referencias_bibliograficas:
+- livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+  citacao: Cap. 4 — 4.2.1
+- livro: Steinbruch & Winterle, Geometria Analítica, 2ª ed.
+  citacao: Cap. 4 — 4.1
+exercicios_recomendados:
+  itens:
+  - livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+    exercicios: 'Pág. 248: exercícios 4.2.1 a 4.2.15'
+    recomendacao: Compartilhado com a aula 18 — equações paramétricas, vetorial e simétrica da reta.
+videos_recomendados:
+- titulo: Geometria Analítica e Álgebra Linear – Aula 13 – Retas no Plano e no Espaço (UNIVESP)
+  url: https://www.youtube.com/watch?v=92jlJTW11Sk
+- titulo: Geometria Analítica e Álgebra Linear – Aula 14 – Planos no Espaço (UNIVESP)
+  url: https://www.youtube.com/watch?v=jhqj6HPBMbc

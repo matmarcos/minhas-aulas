@@ -1,0 +1,37 @@
+titulo: 'Aula 05 - Sistemas de equações lineares: matrizes equivalentes'
+bloco: 1
+data: ''
+resumo: Sistemas homogêneos; matrizes equivalentes por linhas; classificação do sistema (SPD, SPI, SI)
+descricao:
+- 'Todo sistema linear se enquadra em uma de três categorias: possível determinado (SPD), quando tem exatamente
+  uma solução; possível indeterminado (SPI), quando tem infinitas soluções; ou impossível (SI), quando
+  não tem solução nenhuma. Reconhecer em qual categoria um sistema cai — normalmente pelo número de pivôs
+  na forma escalonada em relação ao número de incógnitas — é tão importante quanto saber resolvê-lo.'
+- 'Um caso particular merece destaque: um sistema é homogêneo quando todos os termos independentes são
+  nulos (AX=0). Todo sistema homogêneo tem pelo menos a solução trivial (0,...,0), o que significa que
+  homogêneo nunca é impossível — só pode ser SPD (só a trivial) ou SPI (infinitas soluções, incluindo
+  a trivial).'
+- 'A aula fecha formalizando a noção de equivalência: duas matrizes A e B são equivalentes por linhas,
+  A∼B, se for possível transformar uma na outra por uma sequência finita de operações elementares. O teorema
+  central da seção garante que sistemas cujas matrizes ampliadas são equivalentes têm exatamente as mesmas
+  soluções — é esse teorema que justifica, em última instância, por que o método de Gauss-Jordan da aula
+  anterior funciona: cada operação elementar produz um sistema equivalente ao original, mais simples de
+  resolver.'
+slides:
+  titulo: 'Slides da aula 05 — Sistemas de equações lineares: matrizes equivalentes'
+  arquivo_pdf: CEA049_05_Sistemas_Classificacao.pdf
+referencias_bibliograficas:
+- livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+  citacao: Cap. 1 — 1.2.2, 1.2.3
+- livro: Steinbruch & Winterle, Álgebra Linear, 2ª ed.
+  citacao: Apênd. A — Sistemas de Equações Lineares
+exercicios_recomendados:
+  itens:
+  - livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+    exercicios: 'Pág. 57: exercícios 1.2.1 a 1.2.15'
+    recomendacao: Mesmo bloco de exercícios da aula 4 — sistemas homogêneos e classificação SPD/SPI/SI.
+videos_recomendados:
+- titulo: Geometria Analítica e Álgebra Linear – Aula 03 – Sistema de Equações Lineares II (UNIVESP)
+  url: https://www.youtube.com/watch?v=LzU_KoWuLZo
+- titulo: Geometria Analítica e Álgebra Linear – Aula 04 – Sistema de Equações Lineares III (UNIVESP)
+  url: https://www.youtube.com/watch?v=LBfcE8gK4kU

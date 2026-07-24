@@ -1,0 +1,31 @@
+titulo: Aula 22 - Transformações lineares
+bloco: 3
+data: ''
+resumo: Definição de transformação linear; propriedades; primeiros exemplos
+descricao:
+- 'O curso passa agora a estudar funções entre espaços vetoriais — mais precisamente, funções que preservam
+  a estrutura algébrica desses espaços. Uma transformação T: ℝᵐ→ℝⁿ é dita linear quando preserva soma,
+  T(u+v)=T(u)+T(v), e multiplicação por escalar, T(au)=aT(u), para todo u,v∈ℝᵐ e a∈ℝ.'
+- Essas duas condições são bem mais restritivas do que parecem — muitas funções familiares não são transformações
+  lineares. T(x,y)=(x·y,x+y), por exemplo, falha porque envolve um produto de variáveis; T(x,y,z)=(1,y)
+  falha porque a primeira coordenada não depende linearmente da entrada. Já T(x,y)=(x+y,2x+3y) e T(x,y,z)=(x,y,x+y+z)
+  são transformações lineares — a regra é sempre uma combinação linear das entradas, sem produtos entre
+  elas nem termos constantes somados.
+- 'Uma propriedade poderosa reduz o trabalho de calcular uma transformação linear a apenas conhecer seu
+  efeito sobre uma base: se {v₁,…,vₘ} é base de ℝᵐ e T(v₁),…,T(vₘ) são conhecidos, então T(v) para qualquer
+  v se obtém escrevendo v como combinação linear da base e aplicando a mesma combinação aos valores T(vᵢ)
+  já conhecidos — consequência direta da linearidade. Essa técnica de ''conhecer pela base'' é o que a
+  aula usa para calcular T em pontos não fornecidos diretamente.'
+slides:
+  titulo: Slides da aula 22 — Transformações lineares
+  arquivo_pdf: CEA049_22_Transformacoes_Lineares.pdf
+referencias_bibliograficas:
+- livro: Anton & Rorres, Álgebra Linear com Aplicações, 10ª ed.
+  citacao: Cap. 8 — 8.1
+- livro: Steinbruch & Winterle, Álgebra Linear, 2ª ed.
+  citacao: Cap. 4 — Transformações Lineares
+videos_recomendados:
+- titulo: Geometria Analítica e Álgebra Linear – Aula 18 – Transformações Lineares (UNIVESP)
+  url: https://www.youtube.com/watch?v=GG0l7plSEAs
+- titulo: Geometria Analítica e Álgebra Linear – Aula 19 – Mudança de Base, Representação Matricial (UNIVESP)
+  url: https://www.youtube.com/watch?v=5KMgCvSeBB4

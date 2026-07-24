@@ -1,0 +1,38 @@
+titulo: Aula 13 - Produto vetorial
+bloco: 2
+data: ''
+resumo: Definição, propriedades e interpretação geométrica do produto vetorial (área)
+descricao:
+- 'Diferente do produto escalar, que devolve um número, o produto vetorial V×W de dois vetores em ℝ³ devolve
+  um vetor com três características: comprimento ‖V‖‖W‖sen(θ), numericamente igual à área do paralelogramo
+  determinado por V e W; direção perpendicular tanto a V quanto a W; e sentido dado pela regra da mão
+  direita.'
+- O cálculo prático usa um determinante simbólico 3×3, com a primeira linha formada pelos vetores da base
+  canônica (i, j, k) e as outras duas pelas componentes de V e W. Entre as propriedades, a mais usada
+  é a anticomutatividade, V×W = −(W×V) — a ordem dos vetores importa, e trocá-la inverte o sentido do
+  resultado.
+- 'A interpretação geométrica como área é a aplicação mais imediata: a área de um triângulo com vértices
+  P, Q, R é metade da norma do produto vetorial de dois de seus lados, uma fórmula muito mais direta que
+  decompor o triângulo em base e altura quando os pontos são dados por coordenadas no espaço.'
+slides:
+  titulo: Slides da aula 13 — Produto vetorial
+  arquivo_pdf: CEA049_13_Produto_Vetorial.pdf
+referencias_bibliograficas:
+- livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+  citacao: Cap. 3 — 3.3.1
+- livro: Steinbruch & Winterle, Geometria Analítica, 2ª ed.
+  citacao: Cap. 3
+exercicios_recomendados:
+  itens:
+  - livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+    exercicios: 'Pág. 199: exercícios 3.3.1 a 3.3.8'
+    recomendacao: Compartilhado com a aula 14 — produto vetorial, área e produto misto.
+  - livro: Anton & Rorres, Álgebra Linear com Aplicações, 10ª ed.
+    exercicios: Seções 3.1 a 3.5
+    recomendacao: Vetores, norma, produto escalar, ortogonalidade e produto vetorial — revisão ampla do
+      bloco.
+videos_recomendados:
+- titulo: Geometria Analítica e Álgebra Linear – Aula 12 – Produtos Vetorial e Misto (UNIVESP)
+  url: https://www.youtube.com/watch?v=Mm2OxB-rWdw
+- titulo: Geometria Analítica e Álgebra Linear – Aula 11 – Ângulo entre dois Vetores (UNIVESP)
+  url: https://www.youtube.com/watch?v=KH4WM2Yzn2s

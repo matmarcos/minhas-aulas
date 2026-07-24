@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aula 07 - Matriz inversa II · Minhas Aulas</title>
+<link rel="stylesheet" href="../../../static/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../../../index.html">Minhas Aulas</a>
+  <nav class="breadcrumbs"><a href="../../../index.html">Início</a> / <a href="../../../2026-1/index.html">2026/1</a> / <a href="../../../2026-1/cea049-geometria-analitica-algebra-linear/index.html">CEA049 - Geometria Analítica e Álgebra Linear</a> / Aula 07 - Matriz inversa II</nav>
+</header>
+<main>
+
+
+
+<h1>Aula 07 - Matriz inversa II</h1>
+<p class="meta"></p>
+<p class="subtitle">Cálculo da inversa por escalonamento; matrizes elementares</p>
+
+
+
+
+<section class="aula-secao">
+  <h2>Descrição da aula</h2>
+  
+  <p class="aula-descricao">Com a definição de inversa estabelecida na aula anterior, esta aula ensina como efetivamente calculá-la. O método consiste em colocar a matriz A ao lado da identidade, formando [A|I], e aplicar o método de Gauss-Jordan (aula 4) a esse bloco até que o lado esquerdo se torne a identidade — nesse ponto, o lado direito é A⁻¹.</p>
+  
+  <p class="aula-descricao">O método também serve como teste de invertibilidade na prática: se, ao aplicar Gauss-Jordan, alguma linha do lado esquerdo se anula por completo antes de chegar à identidade, a matriz não é invertível. Uma aplicação direta e importante é a resolução de sistemas: se A é invertível, o sistema AX=b tem solução única X=A⁻¹b; e um sistema homogêneo AX=0 tem solução não trivial se, e somente se, A não é invertível — uma antecipação do critério via determinante que vem no bloco seguinte.</p>
+  
+  <p class="aula-descricao">A aula ainda toca em duas aplicações opcionais da inversão de matrizes que aparecem no livro-texto, mas não são cobradas em prova: interpolação polinomial (encontrar o polinômio que passa por um conjunto de pontos, resolvendo um sistema linear para os coeficientes) e criptografia (usar uma matriz invertível para codificar e decodificar mensagens).</p>
+  
+  <p class="nota-fonte">Texto elaborado a partir dos slides usados em aula, com auxílio de IA (Claude/Anthropic). Use como apoio, não como substituto do livro-texto.</p>
+</section>
+
+
+
+<section class="aula-secao">
+  <h2>Vídeos recomendados</h2>
+  <ul class="material-list">
+    
+    <li><a href="https://www.youtube.com/watch?v=n0VW6zcwuT4" target="_blank" rel="noopener">Geometria Analítica e Álgebra Linear – Aula 06 – Método de Inversão de Matriz (UNIVESP)</a></li>
+    
+    <li><a href="https://www.youtube.com/watch?v=RNy8yHghiVA" target="_blank" rel="noopener">Geometria Analítica e Álgebra Linear – Aula 05 – Matriz Inversa (UNIVESP)</a></li>
+    
+  </ul>
+</section>
+
+
+
+<section class="aula-secao">
+  <h2>Slides do professor</h2>
+  
+  <iframe class="slides-embed" loading="lazy" src="../../../2026-1/cea049-geometria-analitica-algebra-linear/07-matriz-inversa-ii/arquivos/CEA049_07_Matriz_Inversa_II.pdf" title="Slides da aula 07 — Matriz inversa II"></iframe>
+  
+  <ul class="material-list">
+    
+    <li><a href="../../../2026-1/cea049-geometria-analitica-algebra-linear/07-matriz-inversa-ii/arquivos/CEA049_07_Matriz_Inversa_II.pdf" target="_blank" rel="noopener">Abrir slides em tela cheia (PDF)</a></li>
+    
+    
+  </ul>
+</section>
+
+
+
+<section class="aula-secao">
+  <h2>Referências bibliográficas</h2>
+  <ul class="bib-list">
+    
+    <li><strong>Santos, Um Curso de Geometria Analítica e Álgebra Linear</strong> — Cap. 2 — 2.1.2, 2.1.3</li>
+    
+    <li><strong>Steinbruch & Winterle, Álgebra Linear, 2ª ed.</strong> — Apênd. A — Inversão de Matrizes</li>
+    
+  </ul>
+</section>
+
+
+
+<section class="aula-secao">
+  <h2>Exercícios recomendados</h2>
+  
+  <ul class="bib-list">
+    
+    <li>
+      <strong>Santos, Um Curso de Geometria Analítica e Álgebra Linear</strong>
+       — Pág. 93: exercícios 2.1.1 a 2.1.8
+      <br>Mesmo bloco de exercícios da aula 6.
+    </li>
+    
+    <li>
+      <strong>Anton & Rorres, Álgebra Linear com Aplicações, 10ª ed.</strong>
+       — Seções 1.4 a 1.6
+      <br>Exercícios adicionais sobre matriz inversa e método de cálculo.
+    </li>
+    
+  </ul>
+  
+  
+</section>
+
+
+
+
+
+
+
+
+</main>
+<footer class="site-footer">
+  <p>Gerado automaticamente · atualize o conteúdo em <code>content/</code> e rode <code>python scripts/build.py</code></p>
+</footer>
+<script src="../../../static/js/progresso.js" defer></script>
+</body>
+</html>

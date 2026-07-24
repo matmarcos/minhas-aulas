@@ -1,0 +1,35 @@
+titulo: Aula 21 - Subespaços, base e dimensão
+bloco: 3
+data: ''
+resumo: Base e dimensão de um espaço vetorial; espaço linha e espaço coluna
+descricao:
+- 'Uma base de um subespaço W é um conjunto B={V₁,…,Vₙ} que satisfaz duas condições simultaneamente: é
+  linearmente independente e gera W. As duas condições são igualmente necessárias — um conjunto que só
+  gera mas é L.D. tem vetores redundantes; um conjunto L.I. que não gera W é insuficiente.'
+- O resultado central da aula é que todas as bases de um mesmo espaço vetorial têm o mesmo número de elementos
+  — esse número é, por definição, a dimensão do espaço. ℝⁿ tem dimensão n, e sua base canônica {e₁,…,eₙ}
+  é a referência mais simples possível. Uma vez fixada a dimensão de W, qualquer conjunto L.I. com esse
+  número exato de vetores em W já é automaticamente uma base, sem precisar verificar separadamente se
+  gera o espaço.
+- 'A aula ensina dois procedimentos práticos e complementares: verificar se um conjunto dado é base (checando
+  L.I., contagem de elementos e geração) e construir uma base a partir do zero para um subespaço dado
+  — encontrando primeiro um conjunto gerador e depois removendo vetores redundantes até sobrar um conjunto
+  L.I. que ainda gera o espaço.'
+slides:
+  titulo: Slides da aula 21 — Subespaços, base e dimensão
+  arquivo_pdf: CEA049_21_Subespacos_Base_Dimensao.pdf
+referencias_bibliograficas:
+- livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+  citacao: Cap. 5 — 5.2
+- livro: Steinbruch & Winterle, Álgebra Linear, 2ª ed.
+  citacao: Cap. 2 — Base e Dimensão
+exercicios_recomendados:
+  itens:
+  - livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+    exercicios: 'Pág. 331: exercícios 5.2.1 a 5.2.11'
+    recomendacao: Verificação e construção de base, cálculo de dimensão de subespaços.
+videos_recomendados:
+- titulo: Geometria Analítica e Álgebra Linear – Aula 17 – Independência Linear, Base e Dimensão (UNIVESP)
+  url: https://www.youtube.com/watch?v=o9yEWMlRk-U
+- titulo: Geometria Analítica e Álgebra Linear – Aula 16 – Combinações Lineares. Subespaços (UNIVESP)
+  url: https://www.youtube.com/watch?v=l13GR80odc0

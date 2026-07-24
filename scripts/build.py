@@ -119,6 +119,7 @@ def build():
                 "descricao": disc_meta.get("descricao", ""),
                 "professor": disc_meta.get("professor", ""),
                 "aulas": [],
+                "_src_dir": disciplina_dir,
             }
 
             for aula_dir in sorted(disciplina_dir.iterdir()):
@@ -152,6 +153,7 @@ def build():
                         "slug": f"bloco-{num}",
                         "titulo": meta.get("titulo", f"Bloco {num}"),
                         "descricao": meta.get("descricao", ""),
+                        "prova": meta.get("prova"),
                         "aulas": blocos_dict[num],
                     }
                 )
@@ -200,6 +202,19 @@ def build():
             for bloco in disciplina["blocos"]:
                 bloco_dir = disc_dir / bloco["slug"]
                 bloco_dir.mkdir(parents=True, exist_ok=True)
+                if bloco.get("prova"):
+                    provas_src = disciplina["_src_dir"] / "_provas"
+                    arquivos_dir = bloco_dir / "arquivos"
+                    for chave in ("enunciado", "gabarito"):
+                        nome_arquivo = bloco["prova"].get(chave)
+                        if not nome_arquivo:
+                            continue
+                        src = provas_src / nome_arquivo
+                        if src.exists():
+                            arquivos_dir.mkdir(parents=True, exist_ok=True)
+                            shutil.copy2(src, arquivos_dir / nome_arquivo)
+                        else:
+                            print(f"  aviso: prova não encontrada -> {src}")
                 tpl = env.get_template("bloco.html")
                 (bloco_dir / "index.html").write_text(
                     tpl.render(

@@ -1,0 +1,49 @@
+titulo: Aula 27 - Cônicas
+bloco: 3
+data: ''
+resumo: Identificação de cônicas (elipse, hipérbole, parábola) por diagonalização de formas quadráticas
+descricao:
+- 'A última aula do curso reúne praticamente todas as ferramentas construídas ao longo do semestre em
+  um só problema: identificar qual cônica uma equação do segundo grau em x e y representa, mesmo quando
+  ela vem em uma forma que não é imediatamente reconhecível. Uma equação como ax²+bxy+cy²+dx+ey+f=0 pode
+  ser reescrita usando uma matriz simétrica associada à parte quadrática, ax²+bxy+cy² = Xᵀ·M·X, onde X=(x,y)
+  e M é a matriz de coeficientes.'
+- 'Quando essa matriz M tem um termo misto (b≠0, ou seja, um termo em xy), a cônica está rotacionada em
+  relação aos eixos coordenados. A diagonalização de M vista na aula anterior resolve exatamente esse
+  problema: encontrando os autovalores e autovetores de M, obtém-se uma mudança de coordenadas (uma rotação)
+  que elimina o termo misto, revelando a equação da cônica em sua forma padrão — e os autovalores de M
+  dizem imediatamente qual cônica é: mesmo sinal e diferentes, elipse; sinais opostos, hipérbole; um deles
+  nulo, parábola.'
+- 'Depois da rotação, um segundo passo — completar quadrados e transladar os eixos — centra a cônica na
+  origem, revelando seus elementos: focos, vértices, eixos e excentricidade (comuns às três cônicas),
+  além das assíntotas da hipérbole e da diretriz da parábola. É esse processo de duas etapas, rotação
+  por diagonalização seguida de translação, que a disciplina usa como fechamento — cada peça (autovalor,
+  autovetor, forma quadrática) construída em aulas anteriores agora trabalhando junta.'
+referencias_bibliograficas:
+- livro: Anton & Rorres, Álgebra Linear com Aplicações, 10ª ed.
+  citacao: Cap. 7 — 7.3
+- livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+  citacao: Cap. 6 — 6.2, 6.3
+- livro: Steinbruch & Winterle, Álgebra Linear, 2ª ed.
+  citacao: Cap. 7 — Formas Quadráticas, Cônicas
+- livro: Steinbruch & Winterle, Geometria Analítica, 2ª ed.
+  citacao: Cap. 7 — Cônicas
+videos_recomendados:
+- titulo: 'Geometria Analítica e Álgebra Linear – Aula 23 – Seções Cônicas: Representação Matricial (UNIVESP)'
+  url: https://www.youtube.com/watch?v=6Hl6kVsgwag
+- titulo: Geometria Analítica e Álgebra Linear – Aula 24 – Translação de Cônicas (UNIVESP)
+  url: https://www.youtube.com/watch?v=Buuo2loUb28
+material_complementar:
+  texto:
+  - 'Trabalho avaliativo em grupo: cada grupo (até 4 integrantes) sorteia uma cônica — elipse, hipérbole
+    ou parábola, sem rotação ou translação — e apresenta em slides, com duração ideal de 15 minutos.'
+  - 'A apresentação precisa cobrir: a definição geométrica da cônica sorteada; exemplos de equações na
+    forma padrão; um esboço da cônica; e os elementos específicos — para todas, focos, vértices, eixos
+    e excentricidade; para a hipérbole, também as assíntotas; para a parábola, também a diretriz.'
+  - 'Critérios de avaliação: domínio do conteúdo (clareza e correção nas explicações), apresentação oral
+    (postura e organização do grupo), qualidade dos slides e cumprimento do tempo estipulado.'
+  arquivos:
+  - titulo: Roteiro do trabalho avaliativo (PDF)
+    arquivo: Roteiro_Trabalho_Conicas.pdf
+  - titulo: Cartões de sorteio das cônicas (PDF)
+    arquivo: Cartoes_Sorteio_Conicas.pdf

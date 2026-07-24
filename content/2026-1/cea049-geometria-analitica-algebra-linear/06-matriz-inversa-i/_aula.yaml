@@ -1,0 +1,36 @@
+titulo: Aula 06 - Matriz inversa I
+bloco: 1
+data: ''
+resumo: Definição de matriz inversa; propriedades da inversa
+descricao:
+- Uma matriz quadrada A é dita invertível (ou não singular) quando existe uma matriz quadrada A⁻¹ tal
+  que AA⁻¹ = A⁻¹A = I. O primeiro resultado importante é que, quando essa matriz existe, ela é única —
+  não há ambiguidade em falar 'a' inversa de A.
+- 'As propriedades operatórias da inversa espelham as da transposta vista na aula 2: (A⁻¹)⁻¹ = A, (AB)⁻¹
+  = B⁻¹A⁻¹ (note a ordem invertida, mesmo padrão de (AB)ᵀ = BᵀAᵀ) e (Aᵀ)⁻¹ = (A⁻¹)ᵀ. Um teorema fecha
+  a aula amarrando invertibilidade a um conceito que só será formalizado na aula 8 (determinante): A é
+  invertível se, e somente se, é equivalente por linhas à matriz identidade Iₙ — ou seja, se o método
+  de Gauss-Jordan aplicado a A termina na identidade.'
+- 'Um exemplo típico da aula ilustra como manipular a definição algebricamente: se A satisfaz A³=0, mostra-se
+  que (Iₙ−A)⁻¹ = Iₙ+A+A², sem nunca calcular A⁻¹ diretamente — só usando as propriedades da definição.
+  É esse tipo de manipulação puramente algébrica, sem recorrer a números concretos, que caracteriza a
+  diferença entre a aula 6 (definição e propriedades) e a aula 7 (o método prático de cálculo).'
+slides:
+  titulo: Slides da aula 06 — Matriz inversa I
+  arquivo_pdf: CEA049_06_Matriz_Inversa_I.pdf
+referencias_bibliograficas:
+- livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+  citacao: Cap. 2 — 2.1, 2.1.1
+- livro: Steinbruch & Winterle, Álgebra Linear, 2ª ed.
+  citacao: Apênd. A — Inversão de Matrizes
+exercicios_recomendados:
+  itens:
+  - livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+    exercicios: 'Pág. 93: exercícios 2.1.1 a 2.1.8'
+    recomendacao: Bloco de exercícios compartilhado com a aula 7 — cobre definição, propriedades e o método
+      de cálculo da inversa.
+videos_recomendados:
+- titulo: Geometria Analítica e Álgebra Linear – Aula 05 – Matriz Inversa (UNIVESP)
+  url: https://www.youtube.com/watch?v=RNy8yHghiVA
+- titulo: Geometria Analítica e Álgebra Linear – Aula 06 – Método de Inversão de Matriz (UNIVESP)
+  url: https://www.youtube.com/watch?v=n0VW6zcwuT4

@@ -1,0 +1,36 @@
+titulo: 'Aula 03 - Matrizes: propriedades'
+bloco: 1
+data: ''
+resumo: Propriedades algébricas das operações matriciais; matrizes diagonais, triangulares e simétricas
+descricao:
+- Com as operações definidas, a aula cataloga as classes de matrizes que têm comportamento especial e
+  que vão aparecer com frequência no restante do curso. Uma matriz é simétrica quando A = Aᵀ (ou seja,
+  aᵢⱼ = aⱼᵢ) e antissimétrica quando A = −Aᵀ. As simétricas voltarão a aparecer quando o curso tratar
+  de formas quadráticas e diagonalização, no bloco 3.
+- Uma matriz é ortogonal quando A⁻¹ = Aᵀ — o que equivale a dizer que A·Aᵀ = Aᵀ·A = I. Essa classe de
+  matrizes representa geometricamente transformações que preservam distâncias e ângulos (rotações e reflexões),
+  tema que retorna quando o curso chega às transformações lineares no plano.
+- 'Fecham o catálogo as matrizes triangulares: superior, quando todos os elementos abaixo da diagonal
+  principal são nulos, e inferior, no caso simétrico. Essas classes não são um exercício de nomenclatura
+  — a forma escalonada que aparece já na próxima aula é, essencialmente, uma matriz triangular superior,
+  e o cálculo de determinante de uma matriz triangular (produto da diagonal) é um atalho usado o semestre
+  inteiro.'
+slides:
+  titulo: 'Slides da aula 03 — Matrizes: propriedades'
+  arquivo_pdf: CEA049_03_Matrizes_Propriedades.pdf
+referencias_bibliograficas:
+- livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+  citacao: Cap. 1 — 1.1.2
+- livro: Steinbruch & Winterle, Álgebra Linear, 2ª ed.
+  citacao: Apênd. A — Matrizes (tipos e propriedades)
+exercicios_recomendados:
+  itens:
+  - livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+    exercicios: 'Pág. 17: exercícios 1.1.1 a 1.1.10 (seção 1.1.2, opcional)'
+    recomendacao: Mesmo bloco de exercícios da aula 2; a seção 1.1.3 (cadeias de Markov) é uma aplicação
+      opcional das operações matriciais.
+videos_recomendados:
+- titulo: Geometria Analítica e Álgebra Linear – Aula 02 – Matrizes I (UNIVESP)
+  url: https://www.youtube.com/watch?v=0Xcz9IZzb7M
+- titulo: Álgebra Linear – Aula 01 – Matrizes e Determinantes, Parte 1 (UNIVESP)
+  url: https://www.youtube.com/watch?v=r1o7RryS8WM

@@ -1,0 +1,37 @@
+titulo: Aula 15 - Equações do plano I
+bloco: 2
+data: ''
+resumo: Equação geral do plano; vetor normal; plano determinado por três pontos
+descricao:
+- 'Assim como uma reta no plano tem uma equação geral ax+by+c=0, um plano no espaço tem uma equação geral
+  ax+by+cz+d=0. A construção parte de um vetor normal N — um vetor ortogonal a todos os vetores contidos
+  no plano — e de um ponto P conhecido do plano: para qualquer outro ponto X do plano, o vetor PX é ortogonal
+  a N, ou seja, PX·N=0. Expandindo esse produto escalar em coordenadas, chega-se diretamente à equação
+  geral.'
+- Na prática, obter a equação de um plano é encontrar um vetor normal e um ponto. Quando o plano é dado
+  por dois vetores paralelos a ele (não colineares) e um ponto, o vetor normal sai do produto vetorial
+  desses dois vetores — a aula 13 comparece aqui como pré-requisito direto. Quando o plano é dado por
+  três pontos não colineares, dois vetores formados a partir deles (por exemplo, PQ e PR) servem de vetores
+  diretores, e o mesmo procedimento se aplica.
+- 'A aula termina com o caminho inverso: dada a equação geral de um plano, encontrar pontos que pertencem
+  a ele — basta atribuir valores livres a duas das três variáveis e resolver a equação para a terceira.
+  Esse vaivém entre equação e pontos concretos é a habilidade central que a aula 16 aprofunda com as equações
+  vetorial e paramétricas do plano.'
+slides:
+  titulo: Slides da aula 15 — Equações do plano I
+  arquivo_pdf: CEA049_15_Equacoes_Plano_I.pdf
+referencias_bibliograficas:
+- livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+  citacao: Cap. 4 — 4.1.1
+- livro: Steinbruch & Winterle, Geometria Analítica, 2ª ed.
+  citacao: Cap. 5 — 5.1
+exercicios_recomendados:
+  itens:
+  - livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+    exercicios: 'Pág. 223: exercícios 4.1.1 a 4.1.8'
+    recomendacao: Compartilhado com a aula 16 — equação geral e equações paramétricas do plano.
+videos_recomendados:
+- titulo: Geometria Analítica e Álgebra Linear – Aula 14 – Planos no Espaço (UNIVESP)
+  url: https://www.youtube.com/watch?v=jhqj6HPBMbc
+- titulo: Geometria Analítica e Álgebra Linear – Aula 13 – Retas no Plano e no Espaço (UNIVESP)
+  url: https://www.youtube.com/watch?v=92jlJTW11Sk

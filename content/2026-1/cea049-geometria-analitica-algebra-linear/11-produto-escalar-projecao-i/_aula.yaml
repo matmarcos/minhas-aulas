@@ -1,0 +1,37 @@
+titulo: Aula 11 - Produto escalar e projeção I
+bloco: 2
+data: ''
+resumo: Norma de um vetor; produto escalar (interno); ângulo entre vetores
+descricao:
+- 'A norma de um vetor generaliza a ideia de comprimento: se V=(x,y), ‖V‖=√(x²+y²), e a fórmula ganha
+  mais um termo para vetores no espaço. A distância entre dois pontos P e Q é definida como a norma do
+  vetor que liga um ao outro, dist(P,Q)=‖PQ‖ — a fórmula da distância entre pontos, vista em geometria
+  analítica plana, é um caso particular dessa definição.'
+- Um vetor é dito unitário quando ‖V‖=1, e o versor de um vetor V não nulo é o vetor unitário na mesma
+  direção e sentido, obtido dividindo V pela sua própria norma. Versores aparecem sempre que se precisa
+  de uma direção sem se importar com a escala — por exemplo, ao definir vetores normais a um plano, mais
+  adiante no curso.
+- O produto escalar (ou interno) de dois vetores U e V é definido por U·V = ‖U‖‖V‖cos(θ), onde θ é o ângulo
+  entre eles — e vale zero se um dos vetores for nulo. Em coordenadas, para U=(x,y) e V=(a,b), essa definição
+  geométrica se traduz em U·V=ax+by (a chamada lei dos cossenos). O produto escalar permite calcular o
+  ângulo entre vetores sem medir nada — cos(θ) = (U·V)/(‖U‖‖V‖) — e o sinal do produto escalar já revela
+  se o ângulo é agudo, reto ou obtuso, sem precisar calcular o cosseno explicitamente.
+slides:
+  titulo: Slides da aula 11 — Produto escalar e projeção I
+  arquivo_pdf: CEA049_11_Produto_Escalar_Projecao_I.pdf
+referencias_bibliograficas:
+- livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+  citacao: Cap. 3 — 3.2.1
+- livro: Steinbruch & Winterle, Geometria Analítica, 2ª ed.
+  citacao: Cap. 1 — Vetores no R²; Cap. 3
+exercicios_recomendados:
+  itens:
+  - livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+    exercicios: 'Pág. 175: exercícios 3.2.1 a 3.2.21 (exceto 3.1.9)'
+    recomendacao: Compartilhado com a aula 12 — norma, produto escalar, ângulo entre vetores e projeção
+      ortogonal.
+videos_recomendados:
+- titulo: Geometria Analítica e Álgebra Linear – Aula 10 – Produto Escalar (UNIVESP)
+  url: https://www.youtube.com/watch?v=jJP56EHa-54
+- titulo: Geometria Analítica e Álgebra Linear – Aula 11 – Ângulo entre dois Vetores (UNIVESP)
+  url: https://www.youtube.com/watch?v=KH4WM2Yzn2s

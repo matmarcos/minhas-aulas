@@ -1,0 +1,38 @@
+titulo: Aula 18 - Equações da reta II
+bloco: 2
+data: ''
+resumo: Equação simétrica da reta; ângulos e distâncias entre retas e planos
+descricao:
+- 'Quando as três componentes a, b, c do vetor diretor de uma reta são todas não nulas, é possível isolar
+  o parâmetro t nas três equações paramétricas e igualá-las, obtendo a equação simétrica da reta: (x−x₁)/a
+  = (y−y₁)/b = (z−z₁)/c. É uma forma compacta, útil sobretudo para ler rapidamente o vetor diretor e um
+  ponto da reta direto da equação, sem precisar isolar nada.'
+- A segunda metade da aula trata de posições relativas. O ângulo entre duas retas é definido como o menor
+  ângulo entre seus vetores diretores — calculado, como sempre, via produto escalar. Duas retas são paralelas
+  quando os vetores diretores são paralelos (um é múltiplo escalar do outro) e são ortogonais quando os
+  vetores diretores são ortogonais entre si (produto escalar nulo).
+- 'O mesmo raciocínio se estende a planos: o ângulo entre dois planos π₁ e π₂ é definido como o ângulo
+  entre seus vetores normais N₁ e N₂, com cos(π₁,π₂) = (N₁·N₂)/(‖N₁‖‖N₂‖). Essa aula fecha o bloco de
+  geometria analítica reunindo retas e planos sob o mesmo tipo de ferramenta — ângulos e posições relativas
+  sempre reduzidos a um produto escalar entre vetores diretores ou normais.'
+slides:
+  titulo: Slides da aula 18 — Equações da reta II
+  arquivo_pdf: CEA049_18_Equacoes_Reta_II.pdf
+referencias_bibliograficas:
+- livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+  citacao: Cap. 4 — 4.2.2, 4.3
+- livro: Steinbruch & Winterle, Geometria Analítica, 2ª ed.
+  citacao: Cap. 4; Cap. 6
+exercicios_recomendados:
+  itens:
+  - livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+    exercicios: 'Pág. 248: exercícios 4.2.1 a 4.2.15'
+    recomendacao: Mesmo bloco de exercícios da aula 17 — a equação simétrica está entre os itens finais.
+  - livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+    exercicios: 'Pág. 274: exercícios 4.3.1 a 4.3.5'
+    recomendacao: Ângulos entre retas e entre planos.
+videos_recomendados:
+- titulo: Geometria Analítica e Álgebra Linear – Aula 15 – Distância e Ângulos (UNIVESP)
+  url: https://www.youtube.com/watch?v=9SLfku9_mqY
+- titulo: Geometria Analítica e Álgebra Linear – Aula 13 – Retas no Plano e no Espaço (UNIVESP)
+  url: https://www.youtube.com/watch?v=92jlJTW11Sk

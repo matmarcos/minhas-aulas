@@ -1,0 +1,34 @@
+titulo: Aula 12 - Produto escalar e projeção II
+bloco: 2
+data: ''
+resumo: Projeção ortogonal de um vetor sobre outro e aplicações
+descricao:
+- 'Dados dois vetores V e W, a projeção ortogonal de V sobre W, denotada projw V, é o vetor paralelo a
+  W tal que V menos essa projeção é ortogonal a W — em outras palavras, é a ''sombra'' de V na direção
+  de W. A fórmula é direta a partir do produto escalar da aula anterior: projw V = (V·W/‖W‖²)·W.'
+- 'Essa construção decompõe qualquer vetor V em duas partes perpendiculares entre si: a componente paralela
+  a W (a própria projeção) e a componente ortogonal a W (o que sobra, V menos a projeção). É essa decomposição
+  que sustenta, mais adiante no curso, a construção da equação de um plano a partir de um vetor normal
+  — a componente de um ponto na direção normal ao plano é o que determina de qual lado do plano ele está.'
+- 'As propriedades do produto escalar reunidas nas duas aulas — U·U≥0, U·U=0 se e somente se U=0, comutatividade,
+  distributividade em relação à soma, e o comportamento com escalares — são a base algébrica de tudo que
+  vem a seguir em geometria analítica: ângulos entre retas e planos, condições de ortogonalidade e paralelismo,
+  e distâncias, todas essas operações reduzidas a um produto escalar bem escolhido.'
+slides:
+  titulo: Slides da aula 12 — Produto escalar e projeção II
+  arquivo_pdf: CEA049_12_Produto_Escalar_Projecao_II.pdf
+referencias_bibliograficas:
+- livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+  citacao: Cap. 3 — 3.2.2
+- livro: Steinbruch & Winterle, Geometria Analítica, 2ª ed.
+  citacao: Cap. 3
+exercicios_recomendados:
+  itens:
+  - livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+    exercicios: 'Pág. 175: exercícios 3.2.1 a 3.2.21 (exceto 3.1.9)'
+    recomendacao: Mesmo bloco de exercícios da aula 11 — a projeção ortogonal está entre os itens finais.
+videos_recomendados:
+- titulo: Geometria Analítica e Álgebra Linear – Aula 11 – Ângulo entre dois Vetores (UNIVESP)
+  url: https://www.youtube.com/watch?v=KH4WM2Yzn2s
+- titulo: Geometria Analítica e Álgebra Linear – Aula 10 – Produto Escalar (UNIVESP)
+  url: https://www.youtube.com/watch?v=jJP56EHa-54

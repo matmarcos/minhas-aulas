@@ -1,0 +1,36 @@
+titulo: Aula 20 - Combinações lineares
+bloco: 3
+data: ''
+resumo: Combinação linear; subespaço gerado; dependência e independência linear
+descricao:
+- Uma combinação linear de vetores V₁,V₂,…,Vₙ é qualquer vetor da forma a₁V₁+a₂V₂+⋯+aₙVₙ, para números
+  reais a₁,…,aₙ. Dado um conjunto de vetores, o subespaço gerado por eles é o conjunto de todas as suas
+  combinações lineares — por exemplo, os vetores da base canônica {e₁,…,eₙ} geram todo o ℝⁿ.
+- 'A pergunta natural é quando um conjunto de vetores é realmente necessário para gerar um subespaço,
+  ou se algum deles é redundante — combinação linear dos demais. Essa pergunta leva à definição de dependência
+  e independência linear: um conjunto {V₁,…,Vₙ} é linearmente independente (L.I.) quando a única solução
+  da equação a₁V₁+⋯+aₙVₙ=0 é a solução trivial a₁=⋯=aₙ=0; caso existam soluções não triviais, o conjunto
+  é linearmente dependente (L.D.).'
+- 'Na prática, verificar se um conjunto é L.I. ou L.D. em ℝⁿ se reduz a um problema já dominado: monta-se
+  a matriz com os vetores como colunas (ou linhas) e verifica-se se o sistema homogêneo correspondente
+  tem só a solução trivial — o que, para uma matriz quadrada, equivale a ter determinante não nulo. É
+  por isso que um conjunto com mais de n vetores em ℝⁿ é sempre L.D.: o sistema homogêneo associado necessariamente
+  tem solução não trivial.'
+slides:
+  titulo: Slides da aula 20 — Combinações lineares
+  arquivo_pdf: CEA049_20_Combinacoes_Lineares.pdf
+referencias_bibliograficas:
+- livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+  citacao: Cap. 5 — 5.1.1
+- livro: Steinbruch & Winterle, Álgebra Linear, 2ª ed.
+  citacao: Cap. 2 — Combinação Linear; Dependência e Independência Linear
+exercicios_recomendados:
+  itens:
+  - livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+    exercicios: 'Pág. 309: exercícios 5.1.1 a 5.1.8'
+    recomendacao: Combinação linear, subespaço gerado e testes de independência linear.
+videos_recomendados:
+- titulo: Geometria Analítica e Álgebra Linear – Aula 16 – Combinações Lineares. Subespaços (UNIVESP)
+  url: https://www.youtube.com/watch?v=l13GR80odc0
+- titulo: Geometria Analítica e Álgebra Linear – Aula 09 – Espaços Vetoriais (UNIVESP)
+  url: https://www.youtube.com/watch?v=V5B67r4uFs0

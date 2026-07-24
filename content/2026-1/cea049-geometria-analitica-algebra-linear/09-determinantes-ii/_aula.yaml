@@ -1,0 +1,39 @@
+titulo: Aula 09 - Determinantes II
+bloco: 1
+data: ''
+resumo: Propriedades dos determinantes; cálculo por redução de linhas; Regra de Cramer
+descricao:
+- 'Calcular determinantes por cofatores fica caro rapidamente conforme a matriz cresce. Esta aula apresenta
+  as propriedades que tornam o cálculo prático: multiplicar uma linha por um escalar α multiplica o determinante
+  por α; trocar duas linhas troca o sinal do determinante; e somar a uma linha um múltiplo de outra não
+  altera o determinante — a mesma operação elementar usada no escalonamento, mas agora com efeito controlado
+  e conhecido sobre o valor do determinante.'
+- 'Dessas propriedades seguem resultados centrais do curso: det(AB) = det(A)det(B); det(Aᵀ) = det(A);
+  se A é invertível, det(A⁻¹) = 1/det(A); e, o mais importante de todos, A é invertível se, e somente
+  se, det(A) ≠ 0. Esse último critério também resolve a questão da aula 7 sobre sistemas homogêneos: AX=0
+  tem solução não trivial se, e somente se, det(A) = 0.'
+- A aula fecha com a Regra de Cramer, que resolve um sistema AX=b (com det(A)≠0) calculando cada incógnita
+  como xᵢ = det(Aᵢ)/det(A), onde Aᵢ é A com a i-ésima coluna substituída por b. É elegante para sistemas
+  pequenos, mas computacionalmente mais cara que Gauss-Jordan para sistemas grandes — vale como ferramenta
+  teórica e para sistemas 2×2 ou 3×3, não como método geral.
+slides:
+  titulo: Slides da aula 09 — Determinantes II
+  arquivo_pdf: CEA049_09_Determinantes_II.pdf
+referencias_bibliograficas:
+- livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+  citacao: Cap. 2 — 2.2.1
+- livro: Steinbruch & Winterle, Álgebra Linear, 2ª ed.
+  citacao: Apênd. A — Determinantes
+exercicios_recomendados:
+  itens:
+  - livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+    exercicios: 'Pág. 119: exercícios 2.2.1 a 2.2.9, e teste da pág. 128'
+    recomendacao: Propriedades do determinante e Regra de Cramer.
+  - livro: Anton & Rorres, Álgebra Linear com Aplicações, 10ª ed.
+    exercicios: 'Cap. 2.1: 1 a 42; Cap. 2.2: 1 a 36; Cap. 2.3: 1 a 36'
+    recomendacao: Lista extensa de exercícios cobrindo definição, propriedades e aplicações do determinante.
+videos_recomendados:
+- titulo: 'Geometria Analítica e Álgebra Linear – Aula 07 – Determinante: Definição e Propriedades (UNIVESP)'
+  url: https://www.youtube.com/watch?v=novqED_7dI8
+- titulo: Álgebra Linear – Aula 02 – Matrizes e Determinantes, Parte 2 (UNIVESP)
+  url: https://www.youtube.com/watch?v=u4xKswRO4bQ

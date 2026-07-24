@@ -1,0 +1,35 @@
+titulo: Aula 16 - Equações do plano II
+bloco: 2
+data: ''
+resumo: Equações paramétricas e vetorial do plano
+descricao:
+- 'Um plano π que contém um ponto P e dois vetores não colineares U e V pode ser descrito de outra forma:
+  qualquer ponto X do plano se escreve como X = P + αU + βV, para escalares α e β reais — a equação vetorial
+  do plano. Ao contrário da equação geral (uma única equação em x, y, z), a equação vetorial descreve
+  o plano como o conjunto de todas as combinações lineares de U e V, deslocado até P.'
+- 'Escrevendo essa equação vetorial coordenada a coordenada, obtêm-se as equações paramétricas do plano:
+  um sistema de três equações, cada uma expressando x, y ou z em função dos parâmetros livres α e β. É
+  uma forma particularmente útil quando se quer gerar pontos do plano diretamente, sem resolver equação
+  nenhuma — basta escolher valores para α e β.'
+- 'Passar de uma forma para outra é uma habilidade prática que a aula pratica em ambos os sentidos: da
+  equação vetorial/paramétrica para a equação geral (eliminando os parâmetros α e β do sistema) e da equação
+  geral de volta para a paramétrica (encontrando dois vetores diretores e um ponto que satisfazem a equação
+  dada).'
+slides:
+  titulo: Slides da aula 16 — Equações do plano II
+  arquivo_pdf: CEA049_16_Equacoes_Plano_II.pdf
+referencias_bibliograficas:
+- livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+  citacao: Cap. 4 — 4.1.2
+- livro: Steinbruch & Winterle, Geometria Analítica, 2ª ed.
+  citacao: Cap. 5
+exercicios_recomendados:
+  itens:
+  - livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+    exercicios: 'Pág. 223: exercícios 4.1.1 a 4.1.8'
+    recomendacao: Mesmo bloco de exercícios da aula 15.
+videos_recomendados:
+- titulo: Geometria Analítica e Álgebra Linear – Aula 14 – Planos no Espaço (UNIVESP)
+  url: https://www.youtube.com/watch?v=jhqj6HPBMbc
+- titulo: Geometria Analítica e Álgebra Linear – Aula 15 – Distância e Ângulos (UNIVESP)
+  url: https://www.youtube.com/watch?v=9SLfku9_mqY

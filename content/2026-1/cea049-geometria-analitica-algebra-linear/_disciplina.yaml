@@ -1,0 +1,23 @@
+titulo: CEA049 - Geometria Analítica e Álgebra Linear
+descricao: Sistemas de equações lineares e matrizes. Álgebra vetorial. Retas e planos. Espaços vetoriais.
+  Transformações lineares. Autovalores e autovetores. Cônicas. Turma EC1-T33, UFOP. Disciplina já concluída
+  — material publicado como acervo do semestre.
+professor: Marcos Goulart Lima
+blocos:
+  1:
+    titulo: Bloco 1 — Prova P1
+    descricao: Sistemas de equações lineares, matrizes, matriz inversa e determinantes.
+    prova:
+      enunciado: CEA049_2026_1_Prova1.pdf
+  2:
+    titulo: Bloco 2 — Prova P2
+    descricao: Álgebra vetorial (produto escalar, produto vetorial e misto) e retas e planos no espaço.
+    prova:
+      enunciado: CEA049_2026_1_Prova2.pdf
+      gabarito: Gabarito_P2_CEA049.pdf
+  3:
+    titulo: Bloco 3 — Prova P3
+    descricao: Espaços vetoriais, transformações lineares, autovalores/autovetores e cônicas.
+    prova:
+      enunciado: CEA049_2026_1_Prova3.pdf
+      gabarito: Gabarito_P3_CEA049.pdf

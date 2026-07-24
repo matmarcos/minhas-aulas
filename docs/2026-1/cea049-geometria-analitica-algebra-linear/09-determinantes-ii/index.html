@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aula 09 - Determinantes II · Minhas Aulas</title>
+<link rel="stylesheet" href="../../../static/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../../../index.html">Minhas Aulas</a>
+  <nav class="breadcrumbs"><a href="../../../index.html">Início</a> / <a href="../../../2026-1/index.html">2026/1</a> / <a href="../../../2026-1/cea049-geometria-analitica-algebra-linear/index.html">CEA049 - Geometria Analítica e Álgebra Linear</a> / Aula 09 - Determinantes II</nav>
+</header>
+<main>
+
+
+
+<h1>Aula 09 - Determinantes II</h1>
+<p class="meta"></p>
+<p class="subtitle">Propriedades dos determinantes; cálculo por redução de linhas; Regra de Cramer</p>
+
+
+
+
+<section class="aula-secao">
+  <h2>Descrição da aula</h2>
+  
+  <p class="aula-descricao">Calcular determinantes por cofatores fica caro rapidamente conforme a matriz cresce. Esta aula apresenta as propriedades que tornam o cálculo prático: multiplicar uma linha por um escalar α multiplica o determinante por α; trocar duas linhas troca o sinal do determinante; e somar a uma linha um múltiplo de outra não altera o determinante — a mesma operação elementar usada no escalonamento, mas agora com efeito controlado e conhecido sobre o valor do determinante.</p>
+  
+  <p class="aula-descricao">Dessas propriedades seguem resultados centrais do curso: det(AB) = det(A)det(B); det(Aᵀ) = det(A); se A é invertível, det(A⁻¹) = 1/det(A); e, o mais importante de todos, A é invertível se, e somente se, det(A) ≠ 0. Esse último critério também resolve a questão da aula 7 sobre sistemas homogêneos: AX=0 tem solução não trivial se, e somente se, det(A) = 0.</p>
+  
+  <p class="aula-descricao">A aula fecha com a Regra de Cramer, que resolve um sistema AX=b (com det(A)≠0) calculando cada incógnita como xᵢ = det(Aᵢ)/det(A), onde Aᵢ é A com a i-ésima coluna substituída por b. É elegante para sistemas pequenos, mas computacionalmente mais cara que Gauss-Jordan para sistemas grandes — vale como ferramenta teórica e para sistemas 2×2 ou 3×3, não como método geral.</p>
+  
+  <p class="nota-fonte">Texto elaborado a partir dos slides usados em aula, com auxílio de IA (Claude/Anthropic). Use como apoio, não como substituto do livro-texto.</p>
+</section>
+
+
+
+<section class="aula-secao">
+  <h2>Vídeos recomendados</h2>
+  <ul class="material-list">
+    
+    <li><a href="https://www.youtube.com/watch?v=novqED_7dI8" target="_blank" rel="noopener">Geometria Analítica e Álgebra Linear – Aula 07 – Determinante: Definição e Propriedades (UNIVESP)</a></li>
+    
+    <li><a href="https://www.youtube.com/watch?v=u4xKswRO4bQ" target="_blank" rel="noopener">Álgebra Linear – Aula 02 – Matrizes e Determinantes, Parte 2 (UNIVESP)</a></li>
+    
+  </ul>
+</section>
+
+
+
+<section class="aula-secao">
+  <h2>Slides do professor</h2>
+  
+  <iframe class="slides-embed" loading="lazy" src="../../../2026-1/cea049-geometria-analitica-algebra-linear/09-determinantes-ii/arquivos/CEA049_09_Determinantes_II.pdf" title="Slides da aula 09 — Determinantes II"></iframe>
+  
+  <ul class="material-list">
+    
+    <li><a href="../../../2026-1/cea049-geometria-analitica-algebra-linear/09-determinantes-ii/arquivos/CEA049_09_Determinantes_II.pdf" target="_blank" rel="noopener">Abrir slides em tela cheia (PDF)</a></li>
+    
+    
+  </ul>
+</section>
+
+
+
+<section class="aula-secao">
+  <h2>Referências bibliográficas</h2>
+  <ul class="bib-list">
+    
+    <li><strong>Santos, Um Curso de Geometria Analítica e Álgebra Linear</strong> — Cap. 2 — 2.2.1</li>
+    
+    <li><strong>Steinbruch & Winterle, Álgebra Linear, 2ª ed.</strong> — Apênd. A — Determinantes</li>
+    
+  </ul>
+</section>
+
+
+
+<section class="aula-secao">
+  <h2>Exercícios recomendados</h2>
+  
+  <ul class="bib-list">
+    
+    <li>
+      <strong>Santos, Um Curso de Geometria Analítica e Álgebra Linear</strong>
+       — Pág. 119: exercícios 2.2.1 a 2.2.9, e teste da pág. 128
+      <br>Propriedades do determinante e Regra de Cramer.
+    </li>
+    
+    <li>
+      <strong>Anton & Rorres, Álgebra Linear com Aplicações, 10ª ed.</strong>
+       — Cap. 2.1: 1 a 42; Cap. 2.2: 1 a 36; Cap. 2.3: 1 a 36
+      <br>Lista extensa de exercícios cobrindo definição, propriedades e aplicações do determinante.
+    </li>
+    
+  </ul>
+  
+  
+</section>
+
+
+
+
+
+
+
+
+</main>
+<footer class="site-footer">
+  <p>Gerado automaticamente · atualize o conteúdo em <code>content/</code> e rode <code>python scripts/build.py</code></p>
+</footer>
+<script src="../../../static/js/progresso.js" defer></script>
+</body>
+</html>

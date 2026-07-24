@@ -1,0 +1,35 @@
+titulo: 'Aula 02 - Matrizes: operações'
+bloco: 1
+data: ''
+resumo: Adição, multiplicação por escalar, multiplicação de matrizes e transposta
+descricao:
+- Definidas as matrizes, a aula passa às quatro operações que as tornam uma álgebra. A soma de duas matrizes
+  de mesma ordem é feita entrada a entrada; a multiplicação por escalar também — multiplica-se cada elemento
+  pelo número λ.
+- 'A multiplicação de matrizes é a operação que exige mais cuidado: para multiplicar A (m×n) por B (n×p),
+  o número de colunas de A precisa coincidir com o número de linhas de B, e o resultado é uma matriz m×p
+  cujo elemento cᵢⱼ é a soma dos produtos aᵢₖbₖⱼ ao longo de k. Diferente da soma, a multiplicação de
+  matrizes não é comutativa — AB e BA geralmente não coincidem, e às vezes nem os dois produtos existem.'
+- 'A transposta encerra o quarteto: a transposta de uma matriz A (m×n) é a matriz Aᵀ (n×m) obtida trocando
+  linhas por colunas, bᵢⱼ = aⱼᵢ. Ela satisfaz quatro propriedades operatórias que serão citadas sem prova
+  mais adiante — (A+B)ᵀ = Aᵀ+Bᵀ, (λA)ᵀ = λAᵀ, (Aᵀ)ᵀ = A e (AB)ᵀ = BᵀAᵀ, esta última com a ordem invertida,
+  um detalhe que vale memorizar.'
+slides:
+  titulo: 'Slides da aula 02 — Matrizes: operações'
+  arquivo_pdf: CEA049_02_Matrizes_Operacoes.pdf
+referencias_bibliograficas:
+- livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+  citacao: Cap. 1 — 1.1.1
+- livro: Steinbruch & Winterle, Álgebra Linear, 2ª ed.
+  citacao: Apênd. A — Matrizes (operações)
+exercicios_recomendados:
+  itens:
+  - livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+    exercicios: 'Pág. 17: exercícios 1.1.1 a 1.1.10'
+    recomendacao: Este bloco de exercícios cobre tanto as operações matriciais (aula 2) quanto as propriedades
+      vistas na aula seguinte.
+videos_recomendados:
+- titulo: Geometria Analítica e Álgebra Linear – Aula 02 – Matrizes I (UNIVESP)
+  url: https://www.youtube.com/watch?v=0Xcz9IZzb7M
+- titulo: Geometria Analítica e Vetores – Aula 1 – Operações com Matrizes (UNICAMP)
+  url: https://www.youtube.com/watch?v=64f2s5-jy4U

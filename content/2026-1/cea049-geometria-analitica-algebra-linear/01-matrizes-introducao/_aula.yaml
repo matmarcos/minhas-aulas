@@ -1,0 +1,32 @@
+titulo: 'Aula 01 - Matrizes: introdução'
+bloco: 1
+data: ''
+resumo: Definição de matriz; tipos especiais (linha, coluna, quadrada, diagonal, identidade, nula); igualdade
+  de matrizes
+descricao:
+- 'A disciplina abre com o objeto mais básico da Álgebra Linear: a matriz, um quadro retangular com m
+  linhas e n colunas, cujos elementos podem ser números, polinômios ou funções. A convenção adotada no
+  curso — sempre linha por coluna, ordem m×n — é usada sem exceção daqui em diante, então vale automatizá-la
+  já nesta aula.'
+- 'A posição de cada elemento é indicada por dois índices, aᵢⱼ, o da linha i e o da coluna j — uma notação
+  que parece pequena mas evita ambiguidade em toda manipulação futura (por exemplo, ao multiplicar matrizes,
+  onde a ordem dos índices decide quem soma com quem). A partir dela vêm os tipos especiais que reaparecem
+  o semestre inteiro: matriz quadrada (m = n, com sua diagonal principal), matriz-linha, matriz-coluna,
+  matriz diagonal, matriz identidade (notação Iₙ) e matriz nula.'
+- 'A aula fecha com igualdade de matrizes: duas matrizes de mesma ordem são iguais quando todos os elementos
+  correspondentes coincidem, aᵢⱼ = bᵢⱼ para todo i, j. É uma definição simples, mas é o ponto de partida
+  de uma técnica que será usada sem aviso mais adiante — encontrar incógnitas comparando entrada a entrada
+  duas matrizes que devem ser iguais.'
+slides:
+  titulo: 'Slides da aula 01 — Matrizes: introdução'
+  arquivo_pdf: CEA049_01_Matrizes_Introducao.pdf
+referencias_bibliograficas:
+- livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+  citacao: Cap. 1 — 1.1
+- livro: Steinbruch & Winterle, Álgebra Linear, 2ª ed.
+  citacao: Apênd. A — Matrizes (definição)
+videos_recomendados:
+- titulo: Geometria Analítica e Álgebra Linear – Aula 02 – Matrizes I (UNIVESP)
+  url: https://www.youtube.com/watch?v=0Xcz9IZzb7M
+- titulo: Geometria Analítica e Vetores – Aula 1 – Operações com Matrizes (UNICAMP)
+  url: https://www.youtube.com/watch?v=64f2s5-jy4U

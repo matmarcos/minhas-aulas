@@ -1,0 +1,31 @@
+titulo: Aula 25 - Núcleo e imagem
+bloco: 3
+data: ''
+resumo: Núcleo (kernel), imagem e isomorfismo de uma transformação linear
+descricao:
+- Toda transformação linear T:ℝᵐ→ℝⁿ tem dois subespaços associados que descrevem seu comportamento global.
+  O núcleo de T, Ker(T), é o conjunto de todos os vetores de ℝᵐ que T leva ao vetor nulo — mede, em certo
+  sentido, quanta informação a transformação 'apaga'. A imagem de T, Im(T), é o conjunto de todos os vetores
+  de ℝⁿ que são efetivamente atingidos por algum vetor do domínio.
+- O núcleo nunca é vazio — sempre contém pelo menos o vetor nulo, já que toda transformação linear leva
+  0 a 0. Quando o núcleo contém apenas o vetor nulo, a transformação é injetora (não colapsa vetores distintos
+  no mesmo valor); calcular o núcleo, na prática, é resolver o sistema homogêneo T(v)=0, usando a matriz
+  de T obtida na aula 23.
+- Uma transformação T:ℝᵐ→ℝⁿ é um isomorfismo quando é ao mesmo tempo injetora (núcleo trivial) e sobrejetora
+  (imagem igual a todo ℝⁿ) — nesse caso, T tem inversa e os espaços ℝᵐ e ℝⁿ podem ser tratados como algebricamente
+  idênticos. Núcleo e imagem, calculados a partir da matriz de T, são a ferramenta que decide se uma dada
+  transformação linear é invertível, complementando o critério do determinante visto no bloco 1 para o
+  caso particular dos operadores lineares (m=n).
+slides:
+  titulo: Slides da aula 25 — Núcleo e imagem
+  arquivo_pdf: CEA049_25_Nucleo_Imagem.pdf
+referencias_bibliograficas:
+- livro: Anton & Rorres, Álgebra Linear com Aplicações, 10ª ed.
+  citacao: Cap. 4 — 4.7; Cap. 8 — 8.2
+- livro: Steinbruch & Winterle, Álgebra Linear, 2ª ed.
+  citacao: Cap. 4 — Núcleo e Imagem de uma Transformação Linear
+videos_recomendados:
+- titulo: Geometria Analítica e Álgebra Linear – Aula 20 – Núcleo e Imagem, Projeções (UNIVESP)
+  url: https://www.youtube.com/watch?v=VbSm4bMufts
+- titulo: Geometria Analítica e Álgebra Linear – Aula 18 – Transformações Lineares (UNIVESP)
+  url: https://www.youtube.com/watch?v=GG0l7plSEAs

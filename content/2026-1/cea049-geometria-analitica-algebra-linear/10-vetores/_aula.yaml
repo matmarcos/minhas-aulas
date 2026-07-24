@@ -1,0 +1,39 @@
+titulo: Aula 10 - Vetores
+bloco: 2
+data: ''
+resumo: 'Vetores no plano e no espaço: definição geométrica, soma e multiplicação por escalar; componentes'
+descricao:
+- 'O segundo bloco muda de assunto — de sistemas e matrizes para álgebra vetorial — e começa pela definição
+  geométrica de vetor: a classe de equivalência de todos os segmentos orientados com a mesma direção,
+  o mesmo comprimento e o mesmo sentido. Um vetor não é um segmento específico, é o que vários segmentos
+  diferentes têm em comum.'
+- A soma de vetores é definida pela regra do paralelogramo (ou do triângulo), e satisfaz as propriedades
+  familiares da adição — comutatividade, associatividade, existência do vetor nulo e do vetor simétrico
+  (oposto). A multiplicação por escalar α redimensiona o vetor por |α| e inverte o sentido quando α é
+  negativo, mantendo a mesma direção.
+- 'A parte final da aula traduz essa geometria em números: identificando cada ponto do plano com um vetor
+  a partir da origem, obtém-se a representação por coordenadas V=(x,y), com operações componente a componente
+  (soma, multiplicação por escalar, igualdade). O mesmo esquema, com uma coordenada a mais, estende-se
+  para vetores no espaço tridimensional, V=(x,y,z) — extensão natural que a aula 11 explora em detalhe
+  antes de seguir para norma e produto escalar.'
+slides:
+  titulo: Slides da aula 10 — Vetores
+  arquivo_pdf: CEA049_10_Vetores.pdf
+referencias_bibliograficas:
+- livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+  citacao: Cap. 3 — 3.1
+- livro: Steinbruch & Winterle, Geometria Analítica, 2ª ed.
+  citacao: Cap. 1; Cap. 2
+exercicios_recomendados:
+  itens:
+  - livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+    exercicios: 'Pág. 154: exercícios 3.1.1 a 3.1.21 (exceto 3.1.14)'
+    recomendacao: Operações com vetores por componentes, no plano e no espaço.
+  - livro: Anton & Rorres, Álgebra Linear com Aplicações, 10ª ed.
+    exercicios: 'Seção 3.1: 1 a 37'
+    recomendacao: Exercícios adicionais sobre vetores e suas operações básicas.
+videos_recomendados:
+- titulo: Geometria Analítica e Álgebra Linear – Aula 08 – Vetores no Plano e no Espaço (UNIVESP)
+  url: https://www.youtube.com/watch?v=GzDLLoLljII
+- titulo: Geometria Analítica e Álgebra Linear – Aula 09 – Espaços Vetoriais (UNIVESP)
+  url: https://www.youtube.com/watch?v=V5B67r4uFs0

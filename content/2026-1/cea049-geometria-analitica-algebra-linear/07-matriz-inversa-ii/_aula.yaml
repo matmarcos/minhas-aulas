@@ -1,0 +1,39 @@
+titulo: Aula 07 - Matriz inversa II
+bloco: 1
+data: ''
+resumo: Cálculo da inversa por escalonamento; matrizes elementares
+descricao:
+- Com a definição de inversa estabelecida na aula anterior, esta aula ensina como efetivamente calculá-la.
+  O método consiste em colocar a matriz A ao lado da identidade, formando [A|I], e aplicar o método de
+  Gauss-Jordan (aula 4) a esse bloco até que o lado esquerdo se torne a identidade — nesse ponto, o lado
+  direito é A⁻¹.
+- 'O método também serve como teste de invertibilidade na prática: se, ao aplicar Gauss-Jordan, alguma
+  linha do lado esquerdo se anula por completo antes de chegar à identidade, a matriz não é invertível.
+  Uma aplicação direta e importante é a resolução de sistemas: se A é invertível, o sistema AX=b tem solução
+  única X=A⁻¹b; e um sistema homogêneo AX=0 tem solução não trivial se, e somente se, A não é invertível
+  — uma antecipação do critério via determinante que vem no bloco seguinte.'
+- 'A aula ainda toca em duas aplicações opcionais da inversão de matrizes que aparecem no livro-texto,
+  mas não são cobradas em prova: interpolação polinomial (encontrar o polinômio que passa por um conjunto
+  de pontos, resolvendo um sistema linear para os coeficientes) e criptografia (usar uma matriz invertível
+  para codificar e decodificar mensagens).'
+slides:
+  titulo: Slides da aula 07 — Matriz inversa II
+  arquivo_pdf: CEA049_07_Matriz_Inversa_II.pdf
+referencias_bibliograficas:
+- livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+  citacao: Cap. 2 — 2.1.2, 2.1.3
+- livro: Steinbruch & Winterle, Álgebra Linear, 2ª ed.
+  citacao: Apênd. A — Inversão de Matrizes
+exercicios_recomendados:
+  itens:
+  - livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+    exercicios: 'Pág. 93: exercícios 2.1.1 a 2.1.8'
+    recomendacao: Mesmo bloco de exercícios da aula 6.
+  - livro: Anton & Rorres, Álgebra Linear com Aplicações, 10ª ed.
+    exercicios: Seções 1.4 a 1.6
+    recomendacao: Exercícios adicionais sobre matriz inversa e método de cálculo.
+videos_recomendados:
+- titulo: Geometria Analítica e Álgebra Linear – Aula 06 – Método de Inversão de Matriz (UNIVESP)
+  url: https://www.youtube.com/watch?v=n0VW6zcwuT4
+- titulo: Geometria Analítica e Álgebra Linear – Aula 05 – Matriz Inversa (UNIVESP)
+  url: https://www.youtube.com/watch?v=RNy8yHghiVA

@@ -1,0 +1,36 @@
+titulo: Aula 23 - Matriz de uma transformação
+bloco: 3
+data: ''
+resumo: Matriz associada a uma transformação linear em relação a bases
+descricao:
+- 'Toda transformação linear T:ℝᵐ→ℝⁿ pode ser representada por uma matriz de ordem n×m que reproduz exatamente
+  a ação de T sobre os elementos de ℝᵐ. Em geral essa matriz depende das bases escolhidas em ℝᵐ e ℝⁿ,
+  mas o curso opta por uma simplificação deliberada: usar sempre as bases canônicas, com ênfase em ℝ²
+  e ℝ³ — a matriz de T é então formada colocando T(e₁), T(e₂), …, T(eₘ) como colunas.'
+- 'Essa correspondência funciona nos dois sentidos: dada a fórmula de T, obtém-se a matriz calculando
+  a imagem de cada vetor da base canônica; e, inversamente, dada uma matriz [S], obtém-se a lei que define
+  a transformação associada S(x,y,z) multiplicando a matriz pelo vetor (x,y,z) — o produto matriz-vetor
+  da aula 2 reaparece aqui como o mecanismo que converte uma matriz de volta em fórmula.'
+- 'Essa dualidade entre transformação e matriz é o que permite, daqui em diante, tratar problemas sobre
+  transformações lineares como problemas sobre matrizes — e vice-versa: compor duas transformações lineares
+  corresponde a multiplicar suas matrizes, na mesma ordem; e encontrar a transformação inversa de uma
+  T invertível corresponde a calcular a matriz inversa, já dominada desde a aula 7.'
+slides:
+  titulo: Slides da aula 23 — Matriz de uma transformação
+  arquivo_pdf: CEA049_23_Matriz_Transformacao.pdf
+referencias_bibliograficas:
+- livro: Anton & Rorres, Álgebra Linear com Aplicações, 10ª ed.
+  citacao: Cap. 4 — 4.9; Cap. 8 — 8.4
+- livro: Steinbruch & Winterle, Álgebra Linear, 2ª ed.
+  citacao: Cap. 4 — Matriz de uma Transformação Linear
+exercicios_recomendados:
+  itens:
+  - livro: Steinbruch & Winterle, Álgebra Linear, 2ª ed.
+    exercicios: 'Seção 4.8: exercícios 1 a 10, 12, 14 a 21'
+    recomendacao: Encontrar a matriz associada a transformações lineares dadas por fórmula, e a fórmula
+      a partir da matriz.
+videos_recomendados:
+- titulo: Geometria Analítica e Álgebra Linear – Aula 19 – Mudança de Base, Representação Matricial (UNIVESP)
+  url: https://www.youtube.com/watch?v=5KMgCvSeBB4
+- titulo: Geometria Analítica e Álgebra Linear – Aula 18 – Transformações Lineares (UNIVESP)
+  url: https://www.youtube.com/watch?v=GG0l7plSEAs

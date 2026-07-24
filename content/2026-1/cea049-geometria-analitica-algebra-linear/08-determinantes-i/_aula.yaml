@@ -1,0 +1,30 @@
+titulo: Aula 08 - Determinantes I
+bloco: 1
+data: ''
+resumo: Definição de determinante por expansão em cofatores; menor complementar e cofator
+descricao:
+- O determinante é um número associado a cada matriz quadrada que resume, entre outras coisas, se ela
+  é invertível. A definição formal usa permutações, mas o curso opta por não desenvolvê-la — o foco é
+  nas técnicas de cálculo. Para matrizes 2×2 e 3×3, a Regra de Sarrus dá uma fórmula direta.
+- Para matrizes maiores, usa-se expansão em cofatores. O cofator do elemento aᵢⱼ é Aᵢⱼ = (−1)^(i+j)Dᵢⱼ,
+  onde Dᵢⱼ é o determinante da matriz menor obtida ao remover a linha i e a coluna j de A. O determinante
+  de A pode então ser calculado por desenvolvimento por linha ou por coluna qualquer — somando os produtos
+  aᵢⱼAᵢⱼ ao longo dessa linha ou coluna — e o resultado é o mesmo não importa qual linha ou coluna se
+  escolha.
+- 'Uma leitura vale a pena além do que foi apresentado em aula: o Exemplo 2.11 do livro-texto trata do
+  determinante de matrizes triangulares, que é simplesmente o produto dos elementos da diagonal — um atalho
+  que economiza tempo sempre que a matriz já estiver (ou puder ser levada, sem trocar o valor do determinante)
+  à forma triangular.'
+slides:
+  titulo: Slides da aula 08 — Determinantes I
+  arquivo_pdf: CEA049_08_Determinantes_I.pdf
+referencias_bibliograficas:
+- livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+  citacao: Cap. 2 — 2.2
+- livro: Steinbruch & Winterle, Álgebra Linear, 2ª ed.
+  citacao: Apênd. A — Determinantes
+videos_recomendados:
+- titulo: 'Geometria Analítica e Álgebra Linear – Aula 07 – Determinante: Definição e Propriedades (UNIVESP)'
+  url: https://www.youtube.com/watch?v=novqED_7dI8
+- titulo: Álgebra Linear – Aula 01 – Matrizes e Determinantes, Parte 1 (UNIVESP)
+  url: https://www.youtube.com/watch?v=r1o7RryS8WM

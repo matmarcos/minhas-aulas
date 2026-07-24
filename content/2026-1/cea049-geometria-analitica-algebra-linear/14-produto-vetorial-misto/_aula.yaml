@@ -1,0 +1,38 @@
+titulo: Aula 14 - Produto vetorial e produto misto
+bloco: 2
+data: ''
+resumo: Aplicações do produto vetorial; produto misto e interpretação geométrica (volume)
+descricao:
+- O produto misto de três vetores U, V e W, denotado [U,V,W], é definido como U·(V×W) — um produto escalar
+  aplicado ao resultado de um produto vetorial — e se calcula diretamente como o determinante 3×3 formado
+  pelas componentes dos três vetores em linha.
+- 'Sua interpretação geométrica é análoga à do produto vetorial, mas uma dimensão acima: o produto misto
+  vale zero exatamente quando os três vetores são coplanares (ou quando algum é nulo, ou dois são colineares);
+  e, quando não é zero, seu módulo é o volume do paralelepípedo com arestas U, V e W. O volume do tetraedro
+  com essas mesmas arestas é um sexto desse valor.'
+- O produto misto fecha o repertório de ferramentas vetoriais do bloco 2 e é o que permite, por exemplo,
+  verificar rapidamente se quatro pontos no espaço são coplanares (calculando o produto misto de três
+  vetores formados a partir deles) — um teste que aparece com frequência nos exercícios de revisão do
+  capítulo e prepara o terreno para as equações de plano da aula seguinte.
+slides:
+  titulo: Slides da aula 14 — Produto vetorial e produto misto
+  arquivo_pdf: CEA049_14_Produto_Vetorial_Misto.pdf
+referencias_bibliograficas:
+- livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+  citacao: Cap. 3 — 3.3.2
+- livro: Steinbruch & Winterle, Geometria Analítica, 2ª ed.
+  citacao: Cap. 3
+exercicios_recomendados:
+  itens:
+  - livro: Santos, Um Curso de Geometria Analítica e Álgebra Linear
+    exercicios: 'Pág. 199: exercícios 3.3.1 a 3.3.8'
+    recomendacao: Mesmo bloco de exercícios da aula 13 — os itens finais tratam do produto misto e do
+      teste de coplanaridade.
+  - livro: Anton & Rorres, Álgebra Linear com Aplicações, 10ª ed.
+    exercicios: Seções 3.1 a 3.5
+    recomendacao: Mesma lista ampla indicada na aula 13.
+videos_recomendados:
+- titulo: Geometria Analítica e Álgebra Linear – Aula 12 – Produtos Vetorial e Misto (UNIVESP)
+  url: https://www.youtube.com/watch?v=Mm2OxB-rWdw
+- titulo: Geometria Analítica e Álgebra Linear – Aula 13 – Retas no Plano e no Espaço (UNIVESP)
+  url: https://www.youtube.com/watch?v=92jlJTW11Sk
