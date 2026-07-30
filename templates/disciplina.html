@@ -13,4 +13,11 @@
   </a>
   {% endfor %}
 </div>
+
+{% if disciplina.recursos_externos %}
+<a class="recurso-sugestao" href="{{ root }}{{ semestre.slug }}/{{ disciplina.slug }}/recursos-externos/index.html">
+  <span class="recurso-label">Alternativa de estudo</span>
+  Se você preferir, pode estudar por essas aulas do Prof. <strong>{{ disciplina.recursos_externos.professor }}</strong>, da <strong>{{ disciplina.recursos_externos.universidade }}</strong>.
+</a>
+{% endif %}
 {% endblock %}

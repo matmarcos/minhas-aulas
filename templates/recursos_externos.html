@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}Recursos externos · {{ disciplina.titulo }} · Minhas Aulas{% endblock %}
+{% block breadcrumbs %}<a href="{{ root }}index.html">Início</a> / <a href="{{ root }}{{ semestre.slug }}/index.html">{{ semestre.titulo }}</a> / <a href="{{ root }}{{ semestre.slug }}/{{ disciplina.slug }}/index.html">{{ disciplina.titulo }}</a> / Recursos externos{% endblock %}
+{% block content %}
+<h1>Recursos externos</h1>
+<p class="subtitle">Uma opção de estudo alternativa em vídeo, caso você prefira.</p>
+
+<div class="card" style="margin-bottom: 24px;">
+  <h2>{{ recursos.titulo }}</h2>
+  <p>Prof. {{ recursos.professor }} — {{ recursos.universidade }}</p>
+  <p><a href="{{ recursos.url_curso }}" target="_blank" rel="noopener">Acessar a playlist completa no YouTube ↗</a></p>
+</div>
+
+{% if recursos.aviso %}
+<p class="aviso-ia">{{ recursos.aviso }}</p>
+{% endif %}
+
+<div class="tabela-scroll">
+<table class="tabela-correspondencia">
+  <thead>
+    <tr>
+      <th>Sua aula</th>
+      <th>Vídeo(s) correspondente(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for item in recursos.correspondencias %}
+    <tr class="{% if not item.videos %}sem-correspondencia{% endif %}">
+      <td>
+        <strong>Aula {{ item.aula_numero }}</strong> — {{ item.aula_titulo }}
+      </td>
+      <td>
+        {% if item.videos %}
+        <ul class="videos-correspondentes">
+          {% for v in item.videos %}
+          <li><a href="{{ v.url }}" target="_blank" rel="noopener">{{ v.titulo }}</a></li>
+          {% endfor %}
+        </ul>
+        {% if item.nota %}<p class="nota-fonte">{{ item.nota }}</p>{% endif %}
+        {% else %}
+        <span class="meta">sem vídeo correspondente nesta playlist</span>
+        {% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+{% endblock %}

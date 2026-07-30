@@ -1,7 +1,6 @@
 titulo: CEA055 - Estatística e Probabilidade
-descricao: Estatística descritiva, probabilidade, variáveis aleatórias, distribuições
-  amostrais, estimação, testes de hipótese e regressão linear. Turmas de Computação
-  e Sistemas de Informação, UFOP.
+descricao: Estatística descritiva, probabilidade, variáveis aleatórias, distribuições amostrais, estimação,
+  testes de hipótese e regressão linear. Turmas de Computação e Sistemas de Informação, UFOP.
 professor: Marcos Goulart Lima
 blocos:
   1:
@@ -9,8 +8,208 @@ blocos:
     descricao: Estatística descritiva, probabilidade e variáveis aleatórias.
   2:
     titulo: Bloco 2 — Prova P2
-    descricao: Modelos de distribuição discretos e contínuos, aproximação normal e
-      distribuições amostrais.
+    descricao: Modelos de distribuição discretos e contínuos, aproximação normal e distribuições amostrais.
   3:
     titulo: Bloco 3 — Prova P3
     descricao: Intervalos de confiança, testes de hipótese e regressão linear.
+recursos_externos:
+  titulo: Estatística e Probabilidade
+  professor: José Ricardo Gonçalves de Mendonça
+  universidade: UNIVESP (Universidade Virtual do Estado de São Paulo)
+  url_curso: https://www.youtube.com/playlist?list=PL3XWwJYdqO23a1iwQtuwkp0w0Ovm_WMtz
+  aviso: Playlist de videoaulas com boa cobertura de Estatística Descritiva, Probabilidade, Variáveis
+    Aleatórias e estimação (média e variância) — inclusive construção de intervalos de confiança. Não
+    cobre testes de hipótese, variáveis aleatórias multidimensionais, covariância/correlação nem regressão
+    linear (Aulas 21 a 27) — o próprio professor menciona explicitamente que o curso para antes de chegar
+    em testes de hipótese.
+  correspondencias:
+  - aula_numero: 1
+    aula_titulo: 'Estatística Descritiva I: dados qualitativos/quantitativos e medidas de posição'
+    bloco: 1
+    videos:
+    - titulo: Introdução à estatística descritiva
+      url: https://www.youtube.com/watch?v=AI8IoN0donI&list=PL3XWwJYdqO23a1iwQtuwkp0w0Ovm_WMtz&index=1
+    - titulo: Distribuição de frequências
+      url: https://www.youtube.com/watch?v=lCe761IdbuY&list=PL3XWwJYdqO23a1iwQtuwkp0w0Ovm_WMtz&index=3
+    - &id001
+      titulo: Medidas de posição e de dispersão
+      url: https://www.youtube.com/watch?v=3EDqcdiMN38&list=PL3XWwJYdqO23a1iwQtuwkp0w0Ovm_WMtz&index=4
+    - &id002
+      titulo: 'Organização e apresentação de dados: Exemplos resolvidos'
+      url: https://www.youtube.com/watch?v=X-lNPDeb6GI&list=PL3XWwJYdqO23a1iwQtuwkp0w0Ovm_WMtz&index=5
+    nota: null
+  - aula_numero: 2
+    aula_titulo: 'Estatística Descritiva II: medidas de dispersão, quartis e box plots'
+    bloco: 1
+    videos:
+    - *id001
+    - *id002
+    nota: null
+  - aula_numero: 3
+    aula_titulo: 'Introdução à Probabilidade: espaço amostral e eventos'
+    bloco: 1
+    videos:
+    - titulo: Os axiomas da teoria das probabilidades
+      url: https://www.youtube.com/watch?v=g-mPO-NQdlQ&list=PL3XWwJYdqO23a1iwQtuwkp0w0Ovm_WMtz&index=6
+    nota: null
+  - aula_numero: 4
+    aula_titulo: Técnicas de contagem
+    bloco: 1
+    videos:
+    - &id003
+      titulo: 'Probabilidade: Exemplos resolvidos'
+      url: https://www.youtube.com/watch?v=oY9u8N7F0CI&list=PL3XWwJYdqO23a1iwQtuwkp0w0Ovm_WMtz&index=8
+    nota: null
+  - aula_numero: 5
+    aula_titulo: Probabilidade condicional e independência
+    bloco: 1
+    videos:
+    - titulo: Probabilidade condicional e independência
+      url: https://www.youtube.com/watch?v=EbM4iOL56FE&list=PL3XWwJYdqO23a1iwQtuwkp0w0Ovm_WMtz&index=7
+    nota: null
+  - aula_numero: 6
+    aula_titulo: Teorema da probabilidade total e Teorema de Bayes
+    bloco: 1
+    videos:
+    - *id003
+    nota: null
+  - aula_numero: 7
+    aula_titulo: 'Variáveis aleatórias discretas: definição, esperança e variância'
+    bloco: 1
+    videos:
+    - titulo: Variáveis aleatórias e valores esperados
+      url: https://www.youtube.com/watch?v=BdhPs55w9o0&list=PL3XWwJYdqO23a1iwQtuwkp0w0Ovm_WMtz&index=9
+    nota: null
+  - aula_numero: 8
+    aula_titulo: 'Variáveis aleatórias contínuas: esperança e variância'
+    bloco: 1
+    videos:
+    - &id006
+      titulo: Variáveis aleatórias contínuas
+      url: https://www.youtube.com/watch?v=M70seFN-T5k&list=PL3XWwJYdqO23a1iwQtuwkp0w0Ovm_WMtz&index=12
+    nota: null
+  - aula_numero: 9
+    aula_titulo: 'Modelos discretos I: uniforme discreta, Bernoulli e geométrica'
+    bloco: 1
+    videos:
+    - &id004
+      titulo: Principais variáveis aleatórias discretas
+      url: https://www.youtube.com/watch?v=i7TMT1Eq3lM&list=PL3XWwJYdqO23a1iwQtuwkp0w0Ovm_WMtz&index=10
+    - &id005
+      titulo: 'Variáveis aleatórias discretas: Exemplos resolvidos'
+      url: https://www.youtube.com/watch?v=xn_FYKNNjsY&list=PL3XWwJYdqO23a1iwQtuwkp0w0Ovm_WMtz&index=11
+    nota: null
+  - aula_numero: 10
+    aula_titulo: 'Modelos discretos II: binomial e hipergeométrica'
+    bloco: 2
+    videos:
+    - *id004
+    - *id005
+    nota: null
+  - aula_numero: 11
+    aula_titulo: 'Modelos discretos III: distribuição de Poisson'
+    bloco: 2
+    videos:
+    - *id004
+    nota: null
+  - aula_numero: 12
+    aula_titulo: 'Modelos contínuos I: uniforme contínua e exponencial'
+    bloco: 2
+    videos:
+    - *id006
+    nota: null
+  - aula_numero: 13
+    aula_titulo: 'Modelos contínuos II: distribuição normal e normal padrão'
+    bloco: 2
+    videos:
+    - *id006
+    nota: null
+  - aula_numero: 14
+    aula_titulo: Aproximação normal e revisão geral dos modelos de distribuição
+    bloco: 2
+    videos:
+    - titulo: A aproximação normal à distribuição binomial
+      url: https://www.youtube.com/watch?v=nBo9CJo6x9k&list=PL3XWwJYdqO23a1iwQtuwkp0w0Ovm_WMtz&index=13
+    nota: null
+  - aula_numero: 15
+    aula_titulo: População, amostra, amostragem e parâmetros
+    bloco: 2
+    videos:
+    - &id007
+      titulo: Introdução à inferência estatística
+      url: https://www.youtube.com/watch?v=MmWwHz8nsVc&list=PL3XWwJYdqO23a1iwQtuwkp0w0Ovm_WMtz&index=16
+    nota: null
+  - aula_numero: 16
+    aula_titulo: Distribuição amostral da média e da proporção
+    bloco: 2
+    videos:
+    - &id008
+      titulo: Distribuição Amostral da Média
+      url: https://www.youtube.com/watch?v=KD1XbNjsmWM&list=PL3XWwJYdqO23a1iwQtuwkp0w0Ovm_WMtz&index=17
+    nota: o vídeo cobre a distribuição amostral da média; não aborda a da proporção
+  - aula_numero: 17
+    aula_titulo: Teorema do Limite Central e estimação pontual
+    bloco: 2
+    videos:
+    - titulo: Leis dos grandes números
+      url: https://www.youtube.com/watch?v=1CVnYyxKWTc&list=PL3XWwJYdqO23a1iwQtuwkp0w0Ovm_WMtz&index=14
+    - titulo: O teorema central do limite
+      url: https://www.youtube.com/watch?v=34qb9m0NeNc&list=PL3XWwJYdqO23a1iwQtuwkp0w0Ovm_WMtz&index=15
+    - *id007
+    nota: null
+  - aula_numero: 18
+    aula_titulo: Distribuições t de Student e qui-quadrado
+    bloco: 2
+    videos:
+    - *id008
+    - &id009
+      titulo: Distribuição Amostral da Variância
+      url: https://www.youtube.com/watch?v=I0NaFXGu-UY&list=PL3XWwJYdqO23a1iwQtuwkp0w0Ovm_WMtz&index=18
+    nota: null
+  - aula_numero: 19
+    aula_titulo: Intervalo de confiança para a média
+    bloco: 3
+    videos:
+    - *id008
+    nota: null
+  - aula_numero: 20
+    aula_titulo: Intervalo de confiança para proporção e variância; tamanho de amostra
+    bloco: 3
+    videos:
+    - *id009
+    nota: o vídeo cobre o IC para a variância; não aborda proporção nem tamanho de amostra
+  - aula_numero: 21
+    aula_titulo: Introdução ao teste de hipóteses
+    bloco: 3
+    videos: []
+    nota: null
+  - aula_numero: 22
+    aula_titulo: Teste de hipótese para a média — variância conhecida
+    bloco: 3
+    videos: []
+    nota: null
+  - aula_numero: 23
+    aula_titulo: Teste de hipótese para a média — variância desconhecida
+    bloco: 3
+    videos: []
+    nota: null
+  - aula_numero: 24
+    aula_titulo: 'Variáveis aleatórias multidimensionais: distribuições conjuntas'
+    bloco: 3
+    videos: []
+    nota: null
+  - aula_numero: 25
+    aula_titulo: Covariância e correlação
+    bloco: 3
+    videos: []
+    nota: null
+  - aula_numero: 26
+    aula_titulo: Correlação linear e modelo de regressão linear simples
+    bloco: 3
+    videos: []
+    nota: null
+  - aula_numero: 27
+    aula_titulo: Avaliação do modelo de regressão linear e aplicações
+    bloco: 3
+    videos: []
+    nota: null

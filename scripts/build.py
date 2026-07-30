@@ -118,6 +118,7 @@ def build():
                 "titulo": disc_meta.get("titulo", disciplina_dir.name),
                 "descricao": disc_meta.get("descricao", ""),
                 "professor": disc_meta.get("professor", ""),
+                "recursos_externos": disc_meta.get("recursos_externos"),
                 "aulas": [],
                 "_src_dir": disciplina_dir,
             }
@@ -195,6 +196,23 @@ def build():
                 tpl.render(root="../../", semestre=semestre, disciplina=disciplina),
                 encoding="utf-8",
             )
+
+            # pagina opcional de recursos externos (curso/playlist alternativo,
+            # com tabela de correspondencia aula-a-aula) - so gerada quando a
+            # disciplina declara 'recursos_externos' no _disciplina.yaml
+            if disciplina["recursos_externos"]:
+                rec_dir = disc_dir / "recursos-externos"
+                rec_dir.mkdir(parents=True, exist_ok=True)
+                tpl = env.get_template("recursos_externos.html")
+                (rec_dir / "index.html").write_text(
+                    tpl.render(
+                        root="../../../",
+                        semestre=semestre,
+                        disciplina=disciplina,
+                        recursos=disciplina["recursos_externos"],
+                    ),
+                    encoding="utf-8",
+                )
 
             # pagina de cada bloco (P1/P2/P3) - pasta irma das pastas de aula dentro
             # da disciplina, assim as urls das aulas (e os links do Colab, que ja
