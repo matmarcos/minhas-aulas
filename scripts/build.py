@@ -197,19 +197,20 @@ def build():
                 encoding="utf-8",
             )
 
-            # pagina opcional de recursos externos (curso/playlist alternativo,
-            # com tabela de correspondencia aula-a-aula) - so gerada quando a
-            # disciplina declara 'recursos_externos' no _disciplina.yaml
-            if disciplina["recursos_externos"]:
-                rec_dir = disc_dir / "recursos-externos"
+            # paginas opcionais de recursos externos (cursos/playlists alternativos,
+            # cada um com sua tabela de correspondencia aula-a-aula) - uma pasta por
+            # fonte, so geradas quando a disciplina declara 'recursos_externos' (lista)
+            # no _disciplina.yaml
+            for recurso in disciplina["recursos_externos"] or []:
+                rec_dir = disc_dir / "recursos-externos" / recurso["slug"]
                 rec_dir.mkdir(parents=True, exist_ok=True)
                 tpl = env.get_template("recursos_externos.html")
                 (rec_dir / "index.html").write_text(
                     tpl.render(
-                        root="../../../",
+                        root="../../../../",
                         semestre=semestre,
                         disciplina=disciplina,
-                        recursos=disciplina["recursos_externos"],
+                        recursos=recurso,
                     ),
                     encoding="utf-8",
                 )

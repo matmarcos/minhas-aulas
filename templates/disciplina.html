@@ -15,9 +15,13 @@
 </div>
 
 {% if disciplina.recursos_externos %}
-<a class="recurso-sugestao" href="{{ root }}{{ semestre.slug }}/{{ disciplina.slug }}/recursos-externos/index.html">
-  <span class="recurso-label">Alternativa de estudo</span>
-  Se você preferir, pode estudar por essas aulas do Prof. <strong>{{ disciplina.recursos_externos.professor }}</strong>, da <strong>{{ disciplina.recursos_externos.universidade }}</strong>.
-</a>
+<h2 class="secao-titulo">Alternativa{{ "s" if disciplina.recursos_externos|length > 1 }} de estudo</h2>
+<div class="card-grid card-grid-compact">
+  {% for recurso in disciplina.recursos_externos %}
+  <a class="card card-recurso" href="{{ root }}{{ semestre.slug }}/{{ disciplina.slug }}/recursos-externos/{{ recurso.slug }}/index.html">
+    <p>Se você preferir, pode estudar por essas aulas do Prof. <strong>{{ recurso.professor }}</strong>, da <strong>{{ recurso.universidade }}</strong>.</p>
+  </a>
+  {% endfor %}
+</div>
 {% endif %}
 {% endblock %}

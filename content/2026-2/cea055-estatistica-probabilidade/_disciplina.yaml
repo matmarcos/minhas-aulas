@@ -13,7 +13,7 @@ blocos:
     titulo: Bloco 3 — Prova P3
     descricao: Intervalos de confiança, testes de hipótese e regressão linear.
 recursos_externos:
-  titulo: Estatística e Probabilidade
+- titulo: Estatística e Probabilidade
   professor: José Ricardo Gonçalves de Mendonça
   universidade: UNIVESP (Universidade Virtual do Estado de São Paulo)
   url_curso: https://www.youtube.com/playlist?list=PL3XWwJYdqO23a1iwQtuwkp0w0Ovm_WMtz
@@ -213,3 +213,265 @@ recursos_externos:
     bloco: 3
     videos: []
     nota: null
+  slug: univesp
+- slug: stat4all
+  titulo: Introdução à Estatística
+  professor: Eduardo Vargas Ferreira
+  universidade: UFPR (Universidade Federal do Paraná)
+  url_curso: https://stat4all.github.io/
+  aviso: Slides em PDF (sem vídeo) organizados por unidade, com boa cobertura de Estatística Descritiva,
+    Probabilidade, Variáveis Aleatórias, Distribuições, Intervalos de Confiança e Testes de Hipótese —
+    inclusive IC para proporção/variância/tamanho de amostra, que faltam na outra alternativa. Não cobre
+    técnicas de contagem (Aula 4), variáveis aleatórias multidimensionais, covariância/correlação nem
+    regressão linear (Aulas 24 a 27).
+  correspondencias:
+  - aula_numero: 1
+    aula_titulo: 'Estatística Descritiva I: dados qualitativos/quantitativos e medidas de posição'
+    bloco: 1
+    videos:
+    - titulo: Tipos de variáveis
+      url: https://stat4all.github.io/slides/Unid_2_P1.pdf
+    - titulo: Tabela de frequência
+      url: https://stat4all.github.io/slides/Unid_2_P2.pdf
+    - titulo: Gráficos para variáveis qualitativas
+      url: https://stat4all.github.io/slides/Unid_2_P3.pdf
+    - titulo: Gráficos para variáveis quantitativas
+      url: https://stat4all.github.io/slides/Unid_2_P4.pdf
+    - titulo: Introdução às medidas resumo
+      url: https://stat4all.github.io/slides/Unid_2_P5.pdf
+    - titulo: Medidas resumo de posição
+      url: https://stat4all.github.io/slides/Unid_2_P6.pdf
+    nota: null
+  - aula_numero: 2
+    aula_titulo: 'Estatística Descritiva II: medidas de dispersão, quartis e box plots'
+    bloco: 1
+    videos:
+    - titulo: Medidas resumo de dispersão e box-plots
+      url: https://stat4all.github.io/slides/Unid_2_P7.pdf
+    nota: null
+  - aula_numero: 3
+    aula_titulo: 'Introdução à Probabilidade: espaço amostral e eventos'
+    bloco: 1
+    videos:
+    - titulo: Teoria de conjuntos
+      url: https://stat4all.github.io/slides/Unid_3_P1.pdf
+    - titulo: Espaço amostral
+      url: https://stat4all.github.io/slides/Unid_3_P2.pdf
+    - titulo: Operações com eventos
+      url: https://stat4all.github.io/slides/Unid_3_P3.pdf
+    nota: null
+  - aula_numero: 4
+    aula_titulo: Técnicas de contagem
+    bloco: 1
+    videos: []
+    nota: análise combinatória / técnicas de contagem não é tratada nesta fonte
+  - aula_numero: 5
+    aula_titulo: Probabilidade condicional e independência
+    bloco: 1
+    videos:
+    - &id010
+      titulo: Probabilidade condicional e lei da probabilidade total
+      url: https://stat4all.github.io/slides/Unid_3_P4.pdf
+    - titulo: Exercícios sobre probabilidade condicional
+      url: https://stat4all.github.io/slides/Unid_3_P5.pdf
+    nota: null
+  - aula_numero: 6
+    aula_titulo: Teorema da probabilidade total e Teorema de Bayes
+    bloco: 1
+    videos:
+    - *id010
+    - titulo: Regra de Bayes
+      url: https://stat4all.github.io/slides/Unid_3_P7.pdf
+    nota: null
+  - aula_numero: 7
+    aula_titulo: 'Variáveis aleatórias discretas: definição, esperança e variância'
+    bloco: 1
+    videos:
+    - titulo: Conceito de variáveis aleatórias
+      url: https://stat4all.github.io/slides/Unid_4_P1.pdf
+    - titulo: Função de distribuição de probabilidade
+      url: https://stat4all.github.io/slides/Unid_4_P2.pdf
+    - titulo: Função de distribuição acumulada para variável discreta
+      url: https://stat4all.github.io/slides/Unid_4_P3.pdf
+    - titulo: Exemplos sobre distribuição de probabilidade
+      url: https://stat4all.github.io/slides/Unid_4_P4.pdf
+    - titulo: Esperança de uma variável aleatória discreta
+      url: https://stat4all.github.io/slides/Unid_4_P7.pdf
+    - titulo: Variância de uma variável aleatória discreta
+      url: https://stat4all.github.io/slides/Unid_4_P8.pdf
+    nota: null
+  - aula_numero: 8
+    aula_titulo: 'Variáveis aleatórias contínuas: esperança e variância'
+    bloco: 1
+    videos:
+    - titulo: Função densidade de probabilidade
+      url: https://stat4all.github.io/slides/Unid_4_P5.pdf
+    - titulo: F.d.a. para variável contínua
+      url: https://stat4all.github.io/slides/Unid_4_P6.pdf
+    - titulo: Esperança e variância de uma v.a. contínua
+      url: https://stat4all.github.io/slides/Unid_4_P9.pdf
+    nota: null
+  - aula_numero: 9
+    aula_titulo: 'Modelos discretos I: uniforme discreta, Bernoulli e geométrica'
+    bloco: 1
+    videos:
+    - &id011
+      titulo: Distribuição Uniforme discreta, Bernoulli e Binomial
+      url: https://stat4all.github.io/slides/Unid_5_P1.pdf
+    - titulo: Distribuição Geométrica e Binomial Negativa
+      url: https://stat4all.github.io/slides/Unid_5_P4.pdf
+    nota: null
+  - aula_numero: 10
+    aula_titulo: 'Modelos discretos II: binomial e hipergeométrica'
+    bloco: 2
+    videos:
+    - *id011
+    - titulo: Distribuição Hipergeométrica
+      url: https://stat4all.github.io/slides/Unid_5_P2.pdf
+    nota: null
+  - aula_numero: 11
+    aula_titulo: 'Modelos discretos III: distribuição de Poisson'
+    bloco: 2
+    videos:
+    - titulo: Distribuição de Poisson
+      url: https://stat4all.github.io/slides/Unid_5_P3.pdf
+    nota: null
+  - aula_numero: 12
+    aula_titulo: 'Modelos contínuos I: uniforme contínua e exponencial'
+    bloco: 2
+    videos:
+    - titulo: Distribuição Uniforme e Exponencial
+      url: https://stat4all.github.io/slides/Unid_5_P5.pdf
+    nota: null
+  - aula_numero: 13
+    aula_titulo: 'Modelos contínuos II: distribuição normal e normal padrão'
+    bloco: 2
+    videos:
+    - titulo: Distribuição Normal (parte 1)
+      url: https://stat4all.github.io/slides/Unid_5_P6.pdf
+    - titulo: Distribuição Normal (parte 2)
+      url: https://stat4all.github.io/slides/Unid_5_P7.pdf
+    nota: null
+  - aula_numero: 14
+    aula_titulo: Aproximação normal e revisão geral dos modelos de distribuição
+    bloco: 2
+    videos:
+    - titulo: Aproximação da distribuição Binomial pela Normal
+      url: https://stat4all.github.io/slides/Unid_5_P8.pdf
+    nota: null
+  - aula_numero: 15
+    aula_titulo: População, amostra, amostragem e parâmetros
+    bloco: 2
+    videos:
+    - titulo: Definição dos objetivos
+      url: https://stat4all.github.io/slides/Unid_1_P2.pdf
+    - titulo: Base de dados
+      url: https://stat4all.github.io/slides/Unid_1_P3.pdf
+    - titulo: Como selecionar uma amostra
+      url: https://stat4all.github.io/slides/Unid_1_P4.pdf
+    - titulo: Amostragem probabilística
+      url: https://stat4all.github.io/slides/Unid_1_P5.pdf
+    - titulo: Amostragem não probabilística
+      url: https://stat4all.github.io/slides/Unid_1_P6.pdf
+    nota: null
+  - aula_numero: 16
+    aula_titulo: Distribuição amostral da média e da proporção
+    bloco: 2
+    videos:
+    - titulo: Distribuição amostral da média com variância conhecida
+      url: https://stat4all.github.io/slides/Unid_6_P1.pdf
+    - titulo: Distribuição amostral da proporção
+      url: https://stat4all.github.io/slides/Unid_6_P2.pdf
+    nota: null
+  - aula_numero: 17
+    aula_titulo: Teorema do Limite Central e estimação pontual
+    bloco: 2
+    videos:
+    - titulo: Estimação pontual e intervalo de confiança (introdução)
+      url: https://stat4all.github.io/slides/Unid_6_P5.pdf
+    nota: o Teorema do Limite Central em si é revisitado dentro do slide de distribuição amostral da média,
+      não como item separado
+  - aula_numero: 18
+    aula_titulo: Distribuições t de Student e qui-quadrado
+    bloco: 2
+    videos:
+    - titulo: Distribuição amostral da média com variância desconhecida
+      url: https://stat4all.github.io/slides/Unid_6_P3.pdf
+    - titulo: Distribuição amostral para a variância
+      url: https://stat4all.github.io/slides/Unid_6_P4.pdf
+    nota: null
+  - aula_numero: 19
+    aula_titulo: Intervalo de confiança para a média
+    bloco: 3
+    videos:
+    - titulo: Intervalo de confiança para a média com variância conhecida
+      url: https://stat4all.github.io/slides/Unid_6_P6.pdf
+    - titulo: Intervalo de confiança para a média com variância desconhecida
+      url: https://stat4all.github.io/slides/Unid_6_P7.pdf
+    nota: null
+  - aula_numero: 20
+    aula_titulo: Intervalo de confiança para proporção e variância; tamanho de amostra
+    bloco: 3
+    videos:
+    - titulo: Intervalo de confiança para a proporção
+      url: https://stat4all.github.io/slides/Unid_6_P8.pdf
+    - titulo: Intervalo de confiança para a variância
+      url: https://stat4all.github.io/slides/Unid_6_P9.pdf
+    - titulo: Tamanho amostral (parte 1)
+      url: https://stat4all.github.io/slides/Unid_6_P10.pdf
+    - titulo: Tamanho amostral (parte 2)
+      url: https://stat4all.github.io/slides/Unid_6_P11.pdf
+    nota: null
+  - aula_numero: 21
+    aula_titulo: Introdução ao teste de hipóteses
+    bloco: 3
+    videos:
+    - titulo: Visão geral sobre teste de hipótese
+      url: https://stat4all.github.io/slides/Unid_7_P1.pdf
+    - titulo: Hipóteses nula e alternativa
+      url: https://stat4all.github.io/slides/Unid_7_P2.pdf
+    - titulo: Nível de significância
+      url: https://stat4all.github.io/slides/Unid_7_P3.pdf
+    nota: null
+  - aula_numero: 22
+    aula_titulo: Teste de hipótese para a média — variância conhecida
+    bloco: 3
+    videos:
+    - &id012
+      titulo: Determinação da região crítica
+      url: https://stat4all.github.io/slides/Unid_7_P4.pdf
+    - &id013
+      titulo: Estatística de teste
+      url: https://stat4all.github.io/slides/Unid_7_P5.pdf
+    - &id014
+      titulo: P-valor ou nível descritivo
+      url: https://stat4all.github.io/slides/Unid_7_P6.pdf
+    nota: os mesmos slides tratam o caso de variância conhecida e desconhecida em conjunto
+  - aula_numero: 23
+    aula_titulo: Teste de hipótese para a média — variância desconhecida
+    bloco: 3
+    videos:
+    - *id012
+    - *id013
+    - *id014
+    nota: os mesmos slides tratam o caso de variância conhecida e desconhecida em conjunto
+  - aula_numero: 24
+    aula_titulo: 'Variáveis aleatórias multidimensionais: distribuições conjuntas'
+    bloco: 3
+    videos: []
+    nota: variáveis aleatórias multidimensionais não é tratada nesta fonte
+  - aula_numero: 25
+    aula_titulo: Covariância e correlação
+    bloco: 3
+    videos: []
+    nota: covariância e correlação não é tratada nesta fonte
+  - aula_numero: 26
+    aula_titulo: Correlação linear e modelo de regressão linear simples
+    bloco: 3
+    videos: []
+    nota: correlação linear e regressão não é tratada nesta fonte
+  - aula_numero: 27
+    aula_titulo: Avaliação do modelo de regressão linear e aplicações
+    bloco: 3
+    videos: []
+    nota: avaliação de modelo de regressão não é tratada nesta fonte
