@@ -28,6 +28,13 @@ pre_aula:
     url: https://youtu.be/ZvUhRikhNEk
   - titulo: 'Análise Exploratória de Dados: Medidas Resumo'
     url: https://youtu.be/bD2UYs1w_s4
+  tarefa:
+  - 'Segundo a leitura/vídeo, por que simplesmente somar os desvios (xᵢ − x̄) de um
+    conjunto de dados não funciona como medida de dispersão?'
+  - 'Pense em dois grupos de dados do seu dia a dia (notas, gastos da semana, tempo
+    de trajeto etc.) que teriam a mesma média, mas variabilidades bem diferentes.
+    Descreva os dois grupos em 1-2 linhas cada.'
+  - Qual é a relação matemática entre variância e desvio padrão?
 exercicios_recomendados:
   itens:
   - livro: Bussab & Morettin, Estatística Básica, 9ª ed.

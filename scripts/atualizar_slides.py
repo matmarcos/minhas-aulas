@@ -124,9 +124,13 @@ def aplicar(pendencias):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--aplicar", action="store_true", help="aplica as atualizacoes (sem isso, so lista)")
+    parser.add_argument("--aula", action="append", default=None,
+                         help="restringe a um slug de aula (repetivel); sem isso, processa todas as pendencias")
     args = parser.parse_args()
 
     pendencias = encontrar_pendencias()
+    if args.aula:
+        pendencias = [p for p in pendencias if p["aula_slug"] in args.aula]
     if not pendencias:
         print("Nada para atualizar - todos os slides publicados estao com a mesma data (ou mais novos) que a fonte.")
         return
