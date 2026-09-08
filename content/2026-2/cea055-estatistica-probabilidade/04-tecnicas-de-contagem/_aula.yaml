@@ -1,62 +1,111 @@
-titulo: Aula 04 - Técnicas de contagem
+titulo: Aula 04 - Técnicas de contagem e probabilidade condicional
 data: ''
-resumo: Cálculo de probabilidades em espaços amostrais finitos; princípio multiplicativo;
-  combinações
+resumo: Cálculo de probabilidades em espaços amostrais finitos; princípio multiplicativo,
+  arranjos, permutações e combinações; probabilidade condicional e independência entre
+  eventos.
 bloco: 1
 slides:
   titulo: Slides da aula 04
-  arquivo: Aula_04_Tecnicas_de_Contagem.pptx
-  arquivo_pdf: Aula_04_Tecnicas_de_Contagem.pdf
+  arquivo: Aula_04_Probabilidades_parte2_SITE.pptx
+  arquivo_pdf: Aula_04_Probabilidades_parte2.pdf
 referencias_bibliograficas:
 - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
-  citacao: Cap. 5 – 5.2 (exemplos)
+  citacao: Cap. 5 – 5.2, 5.3
 - livro: Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª
     ed.
-  citacao: Cap. 2 – 2.2
+  citacao: Cap. 2 – 2.2, 2.5, 2.7
 - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
-  citacao: Cap. 2 – 2.1 (exemplos)
+  citacao: Cap. 2 – 2.1, 2.2
 - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
-  citacao: Cap. 2 – 2.2, 2.3
+  citacao: Cap. 2 – 2.2 a 2.5
 pre_aula:
   leitura:
     itens:
-    - Bussab & Morettin, Estatística Básica, 9ª ed. — Capítulo 5, seção 5.2 (exemplos
-      de princípio multiplicativo).
-    - 'Morettin, Estatística Básica: Probabilidade e Inferência — Capítulo 2, seção
-      2.2 (mesmo tema, segunda referência).'
+    - Bussab & Morettin, Estatística Básica, 9ª ed. — Capítulo 5, seções 5.2 (princípio
+      multiplicativo) e 5.3 (probabilidade condicional).
+    - 'Morettin, Estatística Básica: Probabilidade e Inferência — Capítulo 2, seções
+      2.2 (princípio multiplicativo) e 2.4 (probabilidade condicional).'
+    nota: As duas referências acima cobrem o mesmo conteúdo — leia a que você tiver
+      disponível. Não precisa ter as duas nem ler as duas.
   videos:
   - titulo: Estatística e Probabilidade – Aula 03 – Análise combinatória (parte I)
+      (UNIVESP)
     url: https://www.youtube.com/watch?v=avPlaW1oW_A
+  - titulo: 'Aula 2: Probabilidade Condicional e Independência (USP/ICMC, Prof. Francisco
+      Rodrigues)'
+    url: https://www.youtube.com/watch?v=HzOCwzzlGiA
+  tarefa:
+  - 'Princípio multiplicativo: uma nave espacial pode decolar por 3 rotas diferentes,
+    com 4 tipos de motor e 2 tripulações disponíveis. De quantas formas diferentes
+    é possível configurar a decolagem, escolhendo uma rota, um motor e uma tripulação?'
+  - 'Probabilidade condicional: numa academia de heróis há 20 estudantes — 12 da Turma
+    A e 8 da Turma B. Desses, 5 estudantes da Turma A e 3 da Turma B já fizeram sua
+    primeira missão de campo. Escolhido um estudante ao acaso dentre os que já fizeram
+    missão de campo, qual a probabilidade de ele ser da Turma A?'
+  - Esta tarefa é opcional e não precisa ser entregue — serve para você se autoavaliar
+    antes da aula. A verificação de verdade é feita em sala, no início da aula.
 exercicios_recomendados:
-  itens:
-  - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
-    exercicios: 'Cap. 5: Problema 11'
-    recomendacao: Este livro tem pouquíssimos exercícios de contagem propostos — a
-      maior parte do conteúdo aparece só como exemplo já resolvido no texto (Exemplos
-      5.8 e 5.9, se quiser estudar por lá). Para praticar mais, use as outras referências
-      desta lista.
-  - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
-    exercicios: ''
-    recomendacao: Não encontramos exercícios de técnicas de contagem neste livro.
-      Use as outras referências desta lista para praticar este conteúdo.
-  - livro: Montgomery & Runger, Applied Statistics and Probability for Engineers,
-      7ª ed.
-    exercicios: 'Cap. 2: Exercícios 2.2.3, 2.2.4, 2.2.5, 2.2.6, 2.2.7, 2.2.9, 2.2.10,
-      2.2.11, 2.2.12 e 2.2.14'
-    recomendacao: 'Referência mais completa para esta aula: cobre princípio multiplicativo
-      (2.2.3 a 2.2.5), permutações (2.2.6, 2.2.9, 2.2.12), arranjos (2.2.10, 2.2.11)
-      e combinações (2.2.7, 2.2.14). Bom ponto de partida.'
-  - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
-    exercicios: 'Cap. 2: Exercícios 5, 6, 7, 8, 9, 10, 11, 12, 13 e 17'
-    recomendacao: Bons exercícios de combinação e princípio multiplicativo. Eles pedem
-      para calcular uma probabilidade no final — é normal, contagem e probabilidade
-      costumam andar juntas; o objetivo aqui é praticar a parte de contar os casos
-      possíveis e favoráveis.
-  arquivo: Tabela_Referencias_Aula4.pdf
+  grupos:
+  - titulo: Parte A — Técnicas de contagem
+    arquivo: Tabela_Referencias_Aula4_TecnicasContagem.pdf
+    itens:
+    - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+      exercicios: 'Cap. 5: Problema 11'
+      recomendacao: Este livro tem pouquíssimos exercícios de contagem propostos —
+        a maior parte do conteúdo aparece só como exemplo já resolvido no texto (Exemplos
+        5.8 e 5.9, se quiser estudar por lá). Para praticar mais, use as outras referências
+        desta lista.
+    - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+      exercicios: ''
+      recomendacao: Não encontramos exercícios de técnicas de contagem neste livro.
+        Use as outras referências desta lista para praticar este conteúdo.
+    - livro: Montgomery & Runger, Applied Statistics and Probability for Engineers,
+        7ª ed.
+      exercicios: 'Cap. 2: Exercícios 2.2.3, 2.2.4, 2.2.5, 2.2.6, 2.2.7, 2.2.9, 2.2.10,
+        2.2.11, 2.2.12 e 2.2.14'
+      recomendacao: 'Referência mais completa para esta aula: cobre princípio multiplicativo
+        (2.2.3 a 2.2.5), permutações (2.2.6, 2.2.9, 2.2.12), arranjos (2.2.10, 2.2.11)
+        e combinações (2.2.7, 2.2.14). Bom ponto de partida.'
+    - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
+      exercicios: 'Cap. 2: Exercícios 5, 6, 7, 8, 9, 10, 11, 12, 13 e 17'
+      recomendacao: Bons exercícios de combinação e princípio multiplicativo. Eles
+        pedem para calcular uma probabilidade no final — é normal, contagem e probabilidade
+        costumam andar juntas; o objetivo aqui é praticar a parte de contar os casos
+        possíveis e favoráveis.
+  - titulo: Parte B — Probabilidade condicional e independência
+    arquivo: Tabela_Referencias_Aula4_ProbabilidadeCondicional.pdf
+    itens:
+    - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+      exercicios: 'Cap. 5: Problemas 15, 16, 17, 18, 19, 20, 21 e 22'
+      recomendacao: 'Boa sequência: começa com extrações de urna (15, 16), passa por
+        independência (17, 19) e termina com sistemas de confiabilidade (20, 22), um
+        tipo de aplicação prática de independência.'
+    - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+      exercicios: 'Cap. 2 (§2.3): Exercícios 10, 11, 12, 13, 14, 17, 19, 20, 21 e 22'
+      recomendacao: Vários exercícios com tabelas de contingência (bom treino de probabilidade
+        condicional a partir de dados reais). O exercício 20 é o mais completo para
+        entender independência, com vários casos diferentes no mesmo problema.
+    - livro: Montgomery & Runger, Applied Statistics and Probability for Engineers,
+        7ª ed.
+      exercicios: 'Cap. 2: Exercícios 2.5.1, 2.5.4, 2.5.6, 2.5.9, 2.5.11, 2.7.1, 2.7.2,
+        2.7.4, 2.7.6 e 2.7.10'
+      recomendacao: Os exercícios 2.5.x treinam probabilidade condicional (muitos usando
+        tabelas). Os 2.7.x treinam independência, incluindo como verificar se dois
+        eventos são independentes a partir de dados.
+    - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
+      exercicios: 'Cap. 2: Exercício 18'
+      recomendacao: Esta referência tem só um exercício claramente focado em independência
+        para esta aula — os demais exercícios do capítulo exigem mais técnicas de contagem
+        do que o conteúdo desta aula pede. Prefira as outras referências para praticar
+        mais.
 lista_ia:
-  lista_arquivo: Lista_Aula4_Original.pdf
-  gabarito_arquivo: Gabarito_Aula4_Original.pdf
+- titulo: Lista 4A — Técnicas de contagem
+  lista_arquivo: Lista_Aula4_TecnicasContagem_Original.pdf
+  gabarito_arquivo: Gabarito_Aula4_TecnicasContagem_Original.pdf
+- titulo: Lista 4B — Probabilidade condicional e independência
+  lista_arquivo: Lista_Aula4_ProbabilidadeCondicional_Original.pdf
+  gabarito_arquivo: Gabarito_Aula4_ProbabilidadeCondicional_Original.pdf
 tarefa_complementar:
-- titulo: Tecnicas de contagem - filmes
-  url: https://colab.research.google.com/github/matmarcos/minhas-aulas/blob/main/docs/2026-2/cea055-estatistica-probabilidade/04-tecnicas-de-contagem/arquivos/Aula%204%20-%20Tecnicas%20de%20contagem%20-%20filmes.ipynb
-  arquivo: Aula 4 - Tecnicas de contagem - filmes.ipynb
+- titulo: Técnicas de contagem - filmes
+  url: https://colab.research.google.com/github/matmarcos/minhas-aulas/blob/main/docs/2026-2/cea055-estatistica-probabilidade/04-tecnicas-de-contagem/arquivos/Aula%204%20-%20Tecnicas%20de%20Contagem%20-%20Filmes.ipynb
+  arquivo: Aula 4 - Tecnicas de Contagem - Filmes.ipynb

@@ -16,6 +16,7 @@
   <ul class="bib-list">
     {% for item in aula.pre_aula.leitura.itens %}<li>{{ item }}</li>{% endfor %}
   </ul>
+  {% if aula.pre_aula.leitura.nota %}<p class="nota-leitura">{{ aula.pre_aula.leitura.nota }}</p>{% endif %}
   {% endif %}
   {% if aula.pre_aula.videos %}
   <h3>Vídeo recomendado</h3>
@@ -90,21 +91,43 @@
 {% if aula.exercicios_recomendados %}
 <section class="aula-secao">
   <h2>Exercícios recomendados</h2>
-  {% if aula.exercicios_recomendados.itens %}
-  <ul class="bib-list">
-    {% for item in aula.exercicios_recomendados.itens %}
-    <li>
-      <strong>{{ item.livro }}</strong>
-      {% if item.exercicios %} — {{ item.exercicios }}{% endif %}
-      {% if item.recomendacao %}<br>{{ item.recomendacao }}{% endif %}
-    </li>
+  {% if aula.exercicios_recomendados.grupos %}
+    {% for grupo in aula.exercicios_recomendados.grupos %}
+    <h3 class="grupo-exercicios">{{ grupo.titulo }}</h3>
+    {% if grupo.itens %}
+    <ul class="bib-list">
+      {% for item in grupo.itens %}
+      <li>
+        <strong>{{ item.livro }}</strong>
+        {% if item.exercicios %} — {{ item.exercicios }}{% endif %}
+        {% if item.recomendacao %}<br>{{ item.recomendacao }}{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    {% if grupo.arquivo %}
+    <ul class="material-list">
+      <li><a href="{{ base_href }}{{ grupo.arquivo }}" target="_blank" rel="noopener">Abrir tabela em PDF</a></li>
+    </ul>
+    {% endif %}
     {% endfor %}
-  </ul>
-  {% endif %}
-  {% if aula.exercicios_recomendados.arquivo %}
-  <ul class="material-list">
-    <li><a href="{{ base_href }}{{ aula.exercicios_recomendados.arquivo }}" target="_blank" rel="noopener">Abrir tabela em PDF</a></li>
-  </ul>
+  {% else %}
+    {% if aula.exercicios_recomendados.itens %}
+    <ul class="bib-list">
+      {% for item in aula.exercicios_recomendados.itens %}
+      <li>
+        <strong>{{ item.livro }}</strong>
+        {% if item.exercicios %} — {{ item.exercicios }}{% endif %}
+        {% if item.recomendacao %}<br>{{ item.recomendacao }}{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    {% if aula.exercicios_recomendados.arquivo %}
+    <ul class="material-list">
+      <li><a href="{{ base_href }}{{ aula.exercicios_recomendados.arquivo }}" target="_blank" rel="noopener">Abrir tabela em PDF</a></li>
+    </ul>
+    {% endif %}
   {% endif %}
 </section>
 {% endif %}
@@ -113,6 +136,19 @@
 <section class="aula-secao">
   <h2>Lista de exercícios extra</h2>
   <p class="aviso-ia">⚠️ Gerado com o auxílio de IA (Claude/Anthropic), não copiado de livro-texto. Pode conter imprecisões — revise as respostas com atenção.</p>
+  {% if aula.lista_ia is sequence and aula.lista_ia is not mapping %}
+    {% for l in aula.lista_ia %}
+    {% if l.titulo %}<h3 class="grupo-exercicios">{{ l.titulo }}</h3>{% endif %}
+    <ul class="material-list">
+      {% if l.lista_arquivo %}
+      <li><a href="{{ base_href }}{{ l.lista_arquivo }}" target="_blank" rel="noopener">📄 Lista de exercícios (PDF, gerado por IA)</a></li>
+      {% endif %}
+      {% if l.gabarito_arquivo %}
+      <li><a href="{{ base_href }}{{ l.gabarito_arquivo }}" target="_blank" rel="noopener">✅ Gabarito (PDF, gerado por IA)</a></li>
+      {% endif %}
+    </ul>
+    {% endfor %}
+  {% else %}
   <ul class="material-list">
     {% if aula.lista_ia.lista_arquivo %}
     <li><a href="{{ base_href }}{{ aula.lista_ia.lista_arquivo }}" target="_blank" rel="noopener">📄 Lista de exercícios (PDF, gerado por IA)</a></li>
@@ -121,6 +157,7 @@
     <li><a href="{{ base_href }}{{ aula.lista_ia.gabarito_arquivo }}" target="_blank" rel="noopener">✅ Gabarito (PDF, gerado por IA)</a></li>
     {% endif %}
   </ul>
+  {% endif %}
 </section>
 {% endif %}
 
