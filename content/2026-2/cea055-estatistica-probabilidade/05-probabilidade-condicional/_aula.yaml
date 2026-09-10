@@ -1,0 +1,72 @@
+titulo: Aula 05 - Probabilidade condicional e independência
+data: ''
+resumo: Probabilidade condicional e regra do produto; eventos independentes e como
+  verificar independência
+bloco: 1
+slides:
+  titulo: Slides da aula 05
+  arquivo: Aula_05_Probabilidade_Condicional_SITE.pptx
+  arquivo_pdf: Aula_05_Probabilidade_Condicional_SITE.pdf
+referencias_bibliograficas:
+- livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+  citacao: Cap. 5 – 5.3
+- livro: Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª
+    ed.
+  citacao: Cap. 2 – 2.5, 2.7
+- livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+  citacao: Cap. 2 – 2.2
+- livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
+  citacao: Cap. 2 – 2.4, 2.5
+pre_aula:
+  leitura:
+    itens:
+    - Bussab & Morettin, Estatística Básica, 9ª ed. — Capítulo 5, seção 5.3 (probabilidade
+      condicional).
+    - 'Morettin, Estatística Básica: Probabilidade e Inferência — Capítulo 2, seção
+      2.4 (mesmo tema, segunda referência).'
+    nota: As duas referências acima cobrem o mesmo conteúdo — leia a que você tiver
+      disponível. Não precisa ter as duas nem ler as duas.
+  videos:
+  - titulo: 'Aula 2: Probabilidade Condicional e Independência'
+    url: https://www.youtube.com/watch?v=HzOCwzzlGiA
+  tarefa:
+  - 'No Comando Estelar há 50 tripulantes: 30 Cadetes e 20 Oficiais. Desses, 12 Cadetes
+    e 16 Oficiais já completaram a simulação avançada de emergência. Monte a expressão
+    (não precisa calcular o valor final) que dá a probabilidade de um tripulante escolhido
+    ao acaso, dentre os que completaram a simulação, ser um Cadete.'
+  - Diferente de um exercício comum, este puzzle pede só a estrutura do raciocínio
+    — a expressão certa —, não o cálculo numérico final. Tarefa opcional, sem entrega;
+    a verificação de verdade é feita em sala, no início da aula.
+exercicios_recomendados:
+  itens:
+  - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+    exercicios: 'Cap. 5: Problemas 15, 16, 17, 18, 19, 20, 21 e 22'
+    recomendacao: 'Boa sequência: começa com extrações de urna (15, 16), passa por
+      independência (17, 19) e termina com sistemas de confiabilidade (20, 22), um
+      tipo de aplicação prática de independência.'
+  - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+    exercicios: 'Cap. 2 (2.3 Exercícios): 10, 11, 12, 13, 14, 17, 19, 20, 21 e 22'
+    recomendacao: Vários exercícios com tabelas de contingência (bom treino de probabilidade
+      condicional a partir de dados reais). O exercício 20 é o mais completo para
+      entender independência, com vários casos diferentes no mesmo problema.
+  - livro: Montgomery & Runger, Applied Statistics and Probability for Engineers,
+      7ª ed.
+    exercicios: 'Cap. 2: Exercícios 2.5.1, 2.5.4, 2.5.6, 2.5.9, 2.5.11, 2.7.1, 2.7.2,
+      2.7.4, 2.7.6 e 2.7.10'
+    recomendacao: Os exercícios 2.5.x treinam probabilidade condicional (muitos usando
+      tabelas). Os 2.7.x treinam independência, incluindo como verificar se dois eventos
+      são independentes a partir de dados.
+  - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
+    exercicios: 'Cap. 2: Exercício 18'
+    recomendacao: Esta referência tem só um exercício claramente focado em independência
+      para esta aula — os demais exercícios do capítulo exigem mais técnicas de contagem
+      do que o conteúdo desta aula pede. Prefira as outras referências para praticar
+      mais.
+  arquivo: Tabela_Referencias_Aula5.pdf
+lista_ia:
+  lista_arquivo: Lista_Aula5_Original.pdf
+  gabarito_arquivo: Gabarito_Aula5_Original.pdf
+tarefa_complementar:
+- titulo: Probabilidade Condicional - Testando Positivo
+  url: https://colab.research.google.com/github/matmarcos/minhas-aulas/blob/main/docs/2026-2/cea055-estatistica-probabilidade/05-probabilidade-condicional/arquivos/Aula%205%20-%20Probabilidade%20Condicional%20-%20Testando%20Positivo.ipynb
+  arquivo: Aula 5 - Probabilidade Condicional - Testando Positivo.ipynb
