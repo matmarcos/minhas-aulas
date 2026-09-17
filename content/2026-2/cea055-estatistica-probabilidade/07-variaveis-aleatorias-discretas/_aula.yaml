@@ -5,8 +5,8 @@ resumo: Conceito de variável aleatória; distinção entre variáveis aleatóri
 bloco: 1
 slides:
   titulo: Slides da aula 07
-  arquivo: Aula_07_Variaveis_Aleatorias_Discretas.pptx
-  arquivo_pdf: Aula_07_Variaveis_Aleatorias_Discretas.pdf
+  arquivo: Aula_07_Variaveis_Aleatorias_Discretas_SITE.pptx
+  arquivo_pdf: Aula_07_Variaveis_Aleatorias_Discretas_SITE.pdf
 referencias_bibliograficas:
 - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
   citacao: Cap. 6 – 6.1 a 6.4
@@ -29,12 +29,6 @@ pre_aula:
     url: https://www.youtube.com/watch?v=qN_K0NuJPs8
   - titulo: 'Aula 6: Valor esperado e variância'
     url: https://www.youtube.com/watch?v=6_6Ek8q1bDE
-  tarefa:
-  - Lança-se uma moeda honesta duas vezes. Defina X = número de caras obtidas. Liste
-    à mão todos os valores possíveis de X e a probabilidade de cada um (a função de
-    probabilidade de X).
-  - Verifique que a soma de todas as probabilidades que você encontrou dá exatamente
-    1.
 exercicios_recomendados:
   itens:
   - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
