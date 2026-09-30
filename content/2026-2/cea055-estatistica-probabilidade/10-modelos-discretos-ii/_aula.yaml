@@ -4,8 +4,8 @@ resumo: Distribuição binomial; distribuição hipergeométrica
 bloco: 2
 slides:
   titulo: Slides da aula 10
-  arquivo: Aula_10_Modelos_Discretos_II.pptx
-  arquivo_pdf: Aula_10_Modelos_Discretos_II.pdf
+  arquivo: Aula_10_Modelos_Discretos_II_SITE.pptx
+  arquivo_pdf: Aula_10_Modelos_Discretos_II_SITE.pdf
 referencias_bibliograficas:
 - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
   citacao: Cap. 6 – 6.6.3, 6.6.4
@@ -17,11 +17,34 @@ referencias_bibliograficas:
 - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
   citacao: Cap. 4 – 4.4, 4.5
 pre_aula:
+  leitura:
+    itens:
+    - 'Bussab & Morettin, Estatística Básica, 9ª ed. — Capítulo 6, seções 6.6.3 (Distribuição
+      Binomial) e 6.6.4 (Distribuição Hipergeométrica).'
+    - 'Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed. — Capítulo 3,
+      seção 3.2 (Modelo Binomial) e seção 3.3 (Modelo Hipergeométrico) — mesmo tema,
+      segunda referência.'
   videos:
-  - titulo: 'Aula 8: ...Binomial'
+  - titulo: 'Aula 8: Uniforme discreta, Bernoulli e Binomial (trecho da binomial)'
     url: https://www.youtube.com/watch?v=zKlRBfVGsyM
-  - titulo: 'Aula 10: ...hipergeométrica'
+  - titulo: 'Aula 10: Geométrica, binomial negativa e hipergeométrica (trecho da hipergeométrica)'
     url: https://www.youtube.com/watch?v=Ke9dn-cSXow
+  tarefa:
+  - 'Uma equipe de ciência de dados cuida do sistema de login e da base de clientes
+    de uma empresa. Para cada situação, monte a expressão da probabilidade pedida
+    — não precisa calcular o valor final.'
+  - '(a) Chegam 8 tentativas de login, independentes, e cada uma é bloqueada pelo
+    filtro antifraude com probabilidade 0,1. Monte a expressão da probabilidade de
+    exatamente 2 tentativas serem bloqueadas.'
+  - '(b) Uma base tem 30 registros de clientes, e 6 deles têm dados faltando. Um
+    analista sorteia 4 registros diferentes para inspecionar. Monte a expressão da
+    probabilidade de exatamente 1 dos 4 ter dados faltando.'
+  - '(c) E se, no item (b), o analista devolvesse cada registro à base antes de sortear
+    o próximo? Qual modelo passaria a valer, e qual seria a expressão?'
+  - 'Diferente de um exercício comum, este puzzle pede só a estrutura do raciocínio
+    — reconhecer qual modelo se aplica e montar a expressão certa —, não o cálculo
+    numérico final. Tarefa opcional, sem entrega; a verificação de verdade é feita
+    em sala, no início da aula.'
 exercicios_recomendados:
   itens:
   - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
@@ -50,3 +73,7 @@ exercicios_recomendados:
 lista_ia:
   lista_arquivo: Lista_Aula10_Original.pdf
   gabarito_arquivo: Gabarito_Aula10_Original.pdf
+tarefa_complementar:
+- titulo: Modelos Discretos II - Qualidade de Dados
+  url: https://colab.research.google.com/github/matmarcos/minhas-aulas/blob/main/docs/2026-2/cea055-estatistica-probabilidade/10-modelos-discretos-ii/arquivos/Aula%2010%20-%20Modelos%20Discretos%20II%20-%20Qualidade%20de%20Dados.ipynb
+  arquivo: Aula 10 - Modelos Discretos II - Qualidade de Dados.ipynb
