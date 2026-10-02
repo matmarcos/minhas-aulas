@@ -51,3 +51,7 @@ exercicios_recomendados:
 lista_ia:
   lista_arquivo: Lista_Aula18_Original.pdf
   gabarito_arquivo: Gabarito_Aula18_Original.pdf
+tarefa_complementar:
+- titulo: t de Student e Qui-Quadrado - Servico de Pagamentos
+  url: https://colab.research.google.com/github/matmarcos/minhas-aulas/blob/main/docs/2026-2/cea055-estatistica-probabilidade/18-t-student-qui-quadrado/arquivos/Aula%2018%20-%20t%20de%20Student%20e%20Qui-Quadrado%20-%20Servico%20de%20Pagamentos.ipynb
+  arquivo: Aula 18 - t de Student e Qui-Quadrado - Servico de Pagamentos.ipynb

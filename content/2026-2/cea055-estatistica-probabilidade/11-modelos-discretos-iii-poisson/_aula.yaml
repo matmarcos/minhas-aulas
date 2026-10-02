@@ -45,3 +45,7 @@ exercicios_recomendados:
 lista_ia:
   lista_arquivo: Lista_Aula11_Original.pdf
   gabarito_arquivo: Gabarito_Aula11_Original.pdf
+tarefa_complementar:
+- titulo: Modelos Discretos III - Poisson - Central de Suporte
+  url: https://colab.research.google.com/github/matmarcos/minhas-aulas/blob/main/docs/2026-2/cea055-estatistica-probabilidade/11-modelos-discretos-iii-poisson/arquivos/Aula%2011%20-%20Modelos%20Discretos%20III%20-%20Poisson%20-%20Central%20de%20Suporte.ipynb
+  arquivo: Aula 11 - Modelos Discretos III - Poisson - Central de Suporte.ipynb

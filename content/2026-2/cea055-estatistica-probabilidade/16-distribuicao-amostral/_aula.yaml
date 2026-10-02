@@ -47,3 +47,7 @@ exercicios_recomendados:
 lista_ia:
   lista_arquivo: Lista_Aula16_Original.pdf
   gabarito_arquivo: Gabarito_Aula16_Original.pdf
+tarefa_complementar:
+- titulo: Distribuicao Amostral - Monitoramento de API
+  url: https://colab.research.google.com/github/matmarcos/minhas-aulas/blob/main/docs/2026-2/cea055-estatistica-probabilidade/16-distribuicao-amostral/arquivos/Aula%2016%20-%20Distribuicao%20Amostral%20-%20Monitoramento%20de%20API.ipynb
+  arquivo: Aula 16 - Distribuicao Amostral - Monitoramento de API.ipynb

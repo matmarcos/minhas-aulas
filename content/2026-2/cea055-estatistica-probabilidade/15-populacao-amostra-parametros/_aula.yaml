@@ -53,3 +53,7 @@ exercicios_recomendados:
 lista_ia:
   lista_arquivo: Lista_Aula15_Original.pdf
   gabarito_arquivo: Gabarito_Aula15_Original.pdf
+tarefa_complementar:
+- titulo: Populacao Amostra e Parametros - Usuarios do App
+  url: https://colab.research.google.com/github/matmarcos/minhas-aulas/blob/main/docs/2026-2/cea055-estatistica-probabilidade/15-populacao-amostra-parametros/arquivos/Aula%2015%20-%20Populacao%20Amostra%20e%20Parametros%20-%20Usuarios%20do%20App.ipynb
+  arquivo: Aula 15 - Populacao Amostra e Parametros - Usuarios do App.ipynb

@@ -49,3 +49,7 @@ exercicios_recomendados:
 lista_ia:
   lista_arquivo: Lista_Aula17_Original.pdf
   gabarito_arquivo: Gabarito_Aula17_Original.pdf
+tarefa_complementar:
+- titulo: TLC e Estimacao Pontual - Avaliacoes de Apps
+  url: https://colab.research.google.com/github/matmarcos/minhas-aulas/blob/main/docs/2026-2/cea055-estatistica-probabilidade/17-tlc-estimacao-pontual/arquivos/Aula%2017%20-%20TLC%20e%20Estimacao%20Pontual%20-%20Avaliacoes%20de%20Apps.ipynb
+  arquivo: Aula 17 - TLC e Estimacao Pontual - Avaliacoes de Apps.ipynb

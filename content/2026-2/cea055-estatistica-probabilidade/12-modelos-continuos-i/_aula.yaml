@@ -47,3 +47,7 @@ exercicios_recomendados:
 lista_ia:
   lista_arquivo: Lista_Aula12_Original.pdf
   gabarito_arquivo: Gabarito_Aula12_Original.pdf
+tarefa_complementar:
+- titulo: Modelos Continuos I - Uniforme e Exponencial - Servidores
+  url: https://colab.research.google.com/github/matmarcos/minhas-aulas/blob/main/docs/2026-2/cea055-estatistica-probabilidade/12-modelos-continuos-i/arquivos/Aula%2012%20-%20Modelos%20Continuos%20I%20-%20Uniforme%20e%20Exponencial%20-%20Servidores.ipynb
+  arquivo: Aula 12 - Modelos Continuos I - Uniforme e Exponencial - Servidores.ipynb

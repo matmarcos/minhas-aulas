@@ -48,3 +48,7 @@ exercicios_recomendados:
 lista_ia:
   lista_arquivo: Lista_Aula13_Original.pdf
   gabarito_arquivo: Gabarito_Aula13_Original.pdf
+tarefa_complementar:
+- titulo: Modelos Continuos II - Normal - Velocidade do Site
+  url: https://colab.research.google.com/github/matmarcos/minhas-aulas/blob/main/docs/2026-2/cea055-estatistica-probabilidade/13-modelos-continuos-ii-normal/arquivos/Aula%2013%20-%20Modelos%20Continuos%20II%20-%20Normal%20-%20Velocidade%20do%20Site.ipynb
+  arquivo: Aula 13 - Modelos Continuos II - Normal - Velocidade do Site.ipynb

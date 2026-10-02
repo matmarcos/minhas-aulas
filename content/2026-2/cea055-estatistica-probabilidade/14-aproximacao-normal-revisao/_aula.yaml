@@ -48,3 +48,7 @@ exercicios_recomendados:
 lista_ia:
   lista_arquivo: Lista_Aula14_Original.pdf
   gabarito_arquivo: Gabarito_Aula14_Original.pdf
+tarefa_complementar:
+- titulo: Aproximacao Normal e Revisao - Teste AB
+  url: https://colab.research.google.com/github/matmarcos/minhas-aulas/blob/main/docs/2026-2/cea055-estatistica-probabilidade/14-aproximacao-normal-revisao/arquivos/Aula%2014%20-%20Aproximacao%20Normal%20e%20Revisao%20-%20Teste%20AB.ipynb
+  arquivo: Aula 14 - Aproximacao Normal e Revisao - Teste AB.ipynb
