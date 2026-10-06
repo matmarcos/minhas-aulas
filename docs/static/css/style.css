@@ -149,6 +149,24 @@ h1 { font-size: 28px; margin-bottom: 4px; color: var(--text); }
   cursor: pointer;
 }
 .preaula-check input { width: 16px; height: 16px; accent-color: var(--accent); cursor: pointer; }
+.gabarito-preaula {
+  margin-top: 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 0 14px;
+}
+.gabarito-preaula summary {
+  cursor: pointer;
+  padding: 12px 0;
+  font-weight: 600;
+  color: var(--accent-blue);
+}
+.gabarito-preaula[open] summary { border-bottom: 1px solid var(--border); margin-bottom: 4px; }
+.gabarito-preaula h4 { font-size: 14px; margin: 14px 0 6px; color: var(--text); }
+.gabarito-passos { margin: 0 0 8px; padding-left: 20px; font-size: 14px; line-height: 1.55; }
+.gabarito-passos li { margin-bottom: 4px; }
+.nota-gabarito { font-size: 12px; color: var(--muted); font-style: italic; margin: 10px 0 12px; }
 .aviso-ia {
   background: #fff6e0;
   border: 1px solid #e8c869;

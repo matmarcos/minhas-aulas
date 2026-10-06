@@ -45,6 +45,28 @@
     <li>Numa campanha de RPG, o mestre prepara três situações para a sessão de hoje. Para cada uma, monte a expressão da probabilidade pedida — não precisa calcular o valor final.</li><li>(a) Um jogador rola um d12 (dado de 12 lados, equilibrado) para sortear em qual dos 12 andares da masmorra o grupo vai cair. Qual expressão dá a probabilidade de cair em um andar específico?</li><li>(b) Um jogador faz um único ataque, com 35% de chance de acerto crítico. Monte a expressão de P(X=1), sendo X=1 se o crítico ocorrer.</li><li>(c) O mesmo jogador continua atacando (sempre 35% de chance, tentativas independentes) até conseguir o primeiro crítico. Monte a expressão de P(X=4), o crítico ocorrer exatamente na 4ª tentativa.</li><li>Diferente de um exercício comum, este puzzle pede só a estrutura do raciocínio — reconhecer qual modelo se aplica e montar a expressão certa —, não o cálculo numérico final. Tarefa opcional, sem entrega; a verificação de verdade é feita em sala, no início da aula.</li>
   </ul>
   
+  
+  <details class="gabarito-preaula">
+    <summary>Ver gabarito comentado (tente antes de abrir)</summary>
+    
+    <h4>(a) Andar da masmorra no d12</h4>
+    <ul class="gabarito-passos">
+      <li><strong>Modelo:</strong> uniforme discreta: 12 resultados igualmente prováveis.</li><li><strong>Expressão:</strong> P(X = k) = 1/12, para k = 1, ..., 12.</li>
+    </ul>
+    
+    <h4>(b) Um único ataque</h4>
+    <ul class="gabarito-passos">
+      <li><strong>Modelo:</strong> Bernoulli: uma tentativa, dois resultados (crítico ou não), p = 0,35.</li><li><strong>Expressão:</strong> P(X = 1) = 0,35 (e P(X = 0) = 0,65).</li>
+    </ul>
+    
+    <h4>(c) Atacar até o primeiro crítico</h4>
+    <ul class="gabarito-passos">
+      <li><strong>Modelo:</strong> geométrica: tentativas independentes, mesma p, contamos até o primeiro sucesso.</li><li><strong>Expressão:</strong> P(X = 4) = (0,65)³ × 0,35 — três falhas seguidas e o crítico na 4ª.</li><li><strong>Valor:</strong> ≈ 0,0961 (9,61%).</li><li><strong>Erro comum:</strong> usar 0,35³ × 0,65 (trocar sucesso e falha) ou esquecer que as 3 primeiras precisam ser falhas.</li>
+    </ul>
+    
+    <p class="nota-gabarito">Gabarito elaborado com auxílio de IA (Claude). Se algo não fizer sentido, pergunte em sala.</p>
+  </details>
+  
   <label class="preaula-check">
     <input type="checkbox" data-preaula-checkbox data-aula-id="2026-2/cea055-estatistica-probabilidade/09-modelos-discretos-i">
     Já fiz a pré-aula desta aula

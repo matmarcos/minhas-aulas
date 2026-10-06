@@ -45,6 +45,28 @@
     <li>Uma equipe de ciência de dados cuida do sistema de login e da base de clientes de uma empresa. Para cada situação, monte a expressão da probabilidade pedida — não precisa calcular o valor final.</li><li>(a) Chegam 8 tentativas de login, independentes, e cada uma é bloqueada pelo filtro antifraude com probabilidade 0,1. Monte a expressão da probabilidade de exatamente 2 tentativas serem bloqueadas.</li><li>(b) Uma base tem 30 registros de clientes, e 6 deles têm dados faltando. Um analista sorteia 4 registros diferentes para inspecionar. Monte a expressão da probabilidade de exatamente 1 dos 4 ter dados faltando.</li><li>(c) E se, no item (b), o analista devolvesse cada registro à base antes de sortear o próximo? Qual modelo passaria a valer, e qual seria a expressão?</li><li>Diferente de um exercício comum, este puzzle pede só a estrutura do raciocínio — reconhecer qual modelo se aplica e montar a expressão certa —, não o cálculo numérico final. Tarefa opcional, sem entrega; a verificação de verdade é feita em sala, no início da aula.</li>
   </ul>
   
+  
+  <details class="gabarito-preaula">
+    <summary>Ver gabarito comentado (tente antes de abrir)</summary>
+    
+    <h4>(a) Tentativas de login bloqueadas</h4>
+    <ul class="gabarito-passos">
+      <li><strong>Modelo:</strong> binomial: n = 8 tentativas independentes, cada uma bloqueada com a mesma p = 0,1.</li><li><strong>Expressão:</strong> P(X = 2) = C(8,2) · (0,1)² · (0,9)⁶.</li><li><strong>Valor:</strong> 28 · 0,01 · 0,531441 ≈ 0,1488.</li>
+    </ul>
+    
+    <h4>(b) Registros sorteados sem reposição</h4>
+    <ul class="gabarito-passos">
+      <li><strong>Modelo:</strong> hipergeométrica: população pequena (N = 30, com r = 6 incompletos), amostra de n = 4 sem reposição.</li><li><strong>Expressão:</strong> P(X = 1) = C(6,1) · C(24,3) / C(30,4).</li><li><strong>Valor:</strong> 6 · 2024 / 27405 ≈ 0,4431.</li><li><strong>Erro comum:</strong> usar a binomial: sem reposição, a chance muda a cada registro sorteado.</li>
+    </ul>
+    
+    <h4>(c) Com reposição</h4>
+    <ul class="gabarito-passos">
+      <li><strong>Modelo:</strong> binomial: devolvendo o registro, cada sorteio tem a mesma chance p = 6/30 = 0,2 e os sorteios ficam independentes.</li><li><strong>Expressão:</strong> P(X = 1) = C(4,1) · (0,2)¹ · (0,8)³.</li><li><strong>Valor:</strong> 4 · 0,2 · 0,512 = 0,4096 — próximo de (b), mas não igual.</li>
+    </ul>
+    
+    <p class="nota-gabarito">Gabarito elaborado com auxílio de IA (Claude). Se algo não fizer sentido, pergunte em sala.</p>
+  </details>
+  
   <label class="preaula-check">
     <input type="checkbox" data-preaula-checkbox data-aula-id="2026-2/cea055-estatistica-probabilidade/10-modelos-discretos-ii">
     Já fiz a pré-aula desta aula

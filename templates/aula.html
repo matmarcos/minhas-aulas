@@ -32,6 +32,18 @@
     {% for item in aula.pre_aula.tarefa %}<li>{{ item }}</li>{% endfor %}
   </ul>
   {% endif %}
+  {% if aula.pre_aula.gabarito %}
+  <details class="gabarito-preaula">
+    <summary>Ver gabarito comentado (tente antes de abrir)</summary>
+    {% for g in aula.pre_aula.gabarito %}
+    <h4>{{ g.titulo }}</h4>
+    <ul class="gabarito-passos">
+      {% for p in g.passos %}<li><strong>{{ p[0] }}:</strong> {{ p[1] }}</li>{% endfor %}
+    </ul>
+    {% endfor %}
+    <p class="nota-gabarito">Gabarito elaborado com auxílio de IA (Claude). Se algo não fizer sentido, pergunte em sala.</p>
+  </details>
+  {% endif %}
   <label class="preaula-check">
     <input type="checkbox" data-preaula-checkbox data-aula-id="{{ aula_id }}">
     Já fiz a pré-aula desta aula

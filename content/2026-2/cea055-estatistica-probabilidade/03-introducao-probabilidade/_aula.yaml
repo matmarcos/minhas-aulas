@@ -33,6 +33,24 @@ pre_aula:
     (quantos elementos ele tem?).'
   - Nesse mesmo espaço amostral, escreva o subconjunto que corresponde ao evento "sair
     coroa e um número par".
+  gabarito:
+  - titulo: 1. Espaço amostral (moeda e dado)
+    passos:
+    - - Montagem
+      - 'cada resultado é um par (moeda, dado). Usando Ca = cara e Co = coroa:'
+    - - Ω
+      - '{(Ca,1), (Ca,2), (Ca,3), (Ca,4), (Ca,5), (Ca,6), (Co,1), (Co,2), (Co,3),
+        (Co,4), (Co,5), (Co,6)}.'
+    - - Quantos elementos
+      - 2 × 6 = 12.
+    - - Erro comum
+      - listar só 2 + 6 = 8 resultados, como se moeda e dado fossem experimentos separados.
+  - titulo: 2. Evento "coroa e número par"
+    passos:
+    - - Evento
+      - A = {(Co,2), (Co,4), (Co,6)}.
+    - - Para ir além
+      - como os 12 resultados são igualmente prováveis, P(A) = 3/12 = 1/4.
 exercicios_recomendados:
   itens:
   - livro: Bussab & Morettin, Estatística Básica, 9ª ed.

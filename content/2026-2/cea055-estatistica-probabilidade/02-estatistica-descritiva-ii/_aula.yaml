@@ -29,12 +29,38 @@ pre_aula:
   - titulo: 'Análise Exploratória de Dados: Medidas Resumo'
     url: https://youtu.be/bD2UYs1w_s4
   tarefa:
-  - 'Segundo a leitura/vídeo, por que simplesmente somar os desvios (xᵢ − x̄) de um
-    conjunto de dados não funciona como medida de dispersão?'
-  - 'Pense em dois grupos de dados do seu dia a dia (notas, gastos da semana, tempo
+  - Segundo a leitura/vídeo, por que simplesmente somar os desvios (xᵢ − x̄) de um
+    conjunto de dados não funciona como medida de dispersão?
+  - Pense em dois grupos de dados do seu dia a dia (notas, gastos da semana, tempo
     de trajeto etc.) que teriam a mesma média, mas variabilidades bem diferentes.
-    Descreva os dois grupos em 1-2 linhas cada.'
+    Descreva os dois grupos em 1-2 linhas cada.
   - Qual é a relação matemática entre variância e desvio padrão?
+  gabarito:
+  - titulo: 1. Por que somar os desvios não funciona
+    passos:
+    - - Ideia
+      - 'os desvios xᵢ − x̄ positivos e negativos se cancelam: a soma é sempre zero,
+        para qualquer conjunto de dados.'
+    - - Conta
+      - Σ(xᵢ − x̄) = Σxᵢ − n·x̄ = n·x̄ − n·x̄ = 0.
+    - - Consequência
+      - a soma não distingue dados concentrados de dados espalhados. Por isso a variância
+        eleva os desvios ao quadrado (e o desvio médio usa o módulo).
+  - titulo: 2. Mesma média, variabilidades diferentes
+    passos:
+    - - Resposta pessoal
+      - 'exemplo: notas de dois alunos em 4 provas — A: 6, 6, 6, 6; B: 2, 10, 2, 10.
+        Os dois têm média 6, mas as notas de B variam muito mais.'
+    - - O que conferir
+      - os dois grupos precisam ter (aproximadamente) a mesma média e espalhamentos
+        claramente diferentes.
+  - titulo: 3. Variância e desvio padrão
+    passos:
+    - - Relação
+      - 'o desvio padrão é a raiz quadrada da variância: s = √s².'
+    - - Por que existe
+      - a variância fica na unidade ao quadrado (min², R$²); o desvio padrão volta
+        para a unidade dos dados, o que facilita a interpretação.
 exercicios_recomendados:
   itens:
   - livro: Bussab & Morettin, Estatística Básica, 9ª ed.

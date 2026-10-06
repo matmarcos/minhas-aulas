@@ -38,6 +38,39 @@ pre_aula:
     em que está matriculado(a) este semestre.'
   - Anote, à mão, o tempo (em minutos) que você levou para chegar à universidade em
     cada um dos últimos 5 dias de aula. Monte uma tabela simples com esses 5 valores.
+  gabarito:
+  - titulo: 1. Classificação das variáveis
+    passos:
+    - - Critério
+      - 'primeiro pergunte se a variável é um número que faz sentido somar e tirar
+        média (quantitativa) ou uma categoria (qualitativa). Depois: categorias com
+        ordem natural são ordinais; contagens são discretas; medidas (tempo, peso,
+        altura) são contínuas.'
+    - - (a) Cor dos olhos
+      - qualitativa nominal — categorias sem ordem.
+    - - (b) Número de irmãos
+      - quantitativa discreta — é uma contagem (0, 1, 2, ...).
+    - - (c) Escolaridade do pai/mãe
+      - qualitativa ordinal — categorias com ordem natural (fundamental < médio <
+        superior).
+    - - (d) Tempo até a universidade
+      - quantitativa contínua — é uma medida, pode assumir qualquer valor num intervalo.
+    - - (e) Time preferido
+      - qualitativa nominal.
+    - - (f) Número de matérias
+      - quantitativa discreta — contagem.
+    - - Erro comum
+      - classificar escolaridade como nominal (ela tem ordem) ou número de irmãos
+        como contínua (não existe 1,5 irmão).
+  - titulo: 2. Tabela com os seus 5 tempos
+    passos:
+    - - Resposta pessoal
+      - 'cada aluno terá valores diferentes. Exemplo: dias 1 a 5 com 25, 30, 22, 40
+        e 28 minutos.'
+    - - O que conferir
+      - a tabela tem as 5 observações, a unidade (minutos) está indicada e cada linha
+        identifica o dia. Essa variável é quantitativa contínua, como no item (d)
+        acima.
 exercicios_recomendados:
   itens:
   - livro: Bussab & Morettin, Estatística Básica, 9ª ed.

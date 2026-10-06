@@ -31,11 +31,21 @@ pre_aula:
       (UNIVESP)
     url: https://www.youtube.com/watch?v=avPlaW1oW_A
   tarefa:
-  - Uma nave espacial pode decolar por 3 rotas diferentes, com 4 tipos de motor e 2
-    tripulações disponíveis. De quantas formas diferentes é possível configurar a decolagem,
-    escolhendo uma rota, um motor e uma tripulação?
+  - Uma nave espacial pode decolar por 3 rotas diferentes, com 4 tipos de motor e
+    2 tripulações disponíveis. De quantas formas diferentes é possível configurar
+    a decolagem, escolhendo uma rota, um motor e uma tripulação?
   - Esta tarefa é opcional e não precisa ser entregue — serve para você se autoavaliar
     antes da aula. A verificação de verdade é feita em sala, no início da aula.
+  gabarito:
+  - titulo: Configurações de decolagem
+    passos:
+    - - Ferramenta
+      - 'princípio multiplicativo: escolhas feitas em etapas independentes se multiplicam.'
+    - - Conta
+      - 3 rotas × 4 motores × 2 tripulações = 24 configurações.
+    - - Erro comum
+      - somar (3 + 4 + 2 = 9). A soma seria a resposta se fosse para escolher só UMA
+        das coisas, e não uma de cada.
 exercicios_recomendados:
   itens:
   - livro: Bussab & Morettin, Estatística Básica, 9ª ed.

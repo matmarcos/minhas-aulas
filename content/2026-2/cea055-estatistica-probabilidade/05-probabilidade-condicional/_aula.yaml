@@ -37,6 +37,20 @@ pre_aula:
   - Diferente de um exercício comum, este puzzle pede só a estrutura do raciocínio
     — a expressão certa —, não o cálculo numérico final. Tarefa opcional, sem entrega;
     a verificação de verdade é feita em sala, no início da aula.
+  gabarito:
+  - titulo: Probabilidade de ser Cadete, dado que completou a simulação
+    passos:
+    - - Ferramenta
+      - 'probabilidade condicional: P(A | B) = P(A ∩ B) / P(B).'
+    - - Eventos
+      - A = ser Cadete; B = ter completado a simulação. Completaram 12 + 16 = 28 tripulantes.
+    - - Expressão
+      - P(Cadete | completou) = (12/50) / (28/50) = 12/28.
+    - - Valor
+      - 12/28 = 3/7 ≈ 0,4286.
+    - - Erro comum
+      - usar 12/30 (isso é P(completou | Cadete), a condição invertida) ou 12/50 (isso
+        é P(Cadete ∩ completou)).
 exercicios_recomendados:
   itens:
   - livro: Bussab & Morettin, Estatística Básica, 9ª ed.

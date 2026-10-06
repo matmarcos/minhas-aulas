@@ -21,29 +21,53 @@ pre_aula:
     itens:
     - 'Bussab & Morettin, Estatística Básica, 9ª ed. — Capítulo 6, seção 6.6 (6.6.1
       e 6.6.2): distribuições uniforme discreta, Bernoulli e geométrica.'
-    - 'Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed. — Capítulo 3,
-      seções 3.2 e 3.3 (mesmo tema, segunda referência).'
+    - Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed. — Capítulo 3,
+      seções 3.2 e 3.3 (mesmo tema, segunda referência).
   videos:
   - titulo: 'Aula 8: Uniforme discreta, Bernoulli e Binomial'
     url: https://www.youtube.com/watch?v=zKlRBfVGsyM
   - titulo: 'Aula 10: Geométrica, binomial negativa e hipergeométrica'
     url: https://www.youtube.com/watch?v=Ke9dn-cSXow
   tarefa:
-  - 'Numa campanha de RPG, o mestre prepara três situações para a sessão de hoje.
-    Para cada uma, monte a expressão da probabilidade pedida — não precisa calcular
-    o valor final.'
-  - '(a) Um jogador rola um d12 (dado de 12 lados, equilibrado) para sortear em qual
+  - Numa campanha de RPG, o mestre prepara três situações para a sessão de hoje. Para
+    cada uma, monte a expressão da probabilidade pedida — não precisa calcular o valor
+    final.
+  - (a) Um jogador rola um d12 (dado de 12 lados, equilibrado) para sortear em qual
     dos 12 andares da masmorra o grupo vai cair. Qual expressão dá a probabilidade
-    de cair em um andar específico?'
-  - '(b) Um jogador faz um único ataque, com 35% de chance de acerto crítico. Monte
-    a expressão de P(X=1), sendo X=1 se o crítico ocorrer.'
-  - '(c) O mesmo jogador continua atacando (sempre 35% de chance, tentativas independentes)
+    de cair em um andar específico?
+  - (b) Um jogador faz um único ataque, com 35% de chance de acerto crítico. Monte
+    a expressão de P(X=1), sendo X=1 se o crítico ocorrer.
+  - (c) O mesmo jogador continua atacando (sempre 35% de chance, tentativas independentes)
     até conseguir o primeiro crítico. Monte a expressão de P(X=4), o crítico ocorrer
-    exatamente na 4ª tentativa.'
+    exatamente na 4ª tentativa.
   - Diferente de um exercício comum, este puzzle pede só a estrutura do raciocínio
     — reconhecer qual modelo se aplica e montar a expressão certa —, não o cálculo
     numérico final. Tarefa opcional, sem entrega; a verificação de verdade é feita
     em sala, no início da aula.
+  gabarito:
+  - titulo: (a) Andar da masmorra no d12
+    passos:
+    - - Modelo
+      - 'uniforme discreta: 12 resultados igualmente prováveis.'
+    - - Expressão
+      - P(X = k) = 1/12, para k = 1, ..., 12.
+  - titulo: (b) Um único ataque
+    passos:
+    - - Modelo
+      - 'Bernoulli: uma tentativa, dois resultados (crítico ou não), p = 0,35.'
+    - - Expressão
+      - P(X = 1) = 0,35 (e P(X = 0) = 0,65).
+  - titulo: (c) Atacar até o primeiro crítico
+    passos:
+    - - Modelo
+      - 'geométrica: tentativas independentes, mesma p, contamos até o primeiro sucesso.'
+    - - Expressão
+      - P(X = 4) = (0,65)³ × 0,35 — três falhas seguidas e o crítico na 4ª.
+    - - Valor
+      - ≈ 0,0961 (9,61%).
+    - - Erro comum
+      - usar 0,35³ × 0,65 (trocar sucesso e falha) ou esquecer que as 3 primeiras
+        precisam ser falhas.
 exercicios_recomendados:
   itens:
   - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
