@@ -159,6 +159,7 @@ h1 { font-size: 28px; margin-bottom: 4px; color: var(--text); }
 .gabarito-preaula summary {
   cursor: pointer;
   padding: 12px 0;
+  font-size: 14px;
   font-weight: 600;
   color: var(--accent-blue);
 }
