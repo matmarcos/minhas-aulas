@@ -23,15 +23,47 @@
 <section class="aula-secao">
   <h2>Pré-aula</h2>
   
+  <h3>Leitura recomendada</h3>
+  <ul class="bib-list">
+    <li>Bussab & Morettin, Estatística Básica, 9ª ed. — Capítulo 7, seções 7.4.1 (O Modelo Uniforme) e 7.4.3 (O Modelo Exponencial).</li><li>Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed. — Capítulo 6, seção 6.2 (Principais Modelos Contínuos), trechos do Modelo Uniforme Contínuo e do Modelo Exponencial (Definição 6.5).</li>
+  </ul>
+  <p class="nota-leitura">As duas referências cobrem o mesmo conteúdo — basta ler uma.</p>
+  
   
   <h3>Vídeo recomendado</h3>
   <ul class="material-list">
     
-    <li><a href="https://www.youtube.com/watch?v=crumAouFNRE" target="_blank" rel="noopener">Aula 12: Exponencial, Uniforme, Gama, Beta e t-Student</a></li>
+    <li><a href="https://www.youtube.com/watch?v=crumAouFNRE" target="_blank" rel="noopener">Aula 12: Exponencial, Uniforme, Gama, Beta e t-Student (assista só aos trechos da uniforme e da exponencial)</a></li>
     
   </ul>
   
   
+  <h3>Tarefa</h3>
+  <ul class="bib-list">
+    <li>Uma equipe de TI cuida das atualizações de um app e do chat de suporte. Monte as expressões pedidas — não precisa calcular o valor final.</li><li>(a) A atualização automática do app é instalada num horário aleatório entre 1h e 5h da manhã, sem preferência de horário. Qual modelo descreve o horário X da instalação? Monte a expressão da probabilidade de a instalação acontecer entre 2h e 3h, e a do horário médio.</li><li>(b) No chat de suporte, o tempo entre mensagens segue uma exponencial com média de 5 minutos. Qual é o λ? Monte a expressão da probabilidade de a próxima mensagem demorar mais de 10 minutos.</li><li>(c) Ainda no item (b), use a função de distribuição F(t) = 1 − e^(−λt) para montar a expressão de P(T ≤ 3). Quanto vale o desvio padrão do tempo entre mensagens?</li><li>Tarefa opcional, sem entrega e sem nota — serve para você conferir se entendeu a leitura. Tente antes de abrir o gabarito.</li>
+  </ul>
+  
+  
+  <details class="gabarito-preaula">
+    <summary>Ver gabarito comentado (tente antes de abrir)</summary>
+    
+    <h4>(a) Horário da atualização</h4>
+    <ul class="gabarito-passos">
+      <li><strong>Modelo:</strong> uniforme contínua — sem preferência de horário: X ~ U[1, 5], com f(x) = 1/(5 − 1) = 1/4.</li><li><strong>Conta:</strong> P(2 ≤ X ≤ 3) = (3 − 2)/4 = 0,25; E(X) = (1 + 5)/2 = 3h.</li><li><strong>Leitura:</strong> um quarto das instalações acontece entre 2h e 3h; em média, a instalação é às 3h.</li><li><strong>Erro comum:</strong> dividir por 5 em vez de 4 — o comprimento do intervalo é 5 − 1.</li>
+    </ul>
+    
+    <h4>(b) Tempo entre mensagens</h4>
+    <ul class="gabarito-passos">
+      <li><strong>Modelo:</strong> exponencial.</li><li><strong>Parâmetro:</strong> E(T) = 1/λ = 5, então λ = 1/5 por minuto.</li><li><strong>Conta:</strong> P(T > 10) = 1 − F(10) = e^(−10/5) = e⁻² ≈ 0,1353.</li><li><strong>Leitura:</strong> em cerca de 13,5% das vezes a espera passa de 10 minutos.</li><li><strong>Erro comum:</strong> usar λ = 5 — a média é 1/λ, não λ.</li>
+    </ul>
+    
+    <h4>(c) Usando a F</h4>
+    <ul class="gabarito-passos">
+      <li><strong>Conta:</strong> P(T ≤ 3) = F(3) = 1 − e^(−3/5) ≈ 0,4512.</li><li><strong>Desvio padrão:</strong> √Var(T) = √(1/λ²) = 1/λ = 5 minutos — na exponencial, igual à média.</li><li><strong>Leitura:</strong> quase metade das mensagens chega em até 3 minutos.</li>
+    </ul>
+    
+    <p class="nota-gabarito">Gabarito elaborado com auxílio de IA (Claude). Se algo não fizer sentido, pergunte em sala.</p>
+  </details>
   
   <label class="preaula-check">
     <input type="checkbox" data-preaula-checkbox data-aula-id="2026-2/cea055-estatistica-probabilidade/12-modelos-continuos-i">
@@ -48,14 +80,14 @@
 <section class="aula-secao">
   <h2>Slides do professor</h2>
   
-  <iframe class="slides-embed" loading="lazy" src="../../../2026-2/cea055-estatistica-probabilidade/12-modelos-continuos-i/arquivos/Aula_12_Modelos_Continuos_I.pdf" title="Slides da aula 12"></iframe>
+  <iframe class="slides-embed" loading="lazy" src="../../../2026-2/cea055-estatistica-probabilidade/12-modelos-continuos-i/arquivos/Aula_12_Modelos_Continuos_I_SITE.pdf" title="Slides da aula 12"></iframe>
   
   <ul class="material-list">
     
-    <li><a href="../../../2026-2/cea055-estatistica-probabilidade/12-modelos-continuos-i/arquivos/Aula_12_Modelos_Continuos_I.pdf" target="_blank" rel="noopener">Abrir slides em tela cheia (PDF)</a></li>
+    <li><a href="../../../2026-2/cea055-estatistica-probabilidade/12-modelos-continuos-i/arquivos/Aula_12_Modelos_Continuos_I_SITE.pdf" target="_blank" rel="noopener">Abrir slides em tela cheia (PDF)</a></li>
     
     
-    <li><a href="../../../2026-2/cea055-estatistica-probabilidade/12-modelos-continuos-i/arquivos/Aula_12_Modelos_Continuos_I.pptx">Baixar slides originais (PowerPoint)</a></li>
+    <li><a href="../../../2026-2/cea055-estatistica-probabilidade/12-modelos-continuos-i/arquivos/Aula_12_Modelos_Continuos_I_SITE.pptx">Baixar slides originais (PowerPoint)</a></li>
     
   </ul>
 </section>

@@ -4,8 +4,8 @@ resumo: Distribuição uniforme contínua; distribuição exponencial
 bloco: 2
 slides:
   titulo: Slides da aula 12
-  arquivo: Aula_12_Modelos_Continuos_I.pptx
-  arquivo_pdf: Aula_12_Modelos_Continuos_I.pdf
+  arquivo: Aula_12_Modelos_Continuos_I_SITE.pptx
+  arquivo_pdf: Aula_12_Modelos_Continuos_I_SITE.pdf
 referencias_bibliograficas:
 - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
   citacao: Cap. 7 – 7.4.1, 7.4.3
@@ -17,9 +17,65 @@ referencias_bibliograficas:
 - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
   citacao: Cap. 5 – 5.2
 pre_aula:
+  leitura:
+    itens:
+    - Bussab & Morettin, Estatística Básica, 9ª ed. — Capítulo 7, seções 7.4.1 (O
+      Modelo Uniforme) e 7.4.3 (O Modelo Exponencial).
+    - Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed. — Capítulo 6,
+      seção 6.2 (Principais Modelos Contínuos), trechos do Modelo Uniforme Contínuo
+      e do Modelo Exponencial (Definição 6.5).
+    nota: As duas referências cobrem o mesmo conteúdo — basta ler uma.
   videos:
-  - titulo: 'Aula 12: Exponencial, Uniforme, Gama, Beta e t-Student'
+  - titulo: 'Aula 12: Exponencial, Uniforme, Gama, Beta e t-Student (assista só aos
+      trechos da uniforme e da exponencial)'
     url: https://www.youtube.com/watch?v=crumAouFNRE
+  tarefa:
+  - Uma equipe de TI cuida das atualizações de um app e do chat de suporte. Monte
+    as expressões pedidas — não precisa calcular o valor final.
+  - (a) A atualização automática do app é instalada num horário aleatório entre 1h
+    e 5h da manhã, sem preferência de horário. Qual modelo descreve o horário X da
+    instalação? Monte a expressão da probabilidade de a instalação acontecer entre
+    2h e 3h, e a do horário médio.
+  - (b) No chat de suporte, o tempo entre mensagens segue uma exponencial com média
+    de 5 minutos. Qual é o λ? Monte a expressão da probabilidade de a próxima mensagem
+    demorar mais de 10 minutos.
+  - (c) Ainda no item (b), use a função de distribuição F(t) = 1 − e^(−λt) para montar
+    a expressão de P(T ≤ 3). Quanto vale o desvio padrão do tempo entre mensagens?
+  - Tarefa opcional, sem entrega e sem nota — serve para você conferir se entendeu
+    a leitura. Tente antes de abrir o gabarito.
+  gabarito:
+  - titulo: (a) Horário da atualização
+    passos:
+    - - Modelo
+      - 'uniforme contínua — sem preferência de horário: X ~ U[1, 5], com f(x) = 1/(5
+        − 1) = 1/4.'
+    - - Conta
+      - P(2 ≤ X ≤ 3) = (3 − 2)/4 = 0,25; E(X) = (1 + 5)/2 = 3h.
+    - - Leitura
+      - um quarto das instalações acontece entre 2h e 3h; em média, a instalação é
+        às 3h.
+    - - Erro comum
+      - dividir por 5 em vez de 4 — o comprimento do intervalo é 5 − 1.
+  - titulo: (b) Tempo entre mensagens
+    passos:
+    - - Modelo
+      - exponencial.
+    - - Parâmetro
+      - E(T) = 1/λ = 5, então λ = 1/5 por minuto.
+    - - Conta
+      - P(T > 10) = 1 − F(10) = e^(−10/5) = e⁻² ≈ 0,1353.
+    - - Leitura
+      - em cerca de 13,5% das vezes a espera passa de 10 minutos.
+    - - Erro comum
+      - usar λ = 5 — a média é 1/λ, não λ.
+  - titulo: (c) Usando a F
+    passos:
+    - - Conta
+      - P(T ≤ 3) = F(3) = 1 − e^(−3/5) ≈ 0,4512.
+    - - Desvio padrão
+      - √Var(T) = √(1/λ²) = 1/λ = 5 minutos — na exponencial, igual à média.
+    - - Leitura
+      - quase metade das mensagens chega em até 3 minutos.
 exercicios_recomendados:
   itens:
   - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
