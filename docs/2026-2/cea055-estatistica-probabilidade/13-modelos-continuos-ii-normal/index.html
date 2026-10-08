@@ -23,15 +23,47 @@
 <section class="aula-secao">
   <h2>Pré-aula</h2>
   
+  <h3>Leitura recomendada</h3>
+  <ul class="bib-list">
+    <li>Bussab & Morettin, Estatística Básica, 9ª ed. — Capítulo 7, seção 7.4.2 (O Modelo Normal).</li><li>Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed. — Capítulo 6, seção 6.2 (Principais Modelos Contínuos), trecho do Modelo Normal.</li>
+  </ul>
+  <p class="nota-leitura">As duas referências cobrem o mesmo conteúdo — basta ler uma.</p>
+  
   
   <h3>Vídeo recomendado</h3>
   <ul class="material-list">
     
-    <li><a href="https://www.youtube.com/watch?v=jdcKU2sgDfg" target="_blank" rel="noopener">Aula 11: A distribuição Normal</a></li>
+    <li><a href="https://www.youtube.com/watch?v=jdcKU2sgDfg" target="_blank" rel="noopener">Aula 11: A distribuição Normal (USP/ICMC)</a></li>
     
   </ul>
   
   
+  <h3>Tarefa</h3>
+  <ul class="bib-list">
+    <li>O tempo de compilação X de um projeto, em segundos, segue uma normal com média 40 s e desvio padrão 5 s: X ~ N(40, 5²). Monte as expressões pedidas usando Φ, a função da tabela da normal padrão. Se tiver a tabela à mão, calcule também o valor.</li><li>(a) Padronize o tempo de 50 s: qual é o z? Monte a expressão da probabilidade de uma compilação demorar mais de 50 s.</li><li>(b) Monte a expressão da probabilidade de a compilação durar entre 35 s e 45 s.</li><li>(c) Caminho contrário: que tempo t deixa 90% das compilações abaixo dele? Monte a expressão de t a partir do z da tabela.</li><li>Tarefa opcional, sem entrega e sem nota — serve para você conferir se entendeu a leitura. Tente antes de abrir o gabarito.</li>
+  </ul>
+  
+  
+  <details class="gabarito-preaula">
+    <summary>Ver gabarito comentado (tente antes de abrir)</summary>
+    
+    <h4>(a) Mais de 50 s</h4>
+    <ul class="gabarito-passos">
+      <li><strong>Padronização:</strong> z = (50 − 40)/5 = 2.</li><li><strong>Conta:</strong> P(X > 50) = P(Z > 2) = 1 − Φ(2) = 1 − 0,9772 = 0,0228.</li><li><strong>Leitura:</strong> cerca de 2,3% das compilações passam de 50 s.</li><li><strong>Erro comum:</strong> responder Φ(2) = 0,9772 — a tabela dá a área à esquerda, e a pergunta é sobre a direita.</li>
+    </ul>
+    
+    <h4>(b) Entre 35 s e 45 s</h4>
+    <ul class="gabarito-passos">
+      <li><strong>Padronização:</strong> (35 − 40)/5 = −1 e (45 − 40)/5 = 1.</li><li><strong>Conta:</strong> P(35 ≤ X ≤ 45) = Φ(1) − Φ(−1) = 2Φ(1) − 1 = 2(0,8413) − 1 = 0,6826.</li><li><strong>Leitura:</strong> cerca de 68% das compilações ficam a menos de um desvio padrão da média.</li><li><strong>Erro comum:</strong> procurar Φ(−1) direto numa tabela que só tem z positivo — use a simetria, Φ(−1) = 1 − Φ(1).</li>
+    </ul>
+    
+    <h4>(c) Tempo para 90%</h4>
+    <ul class="gabarito-passos">
+      <li><strong>Caminho contrário:</strong> procurar na tabela o z com Φ(z) = 0,90, que dá z ≈ 1,28.</li><li><strong>Conta:</strong> t = μ + zσ = 40 + 1,28 · 5 = 46,4 s.</li><li><strong>Leitura:</strong> 90% das compilações terminam em até cerca de 46,4 s.</li><li><strong>Erro comum:</strong> parar no z = 1,28 e esquecer de voltar para a escala do tempo.</li>
+    </ul>
+    
+    <p class="nota-gabarito">Gabarito elaborado com auxílio de IA (Claude). Se algo não fizer sentido, pergunte em sala.</p>
+  </details>
   
   <label class="preaula-check">
     <input type="checkbox" data-preaula-checkbox data-aula-id="2026-2/cea055-estatistica-probabilidade/13-modelos-continuos-ii-normal">

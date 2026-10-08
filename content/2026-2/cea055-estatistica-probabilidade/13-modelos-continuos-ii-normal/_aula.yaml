@@ -17,9 +17,61 @@ referencias_bibliograficas:
 - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
   citacao: Cap. 5 – 5.2
 pre_aula:
+  leitura:
+    itens:
+    - Bussab & Morettin, Estatística Básica, 9ª ed. — Capítulo 7, seção 7.4.2 (O Modelo
+      Normal).
+    - Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed. — Capítulo 6,
+      seção 6.2 (Principais Modelos Contínuos), trecho do Modelo Normal.
+    nota: As duas referências cobrem o mesmo conteúdo — basta ler uma.
   videos:
-  - titulo: 'Aula 11: A distribuição Normal'
+  - titulo: 'Aula 11: A distribuição Normal (USP/ICMC)'
     url: https://www.youtube.com/watch?v=jdcKU2sgDfg
+  tarefa:
+  - 'O tempo de compilação X de um projeto, em segundos, segue uma normal com média
+    40 s e desvio padrão 5 s: X ~ N(40, 5²). Monte as expressões pedidas usando Φ,
+    a função da tabela da normal padrão. Se tiver a tabela à mão, calcule também o
+    valor.'
+  - '(a) Padronize o tempo de 50 s: qual é o z? Monte a expressão da probabilidade
+    de uma compilação demorar mais de 50 s.'
+  - (b) Monte a expressão da probabilidade de a compilação durar entre 35 s e 45 s.
+  - '(c) Caminho contrário: que tempo t deixa 90% das compilações abaixo dele? Monte
+    a expressão de t a partir do z da tabela.'
+  - Tarefa opcional, sem entrega e sem nota — serve para você conferir se entendeu
+    a leitura. Tente antes de abrir o gabarito.
+  gabarito:
+  - titulo: (a) Mais de 50 s
+    passos:
+    - - Padronização
+      - z = (50 − 40)/5 = 2.
+    - - Conta
+      - P(X > 50) = P(Z > 2) = 1 − Φ(2) = 1 − 0,9772 = 0,0228.
+    - - Leitura
+      - cerca de 2,3% das compilações passam de 50 s.
+    - - Erro comum
+      - responder Φ(2) = 0,9772 — a tabela dá a área à esquerda, e a pergunta é sobre
+        a direita.
+  - titulo: (b) Entre 35 s e 45 s
+    passos:
+    - - Padronização
+      - (35 − 40)/5 = −1 e (45 − 40)/5 = 1.
+    - - Conta
+      - P(35 ≤ X ≤ 45) = Φ(1) − Φ(−1) = 2Φ(1) − 1 = 2(0,8413) − 1 = 0,6826.
+    - - Leitura
+      - cerca de 68% das compilações ficam a menos de um desvio padrão da média.
+    - - Erro comum
+      - procurar Φ(−1) direto numa tabela que só tem z positivo — use a simetria,
+        Φ(−1) = 1 − Φ(1).
+  - titulo: (c) Tempo para 90%
+    passos:
+    - - Caminho contrário
+      - procurar na tabela o z com Φ(z) = 0,90, que dá z ≈ 1,28.
+    - - Conta
+      - t = μ + zσ = 40 + 1,28 · 5 = 46,4 s.
+    - - Leitura
+      - 90% das compilações terminam em até cerca de 46,4 s.
+    - - Erro comum
+      - parar no z = 1,28 e esquecer de voltar para a escala do tempo.
 exercicios_recomendados:
   itens:
   - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
