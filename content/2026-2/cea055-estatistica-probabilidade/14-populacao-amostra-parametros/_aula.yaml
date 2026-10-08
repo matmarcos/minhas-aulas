@@ -19,11 +19,60 @@ referencias_bibliograficas:
 - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
   citacao: Cap. 7 – 7.1, 7.2; Cap. 8 – 8.1
 pre_aula:
+  leitura:
+    itens:
+    - Bussab & Morettin, Estatística Básica, 9ª ed. — Capítulo 10, seções 10.2, 10.4,
+      10.5 e 10.6.
+    - Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed. — Capítulo 7,
+      seções 7.1 e 7.2.
+    nota: As duas referências cobrem o mesmo conteúdo — basta ler uma.
   videos:
-  - titulo: 'Estatística – Aula 13 – Amostragem: Conceitos Fundamentais'
+  - titulo: 'Estatística – Aula 13 – Amostragem: Conceitos Fundamentais (UNIVESP)'
     url: https://www.youtube.com/watch?v=sWJlocN-bpc
-  - titulo: Estatística – Aula 2 – Variáveis, População, Amostra e Técnicas de Amostragem
-    url: https://www.youtube.com/watch?v=2Q7wSgJR-g4
+  tarefa:
+  - Uma plataforma de streaming tem 50.000 assinantes e quer saber quantas horas,
+    em média, eles assistem por semana. O time de dados sorteia 500 assinantes e mede
+    as horas de cada um. A média da amostra foi 9,2 horas.
+  - (a) Identifique a população, a amostra, o parâmetro, o estimador e a estimativa.
+  - (b) Um colega sugere medir só quem estiver assistindo às 22h de sábado, "porque
+    é mais fácil". Que tipo de viés isso causa? Para que lado a estimativa tende a
+    errar?
+  - (c) No sorteio dos 500 (sem reposição), qual a probabilidade de um assinante específico
+    ser o primeiro sorteado? E de estar na amostra?
+  - Tarefa opcional, sem entrega e sem nota — serve para você conferir se entendeu
+    a leitura. Tente antes de abrir o gabarito.
+  gabarito:
+  - titulo: (a) Os nomes
+    passos:
+    - - População e amostra
+      - os 50.000 assinantes; os 500 sorteados.
+    - - Parâmetro
+      - μ, a média de horas por semana de todos os assinantes — desconhecida.
+    - - Estimador
+      - a média amostral X̄ — a regra "some as horas da amostra e divida por n".
+    - - Estimativa
+      - 9,2 horas — o valor do estimador nesta amostra.
+    - - Erro comum
+      - chamar 9,2 de parâmetro. O parâmetro é da população; 9,2 vem da amostra.
+  - titulo: (b) Quem assiste às 22h de sábado
+    passos:
+    - - Viés
+      - de seleção — a amostra só tem quem estava assistindo naquele horário.
+    - - Leitura
+      - quem está assistindo num sábado à noite tende a ser quem assiste mais, então
+        a estimativa tende a ficar acima da média real.
+    - - Erro comum
+      - achar que aumentar a amostra resolve. Uma amostra maior com o mesmo viés continua
+        errando para o mesmo lado.
+  - titulo: (c) Probabilidades na AAS
+    passos:
+    - - Primeiro sorteado
+      - cada assinante tem a mesma chance, 1/50.000 = 0,00002.
+    - - Estar na amostra
+      - n/N = 500/50.000 = 0,01, ou seja, 1%.
+    - - Leitura
+      - na amostragem aleatória simples, todos têm a mesma chance de entrar — é isso
+        que evita o viés de seleção.
 exercicios_recomendados:
   itens:
   - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
