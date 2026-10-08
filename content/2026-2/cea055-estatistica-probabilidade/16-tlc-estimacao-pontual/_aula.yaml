@@ -1,0 +1,55 @@
+titulo: Aula 16 - Teorema do Limite Central e estimação pontual
+data: ''
+resumo: Teorema do Limite Central; estimação pontual para média e proporção
+bloco: 2
+slides:
+  titulo: Slides da aula 16
+  arquivo: Aula_16_TLC_Estimacao_Pontual.pptx
+  arquivo_pdf: Aula_16_TLC_Estimacao_Pontual.pdf
+referencias_bibliograficas:
+- livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+  citacao: Cap. 10 – 10.7; Cap. 11 – 11.1
+- livro: Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª
+    ed.
+  citacao: Cap. 7 – 7.2, 7.3
+- livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+  citacao: Cap. 7 – 7.3
+- livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
+  citacao: Cap. 9 – 9.1; Cap. 10 – 10.2, 10.3
+pre_aula:
+  videos:
+  - titulo: 'Aula 19: Teorema Central do Limite'
+    url: https://www.youtube.com/watch?v=QcQz6_93GC4
+exercicios_recomendados:
+  itens:
+  - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+    exercicios: 'Cap. 10: Problemas 4, 5 e 6 (mesmos da Aula 15)'
+    recomendacao: 'Este livro não separa exercícios específicos de "estimação pontual"
+      isoladamente — os problemas 4 a 6, já usados na Aula 15, também servem aqui:
+      ao construir a distribuição amostral da média, você está implicitamente vendo
+      o TLC em ação.'
+  - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+    exercicios: 'Cap. 7 (7.5 Exercícios): 15, 16 e 17'
+    recomendacao: 'O exercício 17 é o mais focado nesta aula: pede o tamanho de amostra
+      necessário para uma certa precisão — ligação direta entre TLC e qualidade da
+      estimativa.'
+  - livro: Montgomery & Runger, Applied Statistics and Probability for Engineers,
+      7ª ed.
+    exercicios: 'Cap. 7: Exercícios 7.3.1, 7.3.4, 7.3.5, 7.3.6 e 7.3.7'
+    recomendacao: Referência mais completa para esta aula. Os exercícios 7.3.4 e 7.3.5
+      comparam estimadores diferentes para o mesmo parâmetro — ajuda a entender por
+      que escolhemos a média amostral como estimador. Os exercícios 7.3.6 e 7.3.7
+      são cálculo direto de estimativas pontuais a partir de dados reais.
+  - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
+    exercicios: 'Cap. 9: Exercícios 1, 2 e 3 (mesmos da Aula 15)'
+    recomendacao: O capítulo de estimação pontual deste livro (Cap. 10) é só teórico,
+      sem lista de exercícios própria. Os exercícios do Cap. 9, já usados na Aula
+      15, continuam válidos aqui pelo mesmo motivo do Bussab.
+  arquivo: Tabela_Referencias_Aula16.pdf
+lista_ia:
+  lista_arquivo: Lista_Aula16_Original.pdf
+  gabarito_arquivo: Gabarito_Aula16_Original.pdf
+tarefa_complementar:
+- titulo: TLC e Estimacao Pontual - Avaliacoes de Apps
+  url: https://colab.research.google.com/github/matmarcos/minhas-aulas/blob/main/docs/2026-2/cea055-estatistica-probabilidade/16-tlc-estimacao-pontual/arquivos/Aula%2016%20-%20TLC%20e%20Estimacao%20Pontual%20-%20Avaliacoes%20de%20Apps.ipynb
+  arquivo: Aula 16 - TLC e Estimacao Pontual - Avaliacoes de Apps.ipynb

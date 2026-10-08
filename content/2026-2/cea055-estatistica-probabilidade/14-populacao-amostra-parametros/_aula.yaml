@@ -1,0 +1,59 @@
+titulo: Aula 14 - População, amostra, amostragem e parâmetros
+data: ''
+resumo: Conceitos de população e amostra; tipos de amostragem; Amostragem Aleatória
+  Simples (AAS); diferença entre estatística e parâmetro; média, mediana, variância
+  e proporção amostrais
+bloco: 2
+slides:
+  titulo: Slides da aula 14
+  arquivo: Aula_14_Populacao_Amostra_Parametros.pptx
+  arquivo_pdf: Aula_14_Populacao_Amostra_Parametros.pdf
+referencias_bibliograficas:
+- livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+  citacao: Cap. 10 – 10.2, 10.4, 10.5, 10.6
+- livro: Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª
+    ed.
+  citacao: Cap. 7 – 7.1
+- livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+  citacao: Cap. 7 – 7.1, 7.2
+- livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
+  citacao: Cap. 7 – 7.1, 7.2; Cap. 8 – 8.1
+pre_aula:
+  videos:
+  - titulo: 'Estatística – Aula 13 – Amostragem: Conceitos Fundamentais'
+    url: https://www.youtube.com/watch?v=sWJlocN-bpc
+  - titulo: Estatística – Aula 2 – Variáveis, População, Amostra e Técnicas de Amostragem
+    url: https://www.youtube.com/watch?v=2Q7wSgJR-g4
+exercicios_recomendados:
+  itens:
+  - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
+    exercicios: 'Cap. 10: Problemas 1 e 3'
+    recomendacao: 'O problema 1 é conceitual: pede para você criticar diferentes planos
+      de amostragem (bom para entender vieses de amostragem). O problema 3 é sobre
+      AAS.'
+  - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
+    exercicios: ''
+    recomendacao: Não encontramos exercícios dedicados aos conceitos de população,
+      amostra e parâmetros nesta lista — ela vai direto para cálculos de distribuição
+      amostral e intervalo de confiança (conteúdo de aulas futuras). Use as outras
+      referências.
+  - livro: Montgomery & Runger, Applied Statistics and Probability for Engineers,
+      7ª ed.
+    exercicios: ''
+    recomendacao: Não encontramos exercícios dedicados à Seção 7.1 (estimação pontual/conceitos
+      básicos) — a lista de exercícios do capítulo começa direto na Seção 7.2 (distribuições
+      amostrais, conteúdo da próxima aula). Use as outras referências.
+  - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
+    exercicios: 'Cap. 8: Exercícios 1, 2 e 3'
+    recomendacao: 'Referência mais completa para esta aula: são exercícios completos
+      de estatística descritiva aplicada a uma amostra (média, desvio, moda, mediana,
+      quartis) — um bom jeito de revisar como calcular estatísticas (as medidas da
+      amostra, em contraste com os parâmetros da população).'
+  arquivo: Tabela_Referencias_Aula14.pdf
+lista_ia:
+  lista_arquivo: Lista_Aula14_Original.pdf
+  gabarito_arquivo: Gabarito_Aula14_Original.pdf
+tarefa_complementar:
+- titulo: Populacao Amostra e Parametros - Usuarios do App
+  url: https://colab.research.google.com/github/matmarcos/minhas-aulas/blob/main/docs/2026-2/cea055-estatistica-probabilidade/14-populacao-amostra-parametros/arquivos/Aula%2014%20-%20Populacao%20Amostra%20e%20Parametros%20-%20Usuarios%20do%20App.ipynb
+  arquivo: Aula 14 - Populacao Amostra e Parametros - Usuarios do App.ipynb

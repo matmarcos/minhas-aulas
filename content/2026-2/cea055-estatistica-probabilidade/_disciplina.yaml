@@ -126,13 +126,6 @@ recursos_externos:
     - *id006
     nota: null
   - aula_numero: 14
-    aula_titulo: Aproximação normal e revisão geral dos modelos de distribuição
-    bloco: 2
-    videos:
-    - titulo: A aproximação normal à distribuição binomial
-      url: https://www.youtube.com/watch?v=nBo9CJo6x9k&list=PL3XWwJYdqO23a1iwQtuwkp0w0Ovm_WMtz&index=13
-    nota: null
-  - aula_numero: 15
     aula_titulo: População, amostra, amostragem e parâmetros
     bloco: 2
     videos:
@@ -140,15 +133,17 @@ recursos_externos:
       titulo: Introdução à inferência estatística
       url: https://www.youtube.com/watch?v=MmWwHz8nsVc&list=PL3XWwJYdqO23a1iwQtuwkp0w0Ovm_WMtz&index=16
     nota: null
-  - aula_numero: 16
-    aula_titulo: Distribuição amostral da média e da proporção
+  - aula_numero: 15
+    aula_titulo: 'Distribuição amostral da média e da proporção; aproximação normal à binomial'
     bloco: 2
     videos:
     - &id008
       titulo: Distribuição Amostral da Média
       url: https://www.youtube.com/watch?v=KD1XbNjsmWM&list=PL3XWwJYdqO23a1iwQtuwkp0w0Ovm_WMtz&index=17
+    - titulo: A aproximação normal à distribuição binomial
+      url: https://www.youtube.com/watch?v=nBo9CJo6x9k&list=PL3XWwJYdqO23a1iwQtuwkp0w0Ovm_WMtz&index=13
     nota: o vídeo cobre a distribuição amostral da média; não aborda a da proporção
-  - aula_numero: 17
+  - aula_numero: 16
     aula_titulo: Teorema do Limite Central e estimação pontual
     bloco: 2
     videos:
@@ -354,13 +349,6 @@ recursos_externos:
       url: https://stat4all.github.io/slides/Unid_5_P7.pdf
     nota: null
   - aula_numero: 14
-    aula_titulo: Aproximação normal e revisão geral dos modelos de distribuição
-    bloco: 2
-    videos:
-    - titulo: Aproximação da distribuição Binomial pela Normal
-      url: https://stat4all.github.io/slides/Unid_5_P8.pdf
-    nota: null
-  - aula_numero: 15
     aula_titulo: População, amostra, amostragem e parâmetros
     bloco: 2
     videos:
@@ -375,16 +363,18 @@ recursos_externos:
     - titulo: Amostragem não probabilística
       url: https://stat4all.github.io/slides/Unid_1_P6.pdf
     nota: null
-  - aula_numero: 16
-    aula_titulo: Distribuição amostral da média e da proporção
+  - aula_numero: 15
+    aula_titulo: 'Distribuição amostral da média e da proporção; aproximação normal à binomial'
     bloco: 2
     videos:
     - titulo: Distribuição amostral da média com variância conhecida
       url: https://stat4all.github.io/slides/Unid_6_P1.pdf
     - titulo: Distribuição amostral da proporção
       url: https://stat4all.github.io/slides/Unid_6_P2.pdf
+    - titulo: Aproximação da distribuição Binomial pela Normal
+      url: https://stat4all.github.io/slides/Unid_5_P8.pdf
     nota: null
-  - aula_numero: 17
+  - aula_numero: 16
     aula_titulo: Teorema do Limite Central e estimação pontual
     bloco: 2
     videos:
