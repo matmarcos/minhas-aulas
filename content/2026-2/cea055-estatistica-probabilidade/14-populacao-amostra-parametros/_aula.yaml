@@ -29,6 +29,12 @@ pre_aula:
   videos:
   - titulo: 'Estatística – Aula 13 – Amostragem: Conceitos Fundamentais (UNIVESP)'
     url: https://www.youtube.com/watch?v=sWJlocN-bpc
+    nota: 'Pode pular o trecho de 6:00 a 10:30 (etapas de uma pesquisa eleitoral). Atenção a
+      três diferenças em relação à aula: (1) o exemplo dos bairros (por volta de 19:10) é
+      de amostragem por conglomerados, não estratificada; (2) numa AAS de tamanho n, a
+      chance de cada pessoa entrar na amostra é n/N, não 1/N; (3) o vídeo trata a AAS
+      como sem reposição, e nas próximas aulas usaremos a AAS com reposição. O vídeo não
+      fala de parâmetro, estimador, estimativa e erro amostral: para isso, use a leitura.'
   tarefa:
   - Uma plataforma de streaming tem 50.000 assinantes e quer saber quantas horas,
     em média, eles assistem por semana. O time de dados sorteia 500 assinantes e mede

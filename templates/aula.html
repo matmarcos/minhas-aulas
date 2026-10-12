@@ -22,7 +22,7 @@
   <h3>Vídeo recomendado</h3>
   <ul class="material-list">
     {% for v in aula.pre_aula.videos %}
-    <li><a href="{{ v.url }}" target="_blank" rel="noopener">{{ v.titulo }}</a></li>
+    <li><a href="{{ v.url }}" target="_blank" rel="noopener">{{ v.titulo }}</a>{% if v.nota %}<p class="nota-leitura">{{ v.nota }}</p>{% endif %}</li>
     {% endfor %}
   </ul>
   {% endif %}
