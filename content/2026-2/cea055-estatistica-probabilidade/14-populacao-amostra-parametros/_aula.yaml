@@ -1,30 +1,30 @@
 titulo: Aula 14 - População, amostra, amostragem e parâmetros
 data: ''
-resumo: Conceitos de população e amostra; tipos de amostragem; Amostragem Aleatória
-  Simples (AAS); diferença entre estatística e parâmetro; média, mediana, variância
-  e proporção amostrais
+resumo: Conceitos de população e amostra; parâmetro, estimador e estimativa; erro
+  amostral e vieses; amostragem probabilística e não probabilística; planos de amostragem
+  (aleatória simples, estratificada, por conglomerados e sistemática)
 bloco: 2
 slides:
   titulo: Slides da aula 14
-  arquivo: Aula_14_Populacao_Amostra_Parametros.pptx
-  arquivo_pdf: Aula_14_Populacao_Amostra_Parametros.pdf
+  arquivo: Aula_14_Populacao_Amostra_Parametros_SITE.pptx
+  arquivo_pdf: Aula_14_Populacao_Amostra_Parametros_SITE.pdf
 referencias_bibliograficas:
 - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
-  citacao: Cap. 10 – 10.2, 10.4, 10.5, 10.6
-- livro: Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª
-    ed.
+  citacao: Cap. 10 – 10.2, 10.4, 10.5, 10.6 e 10.14 (item 2, Planos probabilísticos)
+- livro: Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros,
+    7ª ed.
   citacao: Cap. 7 – 7.1
 - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
-  citacao: Cap. 7 – 7.1, 7.2
+  citacao: Cap. 1 – 1.1 (trecho sobre seleção da amostra); Cap. 7 – 7.1
 - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
-  citacao: Cap. 7 – 7.1, 7.2; Cap. 8 – 8.1
+  citacao: Cap. 7 – 7.1, 7.2
 pre_aula:
   leitura:
     itens:
     - Bussab & Morettin, Estatística Básica, 9ª ed. — Capítulo 10, seções 10.2, 10.4,
-      10.5 e 10.6.
-    - Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed. — Capítulo 7,
-      seções 7.1 e 7.2.
+      10.5 e 10.6, e a seção 10.14, item 2 (Planos probabilísticos).
+    - Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed. — Capítulo 1,
+      seção 1.1 (trecho sobre a seleção da amostra), e Capítulo 7, seção 7.1.
     nota: As duas referências cobrem o mesmo conteúdo — basta ler uma.
   videos:
   - titulo: 'Estatística – Aula 13 – Amostragem: Conceitos Fundamentais (UNIVESP)'
@@ -76,28 +76,22 @@ pre_aula:
 exercicios_recomendados:
   itens:
   - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
-    exercicios: 'Cap. 10: Problemas 1 e 3'
-    recomendacao: 'O problema 1 é conceitual: pede para você criticar diferentes planos
-      de amostragem (bom para entender vieses de amostragem). O problema 3 é sobre
-      AAS.'
+    exercicios: 'Cap. 10: Problemas 1 e 31'
+    recomendacao: O Problema 1 pede para criticar diferentes planos de amostragem (bom
+      para reconhecer vieses). O Problema 31 pergunta como sortear uma amostra em várias
+      situações diferentes, sem contas.
   - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
-    exercicios: ''
-    recomendacao: Não encontramos exercícios dedicados aos conceitos de população,
-      amostra e parâmetros nesta lista — ela vai direto para cálculos de distribuição
-      amostral e intervalo de confiança (conteúdo de aulas futuras). Use as outras
-      referências.
-  - livro: Montgomery & Runger, Applied Statistics and Probability for Engineers,
+    exercicios: 'Cap. 7: Exercícios da Seção 7.1, 1 e 2'
+    recomendacao: O Exercício 1 compara, na prática, o sorteio com e sem reposição.
+      O Exercício 2 compara três planos de coleta e pede as dificuldades de cada um.
+  - livro: Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros,
       7ª ed.
     exercicios: ''
-    recomendacao: Não encontramos exercícios dedicados à Seção 7.1 (estimação pontual/conceitos
-      básicos) — a lista de exercícios do capítulo começa direto na Seção 7.2 (distribuições
-      amostrais, conteúdo da próxima aula). Use as outras referências.
+    recomendacao: Não há exercícios da Seção 7.1; os do capítulo começam na Seção 7.2
+      (distribuições amostrais, conteúdo da próxima aula).
   - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
-    exercicios: 'Cap. 8: Exercícios 1, 2 e 3'
-    recomendacao: 'Referência mais completa para esta aula: são exercícios completos
-      de estatística descritiva aplicada a uma amostra (média, desvio, moda, mediana,
-      quartis) — um bom jeito de revisar como calcular estatísticas (as medidas da
-      amostra, em contraste com os parâmetros da população).'
+    exercicios: ''
+    recomendacao: O Capítulo 7 (amostragem) não tem exercícios propostos.
   arquivo: Tabela_Referencias_Aula14.pdf
 lista_ia:
   lista_arquivo: Lista_Aula14_Original.pdf
