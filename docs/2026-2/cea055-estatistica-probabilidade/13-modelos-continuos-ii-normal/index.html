@@ -40,7 +40,7 @@
   
   <h3>Tarefa</h3>
   <ul class="bib-list">
-    <li>O tempo de compilação X de um projeto, em segundos, segue uma normal com média 40 s e desvio padrão 5 s: X ~ N(40, 5²). Monte as expressões pedidas usando Φ, a função da tabela da normal padrão. Se tiver a tabela à mão, calcule também o valor.</li><li>(a) Padronize o tempo de 50 s: qual é o z? Monte a expressão da probabilidade de uma compilação demorar mais de 50 s.</li><li>(b) Monte a expressão da probabilidade de a compilação durar entre 35 s e 45 s.</li><li>(c) Caminho contrário: que tempo t deixa 90% das compilações abaixo dele? Monte a expressão de t a partir do z da tabela.</li><li>Tarefa opcional, sem entrega e sem nota — serve para você conferir se entendeu a leitura. Tente antes de abrir o gabarito.</li>
+    <li>O tempo de compilação X de um projeto, em segundos, segue uma normal com média 40 s e desvio padrão 5 s: X ~ N(40, 5²). Monte as expressões pedidas usando a tabela da normal padrão P(0 ≤ Z ≤ z), que dá a área entre 0 e z. Se tiver a tabela à mão, calcule também o valor.</li><li>(a) Padronize o tempo de 50 s: qual é o z? Monte a expressão da probabilidade de uma compilação demorar mais de 50 s.</li><li>(b) Monte a expressão da probabilidade de a compilação durar entre 35 s e 45 s.</li><li>(c) Caminho contrário: que tempo t deixa 90% das compilações abaixo dele? Monte a expressão de t a partir do z da tabela.</li><li>Tarefa opcional, sem entrega e sem nota — serve para você conferir se entendeu a leitura. Tente antes de abrir o gabarito.</li>
   </ul>
   
   
@@ -49,17 +49,17 @@
     
     <h4>(a) Mais de 50 s</h4>
     <ul class="gabarito-passos">
-      <li><strong>Padronização:</strong> z = (50 − 40)/5 = 2.</li><li><strong>Conta:</strong> P(X > 50) = P(Z > 2) = 1 − Φ(2) = 1 − 0,9772 = 0,0228.</li><li><strong>Leitura:</strong> cerca de 2,3% das compilações passam de 50 s.</li><li><strong>Erro comum:</strong> responder Φ(2) = 0,9772 — a tabela dá a área à esquerda, e a pergunta é sobre a direita.</li>
+      <li><strong>Padronização:</strong> z = (50 − 40)/5 = 2.</li><li><strong>Conta:</strong> P(X > 50) = P(Z > 2) = 0,5 − P(0 ≤ Z ≤ 2) = 0,5 − 0,4772 = 0,0228.</li><li><strong>Leitura:</strong> cerca de 2,3% das compilações passam de 50 s.</li><li><strong>Erro comum:</strong> responder o valor da tabela, 0,4772 — ele é a área entre 0 e 2; a pergunta é sobre a área à direita de 2.</li>
     </ul>
     
     <h4>(b) Entre 35 s e 45 s</h4>
     <ul class="gabarito-passos">
-      <li><strong>Padronização:</strong> (35 − 40)/5 = −1 e (45 − 40)/5 = 1.</li><li><strong>Conta:</strong> P(35 ≤ X ≤ 45) = Φ(1) − Φ(−1) = 2Φ(1) − 1 = 2(0,8413) − 1 = 0,6826.</li><li><strong>Leitura:</strong> cerca de 68% das compilações ficam a menos de um desvio padrão da média.</li><li><strong>Erro comum:</strong> procurar Φ(−1) direto numa tabela que só tem z positivo — use a simetria, Φ(−1) = 1 − Φ(1).</li>
+      <li><strong>Padronização:</strong> (35 − 40)/5 = −1 e (45 − 40)/5 = 1.</li><li><strong>Conta:</strong> P(35 ≤ X ≤ 45) = P(−1 ≤ Z ≤ 1) = 2 · P(0 ≤ Z ≤ 1) = 2(0,3413) = 0,6826.</li><li><strong>Leitura:</strong> cerca de 68% das compilações ficam a menos de um desvio padrão da média.</li><li><strong>Erro comum:</strong> procurar z = −1 na tabela, que só tem z positivo — use a simetria: a área de −1 a 0 é igual à de 0 a 1.</li>
     </ul>
     
     <h4>(c) Tempo para 90%</h4>
     <ul class="gabarito-passos">
-      <li><strong>Caminho contrário:</strong> procurar na tabela o z com Φ(z) = 0,90, que dá z ≈ 1,28.</li><li><strong>Conta:</strong> t = μ + zσ = 40 + 1,28 · 5 = 46,4 s.</li><li><strong>Leitura:</strong> 90% das compilações terminam em até cerca de 46,4 s.</li><li><strong>Erro comum:</strong> parar no z = 1,28 e esquecer de voltar para a escala do tempo.</li>
+      <li><strong>Caminho contrário:</strong> 90% abaixo de t = 0,5 (metade esquerda) + 0,40; procurar na tabela o z com P(0 ≤ Z ≤ z) = 0,40, que dá z ≈ 1,28.</li><li><strong>Conta:</strong> t = μ + zσ = 40 + 1,28 · 5 = 46,4 s.</li><li><strong>Leitura:</strong> 90% das compilações terminam em até cerca de 46,4 s.</li><li><strong>Erro comum:</strong> parar no z = 1,28 e esquecer de voltar para a escala do tempo.</li>
     </ul>
     
     <p class="nota-gabarito">Gabarito elaborado com auxílio de IA (Claude). Se algo não fizer sentido, pergunte em sala.</p>
