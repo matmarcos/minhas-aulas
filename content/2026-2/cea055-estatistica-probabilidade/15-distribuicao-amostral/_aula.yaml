@@ -1,70 +1,119 @@
 titulo: Aula 15 - Distribuição amostral da média e da proporção; aproximação normal à binomial
 data: ''
-resumo: Distribuições amostrais; distribuição amostral da média; distribuição amostral da proporção;
-  aproximação da binomial pela normal
+resumo: Distribuição amostral; média e variância da média amostral; Teorema do Limite Central;
+  aproximação normal à binomial e correção de continuidade; distribuição amostral da proporção
 bloco: 2
 slides:
   titulo: Slides da aula 15
-  arquivo: Aula_15_Distribuicao_Amostral.pptx
-  arquivo_pdf: Aula_15_Distribuicao_Amostral.pdf
+  arquivo: Aula_15_Distribuicao_Amostral_SITE.pptx
+  arquivo_pdf: Aula_15_Distribuicao_Amostral_SITE.pdf
 referencias_bibliograficas:
 - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
-  citacao: Cap. 10 – 10.7 a 10.9
-- livro: Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª ed.
-  citacao: Cap. 7 – 7.2
+  citacao: Cap. 7 – 7.5 (aproximação normal à binomial); Cap. 10 – 10.7 a 10.9
+- livro: Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros,
+    7ª ed.
+  citacao: Cap. 4 – 4.6 (aproximação normal à binomial); Cap. 7 – 7.2
 - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
-  citacao: Cap. 7 – 7.3
+  citacao: Cap. 6 – 6.2 (aproximação normal para o modelo binomial); Cap. 7 – 7.3
 - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
-  citacao: Cap. 9 – 9.1, 9.2
-- livro: Bussab & Morettin, Estatística Básica, 9ª ed.
-  citacao: Cap. 7 – 7.5 (aproximação normal à binomial)
-- livro: Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª ed.
-  citacao: Cap. 4 – 4.6 (aproximação normal à binomial)
-- livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
-  citacao: Cap. 6 – 6.2 (aproximação normal à binomial)
-- livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
-  citacao: Cap. 6 – 6.2 (aproximação normal à binomial)
+  citacao: Cap. 6 – 6.2 (aproximação normal à binomial); Cap. 9 – 9.1, 9.2
 pre_aula:
+  leitura:
+    itens:
+    - Bussab & Morettin, Estatística Básica, 9ª ed. — Capítulo 10, seções 10.7 a 10.9,
+      e Capítulo 7, seção 7.5 (aproximação normal à binomial).
+    - Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed. — Capítulo 7, seção
+      7.3, e Capítulo 6, seção 6.2 (trecho da aproximação normal para o modelo binomial).
+    nota: As duas referências cobrem o mesmo conteúdo — basta ler uma.
   videos:
-  - titulo: Teorema do Limite Central (introdução à distribuição amostral)
+  - titulo: Teorema do Limite Central (Khan Academy Brasil)
     url: https://www.youtube.com/watch?v=t31I49KYFDo
-  - titulo: Aproximação Normal à Binomial
+  - titulo: Aproximação Normal à Binomial (James Sampaio)
     url: https://www.youtube.com/watch?v=eZ7L9NTzfYg
+  tarefa:
+  - 'Num jogo online, a duração de uma partida tem média de 20 minutos e desvio padrão de
+    8 minutos. A distribuição é assimétrica: a maioria das partidas é curta, e algumas se
+    arrastam. Um torneio tem 64 partidas, sorteadas ao acaso entre as partidas do jogo.'
+  - (a) Qual é a média e o desvio padrão da duração média X̄ das 64 partidas?
+  - (b) A duração de cada partida não é normal. Por que, mesmo assim, podemos usar a normal
+    para X̄?
+  - (c) Qual é a probabilidade de a duração média das 64 partidas passar de 21,5 minutos?
+  - (d) 20% das partidas terminam empatadas. Qual é a probabilidade de a proporção de empates
+    no torneio ser de 25% ou mais?
+  - Tarefa opcional, sem entrega e sem nota — serve para você conferir se entendeu a leitura.
+    Tente antes de abrir o gabarito.
+  gabarito:
+  - titulo: (a) Média e desvio padrão de X̄
+    passos:
+    - - Média
+      - E(X̄) = μ = 20 min.
+    - - Desvio padrão
+      - DP(X̄) = σ/√n = 8/√64 = 8/8 = 1 min.
+    - - Erro comum
+      - dividir por n em vez de √n (8/64 = 0,125).
+  - titulo: (b) Por que a normal
+    passos:
+    - - TLC
+      - com n = 64 (≥ 30), a média é aproximadamente normal, qualquer que seja o formato da
+        distribuição de cada partida.
+  - titulo: (c) Duração média acima de 21,5 min
+    passos:
+    - - Padronização
+      - X̄ ≈ N(20; 1²), então z = (21,5 − 20)/1 = 1,5.
+    - - Probabilidade
+      - P(X̄ > 21,5) = P(Z > 1,5) = 0,5 − P(0 ≤ Z ≤ 1,5) = 0,5 − 0,4332 = 0,0668.
+    - - Leitura
+      - em cerca de 6,7% dos torneios, a média passa de 21,5 min.
+    - - Erro comum
+      - usar σ = 8 no lugar de σ/√n = 1 (daria z = 0,19).
+  - titulo: (d) Proporção de empates de 25% ou mais
+    passos:
+    - - Condição
+      - np = 64 × 0,20 = 12,8 ≥ 5 e n(1 − p) = 51,2 ≥ 5.
+    - - Distribuição
+      - σ_p̂ = √(0,20 × 0,80/64) = 0,05, então p̂ ≈ N(0,20; 0,05²).
+    - - Probabilidade
+      - P(p̂ ≥ 0,25) = P(Z ≥ (0,25 − 0,20)/0,05) = P(Z ≥ 1) = 0,5 − 0,3413 = 0,1587.
+    - - Leitura
+      - em cerca de 16% dos torneios, um quarto ou mais das partidas termina empatada.
 exercicios_recomendados:
   itens:
   - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
     exercicios: 'Cap. 10: Problemas 4, 5, 6, 7, 8, 9, 10, 11, 12 e 13'
-    recomendacao: 'Referência muito completa: os problemas 4 a 6 pedem para você construir a
-      distribuição amostral "na mão" (bom para entender o conceito). Os problemas 7 a 10 são
-      sobre a média; 11 a 13, sobre a proporção.'
+    recomendacao: Os Problemas 4 a 6 constroem a distribuição amostral "na mão" (usam os
+      dados do Problema 3). Os Problemas 7 a 10 são sobre a média; 11 a 13, sobre a proporção.
   - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
-    exercicios: 'Cap. 7 (7.5 Exercícios): 5, 6, 7, 8, 9, 10, 11, 12, 13 e 14'
-    recomendacao: Boa variedade de contextos para a distribuição amostral da média, incluindo
-      casos com diferentes tamanhos de amostra para você comparar o efeito de n na precisão.
-  - livro: Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª ed.
-    exercicios: 'Cap. 7: Exercícios 7.2.1 a 7.2.9'
-    recomendacao: Referência completa (9 exercícios ao todo). O exercício 7.2.1 é um bom ponto
-      de partida — pede para você identificar qual parâmetro da população está sendo estimado.
+    exercicios: 'Cap. 7 (7.5 Exercícios): 5, 6, 9, 10, 11, 12, 13 e 14'
+    recomendacao: O 5 constrói a distribuição amostral de X̄ para n = 2; os demais calculam
+      probabilidades com X̄ normal. O 12 e o 13 mostram o efeito de n e de σ².
+  - livro: Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros,
+      7ª ed.
+    exercicios: 'Cap. 7: 7.2.3, 7.2.4, 7.2.5, 7.2.6 e 7.2.8'
+    recomendacao: Aplicações de engenharia com X̄. O 7.2.4 parte de uma população uniforme
+      (TLC); o 7.2.5 pede o tamanho de amostra para um erro-padrão dado.
   - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
-    exercicios: 'Cap. 9: Exercícios 1, 2, 3, 4 e 5'
-    recomendacao: Os exercícios 1 a 3 treinam a distribuição amostral da média; 4 e 5, a da
-      proporção. Poucos exercícios, mas todos diretamente relevantes.
+    exercicios: 'Cap. 9: Exercícios propostos 1, 2, 3, 4 e 5'
+    recomendacao: Os exercícios 1 a 3 treinam a distribuição amostral da média; 4 e 5, a
+      da proporção.
   - livro: Bussab & Morettin, Estatística Básica, 9ª ed. — aproximação normal à binomial
     exercicios: 'Cap. 7: Problemas 22, 23 e 24'
-    recomendacao: Poucos exercícios dedicados só à aproximação nesta seção. Comparam o cálculo
-      binomial exato com a aproximação normal.
-  - livro: Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª ed. — aproximação
+    recomendacao: Comparam o cálculo binomial exato com a aproximação normal.
+  - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed. — aproximação
       normal à binomial
-    exercicios: 'Cap. 4: Exercícios 4.6.1, 4.6.2, 4.6.3, 4.6.4, 4.6.5 e 4.6.6'
-    recomendacao: Referência mais completa para a parte de aproximação normal. O exercício 4.6.2
-      é o único que aproxima uma Poisson (não uma binomial) pela normal — vale comparar com
-      os demais.
-  - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência — aproximação normal à
-      binomial'
-    exercicios: 'Cap. 6: Exercícios 4, 5, 6, 7, 8 e 9'
-    recomendacao: Excelente sequência para a parte de aproximação normal — do exercício mais
-      simples (4) até aplicações mais ricas (8, com parafusos defeituosos, e 9, com lançamento
-      de moeda).
+    exercicios: 'Cap. 6 (6.3 Exercícios): 31'
+    recomendacao: Compara a solução exata com a aproximação normal em dois casos, n = 20
+      (aproximação ruim) e n = 150.
+  - livro: Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros,
+      7ª ed. — aproximação normal à binomial
+    exercicios: 'Cap. 4: 4.6.1, 4.6.3, 4.6.4, 4.6.8 e 4.6.9'
+    recomendacao: Só aproximações da binomial (os exercícios 4.6.2, 4.6.5, 4.6.7 e 4.6.10
+      aproximam a Poisson, que não é tema desta aula). O 4.6.9 já tem o raciocínio de teste
+      de hipóteses.
+  - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência — aproximação normal
+      à binomial'
+    exercicios: 'Cap. 6: Exercícios propostos 4, 5, 6, 7, 8 e 9'
+    recomendacao: Do mais simples (4) a aplicações mais ricas (8, com parafusos defeituosos,
+      e 9, com lançamentos de moeda).
   arquivo: Tabela_Referencias_Aula15.pdf
 lista_ia:
   lista_arquivo: Lista_Aula15_Original.pdf
