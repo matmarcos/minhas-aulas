@@ -9,7 +9,7 @@ slides:
 referencias_bibliograficas:
 - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
   citacao: Cap. 5 – 5.4
-- livro: Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª
+- livro: Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros, 7ª
     ed.
   citacao: Cap. 2 – 2.6, 2.8
 - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
@@ -38,7 +38,7 @@ exercicios_recomendados:
     recomendacao: Estes são os exercícios mais ricos em Bayes que encontramos no livro
       — guardamos eles especialmente para esta aula (não foram usados na lista da
       Aula 5).
-  - livro: Montgomery & Runger, Applied Statistics and Probability for Engineers,
+  - livro: Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros,
       7ª ed.
     exercicios: 'Cap. 2: Exercícios 2.6.1, 2.6.3, 2.6.4, 2.6.6, 2.6.7, 2.8.1, 2.8.3,
       2.8.4, 2.8.7 e 2.8.9'

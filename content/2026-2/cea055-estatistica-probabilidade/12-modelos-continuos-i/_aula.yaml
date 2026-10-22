@@ -9,7 +9,7 @@ slides:
 referencias_bibliograficas:
 - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
   citacao: Cap. 7 – 7.4.1, 7.4.3
-- livro: Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª
+- livro: Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros, 7ª
     ed.
   citacao: Cap. 4 – 4.4, 4.7
 - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
@@ -87,7 +87,7 @@ exercicios_recomendados:
     exercicios: 'Cap. 6 (6.3 Exercícios): 18, 20, 21, 22 e 23'
     recomendacao: O exercício 18 (encontro entre dois amigos) é um clássico de distribuição
       uniforme. Os exercícios 20 a 23 treinam a exponencial em diferentes contextos.
-  - livro: Montgomery & Runger, Applied Statistics and Probability for Engineers,
+  - livro: Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros,
       7ª ed.
     exercicios: 'Cap. 4: Exercícios 4.4.1, 4.4.2, 4.4.3, 4.4.4, 4.4.5, 4.7.1, 4.7.2,
       4.7.4, 4.7.5 e 4.7.7'

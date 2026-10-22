@@ -6,11 +6,11 @@ bloco: 1
 slides:
   titulo: Slides da aula 04
   arquivo: Aula_04_Tecnicas_de_Contagem_SITE.pptx
-  arquivo_pdf: Aula_04_Tecnicas_de_Contagem.pdf
+  arquivo_pdf: Aula_04_Tecnicas_de_Contagem_SITE.pdf
 referencias_bibliograficas:
 - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
   citacao: Cap. 5 – 5.2
-- livro: Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª
+- livro: Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros, 7ª
     ed.
   citacao: Cap. 2 – 2.2
 - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
@@ -58,7 +58,7 @@ exercicios_recomendados:
     exercicios: ''
     recomendacao: Não encontramos exercícios de técnicas de contagem neste livro.
       Use as outras referências desta lista para praticar este conteúdo.
-  - livro: Montgomery & Runger, Applied Statistics and Probability for Engineers,
+  - livro: Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros,
       7ª ed.
     exercicios: 'Cap. 2: Exercícios 2.2.3, 2.2.4, 2.2.5, 2.2.6, 2.2.7, 2.2.9, 2.2.10,
       2.2.11, 2.2.12 e 2.2.14'

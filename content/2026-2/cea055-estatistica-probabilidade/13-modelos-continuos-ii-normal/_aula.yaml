@@ -9,7 +9,7 @@ slides:
 referencias_bibliograficas:
 - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
   citacao: Cap. 7 – 7.4.2
-- livro: Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª
+- livro: Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros, 7ª
     ed.
   citacao: Cap. 4 – 4.5
 - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
@@ -84,7 +84,7 @@ exercicios_recomendados:
     exercicios: 'Cap. 6 (6.3 Exercícios): 25, 26, 32 e 33'
     recomendacao: Os exercícios 25 e 26 são cálculo direto de probabilidade normal.
       Os 32 e 33 são aplicações práticas (durabilidade de pneu, precipitação pluviométrica).
-  - livro: Montgomery & Runger, Applied Statistics and Probability for Engineers,
+  - livro: Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros,
       7ª ed.
     exercicios: 'Cap. 4: Exercícios 4.5.1, 4.5.2, 4.5.3, 4.5.4, 4.5.5, 4.5.6, 4.5.7,
       4.5.8 e 4.5.9'

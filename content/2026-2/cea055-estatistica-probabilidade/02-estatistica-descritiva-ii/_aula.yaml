@@ -11,7 +11,7 @@ slides:
 referencias_bibliograficas:
 - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
   citacao: Cap. 3 – 3.2 a 3.4
-- livro: Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª
+- livro: Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros, 7ª
     ed.
   citacao: Cap. 6 – 6.4
 - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
@@ -21,7 +21,7 @@ pre_aula:
     itens:
     - 'Bussab & Morettin, Estatística Básica, 9ª ed. — Capítulo 3, seção 3.2 (medidas
       de dispersão: desvio médio e variância).'
-    - Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª ed.
+    - Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros, 7ª ed.
       — Capítulo 6, seção 6.4 (segunda referência, mesmo tema).
   videos:
   - titulo: Medidas de dispersão, forma e associação
@@ -74,7 +74,7 @@ exercicios_recomendados:
     recomendacao: Os exercícios do Cap. 1 trazem box plots. Nos exercícios do Cap.
       4, calcule variância e desvio-padrão — se algum item também pedir média, moda
       ou mediana, você já praticou isso na aula passada.
-  - livro: Montgomery & Runger, Applied Statistics and Probability for Engineers,
+  - livro: Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros,
       7ª ed.
     exercicios: 'Cap. 6: Exercícios 6.1.4, 6.1.5, 6.1.6, 6.1.7, 6.1.8, 6.1.9, 6.1.11,
       6.4.3, 6.4.4 e 6.4.5'
