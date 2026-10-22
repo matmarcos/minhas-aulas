@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aula 16 - Propriedades dos estimadores · Minhas Aulas</title>
+<link rel="stylesheet" href="../../../static/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../../../index.html">Minhas Aulas</a>
+  <nav class="breadcrumbs"><a href="../../../index.html">Início</a> / <a href="../../../2026-2/index.html">2026/2</a> / <a href="../../../2026-2/cea055-estatistica-probabilidade/index.html">CEA055 - Estatística e Probabilidade</a> / Aula 16 - Propriedades dos estimadores</nav>
+</header>
+<main>
+
+
+
+<h1>Aula 16 - Propriedades dos estimadores</h1>
+<p class="meta"></p>
+<p class="subtitle">Estimador não viesado e viés; variância amostral S² (por que dividir por n − 1); estimador consistente; estimador mais eficiente; por que usaremos X̄, p̂ e S²</p>
+
+
+<section class="aula-secao">
+  <h2>Pré-aula</h2>
+  
+  <h3>Leitura recomendada</h3>
+  <ul class="bib-list">
+    <li>Bussab & Morettin, Estatística Básica, 9ª ed. — Capítulo 11, seções 11.1 e 11.2.</li><li>Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed. — Capítulo 7, seção 7.2.</li>
+  </ul>
+  <p class="nota-leitura">As duas referências cobrem o mesmo conteúdo — basta ler uma.</p>
+  
+  
+  <h3>Vídeo recomendado</h3>
+  <ul class="material-list">
+    
+    <li><a href="https://www.youtube.com/watch?v=5KTwIKydljU" target="_blank" rel="noopener">Estimadores e suas propriedades (Dhiego Loiola de Araujo)</a></li>
+    
+    <li><a href="https://www.youtube.com/watch?v=1in0w9bVoVc" target="_blank" rel="noopener">Variância amostral (Khan Academy Brasil)</a></li>
+    
+  </ul>
+  
+  
+  <h3>Tarefa</h3>
+  <ul class="bib-list">
+    <li>Um time de testes conta os bugs encontrados em cada versão de um app. Cada versão tem 0, 2 ou 4 bugs, cada valor com probabilidade 1/3. Assim, a média da população é μ = 2 bugs. O time sorteia 2 versões ao acaso. As 9 amostras possíveis são: 0 e 0; 0 e 2; 0 e 4; 2 e 0; 2 e 2; 2 e 4; 4 e 0; 4 e 2; 4 e 4.</li><li>(a) Em cada amostra, calcule a média X̄ e o menor valor. Depois, calcule a média das 9 estimativas de cada regra. Qual das duas regras é não viesada para μ? Qual é o viés da outra?</li><li>(b) Calcule a variância da população, σ².</li><li>(c) Em cada amostra, calcule σ̂² (soma dos quadrados dos desvios dividida por n = 2) e s² (dividida por n − 1 = 1). Calcule a média das 9 estimativas de cada fórmula. Qual delas é não viesada?</li><li>(d) Um colega propõe estimar μ usando só o número de bugs da primeira versão sorteada. Essa regra é não viesada? Ela melhora se o time sortear mais versões?</li><li>Tarefa opcional, sem entrega e sem nota — serve para você conferir se entendeu a leitura. Tente antes de abrir o gabarito.</li>
+  </ul>
+  
+  
+  <details class="gabarito-preaula">
+    <summary>Ver gabarito comentado (tente antes de abrir)</summary>
+    
+    <h4>(a) Média e menor valor</h4>
+    <ul class="gabarito-passos">
+      <li><strong>Média:</strong> médias das 9 amostras: 0, 1, 2, 1, 2, 3, 2, 3, 4; soma 18; média das 9: 18/9 = 2 = μ. X̄ é não viesado.</li><li><strong>Menor valor:</strong> menores valores: 0, 0, 0, 0, 2, 2, 0, 2, 4; soma 10; média das 9: 10/9 ≈ 1,11. É viesado, com viés ≈ 1,11 − 2 = −0,89: em média, subestima μ.</li>
+    </ul>
+    
+    <h4>(b) Variância da população</h4>
+    <ul class="gabarito-passos">
+      <li><strong>Conta:</strong> σ² = [(0 − 2)² + (2 − 2)² + (4 − 2)²]/3 = 8/3 ≈ 2,67.</li>
+    </ul>
+    
+    <h4>(c) Dividir por n ou por n − 1</h4>
+    <ul class="gabarito-passos">
+      <li><strong>Uma amostra:</strong> 0 e 2: média 1, desvios −1 e 1, soma dos quadrados 2; então σ̂² = 2/2 = 1 e s² = 2/1 = 2.</li><li><strong>Todas:</strong> amostras iguais: σ̂² = 0 e s² = 0; diferença 2 (quatro amostras): σ̂² = 1 e s² = 2; diferença 4 (duas amostras): σ̂² = 4 e s² = 8.</li><li><strong>Médias:</strong> σ̂²: (4 × 1 + 2 × 4)/9 = 12/9 ≈ 1,33, só a metade de σ²; s²: (4 × 2 + 2 × 8)/9 = 24/9 ≈ 2,67 = σ². S² é não viesado; σ̂² subestima σ².</li><li><strong>Erro comum:</strong> achar que, por ser a variância da Aula 2, σ̂² deveria acertar.</li>
+    </ul>
+    
+    <h4>(d) Só a primeira versão</h4>
+    <ul class="gabarito-passos">
+      <li><strong>Viés:</strong> estimativas: 0, 0, 0, 2, 2, 2, 4, 4, 4; média 18/9 = 2 = μ. É não viesada.</li><li><strong>Consistência:</strong> não melhora com mais versões, porque ignora todas as versões depois da primeira; a variância continua σ², qualquer que seja n. Não é consistente. Já a variância de X̄, σ²/n, diminui quando n cresce.</li><li><strong>Leitura:</strong> acertar em média não basta.</li>
+    </ul>
+    
+    <p class="nota-gabarito">Gabarito elaborado com auxílio de IA (Claude). Se algo não fizer sentido, pergunte em sala.</p>
+  </details>
+  
+  <label class="preaula-check">
+    <input type="checkbox" data-preaula-checkbox data-aula-id="2026-2/cea055-estatistica-probabilidade/16-propriedades-estimadores">
+    Já fiz a pré-aula desta aula
+  </label>
+</section>
+
+
+
+
+
+
+
+<section class="aula-secao">
+  <h2>Slides do professor</h2>
+  
+  <iframe class="slides-embed" loading="lazy" src="../../../2026-2/cea055-estatistica-probabilidade/16-propriedades-estimadores/arquivos/Aula_16_Propriedades_Estimadores.pdf" title="Slides da aula 16"></iframe>
+  
+  <ul class="material-list">
+    
+    <li><a href="../../../2026-2/cea055-estatistica-probabilidade/16-propriedades-estimadores/arquivos/Aula_16_Propriedades_Estimadores.pdf" target="_blank" rel="noopener">Abrir slides em tela cheia (PDF)</a></li>
+    
+    
+    <li><a href="../../../2026-2/cea055-estatistica-probabilidade/16-propriedades-estimadores/arquivos/Aula_16_Propriedades_Estimadores.pptx">Baixar slides originais (PowerPoint)</a></li>
+    
+  </ul>
+</section>
+
+
+
+<section class="aula-secao">
+  <h2>Referências bibliográficas</h2>
+  <ul class="bib-list">
+    
+    <li><strong>Bussab & Morettin, Estatística Básica, 9ª ed.</strong> — Cap. 11 – 11.1, 11.2</li>
+    
+    <li><strong>Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros, 7ª ed.</strong> — Cap. 7 – 7.3.1, 7.3.2</li>
+    
+    <li><strong>Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.</strong> — Cap. 7 – 7.2</li>
+    
+    <li><strong>Morettin, Estatística Básica: Probabilidade e Inferência</strong> — Cap. 10 – 10.3</li>
+    
+  </ul>
+</section>
+
+
+
+<section class="aula-secao">
+  <h2>Exercícios recomendados</h2>
+  
+    
+    <ul class="bib-list">
+      
+      <li>
+        <strong>Bussab & Morettin, Estatística Básica, 9ª ed.</strong>
+         — Cap. 11: Problemas 1, 2, 3, 4 e 5 (fim da seção 11.2); Problemas Suplementares 22 e 38
+        <br>Os Problemas 1 a 4 tratam da proporção amostral (viés, variância e consistência); o 5 compara dois estimadores por simulação. O Suplementar 22 escolhe entre dois estimadores a partir de uma tabela de frequências; o 38 compara estimadores ponderados (eficiência).
+      </li>
+      
+      <li>
+        <strong>Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.</strong>
+         — Cap. 7 (7.5 Exercícios): 3, 4, 8 e 31
+        <br>O 3 calcula as duas estimativas da variância (dividindo por n e por n − 1); o 4 verifica que X̄ é não viciado com uma amostra de tamanho 2; o 8 verifica, em três modelos, se S² é não viciado; o 31 usa o computador para estudar S² em 120 amostras.
+      </li>
+      
+      <li>
+        <strong>Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros, 7ª ed.</strong>
+         — Cap. 7: 7.3.2, 7.3.3, 7.3.4, 7.3.6 (a, b, c) e 7.3.7 (a, b, d)
+        <br>O livro chama o viés de "tendência". O 7.3.3 calcula o viés de Σ(Xᵢ − X̄)²/c (por que n − 1); o 7.3.2 e o 7.3.4 comparam estimadores (eficiência); o 7.3.6 e o 7.3.7 calculam estimativas pontuais com dados (os itens indicados evitam o erro-padrão, que não foi visto).
+      </li>
+      
+      <li>
+        <strong>Morettin, Estatística Básica: Probabilidade e Inferência</strong>
+         — —
+        <br>O Cap. 10 (seção 10.3, até "Estimação por intervalo") serve como leitura; o capítulo não tem exercícios próprios.
+      </li>
+      
+    </ul>
+    
+    
+    <ul class="material-list">
+      <li><a href="../../../2026-2/cea055-estatistica-probabilidade/16-propriedades-estimadores/arquivos/Tabela_Referencias_Aula16.pdf" target="_blank" rel="noopener">Abrir tabela em PDF</a></li>
+    </ul>
+    
+  
+</section>
+
+
+
+<section class="aula-secao">
+  <h2>Lista de exercícios extra</h2>
+  <p class="aviso-ia">⚠️ Gerado com o auxílio de IA (Claude/Anthropic), não copiado de livro-texto. Pode conter imprecisões — revise as respostas com atenção.</p>
+  
+  <ul class="material-list">
+    
+    <li><a href="../../../2026-2/cea055-estatistica-probabilidade/16-propriedades-estimadores/arquivos/Lista_Aula16_Original.pdf" target="_blank" rel="noopener">📄 Lista de exercícios (PDF, gerado por IA)</a></li>
+    
+    
+    <li><a href="../../../2026-2/cea055-estatistica-probabilidade/16-propriedades-estimadores/arquivos/Gabarito_Aula16_Original.pdf" target="_blank" rel="noopener">✅ Gabarito (PDF, gerado por IA)</a></li>
+    
+  </ul>
+  
+</section>
+
+
+
+<section class="aula-secao">
+  <h2>Tarefa complementar (opcional)</h2>
+  <ul class="material-list">
+    
+    
+    <li><a href="https://colab.research.google.com/github/matmarcos/minhas-aulas/blob/main/docs/2026-2/cea055-estatistica-probabilidade/16-propriedades-estimadores/arquivos/Aula%2016%20-%20Propriedades%20dos%20Estimadores%20-%20Avaliacoes%20de%20Apps.ipynb" target="_blank" rel="noopener">Propriedades dos Estimadores - Avaliacoes de Apps (abrir no Colab)</a></li>
+    
+    
+  </ul>
+</section>
+
+
+
+
+</main>
+<footer class="site-footer">
+  <p>Gerado automaticamente · atualize o conteúdo em <code>content/</code> e rode <code>python scripts/build.py</code></p>
+</footer>
+<script src="../../../static/js/progresso.js" defer></script>
+</body>
+</html>
