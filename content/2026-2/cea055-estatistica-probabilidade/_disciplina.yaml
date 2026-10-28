@@ -9,7 +9,7 @@ blocos:
     descricao: Estatística descritiva, probabilidade e variáveis aleatórias.
   2:
     titulo: Bloco 2 — Prova P2
-    descricao: Modelos de distribuição discretos e contínuos, aproximação normal e distribuições amostrais.
+    descricao: Modelos de distribuição discretos e contínuos, distribuições amostrais, estimadores e as distribuições qui-quadrado e t.
   3:
     titulo: Bloco 3 — Prova P3
     descricao: Intervalos de confiança, testes de hipótese e regressão linear.
@@ -21,7 +21,7 @@ recursos_externos:
   aviso: Playlist de videoaulas com boa cobertura de Estatística Descritiva, Probabilidade, Variáveis
     Aleatórias e estimação (média e variância) — inclusive construção de intervalos de confiança. Não
     cobre testes de hipótese, variáveis aleatórias multidimensionais, covariância/correlação nem regressão
-    linear (Aulas 21 a 27) — o próprio professor menciona explicitamente que o curso para antes de chegar
+    linear (Aulas 20 a 26) — o próprio professor menciona explicitamente que o curso para antes de chegar
     em testes de hipótese.
   correspondencias:
   - aula_numero: 1
@@ -144,7 +144,7 @@ recursos_externos:
       url: https://www.youtube.com/watch?v=nBo9CJo6x9k&list=PL3XWwJYdqO23a1iwQtuwkp0w0Ovm_WMtz&index=13
     nota: o vídeo cobre a distribuição amostral da média; não aborda a da proporção
   - aula_numero: 16
-    aula_titulo: Teorema do Limite Central e estimação pontual
+    aula_titulo: Propriedades dos estimadores
     bloco: 2
     videos:
     - titulo: Leis dos grandes números
@@ -153,8 +153,8 @@ recursos_externos:
       url: https://www.youtube.com/watch?v=34qb9m0NeNc&list=PL3XWwJYdqO23a1iwQtuwkp0w0Ovm_WMtz&index=15
     - *id007
     nota: null
-  - aula_numero: 18
-    aula_titulo: Distribuições t de Student e qui-quadrado
+  - aula_numero: 17
+    aula_titulo: Distribuições qui-quadrado e t de Student
     bloco: 2
     videos:
     - *id008
@@ -162,49 +162,49 @@ recursos_externos:
       titulo: Distribuição Amostral da Variância
       url: https://www.youtube.com/watch?v=I0NaFXGu-UY&list=PL3XWwJYdqO23a1iwQtuwkp0w0Ovm_WMtz&index=18
     nota: null
-  - aula_numero: 19
+  - aula_numero: 18
     aula_titulo: Intervalo de confiança para a média
     bloco: 3
     videos:
     - *id008
     nota: null
-  - aula_numero: 20
+  - aula_numero: 19
     aula_titulo: Intervalo de confiança para proporção e variância; tamanho de amostra
     bloco: 3
     videos:
     - *id009
     nota: o vídeo cobre o IC para a variância; não aborda proporção nem tamanho de amostra
-  - aula_numero: 21
+  - aula_numero: 20
     aula_titulo: Introdução ao teste de hipóteses
     bloco: 3
     videos: []
     nota: null
-  - aula_numero: 22
+  - aula_numero: 21
     aula_titulo: Teste de hipótese para a média — variância conhecida
     bloco: 3
     videos: []
     nota: null
-  - aula_numero: 23
+  - aula_numero: 22
     aula_titulo: Teste de hipótese para a média — variância desconhecida
     bloco: 3
     videos: []
     nota: null
-  - aula_numero: 24
+  - aula_numero: 23
     aula_titulo: 'Variáveis aleatórias multidimensionais: distribuições conjuntas'
     bloco: 3
     videos: []
     nota: null
-  - aula_numero: 25
+  - aula_numero: 24
     aula_titulo: Covariância e correlação
     bloco: 3
     videos: []
     nota: null
-  - aula_numero: 26
+  - aula_numero: 25
     aula_titulo: Correlação linear e modelo de regressão linear simples
     bloco: 3
     videos: []
     nota: null
-  - aula_numero: 27
+  - aula_numero: 26
     aula_titulo: Avaliação do modelo de regressão linear e aplicações
     bloco: 3
     videos: []
@@ -219,7 +219,7 @@ recursos_externos:
     Probabilidade, Variáveis Aleatórias, Distribuições, Intervalos de Confiança e Testes de Hipótese —
     inclusive IC para proporção/variância/tamanho de amostra, que faltam na outra alternativa. Não cobre
     técnicas de contagem (Aula 4), variáveis aleatórias multidimensionais, covariância/correlação nem
-    regressão linear (Aulas 24 a 27).
+    regressão linear (Aulas 23 a 26).
   correspondencias:
   - aula_numero: 1
     aula_titulo: 'Estatística Descritiva I: dados qualitativos/quantitativos e medidas de posição'
@@ -375,15 +375,15 @@ recursos_externos:
       url: https://stat4all.github.io/slides/Unid_5_P8.pdf
     nota: null
   - aula_numero: 16
-    aula_titulo: Teorema do Limite Central e estimação pontual
+    aula_titulo: Propriedades dos estimadores
     bloco: 2
     videos:
     - titulo: Estimação pontual e intervalo de confiança (introdução)
       url: https://stat4all.github.io/slides/Unid_6_P5.pdf
     nota: o Teorema do Limite Central em si é revisitado dentro do slide de distribuição amostral da média,
       não como item separado
-  - aula_numero: 18
-    aula_titulo: Distribuições t de Student e qui-quadrado
+  - aula_numero: 17
+    aula_titulo: Distribuições qui-quadrado e t de Student
     bloco: 2
     videos:
     - titulo: Distribuição amostral da média com variância desconhecida
@@ -391,7 +391,7 @@ recursos_externos:
     - titulo: Distribuição amostral para a variância
       url: https://stat4all.github.io/slides/Unid_6_P4.pdf
     nota: null
-  - aula_numero: 19
+  - aula_numero: 18
     aula_titulo: Intervalo de confiança para a média
     bloco: 3
     videos:
@@ -400,7 +400,7 @@ recursos_externos:
     - titulo: Intervalo de confiança para a média com variância desconhecida
       url: https://stat4all.github.io/slides/Unid_6_P7.pdf
     nota: null
-  - aula_numero: 20
+  - aula_numero: 19
     aula_titulo: Intervalo de confiança para proporção e variância; tamanho de amostra
     bloco: 3
     videos:
@@ -413,7 +413,7 @@ recursos_externos:
     - titulo: Tamanho amostral (parte 2)
       url: https://stat4all.github.io/slides/Unid_6_P11.pdf
     nota: null
-  - aula_numero: 21
+  - aula_numero: 20
     aula_titulo: Introdução ao teste de hipóteses
     bloco: 3
     videos:
@@ -424,7 +424,7 @@ recursos_externos:
     - titulo: Nível de significância
       url: https://stat4all.github.io/slides/Unid_7_P3.pdf
     nota: null
-  - aula_numero: 22
+  - aula_numero: 21
     aula_titulo: Teste de hipótese para a média — variância conhecida
     bloco: 3
     videos:
@@ -438,7 +438,7 @@ recursos_externos:
       titulo: P-valor ou nível descritivo
       url: https://stat4all.github.io/slides/Unid_7_P6.pdf
     nota: os mesmos slides tratam o caso de variância conhecida e desconhecida em conjunto
-  - aula_numero: 23
+  - aula_numero: 22
     aula_titulo: Teste de hipótese para a média — variância desconhecida
     bloco: 3
     videos:
@@ -446,22 +446,22 @@ recursos_externos:
     - *id013
     - *id014
     nota: os mesmos slides tratam o caso de variância conhecida e desconhecida em conjunto
-  - aula_numero: 24
+  - aula_numero: 23
     aula_titulo: 'Variáveis aleatórias multidimensionais: distribuições conjuntas'
     bloco: 3
     videos: []
     nota: variáveis aleatórias multidimensionais não é tratada nesta fonte
-  - aula_numero: 25
+  - aula_numero: 24
     aula_titulo: Covariância e correlação
     bloco: 3
     videos: []
     nota: covariância e correlação não é tratada nesta fonte
-  - aula_numero: 26
+  - aula_numero: 25
     aula_titulo: Correlação linear e modelo de regressão linear simples
     bloco: 3
     videos: []
     nota: correlação linear e regressão não é tratada nesta fonte
-  - aula_numero: 27
+  - aula_numero: 26
     aula_titulo: Avaliação do modelo de regressão linear e aplicações
     bloco: 3
     videos: []

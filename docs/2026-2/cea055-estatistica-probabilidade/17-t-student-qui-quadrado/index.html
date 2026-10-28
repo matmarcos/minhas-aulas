@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aula 17 - Distribuições qui-quadrado e t de Student · Minhas Aulas</title>
+<link rel="stylesheet" href="../../../static/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../../../index.html">Minhas Aulas</a>
+  <nav class="breadcrumbs"><a href="../../../index.html">Início</a> / <a href="../../../2026-2/index.html">2026/2</a> / <a href="../../../2026-2/cea055-estatistica-probabilidade/index.html">CEA055 - Estatística e Probabilidade</a> / Aula 17 - Distribuições qui-quadrado e t de Student</nav>
+</header>
+<main>
+
+
+
+<h1>Aula 17 - Distribuições qui-quadrado e t de Student</h1>
+<p class="meta"></p>
+<p class="subtitle">O que muda quando trocamos σ por S; distribuição qui-quadrado e a variância amostral; distribuição t de Student; leitura das tabelas de cauda superior</p>
+
+
+<section class="aula-secao">
+  <h2>Pré-aula</h2>
+  
+  <h3>Leitura recomendada</h3>
+  <ul class="bib-list">
+    <li>Bussab & Morettin, Estatística Básica, 9ª ed. — Capítulo 7, seções 7.7.2 (qui-quadrado) e 7.7.3 (t de Student).</li><li>Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros, 7ª ed. — Capítulo 8, seção 8.2.1 (t) e início da 8.3 (qui-quadrado, até a definição dos percentis).</li>
+  </ul>
+  <p class="nota-leitura">As duas referências cobrem o mesmo conteúdo — basta ler uma. Atenção: a Tabela V do Bussab é bilateral (dá o valor com uma área total p nas duas caudas). Na aula usamos tabelas de cauda superior, iguais às do Montgomery: o valor com área α à direita.</p>
+  
+  
+  <h3>Vídeo recomendado</h3>
+  <ul class="material-list">
+    
+    <li><a href="https://www.youtube.com/watch?v=gNBncdEYs-0" target="_blank" rel="noopener">Distribuição Qui Quadrado - Definição e Exemplo (Professor Rafael Gallas)</a></li>
+    
+    <li><a href="https://www.youtube.com/watch?v=q2zLIljdvo4" target="_blank" rel="noopener">Distribuição t-student - Definição e exemplo inicial (Professor Rafael Gallas)</a><p class="nota-leitura">Se o vídeo usar outro tipo de tabela, confira qual área ela dá antes de comparar com a da aula.</p></li>
+    
+  </ul>
+  
+  
+  <h3>Tarefa</h3>
+  <ul class="bib-list">
+    <li>O ping (tempo de resposta do servidor, em ms) de partidas de um jogo online tem distribuição normal. Um time de testes sorteia n = 8 partidas e calcula a média X̄ e o desvio padrão amostral S do ping.</li><li>Trecho da tabela t (cauda superior, área α à direita): ν = 6: 1,943 (α = 0,05) e 2,447 (α = 0,025); ν = 7: 1,895 e 2,365; ν = 8: 1,860 e 2,306.</li><li>Trecho da tabela qui-quadrado (cauda superior): ν = 7: 2,167 (α = 0,95) e 14,067 (α = 0,05); ν = 8: 2,733 e 15,507.</li><li>(a) O time não conhece σ e padroniza a média com S: T = (X̄ − μ)/(S/√8). Qual é a distribuição de T? Com quantos graus de liberdade?</li><li>(b) Que valor de T só é ultrapassado em 5% das amostras?</li><li>(c) Que valor c deixa 95% dos valores de T entre −c e c?</li><li>(d) O fornecedor do servidor garante σ = 10 ms. Se a garantia for verdadeira, 7S²/100 tem distribuição qui-quadrado com 7 graus de liberdade. Abaixo de que valor ficam 95% dos S² observados?</li><li>(e) E abaixo de que valor ficam só 5% dos S²?</li><li>Tarefa opcional, sem entrega e sem nota — serve para você conferir se entendeu a leitura. Tente antes de abrir o gabarito.</li>
+  </ul>
+  
+  
+  <details class="gabarito-preaula">
+    <summary>Ver gabarito comentado (tente antes de abrir)</summary>
+    
+    <h4>(a) Distribuição de T</h4>
+    <ul class="gabarito-passos">
+      <li><strong>Modelo:</strong> com S no lugar de σ, T segue a t de Student com ν = n − 1 = 7 graus de liberdade.</li><li><strong>Erro comum:</strong> usar a linha ν = 8. Os graus de liberdade são n − 1, porque S usa X̄ no lugar de μ.</li>
+    </ul>
+    
+    <h4>(b) 5% acima</h4>
+    <ul class="gabarito-passos">
+      <li><strong>Tabela:</strong> área 0,05 à direita: linha ν = 7, coluna 0,05 → t(0,05; 7) = 1,895.</li>
+    </ul>
+    
+    <h4>(c) 95% no meio</h4>
+    <ul class="gabarito-passos">
+      <li><strong>Leitura:</strong> se 95% ficam no meio, sobram 5%, divididos entre as duas caudas: 2,5% em cada uma. Coluna 0,025 → c = 2,365.</li><li><strong>Erro comum:</strong> usar a coluna 0,05 (1,895): ela deixa 5% em cada cauda, ou seja, 10% fora.</li><li><strong>Comparação:</strong> na normal padrão, o valor seria 1,96. Com S, é preciso ir mais longe de zero.</li>
+    </ul>
+    
+    <h4>(d) 95% abaixo</h4>
+    <ul class="gabarito-passos">
+      <li><strong>Tabela:</strong> 95% abaixo = 5% à direita: linha ν = 7, coluna 0,05 → 14,067.</li><li><strong>Conta:</strong> 7S²/100 ≤ 14,067 ⇒ S² ≤ 14,067 × 100/7 ≈ 200,96 ms² (ou S ≤ 14,18 ms).</li>
+    </ul>
+    
+    <h4>(e) 5% abaixo</h4>
+    <ul class="gabarito-passos">
+      <li><strong>Tabela:</strong> 5% abaixo = 95% à direita: coluna 0,95 → 2,167.</li><li><strong>Conta:</strong> 7S²/100 ≤ 2,167 ⇒ S² ≤ 2,167 × 100/7 ≈ 30,96 ms² (ou S ≤ 5,56 ms).</li><li><strong>Leitura:</strong> mesmo com σ = 10 ms, amostras de 8 partidas dão S de cerca de 5,6 ms até 14,2 ms em 90% dos casos. Com amostras pequenas, S varia muito — é por isso que a t tem caudas mais pesadas que a normal.</li>
+    </ul>
+    
+    <p class="nota-gabarito">Gabarito elaborado com auxílio de IA (Claude). Se algo não fizer sentido, pergunte em sala.</p>
+  </details>
+  
+  <label class="preaula-check">
+    <input type="checkbox" data-preaula-checkbox data-aula-id="2026-2/cea055-estatistica-probabilidade/17-t-student-qui-quadrado">
+    Já fiz a pré-aula desta aula
+  </label>
+</section>
+
+
+
+
+
+
+
+<section class="aula-secao">
+  <h2>Slides do professor</h2>
+  
+  <iframe class="slides-embed" loading="lazy" src="../../../2026-2/cea055-estatistica-probabilidade/17-t-student-qui-quadrado/arquivos/Aula_17_T_Student_e_Qui_Quadrado.pdf" title="Slides da aula 17"></iframe>
+  
+  <ul class="material-list">
+    
+    <li><a href="../../../2026-2/cea055-estatistica-probabilidade/17-t-student-qui-quadrado/arquivos/Aula_17_T_Student_e_Qui_Quadrado.pdf" target="_blank" rel="noopener">Abrir slides em tela cheia (PDF)</a></li>
+    
+    
+    <li><a href="../../../2026-2/cea055-estatistica-probabilidade/17-t-student-qui-quadrado/arquivos/Aula_17_T_Student_e_Qui_Quadrado.pptx">Baixar slides originais (PowerPoint)</a></li>
+    
+  </ul>
+</section>
+
+
+
+<section class="aula-secao">
+  <h2>Referências bibliográficas</h2>
+  <ul class="bib-list">
+    
+    <li><strong>Bussab & Morettin, Estatística Básica, 9ª ed.</strong> — Cap. 7 – 7.7.2, 7.7.3; Cap. 12 – 12.9, 12.10</li>
+    
+    <li><strong>Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros, 7ª ed.</strong> — Cap. 8 – 8.2.1, 8.3</li>
+    
+    <li><strong>Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.</strong> — Cap. 8 – 8.3, 8.5 (p. 269)</li>
+    
+    <li><strong>Morettin, Estatística Básica: Probabilidade e Inferência</strong> — Cap. 14 – 14.1; Cap. 16 – 16.1</li>
+    
+  </ul>
+</section>
+
+
+
+<section class="aula-secao">
+  <h2>Exercícios recomendados</h2>
+  
+    
+    <ul class="bib-list">
+      
+      <li>
+        <strong>Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros, 7ª ed.</strong>
+         — Cap. 8: 8.2.2 e 8.3.2
+        <br>Os dois pedem só para encontrar percentis na tabela, sem construir intervalo: o 8.2.2 na tabela t (inclui t(0,025; 15), o mesmo do Exemplo 4) e o 8.3.2 na tabela qui-quadrado. Os demais exercícios das seções 8.2 e 8.3 já pedem intervalos de confiança (Aulas 18 e 19).
+      </li>
+      
+      <li>
+        <strong>Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.</strong>
+         — Cap. 8: Exercícios da Seção 8.3, n.º 1; Exercícios da Seção 8.5, n.º 1
+        <br>Os dois pedem só para consultar a tabela: o da Seção 8.3 usa a t de Student e o da Seção 8.5 usa a qui-quadrado. Os itens que pedem uma probabilidade exigem encaixar o valor entre duas colunas da tabela e dar uma resposta aproximada. Os outros exercícios dessas seções já são testes de hipótese (Aulas 20 a 22).
+      </li>
+      
+      <li>
+        <strong>Bussab & Morettin, Estatística Básica, 9ª ed.</strong>
+        
+        <br>As seções 7.7.2, 7.7.3, 12.9 e 12.10 servem como leitura. Os problemas que usam a t e a qui-quadrado já são testes de hipótese (Cap. 12), vistos nas Aulas 20 a 22.
+      </li>
+      
+      <li>
+        <strong>Morettin, Estatística Básica: Probabilidade e Inferência</strong>
+        
+        <br>As seções 14.1 e 16.1 servem como leitura. Os exercícios dos Caps. 14 e 16 já pedem intervalos de confiança ou testes de hipótese (Aulas 18 a 22).
+      </li>
+      
+    </ul>
+    
+    
+    <ul class="material-list">
+      <li><a href="../../../2026-2/cea055-estatistica-probabilidade/17-t-student-qui-quadrado/arquivos/Tabela_Referencias_Aula17.pdf" target="_blank" rel="noopener">Abrir tabela em PDF</a></li>
+    </ul>
+    
+  
+</section>
+
+
+
+<section class="aula-secao">
+  <h2>Lista de exercícios extra</h2>
+  <p class="aviso-ia">⚠️ Gerado com o auxílio de IA (Claude/Anthropic), não copiado de livro-texto. Pode conter imprecisões — revise as respostas com atenção.</p>
+  
+  <ul class="material-list">
+    
+    <li><a href="../../../2026-2/cea055-estatistica-probabilidade/17-t-student-qui-quadrado/arquivos/Lista_Aula17_Original.pdf" target="_blank" rel="noopener">📄 Lista de exercícios (PDF, gerado por IA)</a></li>
+    
+    
+    <li><a href="../../../2026-2/cea055-estatistica-probabilidade/17-t-student-qui-quadrado/arquivos/Gabarito_Aula17_Original.pdf" target="_blank" rel="noopener">✅ Gabarito (PDF, gerado por IA)</a></li>
+    
+  </ul>
+  
+</section>
+
+
+
+<section class="aula-secao">
+  <h2>Tarefa complementar (opcional)</h2>
+  <ul class="material-list">
+    
+    
+    <li><a href="https://colab.research.google.com/github/matmarcos/minhas-aulas/blob/main/docs/2026-2/cea055-estatistica-probabilidade/17-t-student-qui-quadrado/arquivos/Aula%2017%20-%20t%20de%20Student%20e%20Qui-Quadrado%20-%20Servico%20de%20Pagamentos.ipynb" target="_blank" rel="noopener">t de Student e Qui-Quadrado - Servico de Pagamentos (abrir no Colab)</a></li>
+    
+    
+  </ul>
+</section>
+
+
+
+<section class="aula-secao">
+  <h2>Material complementar</h2>
+  
+  <p class="aula-descricao">Tabelas t e qui-quadrado de cauda superior, as mesmas da aula. A Lista 17 e a pós-aula usam estas tabelas.</p>
+  
+  <p class="aula-descricao">Pós-aula para entregar: em grupo de até 5 pessoas, uma folha por grupo, com o nome e a matrícula de todos. Entregar no início da próxima aula.</p>
+  
+  
+  <ul class="material-list">
+    
+    <li><a href="../../../2026-2/cea055-estatistica-probabilidade/17-t-student-qui-quadrado/arquivos/Tabelas_t_e_Qui_Quadrado.pdf" target="_blank" rel="noopener">Tabelas t e qui-quadrado (cauda superior, PDF)</a></li>
+    
+    <li><a href="../../../2026-2/cea055-estatistica-probabilidade/17-t-student-qui-quadrado/arquivos/Aula17_PosAula_Frame_Time.pdf" target="_blank" rel="noopener">Pós-aula — O teste de desempenho da placa de vídeo (PDF, para entregar)</a></li>
+    
+  </ul>
+  
+</section>
+
+
+</main>
+<footer class="site-footer">
+  <p>Gerado automaticamente · atualize o conteúdo em <code>content/</code> e rode <code>python scripts/build.py</code></p>
+</footer>
+<script src="../../../static/js/progresso.js" defer></script>
+</body>
+</html>
