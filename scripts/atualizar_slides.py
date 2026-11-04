@@ -8,10 +8,12 @@ via a chave opcional 'fonte_slides' (caminho absoluto). Disciplinas sem essa
 chave sao ignoradas - nada precisa ser hardcoded aqui por disciplina.
 
 Casamento aula <-> arquivo fonte: pelo nome de arquivo declarado em
-_aula.yaml -> slides.arquivo. O .pptx e procurado em dois layouts, nesta ordem:
+_aula.yaml -> slides.arquivo. O .pptx e procurado em tres layouts, nesta ordem:
   1) fonte_slides/<slug-da-aula>/<arquivo>  (uma pasta por aula, mesmo slug do
      content/ - layout usado pelo CEA055 desde 2026-08)
   2) fonte_slides/<arquivo>                 (pasta unica com todos os .pptx)
+  3) fonte_slides/Parte */<slug-da-aula>/<arquivo>  (aulas agrupadas por bloco;
+     o CEA055 usa Aulas/Parte 1 e Aulas/Parte 2 desde 2026-11)
 
 Rode: python scripts/atualizar_slides.py [--aplicar]
   sem --aplicar: so lista o que esta desatualizado (dry-run)
@@ -69,7 +71,9 @@ def encontrar_pendencias():
 
                 # layout 1: uma pasta por aula (mesmo slug do content/)
                 # layout 2: pasta unica com todos os .pptx
+                # layout 3: pasta por aula dentro de uma subpasta de bloco (ex.: "Parte 1", "Parte 2")
                 candidatos = [fonte_dir / aula_dir.name / nome_pptx, fonte_dir / nome_pptx]
+                candidatos += [p / aula_dir.name / nome_pptx for p in sorted(fonte_dir.glob("Parte *")) if p.is_dir()]
                 src_pptx = next((c for c in candidatos if c.exists()), None)
                 if src_pptx is None:
                     print(f"aviso: slide fonte nao encontrado em nenhum layout -> {candidatos[0]} | {candidatos[1]}")
