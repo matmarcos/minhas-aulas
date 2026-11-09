@@ -106,6 +106,10 @@ exercicios_recomendados:
 lista_ia:
   lista_arquivo: Lista_Aula19_Original.pdf
   gabarito_arquivo: Gabarito_Aula19_Original.pdf
+tarefa_complementar:
+- titulo: IC para Proporção, Variância e Tamanho de Amostra - Fábrica de Latas
+  url: https://colab.research.google.com/github/matmarcos/minhas-aulas/blob/main/docs/2026-2/cea055-estatistica-probabilidade/19-ic-proporcao-variancia-tamanho-amostra/arquivos/Aula%2019%20-%20IC%20Proporcao%20Variancia%20e%20Tamanho%20de%20Amostra%20-%20Fabrica%20de%20Latas.ipynb
+  arquivo: Aula 19 - IC Proporcao Variancia e Tamanho de Amostra - Fabrica de Latas.ipynb
 material_complementar:
   texto:
   - A tabela qui-quadrado de cauda superior é a mesma da Aula 17 (PDF "Tabelas t e qui-quadrado", na página da Aula 17).
