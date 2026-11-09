@@ -17,21 +17,65 @@
 
 <h1>Aula 19 - Intervalo de confiança para proporção e variância; tamanho de amostra</h1>
 <p class="meta"></p>
-<p class="subtitle">Intervalo de confiança para a proporção populacional; intervalo de confiança para a variância populacional; determinação do tamanho de amostra</p>
+<p class="subtitle">Intervalo de confiança para a proporção p (otimista e conservador); intervalo de confiança para a variância σ² e o desvio padrão σ (qui-quadrado, população normal); tamanho de amostra para uma margem de erro desejada</p>
 
 
 <section class="aula-secao">
   <h2>Pré-aula</h2>
   
+  <h3>Leitura recomendada</h3>
+  <ul class="bib-list">
+    <li>Bussab & Morettin, Estatística Básica, 9ª ed. — Seção 10.11 (tamanho da amostra) e, no Capítulo 11, seção 11.6, os Exemplos 11.14 a 11.16 (intervalo para a proporção).</li><li>Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros, 7ª ed. — Seção 8.4 (intervalo para a proporção e escolha do tamanho da amostra) e seção 8.3 (intervalo para a variância).</li>
+  </ul>
+  <p class="nota-leitura">As duas referências cobrem o mesmo conteúdo — basta ler uma. Atenção: o Bussab chama o nível de confiança de "coeficiente de confiança" (γ). Na aula usamos nível de confiança (1 − α).</p>
+  
   
   <h3>Vídeo recomendado</h3>
   <ul class="material-list">
     
-    <li><a href="https://www.youtube.com/watch?v=AkmyfLc-EOs" target="_blank" rel="noopener">Aula 22: Intervalo de Confiança</a></li>
+    <li><a href="https://www.youtube.com/watch?v=Xk3yJSD-4a8" target="_blank" rel="noopener">Estatística - Aula 23 - Intervalo de confiança para proporção (UNIVESP)</a></li>
+    
+    <li><a href="https://www.youtube.com/watch?v=C5gBiJHI7V0" target="_blank" rel="noopener">#18 - Exemplo 11 - Intervalo de Confiança para a Variância e Desvio Padrão (Professor Guru)</a><p class="nota-leitura">o vídeo pode chamar os valores da tabela qui-quadrado de "valores críticos"; na aula, são os valores da tabela de cauda superior.</p></li>
     
   </ul>
   
   
+  <h3>Tarefa</h3>
+  <ul class="bib-list">
+    <li>Uma associação comercial de Montes Claros quer saber que fração dos moradores da cidade compra pela internet toda semana. Ela sorteia n = 250 moradores e encontra 50 que compram pela internet toda semana.</li><li>(a) Qual é a proporção amostral p̂? A condição para usar a aproximação normal (np̂ ≥ 5 e n(1 − p̂) ≥ 5) vale?</li><li>(b) Quanto vale o erro padrão estimado √(p̂(1 − p̂)/n)?</li><li>(c) Construa o IC de 95% para a proporção p de moradores que compram pela internet toda semana.</li><li>(d) Numa próxima pesquisa, a associação quer margem de erro de 0,03 com 95% de confiança. Quantos moradores deve sortear, usando p̂ = 0,20 como estimativa? E se não tivesse nenhuma informação sobre p?</li><li>(e) A associação também quer estimar a variabilidade do gasto semanal na internet (a variância σ²). Que distribuição é usada nesse intervalo, e que suposição sobre os gastos é preciso fazer?</li><li>Tarefa opcional, sem entrega e sem nota — serve para você conferir se entendeu a leitura. Tente antes de abrir o gabarito.</li>
+  </ul>
+  
+  
+  <details class="gabarito-preaula">
+    <summary>Ver gabarito comentado (tente antes de abrir)</summary>
+    
+    <h4>(a) Proporção amostral e condição</h4>
+    <ul class="gabarito-passos">
+      <li><strong>Conta:</strong> p̂ = 50/250 = 0,20.</li><li><strong>Condição:</strong> np̂ = 50 ≥ 5 e n(1 − p̂) = 200 ≥ 5 — a condição vale.</li>
+    </ul>
+    
+    <h4>(b) Erro padrão</h4>
+    <ul class="gabarito-passos">
+      <li><strong>Conta:</strong> √(0,20 × 0,80/250) = √0,00064 = 0,0253.</li><li><strong>Erro comum:</strong> esquecer a raiz, ou dividir por n fora da raiz.</li>
+    </ul>
+    
+    <h4>(c) Intervalo</h4>
+    <ul class="gabarito-passos">
+      <li><strong>Margem de erro:</strong> 1,96 × 0,0253 = 0,0496.</li><li><strong>Intervalo:</strong> IC(p; 95%) = [0,20 − 0,0496 ; 0,20 + 0,0496] = [0,150 ; 0,250] — entre 15% e 25% dos moradores.</li>
+    </ul>
+    
+    <h4>(d) Tamanho de amostra</h4>
+    <ul class="gabarito-passos">
+      <li><strong>Fórmula:</strong> n = (1,96/0,03)² × p(1 − p) = 4.268,4 × p(1 − p).</li><li><strong>Com p = 0,20:</strong> 4.268,4 × 0,16 = 682,95 → 683 moradores (arredonde sempre para cima).</li><li><strong>Sem informação:</strong> use p = 0,5, o valor que deixa p(1 − p) maior (1/4) — 4.268,4 × 0,25 = 1.067,1 → 1.068 moradores.</li>
+    </ul>
+    
+    <h4>(e) Variância</h4>
+    <ul class="gabarito-passos">
+      <li><strong>Distribuição:</strong> qui-quadrado com n − 1 graus de liberdade (a mesma da Aula 17).</li><li><strong>Suposição:</strong> os gastos têm distribuição normal. Se a distribuição for muito assimétrica, a confiança real fica abaixo da anunciada.</li>
+    </ul>
+    
+    <p class="nota-gabarito">Gabarito elaborado com auxílio de IA (Claude). Se algo não fizer sentido, pergunte em sala.</p>
+  </details>
   
   <label class="preaula-check">
     <input type="checkbox" data-preaula-checkbox data-aula-id="2026-2/cea055-estatistica-probabilidade/19-ic-proporcao-variancia-tamanho-amostra">
@@ -48,14 +92,14 @@
 <section class="aula-secao">
   <h2>Slides do professor</h2>
   
-  <iframe class="slides-embed" loading="lazy" src="../../../2026-2/cea055-estatistica-probabilidade/19-ic-proporcao-variancia-tamanho-amostra/arquivos/Aula_19_IC_Proporcao_Variancia_TamanhoAmostra.pdf" title="Slides da aula 19"></iframe>
+  <iframe class="slides-embed" loading="lazy" src="../../../2026-2/cea055-estatistica-probabilidade/19-ic-proporcao-variancia-tamanho-amostra/arquivos/Aula_19_IC_Proporcao_Variancia_TamanhoAmostra_SITE.pdf" title="Slides da aula 19"></iframe>
   
   <ul class="material-list">
     
-    <li><a href="../../../2026-2/cea055-estatistica-probabilidade/19-ic-proporcao-variancia-tamanho-amostra/arquivos/Aula_19_IC_Proporcao_Variancia_TamanhoAmostra.pdf" target="_blank" rel="noopener">Abrir slides em tela cheia (PDF)</a></li>
+    <li><a href="../../../2026-2/cea055-estatistica-probabilidade/19-ic-proporcao-variancia-tamanho-amostra/arquivos/Aula_19_IC_Proporcao_Variancia_TamanhoAmostra_SITE.pdf" target="_blank" rel="noopener">Abrir slides em tela cheia (PDF)</a></li>
     
     
-    <li><a href="../../../2026-2/cea055-estatistica-probabilidade/19-ic-proporcao-variancia-tamanho-amostra/arquivos/Aula_19_IC_Proporcao_Variancia_TamanhoAmostra.pptx">Baixar slides originais (PowerPoint)</a></li>
+    <li><a href="../../../2026-2/cea055-estatistica-probabilidade/19-ic-proporcao-variancia-tamanho-amostra/arquivos/Aula_19_IC_Proporcao_Variancia_TamanhoAmostra_SITE.pptx">Baixar slides originais (PowerPoint)</a></li>
     
   </ul>
 </section>
@@ -66,13 +110,13 @@
   <h2>Referências bibliográficas</h2>
   <ul class="bib-list">
     
-    <li><strong>Bussab & Morettin, Estatística Básica, 9ª ed.</strong> — Cap. 11 – 11.6; Cap. 10 – 10.11</li>
+    <li><strong>Bussab & Morettin, Estatística Básica, 9ª ed.</strong> — Cap. 10 – 10.11; Cap. 11 – 11.6; Cap. 12 – 12.9</li>
     
-    <li><strong>Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª ed.</strong> — Cap. 8 – 8.3, 8.4, 8.1.2</li>
+    <li><strong>Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros, 7ª ed.</strong> — Cap. 8 – 8.1.2, 8.3, 8.4</li>
     
-    <li><strong>Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.</strong> — Cap. 7 – 7.4, 7.5</li>
+    <li><strong>Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.</strong> — Cap. 7 – 7.4</li>
     
-    <li><strong>Morettin, Estatística Básica: Probabilidade e Inferência</strong> — Cap. 16 – 16.2, 16.3</li>
+    <li><strong>Morettin, Estatística Básica: Probabilidade e Inferência</strong> — Cap. 11 – 11.2; Cap. 16 – 16.2, 16.3</li>
     
   </ul>
 </section>
@@ -87,26 +131,26 @@
       
       <li>
         <strong>Bussab & Morettin, Estatística Básica, 9ª ed.</strong>
-         — Cap. 11: Problemas 18, 19, 20 e 21
-        <br>Todos são sobre proporção. Os problemas 20 e 21(b) pedem, além do intervalo, o tamanho de amostra necessário — resolva essa parte com atenção especial. Não encontramos, nesta seção, exercício dedicado a intervalo de confiança para variância.
+         — Cap. 10: Problemas 17 e 18; Cap. 11: Problemas 15 (c), 16, 17, 18, 19, 20 e 21; Problemas Suplementares 23 (b) e 24 (b); Cap. 12: Problema Suplementar 33
+        <br>Os do Cap. 10 e o 15 (c), 16 e 17 do Cap. 11 são de tamanho de amostra; o 18 ao 21, de proporção (o 19 pede os dois intervalos, otimista e conservador; o 20 e o 21 (b) também pedem o tamanho de amostra). O Suplementar 33 do Cap. 12 pede o IC para σ² com os dados do Suplementar 32 (só o intervalo; a parte de teste é da Aula 20). O Bussab chama o nível de confiança de "coeficiente de confiança" (γ).
       </li>
       
       <li>
         <strong>Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.</strong>
-         — Cap. 7 (7.5 Exercícios): 24, 25, 26 e 29
-        <br>Todos sobre proporção e tamanho de amostra. Como no Bussab, não encontramos exercício de IC para variância nesta lista — use o Montgomery ou o Morettin para essa parte específica.
+         — Cap. 7: Exercícios da Seção 7.4, n.º 5; Seção 7.5: 17, 24, 25 e 29 (a, b, c)
+        <br>O 5 da Seção 7.4 e o 24 pedem os intervalos otimista e conservador; o 17, o 25 e o 29 são de tamanho de amostra. O Magalhães não traz IC para a variância: use o Montgomery ou o Morettin para essa parte.
       </li>
       
       <li>
-        <strong>Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª ed.</strong>
-         — Cap. 8: Exercícios 8.1.2, 8.3.1, 8.3.2, 8.3.3, 8.4.1, 8.4.3, 8.4.4, 8.4.5 e 8.4.6
-        <br>Referência mais completa: os 8.3.x são de variância (usando qui-quadrado) e os 8.4.x são de proporção. O exercício 8.1.2 treina só encontrar o valor de z para diferentes níveis de confiança — útil antes de resolver os demais.
+        <strong>Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros, 7ª ed.</strong>
+         — Cap. 8: 8.1.4, 8.1.9, 8.1.12 (b), 8.1.13 (c, d); 8.3.1, 8.3.2, 8.3.7; 8.4.1 (a), 8.4.3, 8.4.4, 8.4.5 e 8.4.6 (a)
+        <br>Os 8.1.x são de tamanho de amostra para a média; os 8.3.x, de IC para σ² e σ (o 8.3.2 treina a leitura da tabela qui-quadrado); os 8.4.x, de proporção e tamanho de amostra. Ficaram de fora os limites unilaterais, o IC de Agresti-Coull e os itens que pedem gráfico de probabilidade, que não foram vistos.
       </li>
       
       <li>
         <strong>Morettin, Estatística Básica: Probabilidade e Inferência</strong>
-         — Cap. 16: Exercícios 1, 2, 3, 4 e 5
-        <br>Única referência desta lista com exercícios dedicados a intervalo de confiança para variância (usando a distribuição qui-quadrado) — complementa bem as outras três referências, que só cobrem proporção.
+         — Cap. 11 (Exercícios propostos): 4 (c), 5, 7, 8, 10 e 12 (b); Cap. 16 (Exercícios propostos): 3, 4 (a) e 5
+        <br>Atenção: o Morettin escreve "ao nível de 10%" querendo dizer nível de confiança de 90% (ele chama α de nível de significância). No Cap. 16, faça só o intervalo; os testes são da Aula 20 em diante.
       </li>
       
     </ul>
@@ -139,6 +183,14 @@
 
 
 
+
+<section class="aula-secao">
+  <h2>Material complementar</h2>
+  
+  <p class="aula-descricao">A tabela qui-quadrado de cauda superior é a mesma da Aula 17 (PDF "Tabelas t e qui-quadrado", na página da Aula 17). Para z, use a sua tabela normal P(0 ≤ Z ≤ z).</p>
+  
+  
+</section>
 
 
 </main>

@@ -1,52 +1,112 @@
 titulo: Aula 19 - Intervalo de confiança para proporção e variância; tamanho de amostra
 data: ''
-resumo: Intervalo de confiança para a proporção populacional; intervalo de confiança
-  para a variância populacional; determinação do tamanho de amostra
+resumo: Intervalo de confiança para a proporção p (otimista e conservador); intervalo de confiança para a variância
+  σ² e o desvio padrão σ (qui-quadrado, população normal); tamanho de amostra para uma margem de erro desejada
 bloco: 3
 slides:
   titulo: Slides da aula 19
-  arquivo: Aula_19_IC_Proporcao_Variancia_TamanhoAmostra.pptx
-  arquivo_pdf: Aula_19_IC_Proporcao_Variancia_TamanhoAmostra.pdf
+  arquivo: Aula_19_IC_Proporcao_Variancia_TamanhoAmostra_SITE.pptx
+  arquivo_pdf: Aula_19_IC_Proporcao_Variancia_TamanhoAmostra_SITE.pdf
 referencias_bibliograficas:
 - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
-  citacao: Cap. 11 – 11.6; Cap. 10 – 10.11
-- livro: Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª
-    ed.
-  citacao: Cap. 8 – 8.3, 8.4, 8.1.2
+  citacao: Cap. 10 – 10.11; Cap. 11 – 11.6; Cap. 12 – 12.9
+- livro: Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros, 7ª ed.
+  citacao: Cap. 8 – 8.1.2, 8.3, 8.4
 - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
-  citacao: Cap. 7 – 7.4, 7.5
+  citacao: Cap. 7 – 7.4
 - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
-  citacao: Cap. 16 – 16.2, 16.3
+  citacao: Cap. 11 – 11.2; Cap. 16 – 16.2, 16.3
 pre_aula:
+  leitura:
+    itens:
+    - Bussab & Morettin, Estatística Básica, 9ª ed. — Seção 10.11 (tamanho da amostra) e, no Capítulo 11, seção 11.6,
+      os Exemplos 11.14 a 11.16 (intervalo para a proporção).
+    - Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros, 7ª ed. — Seção 8.4 (intervalo para
+      a proporção e escolha do tamanho da amostra) e seção 8.3 (intervalo para a variância).
+    nota: 'As duas referências cobrem o mesmo conteúdo — basta ler uma. Atenção: o Bussab chama o nível de confiança
+      de "coeficiente de confiança" (γ). Na aula usamos nível de confiança (1 − α).'
   videos:
-  - titulo: 'Aula 22: Intervalo de Confiança'
-    url: https://www.youtube.com/watch?v=AkmyfLc-EOs
+  - titulo: Estatística - Aula 23 - Intervalo de confiança para proporção (UNIVESP)
+    url: https://www.youtube.com/watch?v=Xk3yJSD-4a8
+  - titulo: '#18 - Exemplo 11 - Intervalo de Confiança para a Variância e Desvio Padrão (Professor Guru)'
+    url: https://www.youtube.com/watch?v=C5gBiJHI7V0
+    nota: o vídeo pode chamar os valores da tabela qui-quadrado de "valores críticos"; na aula, são os valores da tabela
+      de cauda superior.
+  tarefa:
+  - Uma associação comercial de Montes Claros quer saber que fração dos moradores da cidade compra pela internet toda
+    semana. Ela sorteia n = 250 moradores e encontra 50 que compram pela internet toda semana.
+  - (a) Qual é a proporção amostral p̂? A condição para usar a aproximação normal (np̂ ≥ 5 e n(1 − p̂) ≥ 5) vale?
+  - (b) Quanto vale o erro padrão estimado √(p̂(1 − p̂)/n)?
+  - (c) Construa o IC de 95% para a proporção p de moradores que compram pela internet toda semana.
+  - (d) Numa próxima pesquisa, a associação quer margem de erro de 0,03 com 95% de confiança. Quantos moradores deve
+    sortear, usando p̂ = 0,20 como estimativa? E se não tivesse nenhuma informação sobre p?
+  - (e) A associação também quer estimar a variabilidade do gasto semanal na internet (a variância σ²). Que distribuição
+    é usada nesse intervalo, e que suposição sobre os gastos é preciso fazer?
+  - Tarefa opcional, sem entrega e sem nota — serve para você conferir se entendeu a leitura. Tente antes de abrir
+    o gabarito.
+  gabarito:
+  - titulo: (a) Proporção amostral e condição
+    passos:
+    - - Conta
+      - p̂ = 50/250 = 0,20.
+    - - Condição
+      - np̂ = 50 ≥ 5 e n(1 − p̂) = 200 ≥ 5 — a condição vale.
+  - titulo: (b) Erro padrão
+    passos:
+    - - Conta
+      - √(0,20 × 0,80/250) = √0,00064 = 0,0253.
+    - - Erro comum
+      - esquecer a raiz, ou dividir por n fora da raiz.
+  - titulo: (c) Intervalo
+    passos:
+    - - Margem de erro
+      - 1,96 × 0,0253 = 0,0496.
+    - - Intervalo
+      - IC(p; 95%) = [0,20 − 0,0496 ; 0,20 + 0,0496] = [0,150 ; 0,250] — entre 15% e 25% dos moradores.
+  - titulo: (d) Tamanho de amostra
+    passos:
+    - - Fórmula
+      - n = (1,96/0,03)² × p(1 − p) = 4.268,4 × p(1 − p).
+    - - Com p = 0,20
+      - 4.268,4 × 0,16 = 682,95 → 683 moradores (arredonde sempre para cima).
+    - - Sem informação
+      - use p = 0,5, o valor que deixa p(1 − p) maior (1/4) — 4.268,4 × 0,25 = 1.067,1 → 1.068 moradores.
+  - titulo: (e) Variância
+    passos:
+    - - Distribuição
+      - qui-quadrado com n − 1 graus de liberdade (a mesma da Aula 17).
+    - - Suposição
+      - os gastos têm distribuição normal. Se a distribuição for muito assimétrica, a confiança real fica abaixo da
+        anunciada.
 exercicios_recomendados:
   itens:
   - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
-    exercicios: 'Cap. 11: Problemas 18, 19, 20 e 21'
-    recomendacao: Todos são sobre proporção. Os problemas 20 e 21(b) pedem, além do
-      intervalo, o tamanho de amostra necessário — resolva essa parte com atenção
-      especial. Não encontramos, nesta seção, exercício dedicado a intervalo de confiança
-      para variância.
+    exercicios: 'Cap. 10: Problemas 17 e 18; Cap. 11: Problemas 15 (c), 16, 17, 18, 19, 20 e 21; Problemas Suplementares
+      23 (b) e 24 (b); Cap. 12: Problema Suplementar 33'
+    recomendacao: Os do Cap. 10 e o 15 (c), 16 e 17 do Cap. 11 são de tamanho de amostra; o 18 ao 21, de proporção (o
+      19 pede os dois intervalos, otimista e conservador; o 20 e o 21 (b) também pedem o tamanho de amostra). O Suplementar
+      33 do Cap. 12 pede o IC para σ² com os dados do Suplementar 32 (só o intervalo; a parte de teste é da Aula 20). O
+      Bussab chama o nível de confiança de "coeficiente de confiança" (γ).
   - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
-    exercicios: 'Cap. 7 (7.5 Exercícios): 24, 25, 26 e 29'
-    recomendacao: Todos sobre proporção e tamanho de amostra. Como no Bussab, não
-      encontramos exercício de IC para variância nesta lista — use o Montgomery ou
-      o Morettin para essa parte específica.
-  - livro: Montgomery & Runger, Applied Statistics and Probability for Engineers,
-      7ª ed.
-    exercicios: 'Cap. 8: Exercícios 8.1.2, 8.3.1, 8.3.2, 8.3.3, 8.4.1, 8.4.3, 8.4.4,
-      8.4.5 e 8.4.6'
-    recomendacao: 'Referência mais completa: os 8.3.x são de variância (usando qui-quadrado)
-      e os 8.4.x são de proporção. O exercício 8.1.2 treina só encontrar o valor de
-      z para diferentes níveis de confiança — útil antes de resolver os demais.'
+    exercicios: 'Cap. 7: Exercícios da Seção 7.4, n.º 5; Seção 7.5: 17, 24, 25 e 29 (a, b, c)'
+    recomendacao: 'O 5 da Seção 7.4 e o 24 pedem os intervalos otimista e conservador; o 17, o 25 e o 29 são de tamanho
+      de amostra. O Magalhães não traz IC para a variância: use o Montgomery ou o Morettin para essa parte.'
+  - livro: Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros, 7ª ed.
+    exercicios: 'Cap. 8: 8.1.4, 8.1.9, 8.1.12 (b), 8.1.13 (c, d); 8.3.1, 8.3.2, 8.3.7; 8.4.1 (a), 8.4.3, 8.4.4, 8.4.5
+      e 8.4.6 (a)'
+    recomendacao: Os 8.1.x são de tamanho de amostra para a média; os 8.3.x, de IC para σ² e σ (o 8.3.2 treina a leitura
+      da tabela qui-quadrado); os 8.4.x, de proporção e tamanho de amostra. Ficaram de fora os limites unilaterais, o
+      IC de Agresti-Coull e os itens que pedem gráfico de probabilidade, que não foram vistos.
   - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
-    exercicios: 'Cap. 16: Exercícios 1, 2, 3, 4 e 5'
-    recomendacao: Única referência desta lista com exercícios dedicados a intervalo
-      de confiança para variância (usando a distribuição qui-quadrado) — complementa
-      bem as outras três referências, que só cobrem proporção.
+    exercicios: 'Cap. 11 (Exercícios propostos): 4 (c), 5, 7, 8, 10 e 12 (b); Cap. 16 (Exercícios propostos): 3, 4 (a)
+      e 5'
+    recomendacao: 'Atenção: o Morettin escreve "ao nível de 10%" querendo dizer nível de confiança de 90% (ele chama
+      α de nível de significância). No Cap. 16, faça só o intervalo; os testes são da Aula 20 em diante.'
   arquivo: Tabela_Referencias_Aula19.pdf
 lista_ia:
   lista_arquivo: Lista_Aula19_Original.pdf
   gabarito_arquivo: Gabarito_Aula19_Original.pdf
+material_complementar:
+  texto:
+  - A tabela qui-quadrado de cauda superior é a mesma da Aula 17 (PDF "Tabelas t e qui-quadrado", na página da Aula 17).
+    Para z, use a sua tabela normal P(0 ≤ Z ≤ z).
