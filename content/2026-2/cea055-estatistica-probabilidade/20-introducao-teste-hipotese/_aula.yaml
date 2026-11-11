@@ -1,50 +1,116 @@
 titulo: Aula 20 - Introdução ao teste de hipóteses
 data: ''
-resumo: Hipótese nula e alternativa; tipos de erro (I e II); nível de significância
+resumo: O teste de hipóteses como regra de decisão; hipótese nula e alternativa; estatística de teste e região crítica;
+  erros tipo I e II e suas probabilidades α e β; poder; regra construída a partir de α; testes bilaterais e unilaterais
 bloco: 3
 slides:
   titulo: Slides da aula 20
-  arquivo: Aula_20_Introducao_Teste_Hipotese.pptx
-  arquivo_pdf: Aula_20_Introducao_Teste_Hipotese.pdf
+  arquivo: Aula_20_Introducao_Teste_Hipotese_SITE.pptx
+  arquivo_pdf: Aula_20_Introducao_Teste_Hipotese_SITE.pdf
 referencias_bibliograficas:
 - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
   citacao: Cap. 12 – 12.1 a 12.4
-- livro: Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª
-    ed.
+- livro: Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros, 7ª ed.
   citacao: Cap. 9 – 9.1
 - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
   citacao: Cap. 8 – 8.1
 - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
   citacao: Cap. 12 – 12.1; Cap. 13 – 13.1
 pre_aula:
+  leitura:
+    itens:
+    - Bussab & Morettin, Estatística Básica, 9ª ed. — Seções 12.1 a 12.4 (o Exemplo 12.1 e os 5 passos de um teste).
+    - Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros, 7ª ed. — Seções 9.1.1 a 9.1.3 (hipóteses,
+      erros tipo I e II, testes unilaterais e bilaterais).
+    nota: 'As duas referências cobrem o mesmo conteúdo — basta ler uma. Atenção: o Montgomery chama 1 − β de "potência"
+      do teste; na aula usamos "poder". Alguns textos falam em "aceitar H₀"; na aula dizemos "não rejeitar H₀", porque
+      não rejeitar não prova que H₀ é verdadeira.'
   videos:
-  - titulo: 'Aula 23: Teste de hipóteses'
-    url: https://www.youtube.com/watch?v=S3V5qJ1bxhk
+  - titulo: Estatística Aplicada aos Negócios - Introdução aos testes de hipóteses (UNIVESP)
+    url: https://www.youtube.com/watch?v=k7cdBD-p6W8
+  - titulo: 5 - Erros tipo I (alfa) e tipo II (beta) (Sergio Freire)
+    url: https://www.youtube.com/watch?v=9f3j0oad7dA
+    nota: os vídeos podem falar em "valor-p" e "valor crítico"; o valor-p fica para a Aula 21.
+  tarefa:
+  - Uma envasadora de água mineral de São Lourenço enche garrafas de 500 ml. O volume das garrafas tem distribuição normal
+    com desvio padrão σ = 8 ml. A cada hora, o operador mede 16 garrafas e usa a regra — se a média ficar fora do intervalo
+    de 497 a 503 ml, ajustar a máquina.
+  - (a) Qual é a afirmação posta à prova (H₀)? E a alternativa (H₁)? O teste é unilateral ou bilateral?
+  - (b) Descreva, nesse contexto, o erro tipo I e o erro tipo II.
+  - (c) Se a máquina está regulada (média de 500 ml), qual a probabilidade de ela ser ajustada sem necessidade?
+  - (d) Se a máquina passou a encher, em média, 504 ml, qual a probabilidade de a regra não mandar ajustar?
+  - (e) O gerente quer que a máquina seja ajustada sem necessidade em no máximo 5% das horas. Entre que valores a média
+    deve ficar para a máquina continuar como está?
+  - Use a tabela P(0 ≤ Z ≤ z) das Aulas 13 e 15. Tarefa opcional, sem entrega e sem nota — serve para você conferir
+    se entendeu a leitura. Tente antes de abrir o gabarito.
+  gabarito:
+  - titulo: (a) Hipóteses
+    passos:
+    - - Hipóteses
+      - H₀ — μ = 500 (máquina regulada) e H₁ — μ ≠ 500 (máquina desregulada).
+    - - Bilateral
+      - encher demais ou de menos são, os dois, problemas. A região crítica fica dos dois lados — X̄ < 497 ou X̄ > 503.
+  - titulo: (b) Erros
+    passos:
+    - - Tipo I
+      - ajustar a máquina quando ela está regulada (parada desnecessária).
+    - - Tipo II
+      - não ajustar a máquina quando ela está desregulada (o problema passa despercebido).
+  - titulo: (c) Probabilidade do erro tipo I (α)
+    passos:
+    - - Distribuição de X̄
+      - com a máquina regulada, X̄ ~ N(500; 8²/16), com desvio padrão 8/√16 = 2 ml (Aula 15).
+    - - Padronização
+      - z = (497 − 500)/2 = −1,5 e z = (503 − 500)/2 = 1,5.
+    - - Resultado
+      - α = 2 × (0,5 − 0,4332) = 0,1336 — a máquina é ajustada à toa em cerca de 13% das horas.
+    - - Erro comum
+      - usar σ = 8 no lugar do desvio padrão de X̄ (2).
+  - titulo: (d) Probabilidade do erro tipo II (β), com média real de 504 ml
+    passos:
+    - - Distribuição de X̄
+      - agora X̄ ~ N(504; 2²). Não ajustar = 497 ≤ X̄ ≤ 503.
+    - - Padronização
+      - z = (497 − 504)/2 = −3,5 e z = (503 − 504)/2 = −0,5.
+    - - Resultado
+      - a área abaixo de −3,5 é desprezível, então β ≈ 0,5 − 0,1915 = 0,3085. Em cerca de 31% das horas a máquina desregulada
+        continua como está.
+  - titulo: (e) Regra com α = 5%
+    passos:
+    - - Tabela
+      - bilateral, 0,025 em cada cauda. Na tabela, P(0 ≤ Z ≤ z) = 0,475 dá z₀,₀₂₅ = 1,96 (Aulas 17 e 18).
+    - - Regra
+      - 500 ± 1,96 × 2 = 500 ± 3,92 — a máquina continua se 496,08 ≤ x̄ ≤ 503,92.
+    - - Repare
+      - a regra antiga ([497 ; 503]) tinha α = 13%; para errar menos contra a máquina regulada, o intervalo ficou mais largo
+        — e isso aumenta β.
 exercicios_recomendados:
   itens:
   - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
-    exercicios: 'Cap. 12 (12.11 Problemas Suplementares): 28, 29, 38 e 39'
-    recomendacao: 'O exercício 28 é o mais completo para esta aula: pede para definir
-      H0/H1, descrever os erros tipo I e II e montar a regra de decisão — praticamente
-      um roteiro do que esta aula ensina.'
+    exercicios: 'Cap. 12: Problemas 1, 2, 3, 4 e 5 (Seção 12.2); Problemas Suplementares 28 e 29'
+    recomendacao: 'Comece pelo 1: regra de decisão dada, α e β, depois a regra com α = 5% e β para vários valores de μ
+      — o mesmo caminho da aula. O 3 pede para escolher H₀ pelo erro mais grave (radar, júri, vacina). O 4 e o Suplementar
+      29 usam a binomial (Aula 9) no lugar da normal. O Suplementar 28 monta uma regra para conferir estoques. Os Suplementares
+      que pedem o nível descritivo (valor-p) ficam para a Aula 21.'
   - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
-    exercicios: 'Cap. 8 (8.6 Exercícios): 11(a-d), 16(a) e 18(a)'
-    recomendacao: Resolva só as partes indicadas (a definição do parâmetro, das hipóteses
-      e do critério de decisão) — o restante desses exercícios já entra em cálculo
-      específico de teste, conteúdo das próximas aulas.
-  - livro: Montgomery & Runger, Applied Statistics and Probability for Engineers,
-      7ª ed.
-    exercicios: 'Cap. 9: Exercícios 9.1.1, 9.1.2, 9.1.3, 9.1.5, 9.1.6, 9.1.7, 9.1.9,
-      9.1.10, 9.1.11 e 9.1.12'
-    recomendacao: Referência mais completa para esta aula. Comece pelo 9.1.1 (identificar
-      se um par de hipóteses está corretamente formulado) e pelo 9.1.2 (interpretar
-      o que significa "não rejeitar H0") antes de ir para os que envolvem cálculo
-      de erro tipo I e II.
+    exercicios: 'Cap. 8: Exercícios da Seção 8.6, n.º 4, 7, 10, 11 (a, b, c, d, e) e 12'
+    recomendacao: 'O 7 (cilindros: parar se a média sair de 47 a 53 mm) é o mais parecido com os Exemplos 1 e 2 da aula.
+      O 4 pede hipóteses, erros, região crítica e β; o 10, o 11 e o 12 são sobre proporção (aproximação normal da Aula
+      15). No 11, não faça o item (f), que pede o nível descritivo (Aula 21).'
+  - livro: Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros, 7ª ed.
+    exercicios: 'Cap. 9: 9.1.1, 9.1.2, 9.1.3, 9.1.4, 9.1.6, 9.1.7, 9.1.8, 9.1.9, 9.1.10, 9.1.11 e 9.1.12'
+    recomendacao: 'Comece pelo 9.1.1 (o par de hipóteses está bem formulado?) e pelo 9.1.2 (o que significa "não rejeitar
+      H₀"). Do 9.1.3 ao 9.1.10 — α e β com região crítica dada, e o efeito de n e de α sobre β (como o slide 21). O 9.1.11
+      e o 9.1.12 usam a binomial. O 9.1.5 ficou de fora: pede o valor P (Aula 21).'
   - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
-    exercicios: 'Cap. 13: Exercícios 1, 3 e 4'
-    recomendacao: Esses exercícios tratam dos erros de decisão (tipo I e II) e da
-      curva de poder do teste — o conceito central desta aula.
+    exercicios: 'Cap. 13 (Exercícios propostos): 1, 2 e 4'
+    recomendacao: O 1 pede a região crítica bilateral com α = 10% e β para μ = 53. O 2 é sobre proporção. O 4 usa os dados
+      do 3 (ponto de fusão do chumbo) e pergunta, na prática, quanto vale β.
   arquivo: Tabela_Referencias_Aula20.pdf
 lista_ia:
   lista_arquivo: Lista_Aula20_Original.pdf
   gabarito_arquivo: Gabarito_Aula20_Original.pdf
+material_complementar:
+  texto:
+  - Para as contas, use a sua tabela normal P(0 ≤ Z ≤ z) (Aulas 13 e 15). Nesta aula, tudo é feito na escala de X̄; a
+    estatística padronizada Z e o valor-p ficam para a Aula 21.
