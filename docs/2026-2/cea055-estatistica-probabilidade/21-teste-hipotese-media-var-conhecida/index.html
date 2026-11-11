@@ -17,23 +17,65 @@
 
 <h1>Aula 21 - Teste de hipótese para a média — variância conhecida</h1>
 <p class="meta"></p>
-<p class="subtitle">Procedimento de teste para uma única média com variância populacional conhecida; valor-p</p>
+<p class="subtitle">A estatística Z do teste para a média com variância conhecida; região crítica nos casos bilateral e unilateral; valor-p e sua interpretação; significância estatística e prática; teste bilateral e intervalo de confiança</p>
 
 
 <section class="aula-secao">
   <h2>Pré-aula</h2>
   
+  <h3>Leitura recomendada</h3>
+  <ul class="bib-list">
+    <li>Bussab & Morettin, Estatística Básica, 9ª ed. — Seções 12.5 (teste para a média com variância conhecida, Exemplo 12.2) e 12.8 (valor-p).</li><li>Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros, 7ª ed. — Seções 9.1.4 (valores P) e 9.2.1 (teste para a média com variância conhecida).</li>
+  </ul>
+  <p class="nota-leitura">As duas referências cobrem o mesmo conteúdo — basta ler uma. O Bussab faz a região crítica na escala de X̄, como na Aula 20; na aula usamos também a escala Z (o Montgomery faz assim). O Montgomery escreve "valor P" e Φ(z) para a acumulada; na aula usamos "valor-p" e a tabela P(0 ≤ Z ≤ z). O Magalhães chama o valor-p de "nível descritivo".</p>
+  
   
   <h3>Vídeo recomendado</h3>
   <ul class="material-list">
     
-    <li><a href="https://www.youtube.com/watch?v=S3V5qJ1bxhk" target="_blank" rel="noopener">Aula 23: Teste de hipóteses</a></li>
+    <li><a href="https://www.youtube.com/watch?v=b-w0QdD8wX4" target="_blank" rel="noopener">Teste de hipóteses para a média: variância conhecida, parte 1 (James Sampaio)</a></li>
     
-    <li><a href="https://www.youtube.com/watch?v=AgDC9yoopUA" target="_blank" rel="noopener">Estatística e Probabilidade – Aula 13 – Teste t de Student</a></li>
+    <li><a href="https://www.youtube.com/watch?v=Z0nZ9JJvveM" target="_blank" rel="noopener">Valor de p explicado de forma simples (Ronaldo Lima Jr.)</a></li>
     
   </ul>
   
   
+  <h3>Tarefa</h3>
+  <ul class="bib-list">
+    <li>Uma fábrica de doce de leite de Viçosa vende potes com 400 g no rótulo. O peso dos potes tem distribuição normal com desvio padrão σ = 12 g. Um fiscal pesa 16 potes e só autua a fábrica se houver evidência de peso médio abaixo do rótulo. A média dos 16 potes foi x̄ = 394 g.</li><li>(a) Quais são H₀ e H₁? O teste é unilateral ou bilateral?</li><li>(b) Calcule o valor observado da estatística Z.</li><li>(c) Com nível de significância α = 5%, qual é a região crítica em Z? O fiscal autua a fábrica?</li><li>(d) Calcule o valor-p. A decisão seria a mesma com nível de significância α = 1%?</li><li>(e) Se o fiscal se preocupasse com peso fora de 400 g para mais ou para menos (teste bilateral), qual seria o valor-p? Confira a decisão a 5% com o intervalo de confiança de 95% para μ (Aula 18).</li><li>Use a tabela P(0 ≤ Z ≤ z) das Aulas 13 e 15. Tarefa opcional, sem entrega e sem nota — serve para você conferir se entendeu a leitura. Tente antes de abrir o gabarito.</li>
+  </ul>
+  
+  
+  <details class="gabarito-preaula">
+    <summary>Ver gabarito comentado (tente antes de abrir)</summary>
+    
+    <h4>(a) Hipóteses</h4>
+    <ul class="gabarito-passos">
+      <li><strong>Hipóteses:</strong> H₀ — μ = 400 (o rótulo está certo) e H₁ — μ < 400 (os potes têm menos doce do que o rótulo).</li><li><strong>Unilateral à esquerda:</strong> pote com doce a mais não prejudica o consumidor.</li>
+    </ul>
+    
+    <h4>(b) Estatística Z</h4>
+    <ul class="gabarito-passos">
+      <li><strong>Desvio padrão de X̄:</strong> 12/√16 = 3 g (Aula 15).</li><li><strong>Valor observado:</strong> z_obs = (394 − 400)/3 = −2,00.</li><li><strong>Erro comum:</strong> dividir por σ = 12 em vez de 3 (daria −0,50).</li>
+    </ul>
+    
+    <h4>(c) Região crítica com α = 5%</h4>
+    <ul class="gabarito-passos">
+      <li><strong>Tabela:</strong> P(0 ≤ Z ≤ z) = 0,45 dá z₀,₀₅ = 1,645 (Aulas 17 e 18). RC — Z < −1,645.</li><li><strong>Decisão:</strong> −2,00 < −1,645, então z_obs está na RC — rejeitar H₀. O fiscal autua — há evidência de peso médio abaixo de 400 g.</li>
+    </ul>
+    
+    <h4>(d) Valor-p</h4>
+    <ul class="gabarito-passos">
+      <li><strong>Área à esquerda de −2,00:</strong> valor-p = 0,5 − 0,4772 = 0,0228.</li><li><strong>Decisões:</strong> α = 5% — 0,0228 ≤ 0,05, rejeitar (a mesma decisão do item c). α = 1% — 0,0228 > 0,01, não rejeitar. A decisão muda.</li>
+    </ul>
+    
+    <h4>(e) Bilateral e intervalo de confiança</h4>
+    <ul class="gabarito-passos">
+      <li><strong>Valor-p bilateral:</strong> dobra-se a cauda — 2 × 0,0228 = 0,0456; com α = 5%, 0,0456 ≤ 0,05, rejeitar.</li><li><strong>IC de 95%:</strong> 394 ± 1,96 × 3 = 394 ± 5,88, ou seja, [388,12 ; 399,88]. O valor de H₀ (400) está fora do intervalo — rejeitar H₀ a 5%, a mesma decisão.</li>
+    </ul>
+    
+    <p class="nota-gabarito">Gabarito elaborado com auxílio de IA (Claude). Se algo não fizer sentido, pergunte em sala.</p>
+  </details>
   
   <label class="preaula-check">
     <input type="checkbox" data-preaula-checkbox data-aula-id="2026-2/cea055-estatistica-probabilidade/21-teste-hipotese-media-var-conhecida">
@@ -50,14 +92,14 @@
 <section class="aula-secao">
   <h2>Slides do professor</h2>
   
-  <iframe class="slides-embed" loading="lazy" src="../../../2026-2/cea055-estatistica-probabilidade/21-teste-hipotese-media-var-conhecida/arquivos/Aula_21_Teste_Hipotese_Media_Var_Conhecida.pdf" title="Slides da aula 21"></iframe>
+  <iframe class="slides-embed" loading="lazy" src="../../../2026-2/cea055-estatistica-probabilidade/21-teste-hipotese-media-var-conhecida/arquivos/Aula_21_Teste_Hipotese_Media_Var_Conhecida_SITE.pdf" title="Slides da aula 21"></iframe>
   
   <ul class="material-list">
     
-    <li><a href="../../../2026-2/cea055-estatistica-probabilidade/21-teste-hipotese-media-var-conhecida/arquivos/Aula_21_Teste_Hipotese_Media_Var_Conhecida.pdf" target="_blank" rel="noopener">Abrir slides em tela cheia (PDF)</a></li>
+    <li><a href="../../../2026-2/cea055-estatistica-probabilidade/21-teste-hipotese-media-var-conhecida/arquivos/Aula_21_Teste_Hipotese_Media_Var_Conhecida_SITE.pdf" target="_blank" rel="noopener">Abrir slides em tela cheia (PDF)</a></li>
     
     
-    <li><a href="../../../2026-2/cea055-estatistica-probabilidade/21-teste-hipotese-media-var-conhecida/arquivos/Aula_21_Teste_Hipotese_Media_Var_Conhecida.pptx">Baixar slides originais (PowerPoint)</a></li>
+    <li><a href="../../../2026-2/cea055-estatistica-probabilidade/21-teste-hipotese-media-var-conhecida/arquivos/Aula_21_Teste_Hipotese_Media_Var_Conhecida_SITE.pptx">Baixar slides originais (PowerPoint)</a></li>
     
   </ul>
 </section>
@@ -68,11 +110,11 @@
   <h2>Referências bibliográficas</h2>
   <ul class="bib-list">
     
-    <li><strong>Bussab & Morettin, Estatística Básica, 9ª ed.</strong> — Cap. 12 – 12.5, 12.8</li>
+    <li><strong>Bussab & Morettin, Estatística Básica, 9ª ed.</strong> — Cap. 12 – 12.5 e 12.8</li>
     
-    <li><strong>Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª ed.</strong> — Cap. 9 – 9.2</li>
+    <li><strong>Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros, 7ª ed.</strong> — Cap. 9 – 9.1.4, 9.1.5, 9.1.6 e 9.2.1</li>
     
-    <li><strong>Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.</strong> — Cap. 8 – 8.2, 8.4</li>
+    <li><strong>Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.</strong> — Cap. 8 – 8.4</li>
     
     <li><strong>Morettin, Estatística Básica: Probabilidade e Inferência</strong> — Cap. 12 – 12.2</li>
     
@@ -89,26 +131,26 @@
       
       <li>
         <strong>Bussab & Morettin, Estatística Básica, 9ª ed.</strong>
-         — Cap. 12 (12.11 Problemas Suplementares): 22, 23, 25(a) e 27
-        <br>Todos com desvio-padrão populacional conhecido. O exercício 23(b) faz uma pergunta interessante sobre a conclusão do teste — vale refletir mesmo sem resolver formalmente.
+         — Cap. 12: Problemas 6 (a, c, d), 7, 8 e 9 (Seção 12.5); Problemas 16 e 17 (Seção 12.8); Problemas Suplementares 25 (a) e 27
+        <br>Do 6 ao 9: os 5 passos com σ conhecido, quase todos unilaterais; o 8 (salários nas siderúrgicas) é unilateral à esquerda, como o Exemplo 2 da aula, e o 9 traz os dados brutos. O 6 (b) pede β e fica para quem fizer o Desafio da Lista. O 16 e o 17 pedem o valor-p. No Suplementar 25, faça só o item (a): o (b) é com σ desconhecido (Aula 22).
       </li>
       
       <li>
         <strong>Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.</strong>
-         — Cap. 8 (8.6 Exercícios): 21 e 22
-        <br>Poucos exercícios de teste para a média com variância conhecida nesta lista — a maioria dos exercícios do capítulo é sobre proporção (conteúdo que não faz parte desta aula). Use as outras referências para praticar mais.
+         — Cap. 8: Exercícios da Seção 8.6, n.º 2, 5 (b), 6 (a) e 9
+        <br>O 2 (consumo de combustível, a revista desconfia que é maior) é unilateral à direita; a pergunta sobre o erro tipo II é opcional. O 5 (b) e o 9 também são unilaterais à direita; o 6 (a), à esquerda. O Magalhães chama o valor-p de "nível descritivo".
       </li>
       
       <li>
-        <strong>Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª ed.</strong>
-         — Cap. 9: Exercícios 9.2.1, 9.2.2, 9.2.3, 9.2.4, 9.2.6, 9.2.7, 9.2.8, 9.2.9 e 9.2.10
-        <br>Referência mais completa para esta aula. Os exercícios 9.2.6 a 9.2.9 seguem o mesmo roteiro (teste + valor-P + potência + tamanho de amostra) — resolva um de cada vez para fixar a sequência completa.
+        <strong>Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros, 7ª ed.</strong>
+         — Cap. 9: 9.1.5, 9.2.1, 9.2.2, 9.2.3, 9.2.4, 9.2.5, 9.2.6 (a), 9.2.7 (a, b), 9.2.8 (a, b), 9.2.9 (a, b) e 9.2.10
+        <br>O 9.2.1 treina a escolha de H₀ e H₁; o 9.2.2, os valores críticos de Z₀; o 9.2.4 e o 9.1.5, o valor P (o 9.1.5 na escala de X̄). O 9.2.3 e o 9.2.5 pedem para completar uma saída de programa. Do 9.2.6 ao 9.2.9, faça o teste e o valor P; os itens de potência e de tamanho da amostra são o mesmo assunto do Desafio da Lista, e os itens (e), com limite unilateral de confiança, ficam de fora. Atenção: no 9.2.7 (a) a tradução traz "α = 0,5"; o certo é 0,05.
       </li>
       
       <li>
         <strong>Morettin, Estatística Básica: Probabilidade e Inferência</strong>
-         — Cap. 12: Exercícios 1, 2, 3, 4, 6, 7, 9 e 10
-        <br>Referência bem completa também. Os exercícios 1 e 2 já vêm com as hipóteses prontas — bom para focar só no cálculo da estatística de teste antes de passar para os exercícios que pedem para você formular as hipóteses sozinho.
+         — Cap. 12 (Exercícios propostos): 1, 2, 3, 4, 6, 7, 9, 10, 11 e 12
+        <br>O 1 e o 2 já vêm com as hipóteses prontas — bons para treinar só a estatística Z e a região crítica. Nos demais, formule H₀ e H₁ antes de fazer contas. O 12 refaz o teste com 64 correntes no lugar de 16: compare com o slide de significância estatística × prática (o mesmo x̄ com n maior). O 5 e o 8 são sobre proporção e ficam fora.
       </li>
       
     </ul>
@@ -141,6 +183,14 @@
 
 
 
+
+<section class="aula-secao">
+  <h2>Material complementar</h2>
+  
+  <p class="aula-descricao">Para as contas, use a sua tabela normal P(0 ≤ Z ≤ z) (Aulas 13 e 15). Quando σ não é conhecido, a estatística passa a usar S e a tabela t — isso fica para a Aula 22.</p>
+  
+  
+</section>
 
 
 </main>
