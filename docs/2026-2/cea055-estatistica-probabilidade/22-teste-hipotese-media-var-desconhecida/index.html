@@ -17,21 +17,65 @@
 
 <h1>Aula 22 - Teste de hipótese para a média — variância desconhecida</h1>
 <p class="meta"></p>
-<p class="subtitle">Procedimento de teste para uma única média com variância desconhecida (uso da distribuição t); exercícios integradores</p>
+<p class="subtitle">A estatística T do teste para a média quando σ é desconhecido; região crítica com a tabela t nos casos bilateral e unilateral; limites do valor-p pela tabela t e valor exato pelo programa; quando usar Z ou T</p>
 
 
 <section class="aula-secao">
   <h2>Pré-aula</h2>
   
+  <h3>Leitura recomendada</h3>
+  <ul class="bib-list">
+    <li>Bussab & Morettin, Estatística Básica, 9ª ed. — Seção 12.10 (teste sobre a média de uma normal com variância desconhecida).</li><li>Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros, 7ª ed. — Seção 9.3.1 (testes de hipóteses para a média com variância desconhecida; valor P com a tabela t).</li>
+  </ul>
+  <p class="nota-leitura">As duas referências cobrem o mesmo conteúdo — basta ler uma. O Montgomery escreve "valor P" e chama a estatística de T₀; na aula usamos "valor-p" e T. A tabela t da aula dá a área na cauda superior (Aula 17): t₀,₀₅;₉ é o valor com área 0,05 à sua direita, com 9 graus de liberdade.</p>
+  
   
   <h3>Vídeo recomendado</h3>
   <ul class="material-list">
     
-    <li><a href="https://www.youtube.com/watch?v=AgDC9yoopUA" target="_blank" rel="noopener">Estatística e Probabilidade – Aula 13 – Teste t de Student</a></li>
+    <li><a href="https://www.youtube.com/watch?v=UrEqmXa8vmQ" target="_blank" rel="noopener">Teste de hipóteses para a média: variância desconhecida (James Sampaio)</a></li>
+    
+    <li><a href="https://www.youtube.com/watch?v=IxPbPxyUUFA" target="_blank" rel="noopener">Inferência Aula 32 - Teste de Hipótese para Média com Variância Desconhecida (Professor Douglas Maioli)</a></li>
     
   </ul>
   
   
+  <h3>Tarefa</h3>
+  <ul class="bib-list">
+    <li>Um alambique de Salinas engarrafa cachaça em garrafas de 700 mL. O volume das garrafas tem distribuição normal, mas o desvio padrão σ é desconhecido. Um fiscal mede 10 garrafas e só autua o alambique se houver evidência de volume médio abaixo do rótulo. A média das 10 garrafas foi x̄ = 696 mL, com desvio padrão amostral s = 6 mL.</li><li>(a) Quais são H₀ e H₁? O teste é unilateral ou bilateral? Por que se usa T, e não Z?</li><li>(b) Calcule o valor observado da estatística T. Quantos graus de liberdade?</li><li>(c) Com nível de significância α = 5%, qual é a região crítica em T? O fiscal autua o alambique?</li><li>(d) Entre quais valores da tabela t fica o valor-p?</li><li>(e) Se o fiscal se preocupasse com volume fora de 700 mL para mais ou para menos (teste bilateral), entre quais valores ficaria o valor-p? A decisão a 5% muda? Confira com o intervalo de confiança de 95% para μ (Aula 18).</li><li>Trecho da tabela t (área na cauda superior) — ν = 9: 1,383 (0,10) · 1,833 (0,05) · 2,262 (0,025) · 2,821 (0,01) · 3,250 (0,005); ν = 10: 1,372 · 1,812 · 2,228 · 2,764 · 3,169. Tarefa opcional, sem entrega e sem nota — serve para você conferir se entendeu a leitura. Tente antes de abrir o gabarito.</li>
+  </ul>
+  
+  
+  <details class="gabarito-preaula">
+    <summary>Ver gabarito comentado (tente antes de abrir)</summary>
+    
+    <h4>(a) Hipóteses</h4>
+    <ul class="gabarito-passos">
+      <li><strong>Hipóteses:</strong> H₀ — μ = 700 (o rótulo está certo) e H₁ — μ < 700 (as garrafas têm menos cachaça do que o rótulo).</li><li><strong>Unilateral à esquerda:</strong> garrafa com cachaça a mais não prejudica o consumidor.</li><li><strong>T e não Z:</strong> σ é desconhecido; usa-se s no lugar de σ, e a estatística passa a ter distribuição t (Aulas 17 e 18).</li>
+    </ul>
+    
+    <h4>(b) Estatística T</h4>
+    <ul class="gabarito-passos">
+      <li><strong>Erro padrão estimado:</strong> s/√n = 6/√10 = 1,897 mL.</li><li><strong>Valor observado:</strong> t_obs = (696 − 700)/1,897 = −2,11, com ν = 10 − 1 = 9 graus de liberdade.</li><li><strong>Erro comum:</strong> usar ν = 10 (a linha certa é n − 1 = 9).</li>
+    </ul>
+    
+    <h4>(c) Região crítica com α = 5%</h4>
+    <ul class="gabarito-passos">
+      <li><strong>Tabela:</strong> linha ν = 9, coluna 0,05 — t₀,₀₅;₉ = 1,833. RC — T < −1,833.</li><li><strong>Decisão:</strong> −2,11 < −1,833, então t_obs está na RC — rejeitar H₀. O fiscal autua — há evidência, ao nível de significância α = 5%, de volume médio abaixo de 700 mL.</li>
+    </ul>
+    
+    <h4>(d) Valor-p pela tabela</h4>
+    <ul class="gabarito-passos">
+      <li><strong>Linha ν = 9:</strong> |t_obs| = 2,11 fica entre 1,833 (coluna 0,05) e 2,262 (coluna 0,025).</li><li><strong>Unilateral:</strong> 0,025 < valor-p < 0,05. Pelo programa, o valor exato é 0,0321.</li>
+    </ul>
+    
+    <h4>(e) Bilateral e intervalo de confiança</h4>
+    <ul class="gabarito-passos">
+      <li><strong>Valor-p bilateral:</strong> dobram-se as áreas — 0,05 < valor-p < 0,10; como o valor-p > 0,05, não rejeitar H₀ a 5%. A decisão muda — o teste bilateral precisa de uma diferença maior.</li><li><strong>IC de 95%:</strong> 696 ± 2,262 × 1,897 = 696 ± 4,29, ou seja, [691,71 ; 700,29]. O valor de H₀ (700) está dentro do intervalo — não rejeitar H₀ no teste bilateral a 5%, a mesma decisão.</li>
+    </ul>
+    
+    <p class="nota-gabarito">Gabarito elaborado com auxílio de IA (Claude). Se algo não fizer sentido, pergunte em sala.</p>
+  </details>
   
   <label class="preaula-check">
     <input type="checkbox" data-preaula-checkbox data-aula-id="2026-2/cea055-estatistica-probabilidade/22-teste-hipotese-media-var-desconhecida">
@@ -48,14 +92,14 @@
 <section class="aula-secao">
   <h2>Slides do professor</h2>
   
-  <iframe class="slides-embed" loading="lazy" src="../../../2026-2/cea055-estatistica-probabilidade/22-teste-hipotese-media-var-desconhecida/arquivos/Aula_22_Teste_Hipotese_Media_Var_Desconhecida.pdf" title="Slides da aula 22"></iframe>
+  <iframe class="slides-embed" loading="lazy" src="../../../2026-2/cea055-estatistica-probabilidade/22-teste-hipotese-media-var-desconhecida/arquivos/Aula_22_Teste_Hipotese_Media_Var_Desconhecida_SITE.pdf" title="Slides da aula 22"></iframe>
   
   <ul class="material-list">
     
-    <li><a href="../../../2026-2/cea055-estatistica-probabilidade/22-teste-hipotese-media-var-desconhecida/arquivos/Aula_22_Teste_Hipotese_Media_Var_Desconhecida.pdf" target="_blank" rel="noopener">Abrir slides em tela cheia (PDF)</a></li>
+    <li><a href="../../../2026-2/cea055-estatistica-probabilidade/22-teste-hipotese-media-var-desconhecida/arquivos/Aula_22_Teste_Hipotese_Media_Var_Desconhecida_SITE.pdf" target="_blank" rel="noopener">Abrir slides em tela cheia (PDF)</a></li>
     
     
-    <li><a href="../../../2026-2/cea055-estatistica-probabilidade/22-teste-hipotese-media-var-desconhecida/arquivos/Aula_22_Teste_Hipotese_Media_Var_Desconhecida.pptx">Baixar slides originais (PowerPoint)</a></li>
+    <li><a href="../../../2026-2/cea055-estatistica-probabilidade/22-teste-hipotese-media-var-desconhecida/arquivos/Aula_22_Teste_Hipotese_Media_Var_Desconhecida_SITE.pptx">Baixar slides originais (PowerPoint)</a></li>
     
   </ul>
 </section>
@@ -68,11 +112,11 @@
     
     <li><strong>Bussab & Morettin, Estatística Básica, 9ª ed.</strong> — Cap. 12 – 12.10</li>
     
-    <li><strong>Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª ed.</strong> — Cap. 9 – 9.3</li>
+    <li><strong>Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros, 7ª ed.</strong> — Cap. 9 – 9.3.1</li>
     
-    <li><strong>Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.</strong> — Cap. 8 – 8.3, 8.4</li>
+    <li><strong>Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.</strong> — Cap. 8 – 8.3 e 8.4</li>
     
-    <li><strong>Morettin, Estatística Básica: Probabilidade e Inferência</strong> — Cap. 14 – 14.2, 14.3</li>
+    <li><strong>Morettin, Estatística Básica: Probabilidade e Inferência</strong> — Cap. 14 – 14.2 e 14.3</li>
     
   </ul>
 </section>
@@ -87,26 +131,26 @@
       
       <li>
         <strong>Bussab & Morettin, Estatística Básica, 9ª ed.</strong>
-         — Cap. 12: Problemas 21 e 22
-        <br>Poucos exercícios dedicados especificamente a variância desconhecida nesta seção — o problema 21 é o mais direto (já dá o valor de t para você interpretar).
+         — Cap. 12: Problemas 21, 22 e 23 (Seção 12.10); Problema Suplementar 25 (b)
+        <br>O 21 treina a distribuição t da estatística (probabilidades com a tabela t), sem teste. O 22 (tempo dos operários) é unilateral à esquerda: o desvio padrão de 15 minutos é o histórico, de antes da modificação; use o s = 12 da amostra. O 23 dá a soma e a soma dos quadrados para calcular s; o item (b) discute o resultado. No Suplementar 25, o item (b) refaz o teste do item (a) (Aula 21) sem conhecer σ: compare as duas decisões.
       </li>
       
       <li>
         <strong>Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.</strong>
-         — Cap. 8 (8.6 Exercícios): 21 e 22
-        <br>Nestes dois exercícios você mesmo estima o desvio-padrão a partir da amostra (não é dado pelo enunciado como parâmetro populacional) — por isso pedem o teste t, não o teste z.
+         — Cap. 8: Exercícios da Seção 8.6, n.º 21, 22, 23 e 24
+        <br>O 21 (frequência cardíaca) é bilateral e pede o nível descritivo (o valor-p). O 22 (cabos de aço) e o 24 (saneamento) dão os dados brutos: calcule x̄ e s antes do teste. O 23 (crescimento dos bebês) pergunta o estimador e sua distribuição e dá uma região crítica pronta para você achar o α.
       </li>
       
       <li>
-        <strong>Montgomery & Runger, Applied Statistics and Probability for Engineers, 7ª ed.</strong>
-         — Cap. 9: Exercícios 9.3.1, 9.3.2, 9.3.3, 9.3.4, 9.3.5, 9.3.6 e 9.3.7
-        <br>Referência mais completa para esta aula. Os exercícios 9.3.2 e 9.3.4 dão uma saída de software com valores faltando — bom treino para interpretar relatórios estatísticos, não só calcular na mão.
+        <strong>Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros, 7ª ed.</strong>
+         — Cap. 9: 9.3.1, 9.3.2, 9.3.3, 9.3.4, 9.3.5, 9.3.6 (a, b, e) e 9.3.7
+        <br>Referência mais completa para esta aula. O 9.3.1 treina os valores críticos de t; o 9.3.3 e o 9.3.5, os limites do valor P pela tabela (como no slide 11 da aula). O 9.3.2 e o 9.3.4 dão uma saída de programa com valores faltando. No 9.3.6, os itens (c) e (d) são de potência e tamanho de amostra e ficam de fora; o (b) pede para verificar a normalidade. O 9.3.7 pede o teste, o menor nível de significância que rejeita (o valor P) e a ligação com o IC.
       </li>
       
       <li>
         <strong>Morettin, Estatística Básica: Probabilidade e Inferência</strong>
-         — Cap. 14: Exercícios 6, 7, 9 e 10
-        <br>Estes quatro já são de teste de hipótese (não intervalo de confiança) com variância desconhecida — os exercícios 1 a 5 da mesma lista são de IC, caso queira revisar aquele conteúdo (Aula 18) também.
+         — Cap. 14: Exercícios propostos 1, n.º 6, 7, 9 e 10; Exercícios propostos 2, n.º 1, 3 e 7 (b)
+        <br>Nos Exercícios propostos 1, o 6 e o 10 são unilaterais à direita; o 7 e o 9 são bilaterais (com α = 10% e α = 2%); o 7 e o 10 trazem os dados brutos. Nos Exercícios propostos 2, o 1 já vem com as hipóteses prontas; o 1 e o 3 têm n grande (n = 64 e n = 60), em que t ≈ z (slide 12 da aula); o 7 (b) é unilateral à esquerda com os dados brutos (o 7 (a) é IC, Aula 18). O 2 (b) e o 5 também pedem teste, mas com dados agrupados ou 36 valores para somar: opcionais.
       </li>
       
     </ul>
@@ -139,6 +183,14 @@
 
 
 
+
+<section class="aula-secao">
+  <h2>Material complementar</h2>
+  
+  <p class="aula-descricao">Para as contas, use a sua tabela t (Aula 17), com a área na cauda superior. A tabela só dá os limites do valor-p; programas estatísticos e planilhas calculam o valor exato.</p>
+  
+  
+</section>
 
 
 </main>
