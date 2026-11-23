@@ -42,36 +42,36 @@
   
   <h3>Tarefa</h3>
   <ul class="bib-list">
-    <li>Uma fábrica de doce de leite de Viçosa vende potes com 400 g no rótulo. O peso dos potes tem distribuição normal com desvio padrão σ = 12 g. Um fiscal pesa 16 potes e só autua a fábrica se houver evidência de peso médio abaixo do rótulo. A média dos 16 potes foi x̄ = 394 g.</li><li>(a) Quais são H₀ e H₁? O teste é unilateral ou bilateral?</li><li>(b) Calcule o valor observado da estatística Z.</li><li>(c) Com nível de significância α = 5%, qual é a região crítica em Z? O fiscal autua a fábrica?</li><li>(d) Calcule o valor-p. A decisão seria a mesma com nível de significância α = 1%?</li><li>(e) Se o fiscal se preocupasse com peso fora de 400 g para mais ou para menos (teste bilateral), qual seria o valor-p? Confira a decisão a 5% com o intervalo de confiança de 95% para μ (Aula 18).</li><li>Use a tabela P(0 ≤ Z ≤ z) das Aulas 13 e 15. Tarefa opcional, sem entrega e sem nota — serve para você conferir se entendeu a leitura. Tente antes de abrir o gabarito.</li>
+    <li>Uma fábrica de doce de leite de Viçosa vende potes com 400 g no rótulo. O peso dos potes tem distribuição normal com desvio padrão σ = 12 g. Um fiscal pesa 16 potes e só autua a fábrica se houver evidência de peso médio abaixo do rótulo. A média dos 16 potes foi x̄ = 394 g.</li><li>(a) Quais são H₀ e H₁? O teste é unilateral ou bilateral? (Passo 1)</li><li>(b) Qual é a estatística do teste e qual a distribuição dela supondo H₀ verdadeira? Com nível de significância α = 5%, qual é a região crítica em Z? (Passos 2 e 3)</li><li>(c) Calcule o valor observado z_obs. O fiscal autua a fábrica? (Passos 4 e 5)</li><li>(d) Calcule o valor-p. Como é a evidência contra H₀ na escala de Fisher (Bussab, Tabela 12.2)? A decisão seria a mesma com nível de significância α = 1%?</li><li>(e) Se o fiscal se preocupasse com peso fora de 400 g para mais ou para menos (teste bilateral), qual seria o valor-p e como fica a evidência na escala de Fisher? Confira a decisão a 5% com o intervalo de confiança de 95% para μ (Aula 18).</li><li>Use a tabela P(0 ≤ Z ≤ z) das Aulas 13 e 15. Tarefa opcional, sem entrega e sem nota — serve para você conferir se entendeu a leitura. Tente antes de abrir o gabarito.</li>
   </ul>
   
   
   <details class="gabarito-preaula">
     <summary>Ver gabarito comentado (tente antes de abrir)</summary>
     
-    <h4>(a) Hipóteses</h4>
+    <h4>(a) Passo 1 — hipóteses</h4>
     <ul class="gabarito-passos">
-      <li><strong>Hipóteses:</strong> H₀ — μ = 400 (o rótulo está certo) e H₁ — μ < 400 (os potes têm menos doce do que o rótulo).</li><li><strong>Unilateral à esquerda:</strong> pote com doce a mais não prejudica o consumidor.</li>
+      <li><strong>Hipóteses:</strong> H₀: μ = 400 (o rótulo está certo) e H₁: μ < 400 (os potes têm menos doce do que o rótulo).</li><li><strong>Unilateral à esquerda:</strong> pote com doce a mais não prejudica o consumidor.</li>
     </ul>
     
-    <h4>(b) Estatística Z</h4>
+    <h4>(b) Passos 2 e 3 — estatística e região crítica</h4>
     <ul class="gabarito-passos">
-      <li><strong>Desvio padrão de X̄:</strong> 12/√16 = 3 g (Aula 15).</li><li><strong>Valor observado:</strong> z_obs = (394 − 400)/3 = −2,00.</li><li><strong>Erro comum:</strong> dividir por σ = 12 em vez de 3 (daria −0,50).</li>
+      <li><strong>Passo 2:</strong> σ = 12 é conhecido: Z = (X̄ − 400)/(σ/√n) tem distribuição N(0, 1) supondo H₀ (Aula 15).</li><li><strong>Passo 3:</strong> α = 5%: na tabela, P(0 ≤ Z ≤ z) = 0,45 dá z₀,₀₅ = 1,645 (Aulas 17 e 18). RC: Z < −1,645.</li>
     </ul>
     
-    <h4>(c) Região crítica com α = 5%</h4>
+    <h4>(c) Passos 4 e 5 — valor observado e decisão</h4>
     <ul class="gabarito-passos">
-      <li><strong>Tabela:</strong> P(0 ≤ Z ≤ z) = 0,45 dá z₀,₀₅ = 1,645 (Aulas 17 e 18). RC — Z < −1,645.</li><li><strong>Decisão:</strong> −2,00 < −1,645, então z_obs está na RC — rejeitar H₀. O fiscal autua — há evidência de peso médio abaixo de 400 g.</li>
+      <li><strong>Passo 4:</strong> desvio padrão de X̄: 12/√16 = 3 g (Aula 15); z_obs = (394 − 400)/3 = −2,00.</li><li><strong>Erro comum:</strong> dividir por σ = 12 em vez de 3 (daria −0,50).</li><li><strong>Passo 5:</strong> −2,00 < −1,645: z_obs está na RC → rejeitar H₀. O fiscal autua: há evidência, ao nível de significância α = 5%, de peso médio abaixo de 400 g.</li>
     </ul>
     
-    <h4>(d) Valor-p</h4>
+    <h4>(d) Valor-p e escala de Fisher</h4>
     <ul class="gabarito-passos">
-      <li><strong>Área à esquerda de −2,00:</strong> valor-p = 0,5 − 0,4772 = 0,0228.</li><li><strong>Decisões:</strong> α = 5% — 0,0228 ≤ 0,05, rejeitar (a mesma decisão do item c). α = 1% — 0,0228 > 0,01, não rejeitar. A decisão muda.</li>
+      <li><strong>Valor-p:</strong> área à esquerda de −2,00: 0,5 − 0,4772 = 0,0228.</li><li><strong>Escala de Fisher:</strong> 0,0228 fica entre 0,025 e 0,01 → evidência entre substancial e forte contra H₀.</li><li><strong>Comparação com o teste:</strong> α = 5%: 0,0228 ≤ 0,05 → rejeitar, a mesma decisão do item (c). α = 1%: 0,0228 > 0,01 → não rejeitar. A decisão muda porque a evidência é substancial, mas não chega a ser muito forte.</li>
     </ul>
     
-    <h4>(e) Bilateral e intervalo de confiança</h4>
+    <h4>(e) Bilateral, escala de Fisher e intervalo de confiança</h4>
     <ul class="gabarito-passos">
-      <li><strong>Valor-p bilateral:</strong> dobra-se a cauda — 2 × 0,0228 = 0,0456; com α = 5%, 0,0456 ≤ 0,05, rejeitar.</li><li><strong>IC de 95%:</strong> 394 ± 1,96 × 3 = 394 ± 5,88, ou seja, [388,12 ; 399,88]. O valor de H₀ (400) está fora do intervalo — rejeitar H₀ a 5%, a mesma decisão.</li>
+      <li><strong>Valor-p bilateral:</strong> dobra-se a cauda → 2 × 0,0228 = 0,0456; com α = 5%, 0,0456 ≤ 0,05 → rejeitar.</li><li><strong>Escala de Fisher:</strong> 0,0456 fica entre 0,05 e 0,025 → evidência entre moderada e substancial: mais fraca que no teste unilateral, com os mesmos dados.</li><li><strong>IC de 95%:</strong> 394 ± 1,96 × 3 = 394 ± 5,88 → [388,12 ; 399,88]. O valor de H₀ (400) está fora do intervalo → rejeitar H₀ a 5%, a mesma decisão.</li>
     </ul>
     
     <p class="nota-gabarito">Gabarito elaborado com auxílio de IA (Claude). Se algo não fizer sentido, pergunte em sala.</p>

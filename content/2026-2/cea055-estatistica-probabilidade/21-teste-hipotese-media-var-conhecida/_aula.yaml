@@ -32,51 +32,51 @@ pre_aula:
   - titulo: Valor de p explicado de forma simples (Ronaldo Lima Jr.)
     url: https://www.youtube.com/watch?v=Z0nZ9JJvveM
   tarefa:
-  - Uma fábrica de doce de leite de Viçosa vende potes com 400 g no rótulo. O peso dos potes tem distribuição normal
-    com desvio padrão σ = 12 g. Um fiscal pesa 16 potes e só autua a fábrica se houver evidência de peso médio abaixo
-    do rótulo. A média dos 16 potes foi x̄ = 394 g.
-  - (a) Quais são H₀ e H₁? O teste é unilateral ou bilateral?
-  - (b) Calcule o valor observado da estatística Z.
-  - (c) Com nível de significância α = 5%, qual é a região crítica em Z? O fiscal autua a fábrica?
-  - (d) Calcule o valor-p. A decisão seria a mesma com nível de significância α = 1%?
-  - (e) Se o fiscal se preocupasse com peso fora de 400 g para mais ou para menos (teste bilateral), qual seria o valor-p?
-    Confira a decisão a 5% com o intervalo de confiança de 95% para μ (Aula 18).
+  - 'Uma fábrica de doce de leite de Viçosa vende potes com 400 g no rótulo. O peso dos potes tem distribuição normal com desvio padrão σ = 12 g. Um fiscal pesa 16 potes e só autua a fábrica se houver evidência de peso médio abaixo do rótulo. A média dos 16 potes foi x̄ = 394 g.'
+  - '(a) Quais são H₀ e H₁? O teste é unilateral ou bilateral? (Passo 1)'
+  - '(b) Qual é a estatística do teste e qual a distribuição dela supondo H₀ verdadeira? Com nível de significância α = 5%, qual é a região crítica em Z? (Passos 2 e 3)'
+  - '(c) Calcule o valor observado z_obs. O fiscal autua a fábrica? (Passos 4 e 5)'
+  - '(d) Calcule o valor-p. Como é a evidência contra H₀ na escala de Fisher (Bussab, Tabela 12.2)? A decisão seria a mesma com nível de significância α = 1%?'
+  - '(e) Se o fiscal se preocupasse com peso fora de 400 g para mais ou para menos (teste bilateral), qual seria o valor-p e como fica a evidência na escala de Fisher? Confira a decisão a 5% com o intervalo de confiança de 95% para μ (Aula 18).'
   - Use a tabela P(0 ≤ Z ≤ z) das Aulas 13 e 15. Tarefa opcional, sem entrega e sem nota — serve para você conferir
     se entendeu a leitura. Tente antes de abrir o gabarito.
   gabarito:
-  - titulo: (a) Hipóteses
+  - titulo: '(a) Passo 1 — hipóteses'
     passos:
-    - - Hipóteses
-      - H₀ — μ = 400 (o rótulo está certo) e H₁ — μ < 400 (os potes têm menos doce do que o rótulo).
-    - - Unilateral à esquerda
-      - pote com doce a mais não prejudica o consumidor.
-  - titulo: (b) Estatística Z
+    - - 'Hipóteses'
+      - 'H₀: μ = 400 (o rótulo está certo) e H₁: μ < 400 (os potes têm menos doce do que o rótulo).'
+    - - 'Unilateral à esquerda'
+      - 'pote com doce a mais não prejudica o consumidor.'
+  - titulo: '(b) Passos 2 e 3 — estatística e região crítica'
     passos:
-    - - Desvio padrão de X̄
-      - 12/√16 = 3 g (Aula 15).
-    - - Valor observado
-      - z_obs = (394 − 400)/3 = −2,00.
-    - - Erro comum
-      - dividir por σ = 12 em vez de 3 (daria −0,50).
-  - titulo: (c) Região crítica com α = 5%
+    - - 'Passo 2'
+      - 'σ = 12 é conhecido: Z = (X̄ − 400)/(σ/√n) tem distribuição N(0, 1) supondo H₀ (Aula 15).'
+    - - 'Passo 3'
+      - 'α = 5%: na tabela, P(0 ≤ Z ≤ z) = 0,45 dá z₀,₀₅ = 1,645 (Aulas 17 e 18). RC: Z < −1,645.'
+  - titulo: '(c) Passos 4 e 5 — valor observado e decisão'
     passos:
-    - - Tabela
-      - P(0 ≤ Z ≤ z) = 0,45 dá z₀,₀₅ = 1,645 (Aulas 17 e 18). RC — Z < −1,645.
-    - - Decisão
-      - −2,00 < −1,645, então z_obs está na RC — rejeitar H₀. O fiscal autua — há evidência de peso médio abaixo de 400 g.
-  - titulo: (d) Valor-p
+    - - 'Passo 4'
+      - 'desvio padrão de X̄: 12/√16 = 3 g (Aula 15); z_obs = (394 − 400)/3 = −2,00.'
+    - - 'Erro comum'
+      - 'dividir por σ = 12 em vez de 3 (daria −0,50).'
+    - - 'Passo 5'
+      - '−2,00 < −1,645: z_obs está na RC → rejeitar H₀. O fiscal autua: há evidência, ao nível de significância α = 5%, de peso médio abaixo de 400 g.'
+  - titulo: '(d) Valor-p e escala de Fisher'
     passos:
-    - - Área à esquerda de −2,00
-      - valor-p = 0,5 − 0,4772 = 0,0228.
-    - - Decisões
-      - α = 5% — 0,0228 ≤ 0,05, rejeitar (a mesma decisão do item c). α = 1% — 0,0228 > 0,01, não rejeitar. A decisão muda.
-  - titulo: (e) Bilateral e intervalo de confiança
+    - - 'Valor-p'
+      - 'área à esquerda de −2,00: 0,5 − 0,4772 = 0,0228.'
+    - - 'Escala de Fisher'
+      - '0,0228 fica entre 0,025 e 0,01 → evidência entre substancial e forte contra H₀.'
+    - - 'Comparação com o teste'
+      - 'α = 5%: 0,0228 ≤ 0,05 → rejeitar, a mesma decisão do item (c). α = 1%: 0,0228 > 0,01 → não rejeitar. A decisão muda porque a evidência é substancial, mas não chega a ser muito forte.'
+  - titulo: '(e) Bilateral, escala de Fisher e intervalo de confiança'
     passos:
-    - - Valor-p bilateral
-      - dobra-se a cauda — 2 × 0,0228 = 0,0456; com α = 5%, 0,0456 ≤ 0,05, rejeitar.
-    - - IC de 95%
-      - 394 ± 1,96 × 3 = 394 ± 5,88, ou seja, [388,12 ; 399,88]. O valor de H₀ (400) está fora do intervalo — rejeitar H₀
-        a 5%, a mesma decisão.
+    - - 'Valor-p bilateral'
+      - 'dobra-se a cauda → 2 × 0,0228 = 0,0456; com α = 5%, 0,0456 ≤ 0,05 → rejeitar.'
+    - - 'Escala de Fisher'
+      - '0,0456 fica entre 0,05 e 0,025 → evidência entre moderada e substancial: mais fraca que no teste unilateral, com os mesmos dados.'
+    - - 'IC de 95%'
+      - '394 ± 1,96 × 3 = 394 ± 5,88 → [388,12 ; 399,88]. O valor de H₀ (400) está fora do intervalo → rejeitar H₀ a 5%, a mesma decisão.'
 exercicios_recomendados:
   itens:
   - livro: Bussab & Morettin, Estatística Básica, 9ª ed.

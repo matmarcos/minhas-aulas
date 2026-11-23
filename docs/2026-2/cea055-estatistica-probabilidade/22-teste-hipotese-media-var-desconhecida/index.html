@@ -42,36 +42,36 @@
   
   <h3>Tarefa</h3>
   <ul class="bib-list">
-    <li>Um alambique de Salinas engarrafa cachaça em garrafas de 700 mL. O volume das garrafas tem distribuição normal, mas o desvio padrão σ é desconhecido. Um fiscal mede 10 garrafas e só autua o alambique se houver evidência de volume médio abaixo do rótulo. A média das 10 garrafas foi x̄ = 696 mL, com desvio padrão amostral s = 6 mL.</li><li>(a) Quais são H₀ e H₁? O teste é unilateral ou bilateral? Por que se usa T, e não Z?</li><li>(b) Calcule o valor observado da estatística T. Quantos graus de liberdade?</li><li>(c) Com nível de significância α = 5%, qual é a região crítica em T? O fiscal autua o alambique?</li><li>(d) Entre quais valores da tabela t fica o valor-p?</li><li>(e) Se o fiscal se preocupasse com volume fora de 700 mL para mais ou para menos (teste bilateral), entre quais valores ficaria o valor-p? A decisão a 5% muda? Confira com o intervalo de confiança de 95% para μ (Aula 18).</li><li>Trecho da tabela t (área na cauda superior) — ν = 9: 1,383 (0,10) · 1,833 (0,05) · 2,262 (0,025) · 2,821 (0,01) · 3,250 (0,005); ν = 10: 1,372 · 1,812 · 2,228 · 2,764 · 3,169. Tarefa opcional, sem entrega e sem nota — serve para você conferir se entendeu a leitura. Tente antes de abrir o gabarito.</li>
+    <li>Um alambique de Salinas engarrafa cachaça em garrafas de 700 mL. O volume das garrafas tem distribuição normal, mas o desvio padrão σ é desconhecido. Um fiscal mede 10 garrafas e só autua o alambique se houver evidência de volume médio abaixo do rótulo. A média das 10 garrafas foi x̄ = 696 mL, com desvio padrão amostral s = 6 mL.</li><li>(a) Quais são H₀ e H₁? O teste é unilateral ou bilateral? (Passo 1)</li><li>(b) Qual é a estatística do teste? Por que se usa T, e não Z? Qual a distribuição dela supondo H₀ verdadeira, com quantos graus de liberdade? Com nível de significância α = 5%, qual é a região crítica em T? (Passos 2 e 3)</li><li>(c) Calcule o valor observado t_obs. O fiscal autua o alambique? (Passos 4 e 5)</li><li>(d) Entre quais valores da tabela t fica o valor-p? Como é a evidência contra H₀ na escala de Fisher (Aula 21)? A decisão é a mesma do item (c)?</li><li>(e) Se o fiscal se preocupasse com volume fora de 700 mL para mais ou para menos (teste bilateral), entre quais valores ficaria o valor-p e como fica a evidência na escala de Fisher? A decisão a 5% muda? Confira com o intervalo de confiança de 95% para μ (Aula 18).</li><li>Trecho da tabela t (área na cauda superior) — ν = 9: 1,383 (0,10) · 1,833 (0,05) · 2,262 (0,025) · 2,821 (0,01) · 3,250 (0,005); ν = 10: 1,372 · 1,812 · 2,228 · 2,764 · 3,169. Tarefa opcional, sem entrega e sem nota — serve para você conferir se entendeu a leitura. Tente antes de abrir o gabarito.</li>
   </ul>
   
   
   <details class="gabarito-preaula">
     <summary>Ver gabarito comentado (tente antes de abrir)</summary>
     
-    <h4>(a) Hipóteses</h4>
+    <h4>(a) Passo 1 — hipóteses</h4>
     <ul class="gabarito-passos">
-      <li><strong>Hipóteses:</strong> H₀ — μ = 700 (o rótulo está certo) e H₁ — μ < 700 (as garrafas têm menos cachaça do que o rótulo).</li><li><strong>Unilateral à esquerda:</strong> garrafa com cachaça a mais não prejudica o consumidor.</li><li><strong>T e não Z:</strong> σ é desconhecido; usa-se s no lugar de σ, e a estatística passa a ter distribuição t (Aulas 17 e 18).</li>
+      <li><strong>Hipóteses:</strong> H₀: μ = 700 (o rótulo está certo) e H₁: μ < 700 (as garrafas têm menos cachaça do que o rótulo).</li><li><strong>Unilateral à esquerda:</strong> garrafa com cachaça a mais não prejudica o consumidor.</li>
     </ul>
     
-    <h4>(b) Estatística T</h4>
+    <h4>(b) Passos 2 e 3 — estatística e região crítica</h4>
     <ul class="gabarito-passos">
-      <li><strong>Erro padrão estimado:</strong> s/√n = 6/√10 = 1,897 mL.</li><li><strong>Valor observado:</strong> t_obs = (696 − 700)/1,897 = −2,11, com ν = 10 − 1 = 9 graus de liberdade.</li><li><strong>Erro comum:</strong> usar ν = 10 (a linha certa é n − 1 = 9).</li>
+      <li><strong>Passo 2:</strong> σ é desconhecido; usa-se S no lugar de σ (Aulas 17 e 18): T = (X̄ − 700)/(S/√n) tem distribuição t com ν = 10 − 1 = 9 graus de liberdade, supondo H₀.</li><li><strong>Erro comum:</strong> usar ν = 10 (a linha certa é n − 1 = 9).</li><li><strong>Passo 3:</strong> α = 5%: linha ν = 9, coluna 0,05 → t₀,₀₅;₉ = 1,833. RC: T < −1,833.</li>
     </ul>
     
-    <h4>(c) Região crítica com α = 5%</h4>
+    <h4>(c) Passos 4 e 5 — valor observado e decisão</h4>
     <ul class="gabarito-passos">
-      <li><strong>Tabela:</strong> linha ν = 9, coluna 0,05 — t₀,₀₅;₉ = 1,833. RC — T < −1,833.</li><li><strong>Decisão:</strong> −2,11 < −1,833, então t_obs está na RC — rejeitar H₀. O fiscal autua — há evidência, ao nível de significância α = 5%, de volume médio abaixo de 700 mL.</li>
+      <li><strong>Passo 4:</strong> s/√n = 6/√10 = 1,897 mL; t_obs = (696 − 700)/1,897 = −2,11.</li><li><strong>Passo 5:</strong> −2,11 < −1,833: t_obs está na RC → rejeitar H₀. O fiscal autua: há evidência, ao nível de significância α = 5%, de volume médio abaixo de 700 mL.</li>
     </ul>
     
-    <h4>(d) Valor-p pela tabela</h4>
+    <h4>(d) Valor-p pela tabela e escala de Fisher</h4>
     <ul class="gabarito-passos">
-      <li><strong>Linha ν = 9:</strong> |t_obs| = 2,11 fica entre 1,833 (coluna 0,05) e 2,262 (coluna 0,025).</li><li><strong>Unilateral:</strong> 0,025 < valor-p < 0,05. Pelo programa, o valor exato é 0,0321.</li>
+      <li><strong>Linha ν = 9:</strong> |t_obs| = 2,11 fica entre 1,833 (coluna 0,05) e 2,262 (coluna 0,025) → unilateral: 0,025 < valor-p < 0,05. Pelo programa, o valor exato é 0,0321.</li><li><strong>Escala de Fisher:</strong> valor-p entre 0,05 e 0,025 → evidência entre moderada e substancial contra H₀.</li><li><strong>Comparação com o teste:</strong> valor-p < 0,05 → rejeitar, a mesma decisão do item (c). A escala mostra que a evidência não é forte: com α = 1%, H₀ não seria rejeitada (0,0321 > 0,01).</li>
     </ul>
     
-    <h4>(e) Bilateral e intervalo de confiança</h4>
+    <h4>(e) Bilateral, escala de Fisher e intervalo de confiança</h4>
     <ul class="gabarito-passos">
-      <li><strong>Valor-p bilateral:</strong> dobram-se as áreas — 0,05 < valor-p < 0,10; como o valor-p > 0,05, não rejeitar H₀ a 5%. A decisão muda — o teste bilateral precisa de uma diferença maior.</li><li><strong>IC de 95%:</strong> 696 ± 2,262 × 1,897 = 696 ± 4,29, ou seja, [691,71 ; 700,29]. O valor de H₀ (700) está dentro do intervalo — não rejeitar H₀ no teste bilateral a 5%, a mesma decisão.</li>
+      <li><strong>Valor-p bilateral:</strong> dobram-se as áreas → 0,05 < valor-p < 0,10 (exato: 0,0643); como o valor-p > 0,05, não rejeitar H₀ a 5%. A decisão muda: o teste bilateral precisa de uma diferença maior.</li><li><strong>Escala de Fisher:</strong> valor-p entre 0,10 e 0,05 → evidência marginal contra H₀.</li><li><strong>IC de 95%:</strong> 696 ± 2,262 × 1,897 = 696 ± 4,29 → [691,71 ; 700,29]. O valor de H₀ (700) está dentro do intervalo → não rejeitar H₀ no teste bilateral a 5%, a mesma decisão.</li>
     </ul>
     
     <p class="nota-gabarito">Gabarito elaborado com auxílio de IA (Claude). Se algo não fizer sentido, pergunte em sala.</p>
@@ -144,13 +144,13 @@
       <li>
         <strong>Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros, 7ª ed.</strong>
          — Cap. 9: 9.3.1, 9.3.2, 9.3.3, 9.3.4, 9.3.5, 9.3.6 (a, b, e) e 9.3.7
-        <br>Referência mais completa para esta aula. O 9.3.1 treina os valores críticos de t; o 9.3.3 e o 9.3.5, os limites do valor P pela tabela (como no slide 11 da aula). O 9.3.2 e o 9.3.4 dão uma saída de programa com valores faltando. No 9.3.6, os itens (c) e (d) são de potência e tamanho de amostra e ficam de fora; o (b) pede para verificar a normalidade. O 9.3.7 pede o teste, o menor nível de significância que rejeita (o valor P) e a ligação com o IC.
+        <br>Referência mais completa para esta aula. O 9.3.1 treina os valores críticos de t; o 9.3.3 e o 9.3.5, os limites do valor P pela tabela (como no slide 13 da aula). O 9.3.2 e o 9.3.4 dão uma saída de programa com valores faltando. No 9.3.6, os itens (c) e (d) são de potência e tamanho de amostra e ficam de fora; o (b) pede para verificar a normalidade. O 9.3.7 pede o teste, o menor nível de significância que rejeita (o valor P) e a ligação com o IC.
       </li>
       
       <li>
         <strong>Morettin, Estatística Básica: Probabilidade e Inferência</strong>
          — Cap. 14: Exercícios propostos 1, n.º 6, 7, 9 e 10; Exercícios propostos 2, n.º 1, 3 e 7 (b)
-        <br>Nos Exercícios propostos 1, o 6 e o 10 são unilaterais à direita; o 7 e o 9 são bilaterais (com α = 10% e α = 2%); o 7 e o 10 trazem os dados brutos. Nos Exercícios propostos 2, o 1 já vem com as hipóteses prontas; o 1 e o 3 têm n grande (n = 64 e n = 60), em que t ≈ z (slide 12 da aula); o 7 (b) é unilateral à esquerda com os dados brutos (o 7 (a) é IC, Aula 18). O 2 (b) e o 5 também pedem teste, mas com dados agrupados ou 36 valores para somar: opcionais.
+        <br>Nos Exercícios propostos 1, o 6 e o 10 são unilaterais à direita; o 7 e o 9 são bilaterais (com α = 10% e α = 2%); o 7 e o 10 trazem os dados brutos. Nos Exercícios propostos 2, o 1 já vem com as hipóteses prontas; o 1 e o 3 têm n grande (n = 64 e n = 60), em que t ≈ z (slide 14 da aula); o 7 (b) é unilateral à esquerda com os dados brutos (o 7 (a) é IC, Aula 18). O 2 (b) e o 5 também pedem teste, mas com dados agrupados ou 36 valores para somar: opcionais.
       </li>
       
     </ul>
