@@ -98,7 +98,7 @@ exercicios_recomendados:
   - livro: Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros, 7ª ed.
     exercicios: 'Cap. 9: 9.3.1, 9.3.2, 9.3.3, 9.3.4, 9.3.5, 9.3.6 (a, b, e) e 9.3.7'
     recomendacao: 'Referência mais completa para esta aula. O 9.3.1 treina os valores críticos de t; o 9.3.3 e o
-      9.3.5, os limites do valor P pela tabela (como no slide 12 da aula). O 9.3.2 e o 9.3.4 dão uma saída de programa
+      9.3.5, os limites do valor P pela tabela (como no slide 13 da aula). O 9.3.2 e o 9.3.4 dão uma saída de programa
       com valores faltando. No 9.3.6, os itens (c) e (d) são de potência e tamanho de amostra e ficam de fora; o (b)
       pede para verificar a normalidade. O 9.3.7 pede o teste, o menor nível de significância que rejeita (o valor P) e
       a ligação com o IC.'
@@ -106,7 +106,7 @@ exercicios_recomendados:
     exercicios: 'Cap. 14: Exercícios propostos 1, n.º 6, 7, 9 e 10; Exercícios propostos 2, n.º 1, 3 e 7 (b)'
     recomendacao: 'Nos Exercícios propostos 1, o 6 e o 10 são unilaterais à direita; o 7 e o 9 são bilaterais (com
       α = 10% e α = 2%); o 7 e o 10 trazem os dados brutos. Nos Exercícios propostos 2, o 1 já vem com as hipóteses
-      prontas; o 1 e o 3 têm n grande (n = 64 e n = 60), em que t ≈ z (slide 13 da aula); o 7 (b) é unilateral à
+      prontas; o 1 e o 3 têm n grande (n = 64 e n = 60), em que t ≈ z (slide 14 da aula); o 7 (b) é unilateral à
       esquerda com os dados brutos (o 7 (a) é IC, Aula 18). O 2 (b) e o 5 também pedem teste, mas com dados agrupados
       ou 36 valores para somar: opcionais.'
   arquivo: Tabela_Referencias_Aula22.pdf
