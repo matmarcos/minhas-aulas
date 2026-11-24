@@ -27,7 +27,7 @@
   <ul class="bib-list">
     <li>Bussab & Morettin, Estatística Básica, 9ª ed. — Seções 8.1 (distribuição conjunta) e 8.2 (distribuições marginais e condicionais; variáveis independentes).</li><li>Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros, 7ª ed. — Seções 5.1 (distribuições conjuntas para duas variáveis; marginais) e 5.2 (distribuições condicionais e independência).</li>
   </ul>
-  <p class="nota-leitura">As duas referências cobrem o mesmo conteúdo — basta ler uma. a aula trata só de variáveis discretas, com a distribuição conjunta numa tabela de dupla entrada. No Montgomery, pule as partes com densidade conjunta e integrais (caso contínuo). Na aula, a distribuição conjunta é escrita p(x, y) = P(X = x, Y = y), e as marginais, p_X(x) e p_Y(y).</p>
+  <p class="nota-leitura">As duas referências cobrem o mesmo conteúdo — basta ler uma. a aula trata só de variáveis discretas, com a distribuição conjunta numa tabela de dupla entrada. No Montgomery, pule as partes com densidade conjunta e integrais (caso contínuo). Na aula, a notação é a mesma das Aulas 5 e 7: P(X = x, Y = y) para a conjunta, P(X = x) e P(Y = y) para as marginais e P(Y = y | X = x) para a condicional.</p>
   
   
   <h3>Vídeo recomendado</h3>
@@ -42,7 +42,7 @@
   
   <h3>Tarefa</h3>
   <ul class="bib-list">
-    <li>Uma queijaria de São Roque de Minas, na Serra da Canastra, entrega queijos a um empório de Belo Horizonte. Em cada entrega, observam-se duas variáveis: X = número de peças devolvidas pelo empório por defeito na casca (0, 1 ou 2) e Y = 1 se a entrega atrasou, 0 se chegou no prazo. Entregas que atrasam ficam mais tempo no caminhão, e a queijaria desconfia que atraso e devolução andam juntos. Pelo histórico, a distribuição conjunta de (X, Y) é:</li><li>Distribuição conjunta de (X, Y) — X = 0: p(0, 0) = 0,45; p(0, 1) = 0,15 · X = 1: p(1, 0) = 0,15; p(1, 1) = 0,10 · X = 2: p(2, 0) = 0,05; p(2, 1) = 0,10</li><li>(a) Confira que a tabela é uma distribuição conjunta e complete as distribuições marginais de X e de Y.</li><li>(b) Qual é a probabilidade de uma entrega ter pelo menos uma peça devolvida? E de atrasar e ter pelo menos uma peça devolvida?</li><li>(c) Calcule P(Y = 1 | X = x) para x = 0, 1 e 2. O que acontece com a chance de atraso quando o número de peças devolvidas cresce?</li><li>(d) X e Y são independentes? Justifique com um par (x, y).</li><li>(e) Se X e Y fossem independentes, com as mesmas marginais, quanto deveriam valer p(0, 0) e p(2, 1)? Compare com os valores da tabela.</li><li>Tarefa opcional, sem entrega e sem nota — serve para você conferir se entendeu a leitura. Tente antes de abrir o gabarito.</li>
+    <li>Uma queijaria de São Roque de Minas, na Serra da Canastra, entrega queijos a um empório de Belo Horizonte. Em cada entrega, observam-se duas variáveis: X = número de peças devolvidas pelo empório por defeito na casca (0, 1 ou 2) e Y = 1 se a entrega atrasou, 0 se chegou no prazo. Entregas que atrasam ficam mais tempo no caminhão, e a queijaria desconfia que atraso e devolução andam juntos. Pelo histórico, a distribuição conjunta de (X, Y) é:</li><li>Distribuição conjunta de (X, Y) — X = 0: P(X = 0, Y = 0) = 0,45; P(X = 0, Y = 1) = 0,15 · X = 1: P(X = 1, Y = 0) = 0,15; P(X = 1, Y = 1) = 0,10 · X = 2: P(X = 2, Y = 0) = 0,05; P(X = 2, Y = 1) = 0,10</li><li>(a) Confira que a tabela é uma distribuição conjunta e complete as distribuições marginais de X e de Y.</li><li>(b) Qual é a probabilidade de uma entrega ter pelo menos uma peça devolvida? E de atrasar e ter pelo menos uma peça devolvida?</li><li>(c) Calcule P(Y = 1 | X = x) para x = 0, 1 e 2. O que acontece com a chance de atraso quando o número de peças devolvidas cresce?</li><li>(d) X e Y são independentes? Justifique com um par (x, y).</li><li>(e) Se X e Y fossem independentes, com as mesmas marginais, quanto deveriam valer P(X = 0, Y = 0) e P(X = 2, Y = 1)? Compare com os valores da tabela.</li><li>Tarefa opcional, sem entrega e sem nota — serve para você conferir se entendeu a leitura. Tente antes de abrir o gabarito.</li>
   </ul>
   
   
@@ -51,27 +51,27 @@
     
     <h4>(a) Conjunta e marginais</h4>
     <ul class="gabarito-passos">
-      <li><strong>Distribuição conjunta:</strong> todos os valores são ≥ 0 e a soma das seis células é 0,45 + 0,15 + 0,15 + 0,10 + 0,05 + 0,10 = 1.</li><li><strong>Marginal de X (soma das linhas):</strong> p_X(0) = 0,60; p_X(1) = 0,25; p_X(2) = 0,15.</li><li><strong>Marginal de Y (soma das colunas):</strong> p_Y(0) = 0,65; p_Y(1) = 0,35. As duas marginais somam 1.</li>
+      <li><strong>Distribuição conjunta:</strong> todos os valores são ≥ 0 e a soma das seis células é 0,45 + 0,15 + 0,15 + 0,10 + 0,05 + 0,10 = 1.</li><li><strong>Marginal de X (soma das linhas):</strong> P(X = 0) = 0,60; P(X = 1) = 0,25; P(X = 2) = 0,15.</li><li><strong>Marginal de Y (soma das colunas):</strong> P(Y = 0) = 0,65; P(Y = 1) = 0,35. As duas marginais somam 1.</li>
     </ul>
     
     <h4>(b) Probabilidades de eventos</h4>
     <ul class="gabarito-passos">
-      <li><strong>Pelo menos uma devolvida:</strong> P(X ≥ 1) = p_X(1) + p_X(2) = 0,25 + 0,15 = 0,40.</li><li><strong>Atrasar e ter pelo menos uma devolvida:</strong> soma das células com Y = 1 e X ≥ 1: p(1, 1) + p(2, 1) = 0,10 + 0,10 = 0,20.</li><li><strong>Erro comum:</strong> multiplicar P(X ≥ 1) × P(Y = 1) = 0,40 × 0,35 = 0,14. Isso só valeria se X e Y fossem independentes, e eles não são (item d).</li>
+      <li><strong>Pelo menos uma devolvida:</strong> P(X ≥ 1) = P(X = 1) + P(X = 2) = 0,25 + 0,15 = 0,40.</li><li><strong>Atrasar e ter pelo menos uma devolvida:</strong> soma das células com Y = 1 e X ≥ 1: P(X = 1, Y = 1) + P(X = 2, Y = 1) = 0,10 + 0,10 = 0,20.</li><li><strong>Erro comum:</strong> multiplicar P(X ≥ 1) × P(Y = 1) = 0,40 × 0,35 = 0,14. Isso só valeria se X e Y fossem independentes, e eles não são (item d).</li>
     </ul>
     
     <h4>(c) Distribuição condicional</h4>
     <ul class="gabarito-passos">
-      <li><strong>Conta:</strong> P(Y = 1 | X = x) = p(x, 1)/p_X(x) — a probabilidade condicional da Aula 5, linha por linha.</li><li><strong>Valores:</strong> x = 0: 0,15/0,60 = 0,25; x = 1: 0,10/0,25 = 0,40; x = 2: 0,10/0,15 ≈ 0,67.</li><li><strong>Interpretação:</strong> a chance de atraso cresce com o número de peças devolvidas: 25%, 40% e cerca de 67%. Saber X muda a distribuição de Y.</li>
+      <li><strong>Conta:</strong> P(Y = 1 | X = x) = P(X = x, Y = 1)/P(X = x) — a probabilidade condicional da Aula 5, linha por linha.</li><li><strong>Valores:</strong> x = 0: 0,15/0,60 = 0,25; x = 1: 0,10/0,25 = 0,40; x = 2: 0,10/0,15 ≈ 0,67.</li><li><strong>Interpretação:</strong> a chance de atraso cresce com o número de peças devolvidas: 25%, 40% e cerca de 67%. Saber X muda a distribuição de Y.</li>
     </ul>
     
     <h4>(d) Independência</h4>
     <ul class="gabarito-passos">
-      <li><strong>Critério:</strong> independência exige p(x, y) = p_X(x)·p_Y(y) para todo par; basta um par que falhe para concluir que não são independentes.</li><li><strong>Par (0, 0):</strong> p(0, 0) = 0,45, mas p_X(0)·p_Y(0) = 0,60 × 0,65 = 0,39. Como 0,45 ≠ 0,39, X e Y não são independentes.</li><li><strong>Mesma conclusão pelo item (c):</strong> P(Y = 1 | X = 0) = 0,25 é diferente de P(Y = 1) = 0,35.</li>
+      <li><strong>Critério:</strong> independência exige P(X = x, Y = y) = P(X = x)·P(Y = y) para todo par; basta um par que falhe para concluir que não são independentes.</li><li><strong>Par (0, 0):</strong> P(X = 0, Y = 0) = 0,45, mas P(X = 0)·P(Y = 0) = 0,60 × 0,65 = 0,39. Como 0,45 ≠ 0,39, X e Y não são independentes.</li><li><strong>Mesma conclusão pelo item (c):</strong> P(Y = 1 | X = 0) = 0,25 é diferente de P(Y = 1) = 0,35.</li>
     </ul>
     
     <h4>(e) Como seria a tabela com independência</h4>
     <ul class="gabarito-passos">
-      <li><strong>Produto das marginais:</strong> p(0, 0) = 0,60 × 0,65 = 0,39 e p(2, 1) = 0,15 × 0,35 = 0,0525.</li><li><strong>Comparação:</strong> na tabela real, p(0, 0) = 0,45 e p(2, 1) = 0,10 — as entregas "boas" (sem devolução e no prazo) e as "ruins" (duas devoluções e atraso) acontecem mais do que aconteceriam se as variáveis fossem independentes. É a dependência que a queijaria desconfiava.</li>
+      <li><strong>Produto das marginais:</strong> P(X = 0, Y = 0) = 0,60 × 0,65 = 0,39 e P(X = 2, Y = 1) = 0,15 × 0,35 = 0,0525.</li><li><strong>Comparação:</strong> na tabela real, P(X = 0, Y = 0) = 0,45 e P(X = 2, Y = 1) = 0,10 — as entregas "boas" (sem devolução e no prazo) e as "ruins" (duas devoluções e atraso) acontecem mais do que aconteceriam se as variáveis fossem independentes. É a dependência que a queijaria desconfiava.</li>
     </ul>
     
     <p class="nota-gabarito">Gabarito elaborado com auxílio de IA (Claude). Se algo não fizer sentido, pergunte em sala.</p>
@@ -92,14 +92,14 @@
 <section class="aula-secao">
   <h2>Slides do professor</h2>
   
-  <iframe class="slides-embed" loading="lazy" src="../../../2026-2/cea055-estatistica-probabilidade/23-va-multidimensionais-distribuicoes-conjuntas/arquivos/Aula_23_VA_Multidimensionais_Distribuicoes_Conjuntas.pdf" title="Slides da aula 23"></iframe>
+  <iframe class="slides-embed" loading="lazy" src="../../../2026-2/cea055-estatistica-probabilidade/23-va-multidimensionais-distribuicoes-conjuntas/arquivos/Aula_23_VA_Multidimensionais_Distribuicoes_Conjuntas_SITE.pdf" title="Slides da aula 23"></iframe>
   
   <ul class="material-list">
     
-    <li><a href="../../../2026-2/cea055-estatistica-probabilidade/23-va-multidimensionais-distribuicoes-conjuntas/arquivos/Aula_23_VA_Multidimensionais_Distribuicoes_Conjuntas.pdf" target="_blank" rel="noopener">Abrir slides em tela cheia (PDF)</a></li>
+    <li><a href="../../../2026-2/cea055-estatistica-probabilidade/23-va-multidimensionais-distribuicoes-conjuntas/arquivos/Aula_23_VA_Multidimensionais_Distribuicoes_Conjuntas_SITE.pdf" target="_blank" rel="noopener">Abrir slides em tela cheia (PDF)</a></li>
     
     
-    <li><a href="../../../2026-2/cea055-estatistica-probabilidade/23-va-multidimensionais-distribuicoes-conjuntas/arquivos/Aula_23_VA_Multidimensionais_Distribuicoes_Conjuntas.pptx">Baixar slides originais (PowerPoint)</a></li>
+    <li><a href="../../../2026-2/cea055-estatistica-probabilidade/23-va-multidimensionais-distribuicoes-conjuntas/arquivos/Aula_23_VA_Multidimensionais_Distribuicoes_Conjuntas_SITE.pptx">Baixar slides originais (PowerPoint)</a></li>
     
   </ul>
 </section>
