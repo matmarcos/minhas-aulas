@@ -79,25 +79,17 @@ pre_aula:
 exercicios_recomendados:
   itens:
   - livro: Bussab & Morettin, Estatística Básica, 9ª ed.
-    exercicios: 'Cap. 8: Problemas 1, 2 e 3'
-    recomendacao: 'Sequência muito didática: o problema 1 parte de um experimento
-      simples (moeda + dado) para você mesmo montar a tabela conjunta; o 2 e o 3 já
-      dão a tabela pronta e pedem marginais, condicionais e independência.'
+    exercicios: 'Cap. 8: Problemas 1, 2 e 3 (Seção 8.2)'
+    recomendacao: 'Sequência mais didática para começar. No 1 (moeda e dado), você monta a tabela conjunta a partir do experimento e verifica a independência. O 2 dá a tabela pronta e pede marginais, condicionais e independência; o item (b) pede a esperança e a variância de X e de Y, cada uma sozinha. O 3 dá a tabela incompleta e pede para completá-la supondo X e Y independentes: cada célula é o produto das marginais.'
   - livro: Magalhães & Lima, Noções de Probabilidade e Estatística, 5ª ed.
-    exercicios: 'Cap. 5 (5.3 Exercícios): 25, 27, 28, 29 e 30'
-    recomendacao: 'Boa variedade de contextos (paleontologia, matérias-primas, variáveis
-      abstratas A e B). O exercício 30 é interessante: dá probabilidades condicionais
-      e marginais parciais, e você precisa completar a tabela toda.'
-  - livro: Montgomery & Runger, Applied Statistics and Probability for Engineers,
-      7ª ed.
-    exercicios: 'Cap. 5: Exercícios 5.1.1, 5.1.2, 5.2.1, 5.2.2, 5.2.4 e 5.2.5'
-    recomendacao: Única referência desta lista com exemplos de variáveis contínuas
-      bidimensionais (5.2.1 e 5.2.5, com densidades condicionais) — as outras referências
-      desta lista trabalham só com variáveis discretas.
+    exercicios: 'Cap. 5: Exercícios da Seção 5.3, n.º 14 (a, c), 15 (a, c), 17 (a, b), 18 (a, b), 19 (a, b, d, e) e 30'
+    recomendacao: 'No 14 (dois dados), no 17 (bolas sorteadas com devolução) e no 18 (moeda lançada três vezes), você monta a conjunta a partir do experimento. O 15 dá a tabela pronta (com frações) e pede probabilidades de eventos. O 19 (palavras de uma frase) termina com uma condicional no item (e). O 30 é o mais desafiador: dá marginais, uma probabilidade conjunta e uma condicional, e você precisa montar a tabela toda. Os itens deixados de fora pedem esperança de funções de (X, Y), covariância ou correlação: Aula 24.'
+  - livro: Montgomery & Runger, Estatística Aplicada e Probabilidade para Engenheiros, 7ª ed.
+    exercicios: 'Cap. 5: 5.1.1, 5.1.2, 5.1.3 e 5.2.2 (a, b, d)'
+    recomendacao: 'O 5.1.1 e o 5.1.2 dão a função de probabilidade conjunta (tabela no livro): verifique as propriedades, calcule probabilidades de eventos e a marginal de X; o item (e) pede esperança e variância de cada variável. O 5.1.3 (bits com distorção) é o mais trabalhoso: a conjunta sai contando os casos com três bits. O 5.2.2 usa a tabela do 5.1.1 para as condicionais e a independência; o item (c), esperança condicional, fica de fora.'
   - livro: 'Morettin, Estatística Básica: Probabilidade e Inferência'
-    exercicios: 'Cap. 3: Exercícios 14, 15, 16, 17 e 18'
-    recomendacao: 'O exercício 18 é bom para revisão: dá a tabela conjunta incompleta
-      (falta descobrir o valor de p) antes de calcular tudo o mais.'
+    exercicios: 'Cap. 3: Exercícios propostos, n.º 21 (a, b)'
+    recomendacao: 'Duas bolas retiradas sem reposição: monte a conjunta (a segunda retirada depende da primeira) e calcule a esperança e a variância de cada variável. Os itens (c) e (d), e os outros exercícios de distribuição conjunta do capítulo, pedem funções de (X, Y), covariância ou correlação: Aula 24.'
   arquivo: Tabela_Referencias_Aula23.pdf
 lista_ia:
   lista_arquivo: Lista_Aula23_Original.pdf
